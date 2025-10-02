@@ -1,0 +1,75 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=80mm,paperheight=65mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=1.5]
+\clip(-1.5,-0.7) rectangle (4.5,3.5);
+\draw  (0.,0)-- (0,3);
+\draw  (0.5,0)-- (0.5,3);
+\draw  (1,0)-- (1,2.5);
+\draw  (1.5,0)-- (1.5,2);
+\draw  (2,0)-- (2,1.5);
+\draw  (2.5,0)-- (2.5,1);
+\draw  (3,0)-- (3,0.5);
+\draw  (0.,0)-- (3,0);
+\draw  (0.,0.5)-- (3,0.5);
+\draw  (0.,1)-- (2.5,1);
+\draw  (0.,1.5)-- (2,1.5);
+\draw  (0.,2)-- (1.5,2);
+\draw  (0.,2.5)-- (1,2.5);
+\draw  (0.,3)-- (0.5,3);
+\begin{small}
+\draw (-0.5,2.75) node {tým 2};
+\draw (-0.5,2.25) node {tým 3};
+\draw (-0.5,1.75) node {tým 4};
+\draw (-0.5,1.25) node {tým 5};
+\draw (-0.5,0.75) node {tým 6};
+\draw (-0.5,0.25) node {tým 7};
+\draw (0.1,-0.4) node {\rotatebox{45}{tým 1}};
+\draw (0.6,-0.4) node {\rotatebox{45}{tým 2}};
+\draw (1.1,-0.4) node {\rotatebox{45}{tým 3}};
+\draw (1.6,-0.4) node {\rotatebox{45}{tým 4}};
+\draw (2.1,-0.4) node {\rotatebox{45}{tým 5}};
+\draw (2.6,-0.4) node {\rotatebox{45}{tým 6}};
+\end{small}
+\begin{scriptsize}
+\draw (0.25,2.75) node {$D_1$};
+\draw (0.25,2.25) node {$D_2$};
+\draw (0.25,1.75) node {$D_3$};
+\draw (0.25,1.25) node {$D_4$};
+\draw (0.25,0.75) node {$D_5$};
+\draw (0.75,2.25) node {$D_1$};
+\draw (0.75,1.75) node {$D_2$};
+\draw (0.75,1.25) node {$D_3$};
+\draw (0.75,0.75) node {$D_4$};
+\draw (0.75,0.25) node {$D_5$};
+\draw (1.25,1.75) node {$D_1$};
+\draw (1.25,1.25) node {$D_2$};
+\draw (1.25,0.75) node {$D_3$};
+\draw (1.25,0.25) node {$D_4$};
+\draw (1.75,1.25) node {$D_1$};
+\draw (1.75,0.75) node {$D_2$};
+\draw (1.75,0.25) node {$D_3$};
+\draw (2.25,0.75) node {$D_1$};
+\draw (2.25,0.25) node {$D_2$};
+\draw (2.75,0.25) node {$D_1$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

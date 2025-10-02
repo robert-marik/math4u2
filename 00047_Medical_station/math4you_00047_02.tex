@@ -1,0 +1,42 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=95mm,paperheight=15mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1cm]
+\clip(-0.3,-0.8) rectangle (9.3,0.5);
+\draw (0,0)--(9,0);
+\draw [color=black] (0.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (2.6,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (5.2,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (7.4,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (9,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0,-0.4) node {$S$};
+\draw[color=black] (9,-0.4) node {$C$};
+\draw[color=black] (2.6,-0.4) node {$K_1$};
+\draw[color=black] (5.2,-0.4) node {$K_2$};
+\draw[color=black] (7.4,-0.4) node {$K_3$};
+\begin{small}
+\draw[color=black] (1.3,0.3) node {$13\,\text{km}$};
+\draw[color=black] (3.9,0.3) node {$13\,\text{km}$};
+\draw[color=black] (6.3,0.3) node {$11\,\text{km}$};
+\draw[color=black] (8.2,0.3) node {$8\,\text{km}$};
+\end{small}
+\end{tikzpicture}
+\end{document}

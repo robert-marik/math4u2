@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[paperwidth=200mm,paperheight=90mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{pstricks,pstricks-add,pst-math,pst-xkey,pst-3dplot,pst-func,pst-solides3d,pst-plot}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\pagestyle{empty}
+\begin{document}
+\centering
+
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=+,dotsize=3pt 0,,arrowsize=3pt 2,arrowinset=0.25}
+
+\begin{pspicture*}(-5.0,-0.5)(13.9,8.1)
+
+
+\pspolygon[linewidth=0.pt,linecolor=lightgray,fillcolor=lightgray,fillstyle=solid,opacity=0.3](0.,0.)(0.,4.)(0.3472609457484312,5.18245677699002)(-4.5850492672049175,5.182456776990019)(-3.444402732937919,2.510098355732411)
+
+\psline[linewidth=1.2pt](0.,0.)(7.,0.)
+\psline[linestyle=dashed,dash=8pt 3pt](0.,0.)(2.13,2.13)
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,2.13)(9.13,2.13)
+\psline[linewidth=1.2pt](9.13,2.13)(7.,0.)
+\psline[linewidth=1.2pt](0.,0.)(0.,4.)
+\psline[linewidth=1.2pt](0.,4.)(7.,4.)
+\psline[linestyle=dashed,dash=8pt 3pt](9.13,6.13)(2.13,6.13)
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,6.13)(2.13,2.13)
+\psline[linewidth=1.2pt](9.13,6.13)(9.13,2.13)
+\psline[linewidth=1.2pt](7.,4.)(7.,0.)
+\psline[linewidth=1.2pt](13.21971952463742,-0.12480916836138069)(13.21971952463742,2.522337355780061)
+\psline[linewidth=1.2pt,linestyle=dotted](13.21971952463742,-0.12480916836138069)(10.940259844077445,1.5363403660461692)
+\psline[linewidth=1.2pt](7.,4.)(8.065,7.626426993626477)
+\psline[linewidth=1.2pt](8.065,7.626426993626477)(9.13,6.13)
+\psline[linewidth=1.2pt](0.,4.)(1.065,7.626426993626477)
+\psline[linestyle=dashed,dash=8pt 3pt](1.065,7.626426993626477)(2.13,6.13)
+\psline[linewidth=1.2pt](1.065,7.626426993626477)(8.065,7.626426993626477)
+\psline[linewidth=1.2pt,linestyle=dotted](-3.444402732937919,2.510098355732411)(0.,0.)
+\psline[linewidth=1.2pt,linestyle=dotted](-4.5850492672049175,5.182456776990019)(2.414950732795083,5.182456776990019)
+\psline[linewidth=1.2pt,linestyle=dotted](-3.444402732937919,2.510098355732411)(-4.5850492672049175,5.182456776990019)
+
+\psline[linewidth=1.2pt,linestyle=dotted](2.414950732795083,5.182456776990019)(5.685597267062081,4.640098355732412)
+\psline[linewidth=1.2pt,linestyle=dotted](5.685597267062081,4.640098355732412)(9.13,2.13)
+
+\begin{scriptsize}
+\psdots[](1.065,1.065)
+\psdots[](13.21971952463742,-0.12480916836138069)
+\psdots[](13.21971952463742,2.522337355780061)
+\psdots[](10.940259844077445,1.5363403660461692)
+\psdots[](-3.444402732937919,2.510098355732411)
+\psdots[](5.685597267062081,4.640098355732412)
+\psdots[](-4.5850492672049175,5.182456776990019)
+\psdots[](2.414950732795083,5.182456776990019)
+\end{scriptsize}
+\end{pspicture*}
+\end{document}

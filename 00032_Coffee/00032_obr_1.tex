@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary[patterns]
+
+\begin{document}
+ \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.1cm,y=0.1cm]
+  \begin{axis}[x=0.05cm,y=0.05cm,
+               axis lines=middle,
+               ymajorgrids=false,
+               xmajorgrids=false,
+               xmin=-10,
+               xmax=130,
+               ymin=-10,
+               ymax=130,
+               xtick={-40.0,-20.0,...,300.0},
+               ytick={-120.0,-100.0,...,140.0},]
+   \clip(-10,-10) rectangle (130,130);
+   \fill[line width=2.pt,color=pink,fill=pink,pattern=north east lines,pattern color=pink] (0.,0.) -- (116.6,0.) -- 
+     (85.71428571428572,74.28571428571429) -- (0.,120.) -- cycle;
+   \draw [line width=1.pt,domain=-10:130,color=blue] plot(\x,{(--70.-0.6*\x)/0.25});
+   \draw [line width=1.pt,domain=-10:130,color=green] plot(\x,{(--90.-0.4*\x)/0.75});
+\draw (125,5) -- node{$x$}(125,5);
+\draw (5,125) -- node{$y$}(5,125);
+  \end{axis}
+ \end{tikzpicture}
+\end{document}

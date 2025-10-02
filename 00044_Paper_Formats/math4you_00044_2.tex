@@ -1,0 +1,46 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=190mm,paperheight=65mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-2.,-5.5) rectangle (17.0,1);
+\draw [line width=2pt] (0,0)-- (16,0);
+\draw [line width=2pt] (16,0)-- (16,0.5);
+\draw [line width=2pt] (16,0.5)-- (0,0.5);
+\draw [line width=2pt] (0,0.5)-- (0,0);
+\draw [line width=2pt] (7.5,-1)-- (0,-1);
+\draw [line width=2pt] (0,-1)-- (0,-2);
+\draw [line width=2pt] (0,-2)-- (7.5,-2);
+\draw [line width=2pt] (7.5,-1.5)-- (0,-1.5);
+\draw [shift={(7.5,-1.5)},line width=2pt]  plot[domain=-1.5707963267948966:1.5707963267948966,variable=\t]({1*0.5*cos(\t r)+0*0.5*sin(\t r)},{0*0.5*cos(\t r)+1*0.5*sin(\t r)});
+\draw [shift={(0,-3.5)},line width=2pt]  plot[domain=1.5707963267948966:4.71238898038469,variable=\t]({1*0.5*cos(\t r)+0*0.5*sin(\t r)},{0*0.5*cos(\t r)+1*0.5*sin(\t r)});
+\draw [shift={(3.5,-4)},line width=2pt]  plot[domain=-1.5707963267948966:1.5707963267948966,variable=\t]({1*0.5*cos(\t r)+0*0.5*sin(\t r)},{0*0.5*cos(\t r)+1*0.5*sin(\t r)});
+\draw [shift={(3.5,-4)},line width=2pt]  plot[domain=-1.5707963267948966:1.5707963267948966,variable=\t]({1*1*cos(\t r)+0*1*sin(\t r)},{0*1*cos(\t r)+1*1*sin(\t r)});
+\draw [line width=2pt] (0,-3)-- (3.5,-3);
+\draw [line width=2pt] (3.5,-3.5)-- (0,-3.5);
+\draw [line width=2pt] (3.5,-4)-- (0,-4);
+\draw [line width=2pt] (0,-4)-- (0,-5);
+\draw [line width=2pt] (0,-4.5)-- (3.5,-4.5);
+\draw [line width=2pt] (3.5,-5)-- (0,-5);
+\draw (-1.85,0.5) node[anchor=north west] {$n=0$};
+\draw (-1.85,-1.2555964678647749) node[anchor=north west] {$n=1$};
+\draw (-1.85,-3.7291263470916345) node[anchor=north west] {$n=2$};
+\end{tikzpicture}
+\end{document}

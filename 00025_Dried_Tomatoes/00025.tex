@@ -1,0 +1,56 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=120mm,paperheight=63mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1.0cm]
+\begin{axis}[
+x=4cm,y=0.25cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-1,
+xmax=2,
+ymin=-5,
+ymax=20,
+xtick={0.94},
+xticklabels={},
+ytick={16.666},
+yticklabels={},]
+\clip(-1,-5) rectangle (2,20);
+\draw[smooth,dotted,samples=200,domain=-2.693333333333285:0.95] plot(\x,{-1/(\x - 1)});
+\draw[smooth,dotted,samples=200,domain=1.1:4] plot(\x,{-1/(\x - 1)});
+\draw[smooth,line width=2pt,samples=100,domain=0:0.94] plot(\x,{-1/(\x - 1)});
+\fill (0,1) circle (2pt);
+\fill (0.94,16.666) circle (2pt);
+\draw[dotted] (0.94,16.666) -- (0,16.666);
+\draw[dotted] (0.94,16.666) -- (0.94,0);
+\draw[dashed] (1,18) -- (1,-5);
+\draw[color=black] (-0.15,16.666) node {$1000$};
+\draw[color=black] (-0.1,2) node {$60$};
+\draw[color=black] (0.92,-1.2) node {$94$};
+\draw[color=black] (1.11,-1.2) node {$100$};
+\draw[color=black] (-0.1,-1.2) node {$O$};
+\draw[color=black] (0.1,19) node {$y$};
+\draw[color=black] (1.88,1.2) node {$x$};
+\end{axis}
+\end{tikzpicture}
+
+
+\end{document}

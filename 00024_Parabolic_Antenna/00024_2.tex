@@ -1,0 +1,61 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=120mm,paperheight=66mm,top=4mm,bottom=0mm,left=2mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=1.0cm,y=1.0cm,
+axis lines=middle,
+xmin=-5.75,
+xmax=5.75,
+ymin=-0.5,
+ymax=5.5,
+tick style={draw=none},
+xtick={},
+xticklabels={},
+ytick={},
+yticklabels={},]
+\clip(-6,-0.5) rectangle (6,5.5);
+\draw [shift={(-5.75,3.5)},line width=1.pt,color=qqqqff] (0,0) -- (-152.6223122665111:0.8) arc (-152.6223122665111:-27.37768773348895:0.8) -- cycle;
+\draw [samples=300,rotate around={0.:(0.,0.)},xshift=0.cm,yshift=0.cm,line width=2.pt,domain=-4.86:4.86)] plot (\x,{(\x)^2/2/8.0});
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (0.,1.48) -- (-4.866210024238576,1.48);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (0.,1.48) -- (4.866210024238575,1.48);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (-4.866210024238576,0.74) -- (-4.866210024238576,1.48);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (-4.866210024238576,0.74) -- (-4.866210024238576,0.);
+\draw [line width=1.2pt,color=qqqqff] (0.,4.)-- (-4.866210024238576,1.48);
+\draw [line width=1.2pt,color=qqqqff] (0.,4.)-- (4.866210024238575,1.48);
+\draw [color=qqqqff](0.8,2.1) node[anchor=north west] {$d$};
+\draw [color=qqqqff](-5.36,1.1) node[anchor=north west] {$h$};
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,4.) circle (2.5pt);
+\draw[color=qqqqff] (0.2,4.35) node {$F$};
+\draw[color=black] (15.66,16.15) node {$c$};
+\draw [fill=qqqqff] (-4.866210024238576,1.48) circle (2.5pt);
+\draw [fill=qqqqff] (4.866210024238575,1.48) circle (2.5pt);
+\draw[color=qqqqff] (0.3,3.57) node {$2\varphi$};
+\draw(-5.05,1.98) node {$\left[-\frac{d}{2},h\right]$};
+\draw(4.99,1.98) node {$\left[\frac{d}{2},h\right]$};
+\draw(-0.25,5.25) node {$y$};
+\draw(5.25,-0.25) node {$x$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

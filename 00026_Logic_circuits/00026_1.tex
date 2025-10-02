@@ -1,0 +1,43 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=100mm,paperheight=18mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\begin{circuitikz}
+\node [not port] at (-4,0) {};
+\node [and port] at (0,0) {};
+\node [or port] at (3.5,0) {};
+\begin{scriptsize}
+\node at (-4,-1) {NOT};
+\node at (-0.5,-1) {AND};
+\node at (3.,-1) {OR};
+\node[color=red] at (-4.9,0) {$\mathrm{A}$};
+\node[color=red] at (-3,0) {$\neg\mathrm{A}$};
+\node[color=red] at (-1.6,0.3) {$\mathrm{A}$};
+\node[color=red] at (-1.6,-0.3) {$\mathrm{B}$};
+\node[color=red] at (0.6,0) {$\mathrm{A}\wedge\mathrm{B}$};
+\node[color=red] at (1.9,0.3) {$\mathrm{A}$};
+\node[color=red] at (1.9,-0.3) {$\mathrm{B}$};
+\node[color=red] at (4.2,0) {$\mathrm{A}\vee\mathrm{B}$};
+\end{scriptsize}
+\end{circuitikz}
+
+\end{document}

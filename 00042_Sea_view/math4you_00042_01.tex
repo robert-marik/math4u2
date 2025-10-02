@@ -1,0 +1,40 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=64mm,paperheight=55mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=2.5]
+\clip(-1.,-0.1) rectangle (1.4,2.05);
+\draw [shift={(0.,1.7873037162951844)}] (0,0) -- (-90.:0.13008130081300834) arc (-90.:0.:0.13008130081300834) -- cycle;
+\draw [shift={(0.,0.)}]  plot[domain=0.7219766049843283:2.134945492744135,variable=\t]({1.*1.7873037162951844*cos(\t r)+0.*1.7873037162951844*sin(\t r)},{0.*1.7873037162951844*cos(\t r)+1.*1.7873037162951844*sin(\t r)});
+\draw [dotted,domain=-1.:1.5] plot(\x,{(-1.7873037162951844-0.*\x)/-1.});
+\draw (1.239128174515149,1.7873037162951844)-- (0.9305729348490346,1.5259385922143236);
+\draw (1.239128174515149,1.7873037162951844)-- (1.1025940605339282,1.4066772593448298);
+\draw (0.,1.7873037162951844)-- (0.,0.);
+\draw (0.,0.)-- (1.239128174515149,1.7873037162951844);
+\fill (0.05410668818261492,1.7331970281125695) circle (0.009756097560975625);
+\draw [color=black] (0.,0.)-- ++(-1.0pt,0 pt) -- ++(2.0pt,0 pt) ++(-1.0pt,-1.0pt) -- ++(0 pt,2.0pt);
+\draw[color=black] (-0.15456187895212292,0.11125564588979533) node {$S$};
+\draw [color=black] (0.,1.7873037162951844)-- ++(-1.0pt,0 pt) -- ++(2.0pt,0 pt) ++(-1.0pt,-1.0pt) -- ++(0 pt,2.0pt);
+\draw[color=black] (0.0730803974706417,1.95) node {$H$};
+\draw [color=black] (1.239128174515149,1.7873037162951844)-- ++(-1.0pt,0 pt) -- ++(2.0pt,0 pt) ++(-1.0pt,-1.0pt) -- ++(0 pt,2.0pt);
+\draw[color=black] (1.2828364950316191,1.95) node {$V$};
+\end{tikzpicture}
+%\vfill
+\end{document}

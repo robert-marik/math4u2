@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=40mm,paperheight=75mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-3.75) rectangle (3,3.75);
+\draw [samples=250,rotate around={-90.:(0.,0.)},xshift=0.cm,yshift=0.cm,line width=2.pt,domain=-24.0:24.0)] plot (\x,{(\x)^2/2/4.0});
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (1.5,3.464101615137755);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (1.5,-3.4641016151377544);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (1.,-2.8284271247461903);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (0.5,-2.);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (0.25,-1.4142135623730951);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (1.,2.82842712474619);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (0.5,2.);
+\draw [line width=1.2pt,color=qqqqff] (2.,0.)-- (0.25,1.414213562373095);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (1.5,3.464101615137755) -- (3.,3.464101615137755);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff](1.,2.82842712474619) -- (3.,2.82842712474619);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (0.5,2.) -- (3.,2.);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff](0.25,1.414213562373095) -- (3.,1.414213562373095);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (0.25,-1.4142135623730951) -- (3.,-1.4142135623730951);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (0.5,-2.) -- (3.,-2.);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff] (1.,-2.8284271247461903) -- (3.,-2.8284271247461903);
+\draw [-{Latex[length=5mm, width=2mm]},line width=1.2pt,color=qqqqff](1.5,-3.4641016151377544) -- (3.,-3.4641016151377544);
+\draw [line width=1pt,dash pattern=on 1pt off 2.5pt on 5pt off 2.5pt] (3.48,0.)-- (-0.56,0.);
+\begin{scriptsize}
+\draw [fill=qqqqff] (2.,0.) ++(-4.0pt,0 pt) -- ++(4.0pt,4.0pt)--++(4.0pt,-4.0pt)--++(-4.0pt,-4.0pt)--++(-4.0pt,4.0pt);
+\draw[color=qqqqff] (2.14,0.25) node {$F$};
+\end{scriptsize}
+\end{tikzpicture}
+
+
+\end{document}

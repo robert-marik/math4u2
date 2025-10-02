@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=100mm,paperheight=59mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(14,1.2) rectangle (24,7);
+\fill[color=blue,fill=blue,fill opacity=0.1] (13,1.78) -- (25,1.78) -- (25,-4) -- (13,-4) -- cycle;
+\draw [color=blue] (14,1.78)-- (24,1.78);
+\draw [dash pattern=on 1pt off 4pt on 8pt off 4pt] (19,-2.9) -- (19,7.9);
+\draw [dash pattern=on 1pt off 4pt on 8pt off 4pt] (12.65,-4.16) -- (25.35,7.72);
+%\draw [dash pattern=on 1pt off 4pt on 8pt off 4pt,domain=13:25] plot(\x,{(-7.99--0.47*\x)/0.5});
+\draw(23.36,1.78) arc (0:180:4.36);
+\draw (16.06,5)-- (21.94,5);
+\draw (15.59,4.5)-- (22.41,4.5);
+\draw [dotted] (16.06,5)-- (19,1.78);
+\draw [color=black] (22.41,4.5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (22.82,4.73) node {$L_2$};
+\draw [color=black] (21.94,5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (22.15,5.31) node {$L_1$};
+\draw [color=black] (19,1.78)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (19.34,1.5) node {$S$};
+\draw [color=black] (16.06,5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (15.8,5.41) node {$K_1$};
+\draw [color=black] (15.59,4.5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (15.2,4.83) node {$K_2$};
+\draw[color=black] (19.34,6.7) node {$o$};
+\draw[color=black] (23.4,5.3) node {$o_{L_1L_2}$};
+\draw[color=black] (17.2,3.3) node {$r$};
+\draw[color=black] (14.5,3.3) node {$k$};
+\draw[color=blue] (14.3,2.1) node {$h$};
+\draw[color=black] (19.34,5.3) node {$S_1$};
+\draw[color=black] (19.34,4.2) node {$S_2$};
+\end{tikzpicture}
+\end{document}

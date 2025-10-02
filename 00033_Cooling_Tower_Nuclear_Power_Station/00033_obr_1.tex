@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary[patterns]
+
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=0.1cm,y=0.1cm,
+axis lines=middle,
+xmin=-5,
+xmax=165,
+ymin=-5,
+ymax=75,
+xtick={0},
+ytick={0},]
+\clip(-5,-5) rectangle (165,75);
+\draw[line width=1.2pt,smooth,samples=200,domain=0:155] plot(\x,{sqrt(1444+1444/7481*((\x)-35)^(2.0))});
+\draw [color=black] (0.,41.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (4.5531733217184726,44.043871888544075) node {$[0,41]$};
+\draw [color=black] (35.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (34.46496471750147,-3.037669984989787) node {$[35,0]$};
+\draw [color=black] (155.,65.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (154.42761144428187,68.08010347314493) node {$[155,65]$};
+\draw (163,-2.5) -- node{$x$}(163,-2.5);
+\draw (-2.5,72) -- node{$y$}(-2.5,72);
+\draw[color=black,line width=0.6pt,loosely dotted] (35,0) -- (35,38);
+\draw[color=black,line width=0.6pt,loosely dotted] (155,0) -- (155,65);
+\end{axis}
+\end{tikzpicture}
+\end{document}

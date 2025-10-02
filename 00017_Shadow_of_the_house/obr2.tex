@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[paperwidth=250mm,paperheight=100mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{pstricks,pstricks-add,pst-math,pst-xkey,pst-3dplot,pst-func,pst-solides3d,pst-plot}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\pagestyle{empty}
+\begin{document}
+\centering
+
+\newrgbcolor{wqwqwq}{0.3764705882352941 0.3764705882352941 0.3764705882352941}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=+,dotsize=3pt 0,,arrowsize=3pt 2,arrowinset=0.25}
+
+\begin{pspicture*}(-5.2,-0.7)(19.6,8.8)
+
+\psline[linewidth=1.2pt](0.,0.)(7.,0.)
+\psline[linestyle=dashed,dash=8pt 3pt](0.,0.)(2.13,2.13)
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,2.13)(9.13,2.13)
+\psline[linewidth=1.2pt](9.13,2.13)(7.,0.)
+\psline[linewidth=1.2pt](0.,0.)(0.,4.)
+\psline[linewidth=1.2pt](0.,4.)(7.,4.)
+\psline[linewidth=1.2pt](7.,4.)(9.13,6.13)
+\psline[linestyle=dashed,dash=8pt 3pt](9.13,6.13)(2.13,6.13)
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,6.13)(0.,4.)
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,6.13)(2.13,2.13)
+\psline[linewidth=1.2pt](9.13,6.13)(9.13,2.13)
+\psline[linewidth=1.2pt](7.,4.)(7.,0.)
+\psline[linewidth=1.2pt](0.,4.)(3.,8.06)
+\psline[linestyle=dashed,dash=8pt 3pt](3.,8.06)(2.13,6.13)
+\psline[linewidth=1.2pt](3.,8.06)(6.13,8.06)
+\psline[linewidth=1.2pt](6.13,8.06)(7.,4.)
+\psline[linewidth=1.2pt](6.13,8.06)(9.13,6.13)
+\psline[linewidth=1.2pt](-4.5996437221809465,-0.075440385524334)(-4.5996437221809465,2.244559614475666)
+\psline[linewidth=1.2pt,linestyle=dotted](-4.5996437221809465,-0.075440385524334)(-0.38341162387422395,1.8134315945170738)
+\psline[](-2.570601824235039,0.9455334150047147)(-2.4870517776762195,0.7590377753644965)
+\psline[](-2.4960035683789505,0.9789534336282432)(-2.4124535218201313,0.792457793988025)
+
+\rput[tl](-5.,-0.15){$P$}
+\rput[tl](-0.5,1.6){$R$}
+\rput[tl](-5.,2.7){$Q$}
+\rput[tl](-0.25833400920430877,-0.15){$A$}
+\rput[tl](6.873678363472788,-0.15){$B$}
+\rput[tl](9.2,2.1){$C$}
+\rput[tl](1.62,2.4){$D$}
+\rput[tl](-0.5,4.){$E$}
+\rput[tl](7.1,4.){$F$}
+\rput[tl](9.3,6.4){$G$}
+\rput[tl](2.25,5.95){$H$}
+\rput[tl](6.,8.6){$T$}
+\rput[tl](2.9,8.6){$S$}
+
+\rput[tl](18.8,7.3){$T'$}
+
+\psline[linestyle=dashed,dash=8pt 3pt](2.13,2.13)(3.,1.065)
+\psline[linestyle=dashed,dash=8pt 3pt](3.,1.065)(0.,0.)
+\psline[linestyle=dashed,dash=8pt 3pt](3.,1.065)(6.13,1.065)
+\psline[linestyle=dashed,dash=8pt 3pt](6.13,1.065)(9.13,2.13)
+\psline[linestyle=dashed,dash=8pt 3pt](6.13,1.065)(7.,0.)
+\psline[linestyle=dashed,dash=2pt 2pt](6.13,8.06)(6.13,1.065)
+\psline[linewidth=1.2pt,linestyle=dotted](6.13,1.065)(18.84230324467911,6.760111853616228)
+\psline[](12.389397684494208,4.003565798952541)(12.489657740364793,3.779771031384278)
+\psline[](12.48264550431432,4.045340822231949)(12.582905560184905,3.8215460546636866)
+\psline[]{->}(6.13,8.06)(18.842303244679105,6.760111853616228)
+\psline[]{->}(-4.5996437221809465,2.244559614475666)(-0.383411623874224,1.8134315945170738)
+\psline[linewidth=1.2pt](-4.5996437221809465,2.244559614475666)(-0.38341162387422395,1.8134315945170738)
+\psline[linewidth=1.2pt](-2.5298788579316507,2.1561699255394946)(-2.5548242855813803,1.912215211640631)
+\psline[linewidth=1.2pt](-2.42823106047379,2.1457759973521053)(-2.45317648812352,1.9018212834532418)
+\psline[linewidth=0.1pt](6.13,8.06)(18.84230324467911,6.760111853616228)
+\psline[](12.447800437435493,7.53723024785124)(12.422855009785758,7.293275533952377)
+\psline[](12.549448234893353,7.526836319663852)(12.52450280724362,7.282881605764988)
+
+\rput[tl](5.749722258896168,0.9){$T_1$}
+
+\begin{scriptsize}
+\psdots[](6.13,1.065)
+\psdots[](-4.5996437221809465,-0.075440385524334)
+\psdots[](-4.5996437221809465,2.244559614475666)
+\psdots[](-0.38341162387422395,1.8134315945170738)
+\psdots[](18.84230324467911,6.760111853616228)
+\psdots[](6.13,8.06)
+\end{scriptsize}
+
+
+
+\end{pspicture*}
+\end{document}

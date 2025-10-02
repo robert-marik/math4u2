@@ -1,0 +1,9 @@
+number,image,parameters
+00006,06_program_hack.jpg,"trim={0cm 12cm 0cm 12cm}, clip=true, width=\linewidth"
+00045,regrese_3.pdf,"width=0.5\linewidth"
+<<<<<<< HEAD
+=======
+00045,predikce.pdf,"width=0.5\linewidth"
+00045,regrese_uloha5.png,"width=0.5\linewidth"
+>>>>>>> 28f9e3b5f526883c11b5b6b9ed32c9ad4af1e1f5
+

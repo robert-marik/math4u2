@@ -1,0 +1,45 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=110mm,paperheight=43mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\begin{circuitikz} 
+\draw (4,0) node[or port] (or) {};
+\draw (or.in 1) -| ++(-0.5,0.7) -- ++(-0.5,0) node[and port, anchor = out] (and2){};
+\draw (or.in 2) -- ++(-3.5,0) node[and port, anchor = out] (and1){};
+\draw (and2.in 1) -- ++(-1,0) node[not port,anchor=out] (not2){};
+\draw (and2.in 2) -| ++(-0.5,-2.5) -- ++(-0.5,0) node[not port,anchor=out] (not1){};
+\draw (and1.in 1) -- ++(-1,0) coordinate (dot1) -- ++(-1,0);
+\draw (and1.in 2) -- ++(-1,0) coordinate (dot2) -- ++(-1,0);
+\fill (dot1) circle (2pt);
+\fill (dot2) circle (2pt);
+\draw (not1.in) -| (dot2);
+\draw (not2.in) -| (dot1);
+\begin{footnotesize}
+\node at (-4.7,0) {$\mathrm{A}$};
+\node at (4.8,0) {$\mathrm{A}\Leftrightarrow\mathrm{B}$};
+\node at (-4.7,-0.6) {$\mathrm{B}$};
+\end{footnotesize}
+\end{circuitikz}
+
+
+
+\end{document}

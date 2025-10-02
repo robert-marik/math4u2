@@ -1,0 +1,35 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=53mm,paperheight=35mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.7,-0.4) rectangle (4.6,3.);
+\draw (0.,2.8284)-- (0.,0.);
+\draw (0.,0.)-- (4.,0.);
+\draw (2.,2.8284)-- (2.,0.);
+\draw (4.,2.8284)-- (4.,0.);
+\draw (0.,2.8284)-- (4.,2.8284);
+\begin{small}
+\draw[color=black] (-0.3,1.41) node {$b$};
+\draw[color=black] (2.,-0.3) node {$a$};
+\draw[color=black] (1,0.3) node {$\frac{a}{2}$};
+\end{small}
+\end{tikzpicture}
+\end{document}

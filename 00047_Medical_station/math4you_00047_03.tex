@@ -1,0 +1,65 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=60mm,paperheight=55mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+%\noindent\centering\mbox{}\vfill
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-0.8,
+xmax=5,
+ymin=-0.5,
+ymax=4.8,
+ytick={1.825,2.075,2.475,2.575,4.175},
+yticklabels={,,,,},
+xtick={1.7,3,3.5,4,4.5},
+xticklabels={17,30,35,40,45},]
+\clip(-0.8,-0.5) rectangle (5,4.8);
+\draw[dotted] (1.7,2.475) -- (1.7,0);
+\draw[dotted] (1.7,2.475) -- (0,2.475);
+\draw[dotted] (3,1.825) -- (3,0);
+\draw[dotted] (3,1.825) -- (0,1.825);
+\draw[dotted] (3.5,1.825) -- (3.5,0);
+\draw[dotted] (4.,2.075) -- (4.,0);
+\draw[dotted] (4.,2.075) -- (0.,2.075);
+\draw[dotted] (4.5,2.575) -- (4.5,0);
+\draw[dotted] (4.5,2.575) -- (0.,2.575);
+\draw (0,4.175) -- (1.7,2.475);
+\draw (3,1.825) -- (1.7,2.475);
+\draw (3,1.825) -- (3.5,1.825);
+\draw (4.,2.075) -- (3.5,1.825);
+\draw (4.,2.075) -- (4.5,2.575);
+\fill (0,4.175) circle (2pt);
+\fill (4.5,2.575) circle (2pt);
+\begin{scriptsize}
+\draw[color=black] (-0.5,4.175) node {167};
+\draw[color=black] (-0.5,2.8) node {103};
+\draw[color=black] (-0.4,2.475) node {99};
+\draw[color=black] (-0.4,2.075) node {83};
+\draw[color=black] (-0.4,1.7) node {73};
+\draw[color=black] (-0.3,-0.3) node {$O$};
+\draw[color=black] (4.8,0.3) node {$x$};
+\draw[color=black] (0.3,4.6) node {$y$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=155mm,paperheight=80mm,top=0mm,bottom=0mm,left=2mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+
+\begin{figure}[htbp]
+\begin{subfigure}{0.45\textwidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=2.4cm,y=2.0cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-1,
+xmax=2,
+ymin=-0.5,
+ymax=2.8,
+xtick={0.5,1},
+xticklabels={,1000},
+ytick={0.5,1,1.5,2},
+yticklabels={,1000,,2000},tickwidth=10pt,]
+\clip(-1,-0.5) rectangle (2,2.8);
+\draw [color=red,domain=-1:5] plot(\x,{-(600/400)*\x + (400/400)});
+\draw [color=red,domain=-1:5] plot(\x,{-(90/20)*\x + (40/20)});
+\draw [color=red] (0.3333,0.5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [domain=-1:5] plot(\x,{-(597/386)*\x + (401.95/386)});
+\draw [domain=-1:5] plot(\x,{-(86/19)*\x + (39.6/19)});
+\draw [color=black] (0.35,0.5)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-0.5,1.4) node {$p_1$};
+\draw[color=red] (-0.7,1.7) node {$p'_1$};
+\draw[color=black] (0.3,1.8) node {$p_2$};
+\draw[color=red] (0.3,1.5) node {$p'_2$};
+\draw[color=black] (0.9,0.5) node {$P\left[ 350;500 \right]$};
+\draw[color=red] (0.9,0.8) node {$P'\left[ \frac{1000}{3};500 \right]$};
+\draw[color=black] (1.9,0.15) node {$x$};
+\draw[color=black] (0.15,2.6) node {$y$};
+\draw[color=black] (0.15,-0.15) node {$O$};
+\end{axis}
+\end{tikzpicture}
+\end{subfigure}\hspace{9mm}
+\begin{subfigure}{0.45\textwidth}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.0cm,y=1.0cm]
+\begin{axis}[
+x=2.4cm,y=2.0cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-1,
+xmax=2,
+ymin=-0.5,
+ymax=2.8,
+xtick={0.5,1},
+xticklabels={,1000},
+ytick={0.5,1,1.5,2},
+yticklabels={,1000,,2000},tickwidth=10pt,]
+\clip(-1,-0.5) rectangle (2,2.8);
+\draw [color=red,domain=-1:5] plot(\x,{-(500/80)*\x + (200/80)});
+\draw [color=red,domain=-1:5] plot(\x,{-(100/20)*\x + (40/20)});
+\draw [color=red] (0.4,0)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [domain=-1:5] plot(\x,{-(504/81)*\x + (198.9/81)});
+\draw [domain=-1:5] plot(\x,{-(98/18)*\x + (40.7/18)});
+\draw [color=black] (0.25,0.9)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-0.2,2.4) node {$q_2$};
+\draw[color=red] (-0.3,2.7) node {$q'_2$};
+\draw[color=black] (0.2,2.1) node {$q_1$};
+\draw[color=red] (0.25,1.8) node {$q'_1$};
+\draw[color=black] (1.9,-0.15) node {$x$};
+\draw[color=black] (0.15,2.6) node {$y$};
+\draw[color=black] (0.15,-0.15) node {$O$};
+\draw[color=black] (0.7,1.1) node {$Q\left[ 250;900 \right]$};
+\draw[color=red] (0.8,0.2) node {$Q'\left[ 400;0 \right]$};
+\end{axis}
+\end{tikzpicture}
+\end{subfigure}
+\label{fig:reseni1}
+\end{figure}
+
+\end{document}

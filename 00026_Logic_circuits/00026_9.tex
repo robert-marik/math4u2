@@ -1,0 +1,53 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=110mm,paperheight=35mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{subcaption}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\begin{circuitikz} 
+\draw (-1,-1) node[or port] (o1) {};
+\draw (1,0) node[or port] (o3) {};
+\fill (-3,1) circle (2pt);
+\fill (-3,-2) circle (2pt);
+\fill (-0.4,-1) circle (2pt);
+\draw (o1.in 1) -- ++(-2,0);
+\draw (o1.out) -| (o3.in 2);
+\draw (o3.in 1) -| (-3,1);
+\draw (o1.in 2) -| (-3,-2);
+\draw (-3,1) -- (-4.4,1);
+\draw (-3,-2) -- (-4.4,-2);
+\draw (-3,1.) -- (2.2,1.);
+\draw (-3,-2) -- (2.2,-2);
+\draw (-0.4,-1) -- (2.2,-1);
+\draw (o3.out) -- (2.2,0);
+\begin{footnotesize}
+\node at (-4.7,1) {$\mathrm{C}$};
+\node at (-4.7,-0.7) {$\mathrm{L}$};
+\node at (-4.7,-2) {$\mathrm{M}$};
+\node at (2.8,1) {$\mathrm{COC}$};
+\node at (2.7,0) {$\mathrm{WA}$};
+\node at (2.8,-1) {$\mathrm{COF}$};
+\node at (2.7,-2) {$\mathrm{ML}$};
+\end{footnotesize}
+\end{circuitikz}
+
+
+
+\end{document}
