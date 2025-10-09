@@ -1,9 +1,11 @@
 ---
 keywords:
-- Teorema de Pitágoras
-- estereometría 
-- trigonometría, prisma truncado
-is_finished: True
+- geometría en el espacio
+- teorema de Pitágoras
+- estereometría
+- trigonometría
+- prisma truncado
+is_finished: true
 ---
 
 

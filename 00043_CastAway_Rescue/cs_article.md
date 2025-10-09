@@ -1,9 +1,9 @@
 ---
 keywords:
-- geometrie
-- pythagorova věta
+- geometrie v rovině
+- Pythagorova věta
 - osa úsečky
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

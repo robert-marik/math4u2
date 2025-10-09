@@ -1,10 +1,13 @@
 ---
 keywords:
+- sequences and series
 - probability
 - expected value
 - geometric sequence
-is_finished: True
-remark: Note for translators. Instead of the amount in CZK, you can enter the currency of your country, or some reasonable currency. You can also come up with your own names for the lottery tickets.
+is_finished: true
+remark: Note for translators. Instead of the amount in CZK, you can enter the currency
+  of your country, or some reasonable currency. You can also come up with your own
+  names for the lottery tickets.
 ---
 
 # Which Lottery Ticket Is More Profitable?

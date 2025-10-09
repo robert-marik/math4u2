@@ -1,10 +1,11 @@
 ---
 keywords:
+- trigonometry
 - origami
 - paper folding
 - supplementary angles
 - alternate angles
-is_finished: True
+is_finished: true
 ---
 
 # Origami

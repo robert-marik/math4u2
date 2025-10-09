@@ -1,8 +1,11 @@
 ---
 keywords:
+- geometría en el espacio
 - estereometría
 - planimetría
-is_finished: True
+- círculo
+- geografía
+is_finished: true
 ---
 
 # Distancias en la superficie de la Tierra

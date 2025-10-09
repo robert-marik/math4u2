@@ -2,9 +2,7 @@
 keywords:
 - analytická geometria
 - parametrická rovnica priamky
-- kvadratická funkcia
-
-is_finished: True
+is_finished: true
 ---
 
 # Parabolická kalkulačka

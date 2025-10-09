@@ -1,9 +1,10 @@
 ---
 keywords:
+- rachunek różniczkowy i całkowy
 - optymalizacja
 - równanie kwadratowe
 - wyprowadzenie
-is_finished: True
+is_finished: true
 ---
 
 # Strzał piłką golfową

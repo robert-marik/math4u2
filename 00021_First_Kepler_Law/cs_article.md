@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytická geometrie
 - kuželosečky
 - elipsa
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

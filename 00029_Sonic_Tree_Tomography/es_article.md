@@ -3,7 +3,7 @@ keywords:
 - geometría analítica
 - planimetría
 - cuadrilátero
-is_finished: True
+is_finished: true
 ---
 
 # Tomografía de árbol

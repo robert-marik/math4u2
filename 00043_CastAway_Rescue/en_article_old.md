@@ -1,9 +1,9 @@
 ---
 keywords:
-- geometry
+- plane geometry
 - Pythagorean theorem
 - perpendicular bisector
-is_finished: True
+is_finished: true
 ---
 
 # Rescuing a Castaway

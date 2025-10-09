@@ -1,11 +1,12 @@
 ---
-keywords: 
-- anamorfózy 
-- tělesa 
+keywords:
+- geometrie v prostoru
+- anamorfózy
+- tělesa
 - promítání
 - středové promítání
 - perspektiva
-is_finished: True
+is_finished: true
 difficulty: 3
 time: 45
 ---

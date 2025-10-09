@@ -1,9 +1,10 @@
 ---
 keywords:
+- functions
 - percentages
 - inverse proportion
 - rational function
-is_finished: True
+is_finished: true
 ---
 
 

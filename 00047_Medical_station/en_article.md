@@ -1,10 +1,10 @@
 ---
 keywords:
-- function
+- functions
 - linear function
 - absolute value
 - optimization
-is_finished: True
+is_finished: true
 ---
 
 # Medical Station at a Running Race

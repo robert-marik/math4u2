@@ -1,5 +1,6 @@
 ---
 keywords:
+- rachunek różniczkowy i całkowy
 - hiperbola
 - geometria analityczna
 - objetość

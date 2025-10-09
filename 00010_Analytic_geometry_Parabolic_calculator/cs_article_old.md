@@ -2,7 +2,7 @@
 keywords:
 - analytická geometrie
 - parametrická rovnice přímky
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

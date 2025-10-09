@@ -1,9 +1,10 @@
 ---
 keywords:
-- función
+- funciones
 - función lineal
-- valor absoluto, optimización
-is_finished: True
+- valor absoluto
+- optimización
+is_finished: true
 ---
 
 # Puesto médico en una carrera de atletismo

@@ -3,7 +3,7 @@ keywords:
 - trigonometry
 - law of sines
 - law of cosines
-is_finished: True
+is_finished: true
 ---
 
 # Crossing the river

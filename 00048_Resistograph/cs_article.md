@@ -1,11 +1,11 @@
 ---
 keywords:
+- analytická geometrie
 - akustický tomograf
 - resistograf
-- analytická geometrie
 - rovnice přímky
 - délka vektoru
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

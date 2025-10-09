@@ -1,11 +1,12 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: True
+- rovnice a nerovnice
+- reťazový zlomok
+- kvadratická rovnica
+is_finished: true
 ---
 
-# Zlatý rez a řeťazový zlomok
+# Zlatý rez a reťazový zlomok
 
 Majme úsečku $AB$ a bod $C$, ktorý na nej leží. Bod $C$ rozdeľuje úsečku $AB$ v zlatom reze, ak dĺžky úsekov spĺňajú rovnicu
 $$\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.$$

@@ -1,8 +1,9 @@
 ---
 keywords:
+- combinatoria, probabilidad y estadística
 - probabilidad condicional
 - frecuencia de aparición
-is_finished: True
+is_finished: true
 ---
 
 # Pruebas diagnósticas en medicina

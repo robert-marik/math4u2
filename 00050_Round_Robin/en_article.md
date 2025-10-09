@@ -1,7 +1,8 @@
 ---
 keywords:
+- combinatorics, probability and statistics
 - combinatorics
-is_finished: True
+is_finished: true
 ---
 
 # Round Robin: A Fair Tournament System

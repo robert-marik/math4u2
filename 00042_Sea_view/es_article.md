@@ -1,8 +1,8 @@
 ---
 keywords:
-- geometría
+- geometría en el plano
 - trigonometría
-is_finished: True
+is_finished: true
 ---
 
 # Vistas al mar

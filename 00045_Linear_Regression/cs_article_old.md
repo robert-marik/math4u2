@@ -1,11 +1,12 @@
 ---
 keywords:
+- kombinatorika, pravděpodobnost a statistika
 - vektory
 - skalární součin
 - lineární regrese
 - strojové učení
 - zpracování dat
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

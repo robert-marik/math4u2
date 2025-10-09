@@ -3,7 +3,7 @@ keywords:
 - trigonometría
 - ley de los senos
 - ley de los cosenos
-is_finished: True
+is_finished: true
 ---
 
 # Cruzando el río

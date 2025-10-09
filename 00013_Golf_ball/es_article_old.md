@@ -1,9 +1,10 @@
 ---
 keywords:
-- Optimización
-- Ecuación cuadrática
-- Derivada
-is_finished: True
+- cálculo diferencial e integral
+- optimización
+- ecuación cuadrática
+- derivada
+is_finished: true
 ---
 
 # Golpe a una pelota de golf

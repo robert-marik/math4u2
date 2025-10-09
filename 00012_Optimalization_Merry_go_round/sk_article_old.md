@@ -1,9 +1,10 @@
 ---
 keywords:
+- funkcie
 - optimalizácia
 - kvadratická rovnica
 - dolná celá časť čísla
-is_finished: True
+is_finished: true
 ---
 
 # Optimálna cena vstupenky

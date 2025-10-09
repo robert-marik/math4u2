@@ -1,11 +1,12 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - wektory
 - iloczyn skalarny
 - regresja liniowa
 - uczenie maszynowe
 - przetwarzanie danych
-is_finished: True
+is_finished: true
 ---
 
 # Regresja liniowa

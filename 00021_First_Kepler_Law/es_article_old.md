@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometría analítica
 - sección cónica
 - elipse
-is_finished: True
+is_finished: true
 ---
 
 # La primera ley de Kepler sobre el movimiento planetario

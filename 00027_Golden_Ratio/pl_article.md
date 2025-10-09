@@ -1,9 +1,9 @@
 ---
 keywords:
-- geometria płaszczyzny
+- równania i nierówności
 - równanie kwadratowe
 - ułamek łańcuchowy
-is_finished: True
+is_finished: true
 ---
 
 # Złoty podział i ułamki ciągłe

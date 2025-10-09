@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytická geometria
 - kuželosečky
 - elipsa
-is_finished: True
+is_finished: true
 ---
 
 # Prvý Keplerov zákon o pohybe planét

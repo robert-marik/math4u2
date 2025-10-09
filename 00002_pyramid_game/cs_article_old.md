@@ -1,8 +1,9 @@
 ---
 keywords:
- - geometrická posloupnost
- - finanční matematika
-is_finished: True
+- posloupnosti a řady
+- geometrická posloupnost
+- finanční matematika
+is_finished: true
 difficulty: 2
 time: 25
 ---

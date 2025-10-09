@@ -1,10 +1,11 @@
 ---
-keywords: 
- - Pythagorean Theorem
- - Solid Geometry
- - Trigonometry
- - Twisted Prism
-is_finished: True
+keywords:
+- space geometry
+- Pythagorean theorem
+- stereometry
+- trigonometry
+- twisted prism
+is_finished: true
 ---
 
 # Twisted Prism

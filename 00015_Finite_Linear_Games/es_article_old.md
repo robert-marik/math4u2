@@ -1,5 +1,6 @@
 ---
 keywords:
+- ecuaciones e inecuaciones
 - juegos lineales finitos
 - sistemas de ecuaciones
 - aritmética modular

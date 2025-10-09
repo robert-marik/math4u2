@@ -1,8 +1,8 @@
 ---
 keywords:
-- geometrie
+- geometrie v rovině
 - trigonometrie
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

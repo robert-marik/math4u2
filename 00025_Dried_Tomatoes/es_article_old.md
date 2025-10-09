@@ -1,8 +1,10 @@
 ---
 keywords:
+- funciones
 - porcentajes
+- función de proporcionalidad inversa
 - función lineal fraccionaria
-is_finished: True
+is_finished: true
 ---
 
 # Tomates secos

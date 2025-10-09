@@ -2,7 +2,7 @@
 keywords:
 - geometria analityczna
 - parametryczne równanie prostej
-is_finished: True
+is_finished: true
 ---
 
 # Kalkulator paraboliczny

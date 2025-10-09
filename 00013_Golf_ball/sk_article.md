@@ -1,9 +1,10 @@
 ---
 keywords:
+- diferenciálny a integrálny počet
 - optimalizácia
 - kvadratická rovnica
 - derivácia
-is_finished: True
+is_finished: true
 ---
 # Odpal golfovej loptičky
 

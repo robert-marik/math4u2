@@ -1,9 +1,10 @@
 ---
 keywords:
+- posloupnosti a řady
 - poměr
 - geometrická posloupnost
 - aritmetická posloupnost
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 30
 ---

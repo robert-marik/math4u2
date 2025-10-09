@@ -1,9 +1,10 @@
 ---
 keywords:
+- ciągi i szeregi
 - prawdopodobieństwo
 - wartość oczekiwana
 - ciąg geometryczny
-is_finished: True
+is_finished: true
 ---
 
 # Który los na loterię jest bardziej opłacalny?

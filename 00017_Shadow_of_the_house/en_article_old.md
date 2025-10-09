@@ -1,8 +1,9 @@
 ---
 keywords:
+- space geometry
 - cabinet axonometry
 - lighting
-is_finished: True
+is_finished: true
 ---
 
 # Shadow of House

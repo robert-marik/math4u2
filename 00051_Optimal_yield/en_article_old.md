@@ -1,9 +1,10 @@
 ---
 keywords:
+- analytic geometry
 - quadratic equation
 - systems of equations
 - equation of a circle
-is_finished: True
+is_finished: true
 ---
 
 # Yield Optimization

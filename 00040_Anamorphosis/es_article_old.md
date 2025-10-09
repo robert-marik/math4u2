@@ -1,9 +1,12 @@
 ---
 keywords:
+- geometría en el espacio
 - anamorfosis
 - cuerpos sólidos
-- proyección, proyección central, perspectiva
-is_finished: True
+- proyección
+- proyección central
+- perspectiva
+is_finished: true
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 keywords:
-- optimalizace
 - analytická geometrie
+- optimalizace
 - obecná rovnice přímky
 - obecná rovnice roviny
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 30
 ---

@@ -1,8 +1,8 @@
 ---
 keywords:
-- geometria
+- geometria v rovine
 - trigonometria
-is_finished: True
+is_finished: true
 ---
 
 # Výhľad na more

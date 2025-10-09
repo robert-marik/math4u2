@@ -1,7 +1,9 @@
 ---
-keywords: 
- - statistics
-is_finished: True
+keywords:
+- combinatorics, probability and statistics
+- statistics
+- financial literacy
+is_finished: true
 ---
 
 # Reading Data from a Graph

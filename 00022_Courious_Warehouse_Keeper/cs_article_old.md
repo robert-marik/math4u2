@@ -1,8 +1,9 @@
 ---
 keywords:
+- rovnice a nerovnice
 - soustavy lineárních rovnic
 - zaokrouhlování
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 35
 ---

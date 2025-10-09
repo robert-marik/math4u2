@@ -3,7 +3,7 @@ keywords:
 - analytická geometria
 - kuželosečky
 - hyperbola
-is_finished: True
+is_finished: true
 ---
 
 # Hyperbolická navigácia

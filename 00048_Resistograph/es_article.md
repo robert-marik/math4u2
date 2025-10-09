@@ -1,9 +1,11 @@
 ---
 keywords:
+- geometría analítica
 - tomógrafo acústico
 - resistógrafo
-- geometría analítica, ecuación de la recta, longitud del vector
-is_finished: True
+- ecuación de la recta
+- longitud del vector
+is_finished: true
 ---
 
 # Cuando el tomógrafo acústico se encuentra con el resistógrafo

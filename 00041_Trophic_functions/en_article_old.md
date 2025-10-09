@@ -1,9 +1,9 @@
 ---
-keywords: 
-- function
+keywords:
+- functions
 - rational fractional function
 - asymptote
-is_finished: True
+is_finished: true
 ---
 
 # Trophic Functions in Predator–Prey Models

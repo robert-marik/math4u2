@@ -1,8 +1,9 @@
 ---
 keywords:
+- kombinatorika, pravděpodobnost a statistika
 - podmíněná pravděpodobnost
 - četnost jevů
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 25
 ---

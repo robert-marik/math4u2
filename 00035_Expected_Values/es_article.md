@@ -1,9 +1,10 @@
 ---
 keywords:
+- sucesiones y límites
 - probabilidad
 - valor estimado
 - secuencia geométrica
-is_finished: True
+is_finished: true
 ---
 
 

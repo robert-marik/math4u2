@@ -1,6 +1,6 @@
 ---
 keywords:
-- plane geometry
+- equations and inequalities
 - chain fraction
 - quadratic equation
 is_finished: true

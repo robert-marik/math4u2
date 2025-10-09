@@ -1,8 +1,9 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- plane geometry
+- Pythagorean theorem
+- perpendicular bisector
+is_finished: false
 ---
 
 ### Instructions for translators

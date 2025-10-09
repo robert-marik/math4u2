@@ -1,8 +1,9 @@
 ---
 keywords:
+- równania i nierówności
 - układy równań liniowych
 - zaokrąglanie
-is_finished: True
+is_finished: true
 ---
 
 

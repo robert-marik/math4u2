@@ -1,10 +1,11 @@
 ---
 keywords:
+- diferenciální a integrální počet
 - hyperbola
 - analytická geometrie
 - objem
 - integrální počet
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 20
 ---

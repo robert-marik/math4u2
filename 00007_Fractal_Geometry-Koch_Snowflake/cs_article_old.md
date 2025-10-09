@@ -1,9 +1,10 @@
 ---
-keywords: 
- - geometrická posloupnost
- - fraktál
- - Kochova vločka
-is_finished: True
+keywords:
+- posloupnosti a řady
+- geometrická posloupnost
+- fraktál
+- Kochova vločka
+is_finished: true
 difficulty: 2
 time: 35
 ---

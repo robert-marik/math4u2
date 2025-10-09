@@ -3,7 +3,7 @@ keywords:
 - analytická geometria
 - planimetria
 - štvoruholník
-is_finished: True
+is_finished: true
 ---
 
 ## Stromový tomograf

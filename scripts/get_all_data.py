@@ -22,6 +22,7 @@ def get_yaml(dir, lang):
     data["title"] = title
     # add suffix lang to each key
     data = {f"{k}_{lang}": v for k, v in data.items()}
+    data[f"keywords_{lang}"] = "|".join(data[f"keywords_{lang}"])
     return data
 
 langs = ["cs", "en", "es", "pl", "sk"]
@@ -50,6 +51,10 @@ for lang in langs:
 
 df
 
+#%%
+df['guid'] = df.index
+df.to_csv("m4u_rwp.csv", index=False)
+df
 #%%
 
 df = df.drop(columns=["remark_en"])

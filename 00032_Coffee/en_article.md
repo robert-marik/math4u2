@@ -1,7 +1,7 @@
 ---
 keywords:
-- optimization
 - analytic geometry
+- optimization
 - the general form of a line
 - the general form of a plane
 is_finished: true

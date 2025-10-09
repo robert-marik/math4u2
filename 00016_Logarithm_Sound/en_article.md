@@ -1,9 +1,10 @@
 ---
 keywords:
+- exponentials and logarithms
 - logarithms
 - logarithmic equation
 - exponential equation
-is_finished: True
+is_finished: true
 ---
 
 # Sound

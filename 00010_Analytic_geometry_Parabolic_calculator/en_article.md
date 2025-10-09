@@ -2,7 +2,7 @@
 keywords:
 - analytic geometry
 - parametric equation of line
-is_finished: True
+is_finished: true
 ---
 
 # Parabolic calculator

@@ -1,9 +1,10 @@
 ---
 keywords:
+- equations and inequalities
 - finite linear games
 - systems of equations
 - modular arithmetic
-is_finished: True
+is_finished: true
 ---
 
 # Finite linear games

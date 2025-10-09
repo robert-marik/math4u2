@@ -1,8 +1,9 @@
 ---
 keywords:
+- plane geometry
 - geometry
 - circumferential angle
-is_finished: True
+is_finished: true
 ---
 
 # Ship navigation

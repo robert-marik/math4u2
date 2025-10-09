@@ -1,8 +1,9 @@
 ---
 keywords:
+- základní poznatky
 - výroky
 - matematická logika
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 35
 ---

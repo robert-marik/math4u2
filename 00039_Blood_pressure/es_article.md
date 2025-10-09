@@ -1,9 +1,12 @@
 ---
 keywords:
+- trigonometría
 - funciones trigonométricas
-- seno, coseno
-- aproximación, presión arterial
-is_finished: True
+- seno
+- coseno
+- aproximación
+- presión arterial
+is_finished: true
 ---
 
 

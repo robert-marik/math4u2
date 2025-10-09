@@ -1,9 +1,10 @@
 ---
 keywords:
+- funkcie
 - percentá
 - nepriama úmera
 - lineárna lomená funkcia
-is_finished: True
+is_finished: true
 ---
 
 # Sušenie paradajok

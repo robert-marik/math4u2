@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria analityczna
 - przekrój stożkowy
-- elipsa 
-is_finished: True
+- elipsa
+is_finished: true
 ---
 
 # Pierwsze prawo Keplera o ruchu planet 

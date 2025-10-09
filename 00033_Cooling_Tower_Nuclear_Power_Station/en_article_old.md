@@ -1,5 +1,6 @@
 ---
 keywords:
+- differential and integral calculus
 - hyperbola
 - analytic geometry
 - volume

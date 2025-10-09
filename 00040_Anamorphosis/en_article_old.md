@@ -1,11 +1,12 @@
 ---
 keywords:
+- space geometry
 - anamorphosis
 - solids
 - projection
 - central projection
 - perspective
-is_finished: True
+is_finished: true
 ---
 
 # Anamorphosis

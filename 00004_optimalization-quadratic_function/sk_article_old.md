@@ -1,8 +1,9 @@
 ---
 keywords:
- - kvadratická funkcia
- - optimalizácia
-is_finished: True
+- funkcie
+- kvadratická funkcia
+- optimalizácia
+is_finished: true
 ---
 # Nákup vozidiel pre taxislužbu
 

@@ -1,10 +1,11 @@
 ---
-keywords: 
- - stereometry
- - planimetry
- - circle
- - geography
-is_finished: True
+keywords:
+- space geometry
+- stereometry
+- planimetry
+- circle
+- geography
+is_finished: true
 ---
 # Distances on the Earth's surface
 

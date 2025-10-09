@@ -1,9 +1,10 @@
 ---
 keywords:
+- rovnice a nerovnice
 - konečné lineární hry
 - soustavy rovnic
 - modulární aritmetika
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 40
 ---

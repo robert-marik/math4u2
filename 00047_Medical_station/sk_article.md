@@ -1,8 +1,10 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- functions
+- linear function
+- absolute value
+- optimization
+is_finished: false
 ---
 
 ### Instructions for translators

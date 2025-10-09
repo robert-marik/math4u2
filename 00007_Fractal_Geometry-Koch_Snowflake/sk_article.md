@@ -1,9 +1,10 @@
 ---
 keywords:
+- postupnosti a rady
 - geometrická postupnosť
 - fraktál
 - Kochova vločka
-is_finished: True
+is_finished: true
 ---
 
 # Fraktálna geometria 

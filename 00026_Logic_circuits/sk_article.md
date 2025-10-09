@@ -1,8 +1,9 @@
 ---
 keywords:
+- základné poznatky
 - výroková logika
 - výroky
-is_finished: True
+is_finished: true
 ---
 
 # Logické obvody

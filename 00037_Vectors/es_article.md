@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometría analítica
 - vectores
 - producto escalar
-is_finished: True
+is_finished: true
 ---
 
 

@@ -1,9 +1,10 @@
 ---
 keywords:
+- funkcje
 - optymalizacja
-- równanie kwadratowe 
+- równanie kwadratowe
 - funkcja podłogi
-is_finished: True
+is_finished: true
 ---
 # Optymalna cena biletu
 

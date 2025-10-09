@@ -1,9 +1,10 @@
 ---
 keywords:
+- posloupnosti a řady
 - pravděpodobnost
 - očekávaná hodnota
 - geometrická posloupnost
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

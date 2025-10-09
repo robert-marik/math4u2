@@ -1,9 +1,10 @@
 ---
 keywords:
-- optimización
 - geometría analítica
-- ecuación general de una recta, ecuación general de un plano
-is_finished: True
+- optimización
+- ecuación general de una recta
+- ecuación general de un plano
+is_finished: true
 ---
 
 # Optimización 

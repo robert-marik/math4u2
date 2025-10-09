@@ -1,11 +1,11 @@
 ---
 keywords:
+- geometria analityczna
 - tomograf akustyczny
 - rezystograf
-- geometria analityczna
 - równanie linii
 - wielkość wektorowa
-is_finished: True
+is_finished: true
 ---
 
 # Gdy tomograf akustyczny spotyka się z rezystografem

@@ -1,14 +1,25 @@
 ---
 keywords:
+- goniometria
 - origami
 - skladanie papiera
 - Miura skladanie
 - Miura fold
 - trigonometrické funkcie
-
+is_finished: true
 ---
 
-# Miura skládanie
+---
+keywords:
+- origami
+- skladanie papiera
+- Miura skladanie
+- Miura fold
+- trigonometrické funkcie
+is_finished: True
+---
+
+# Miura skladanie
 
 Miura skladanie (Miura fold) je jedným z najznámejších spôsobov skladania papiera v origami.
 Keď počujeme slovo origami, predstavíme si asi najskôr papierovú skladačku v tvare zvieraťa alebo lodičky.
@@ -63,7 +74,7 @@ Začneme tým, že kratšie rozmery formátu $A4$ rozdelíme na 5 rovnako veľk�
 jeden dielik teda bude mať dĺžku $42\,\text{mm}$.Body ležiace oproti sebe spojíme
 a papier v týchto spojniciach poskladáme do tvaru harmoniky.
 
-![Skládání vzoru Miura-ori](miura_ori_12.png)
+![Skladanie vzoru Miura-ori](miura_ori_12.png)
 
 Dlhšiu hranu rozdelíme na sedem rovnakých úsekov.
 Z jedného z bodov tohto delenia vedieme úsečku, ktorá s dlhšou hranou zviera uhol odlišný od pravého.

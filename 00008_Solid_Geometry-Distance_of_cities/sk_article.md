@@ -1,10 +1,11 @@
 ---
 keywords:
+- geometria v priestore
 - stereometria
-- planimetria 
+- planimetria
 - kružnica
 - geografia
-is_finished: True
+is_finished: true
 ---
 
 # Vzdialenosti na zemskom povrchu

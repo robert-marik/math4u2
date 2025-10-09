@@ -1,11 +1,11 @@
 ---
 keywords:
-- tomograf akustyczny
 - geometria analityczna
+- tomograf akustyczny
 - elipsa
 - iloczyn skalarny
 - projekcja wektorowa
-is_finished: True
+is_finished: true
 ---
 
 # Tomograf akustyczny i równanie elipsy

@@ -4,7 +4,7 @@ keywords:
 - lineární funkce
 - absolutní hodnota
 - optimalizace
-is_finished: True
+is_finished: true
 difficulty: 3
 time: 40
 ---

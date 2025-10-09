@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria na płaszczyźnie
 - planimetria
 - zbiór punktów, które mają wspólną własność
-is_finished: True
+is_finished: true
 ---
 
 

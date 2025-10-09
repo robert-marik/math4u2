@@ -1,11 +1,11 @@
 ---
 keywords:
+- analytic geometry
 - acoustic tomograph
 - resistograph
-- analytic geometry
 - equation of a line
 - vector magnitude
-is_finished: True
+is_finished: true
 ---
 
 # When an Acoustic Tomograph Meets a Resistograph

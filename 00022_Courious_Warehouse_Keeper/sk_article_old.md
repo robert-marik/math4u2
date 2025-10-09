@@ -1,8 +1,9 @@
 ---
 keywords:
+- rovnice a nerovnice
 - sústavy lineárnych rovníc
 - zaokrúľovanie
-is_finished: True
+is_finished: true
 ---
 
 # Zvedavý skladník

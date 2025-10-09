@@ -1,9 +1,10 @@
 ---
 keywords:
+- analytická geometrie
 - kvadratická rovnice
 - soustavy rovnic
 - rovnice kružnice
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 20
 ---

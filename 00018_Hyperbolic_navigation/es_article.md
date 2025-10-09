@@ -3,7 +3,7 @@ keywords:
 - geometría analítica
 - sección cónica
 - hipérbola
-is_finished: True
+is_finished: true
 ---
 
 # Navegación hiperbólica

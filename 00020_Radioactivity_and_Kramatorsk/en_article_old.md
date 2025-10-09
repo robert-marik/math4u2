@@ -1,6 +1,10 @@
 ---
-keywords: exponential function, logarithmic function, function, radioactivity
-is_finished: True
+keywords:
+- exponentials and logarithms
+- exponential function
+- logarithmic function
+- radioactivity
+is_finished: true
 ---
 
 # Deadly Flat in Kramatorsk

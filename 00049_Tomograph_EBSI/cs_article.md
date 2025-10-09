@@ -1,11 +1,11 @@
 ---
 keywords:
-- akustický tomograf
 - analytická geometrie
+- akustický tomograf
 - elipsa
 - skalární součin
 - projekce vektoru
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

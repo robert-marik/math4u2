@@ -1,8 +1,9 @@
 ---
 keywords:
+- funkcje
 - funkcja kwadratowa
 - optymalizacja
-is_finished: True
+is_finished: true
 ---
 
 # Optymalizacja zakupu samochodu dla usług taksówkarskich

@@ -1,8 +1,9 @@
 ---
 keywords:
+- kombinatorika, pravdepodobnosť a štatistika
 - podmienená pravdepodobnosť
 - počet výskytov daného javu
-is_finished: True
+is_finished: true
 ---
 
 # Diagnostické testy v medicíne

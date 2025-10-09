@@ -1,8 +1,9 @@
 ---
 keywords:
+- funciones
 - función cuadrática
 - optimización
-is_finished: True
+is_finished: true
 ---
 
 # Optimización de la compra de coches para el servicio de taxi

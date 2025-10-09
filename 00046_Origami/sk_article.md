@@ -1,10 +1,11 @@
 ---
 keywords:
+- goniometria
 - origami
 - skladanie papiera
 - vedľajšie uhly
 - striedavé úhly
-is_finished: True
+is_finished: true
 ---
 
 # Origami

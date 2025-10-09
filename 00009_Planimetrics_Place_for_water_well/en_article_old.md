@@ -1,8 +1,9 @@
 ---
 keywords:
+- plane geometry
 - planimetry
 - set of points that share a property
-is_finished: True
+is_finished: true
 ---
 
 # Locating a Well on the Property 

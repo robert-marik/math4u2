@@ -1,9 +1,11 @@
 ---
 keywords:
+- trigonometría
 - origami
 - plegado de papel
-- ángulos adyacentes, ángulos alternos
-is_finished: True
+- ángulos adyacentes
+- ángulos alternos
+is_finished: true
 ---
 
 # Origami

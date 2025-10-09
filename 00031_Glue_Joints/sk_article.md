@@ -1,8 +1,9 @@
 ---
 keywords:
+- goniometria
 - goniometrické funkcie
 - pravouhlý trojuholník
-is_finished: True
+is_finished: true
 ---
 
 # Lepené spoje

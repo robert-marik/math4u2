@@ -1,9 +1,11 @@
 ---
 keywords:
+- cálculo diferencial e integral
 - hipérbola
 - geometría analítica
+- volumen
 - cálculo integral
-is_finished: True
+is_finished: true
 ---
 
 # Volumen de una torre de refrigeración de una central nuclear

@@ -1,9 +1,9 @@
 ---
 keywords:
-- Geometría
+- geometría en el plano
 - teorema de Pitágoras
 - eje de recta
-is_finished: True
+is_finished: true
 ---
 
 # Rescate de un náufrago

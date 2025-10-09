@@ -1,8 +1,9 @@
 ---
 keywords:
-- aksonometria 
+- geometria w przestrzeni
+- aksonometria
 - oświetlenie
-is_finished: True
+is_finished: true
 ---
 
 # Cień domu

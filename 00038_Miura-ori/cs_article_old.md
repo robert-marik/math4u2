@@ -1,11 +1,12 @@
 ---
 keywords:
+- goniometrie
 - origami
 - skládání papíru
 - Miura-ori
 - Miura fold
 - trigonometrické funkce
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

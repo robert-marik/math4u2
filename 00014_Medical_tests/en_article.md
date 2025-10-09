@@ -1,5 +1,6 @@
 ---
 keywords:
+- combinatorics, probability and statistics
 - conditional probability
 - frequency of occurrence
 is_finished: True
@@ -145,4 +146,5 @@ rate of doctors in estimating the result is almost 100%.
    *Global Prevalence of Celiac Disease: Systematic Review and Meta-analysis*.
    Clin Gastroenterol Hepatol. 2018 Jun; 16(6):823-836. doi: 10.1016/j.cgh.2017.06.037.
 2. Gigerenzer, G., *Calculated risks*, Simon and Schuster, 2003. 
+
 

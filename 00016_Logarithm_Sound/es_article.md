@@ -1,5 +1,6 @@
 ---
 keywords:
+- exponentes y logaritmos
 - logaritmos
 - ecuación logarítmica
 - ecuación exponencial

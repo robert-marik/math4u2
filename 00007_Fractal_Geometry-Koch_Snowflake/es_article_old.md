@@ -1,8 +1,10 @@
 ---
 keywords:
+- sucesiones y límites
 - progresión geométrica
 - fractal
-is_finished: True
+- copo de nieve de Koch
+is_finished: true
 ---
 
 # Geometría fractal

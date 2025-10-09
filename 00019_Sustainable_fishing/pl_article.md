@@ -1,8 +1,9 @@
 ---
 keywords:
+- funkcje
 - funkcja kwadratowa
 - równanie kwadratowe
-is_finished: True
+is_finished: true
 ---
 
 # Upadek połowów dorsza

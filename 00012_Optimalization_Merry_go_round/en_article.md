@@ -1,9 +1,10 @@
 ---
 keywords:
+- functions
 - optimization
 - quadratic equation
 - floor function
-is_finished: True
+is_finished: true
 ---
 
 # Optimal Ticket Price

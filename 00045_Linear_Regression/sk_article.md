@@ -1,8 +1,12 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- combinatorics, probability and statistics
+- vectors
+- dot product
+- linear regression
+- machine learning
+- data processing
+is_finished: false
 ---
 
 ### Instructions for translators

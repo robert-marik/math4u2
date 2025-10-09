@@ -1,8 +1,9 @@
 ---
 keywords:
+- trigonometría
 - funciones goniométricas
 - triángulo rectángulo
-is_finished: True
+is_finished: true
 ---
 
 # Juntas pegadas

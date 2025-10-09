@@ -1,11 +1,12 @@
 ---
-keywords: 
+keywords:
+- combinatorics, probability and statistics
 - vectors
 - dot product
 - linear regression
 - machine learning
 - data processing
-is_finished: True
+is_finished: true
 ---
 
 # Linear Regression

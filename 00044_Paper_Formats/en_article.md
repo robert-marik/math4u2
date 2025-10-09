@@ -1,9 +1,10 @@
 ---
 keywords:
+- sequences and series
 - ratio
 - geometric sequence
 - arithmetic sequence
-is_finished: True
+is_finished: true
 ---
 
 # The Mathematics Hidden in a Sheet of Paper

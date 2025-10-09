@@ -1,6 +1,9 @@
 ---
-keywords: funkce, racionální lomená funkce, asymptota
-is_finished: True
+keywords:
+- funkce
+- racionální lomená funkce
+- asymptota
+is_finished: true
 difficulty: 1
 time: 20
 ---

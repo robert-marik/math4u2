@@ -1,9 +1,13 @@
 ---
 keywords:
+- combinatoria, probabilidad y estadística
 - estadística
 - tratamiento de datos
-- media aritmética, media geométrica, análisis de regresión, GeoGebra
-is_finished: True
+- media aritmética
+- media geométrica
+- análisis de regresión
+- GeoGebra
+is_finished: true
 ---
 
 # Propagación inicial de una epidemia

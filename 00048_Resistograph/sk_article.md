@@ -1,14 +1,11 @@
 ---
 keywords:
+- analytická geometria
 - akustický tomograf
 - resistograf
-- analytická geometria
 - rovnica priamky
 - dĺžka vektora
-is_finished: True
-difficulty: 1
-time: 15
----
+is_finished: true
 ---
 
 # Keď sa akustický tomograf stretne s resistografom

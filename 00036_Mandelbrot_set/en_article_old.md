@@ -5,7 +5,7 @@ keywords:
 - sequences
 - convergence
 - absolute value
-is_finished: True
+is_finished: true
 ---
 
 # Mandelbrot Set

@@ -1,9 +1,10 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - średnia arytmetyczna
 - średnia geometryczna
 - statystyki
-is_finished: True
+is_finished: true
 ---
 
 # Opis trendów PKB

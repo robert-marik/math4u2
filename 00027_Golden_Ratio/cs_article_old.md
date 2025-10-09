@@ -1,9 +1,9 @@
 ---
 keywords:
-- planimetrie
+- rovnice a nerovnice
 - řetězový zlomek
 - kvadratická rovnice
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 40
 ---

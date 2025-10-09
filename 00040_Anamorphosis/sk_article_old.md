@@ -1,8 +1,12 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- space geometry
+- anamorphosis
+- solids
+- projection
+- central projection
+- perspective
+is_finished: false
 ---
 
 ### Instructions for translators

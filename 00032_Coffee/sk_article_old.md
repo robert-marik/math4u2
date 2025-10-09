@@ -1,10 +1,10 @@
 ---
 keywords:
-- optimalizácia
 - analytická geometria
+- optimalizácia
 - všeobecná rovnica priamky
 - všeobecná rovnica roviny
-is_finished: True
+is_finished: true
 ---
 
 # Optimalizácia 

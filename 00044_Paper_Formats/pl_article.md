@@ -1,9 +1,10 @@
 ---
 keywords:
+- ciągi i szeregi
 - stosunek
 - ciąg geometryczny
 - ciąg arytmetyczny
-is_finished: True
+is_finished: true
 ---
 
 # Matematyka ukryta w kartce papieru

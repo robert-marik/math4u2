@@ -1,8 +1,9 @@
 ---
 keywords:
+- podstawy matematyki
 - twierdzenia
 - logika
-is_finished: True
+is_finished: true
 ---
 
 # Obwody logiczne

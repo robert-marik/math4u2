@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria w przestrzeni
 - stereometria
 - stożek
-is_finished: True
+is_finished: true
 ---
 
 # Czapka stożkowa

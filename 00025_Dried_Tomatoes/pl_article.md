@@ -1,9 +1,10 @@
 ---
 keywords:
+- funkcje
 - procenty
 - odwrotna proporcja
 - funkcja wymierna
-is_finished: True
+is_finished: true
 ---
 
 

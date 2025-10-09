@@ -1,12 +1,13 @@
 ---
 keywords:
+- combinatorics, probability and statistics
 - statistics
 - data processing
 - arithmetic mean
 - geometric mean
 - regression analysis
 - GeoGebra
-is_finished: True
+is_finished: true
 ---
 
 # Initial Spread of the Epidemic

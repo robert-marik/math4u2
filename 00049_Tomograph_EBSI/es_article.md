@@ -1,11 +1,11 @@
 ---
 keywords:
-- tomógrafo acústico
 - geometría analítica
-- elipse 
+- tomógrafo acústico
+- elipse
 - producto escalar
 - proyección vectorial
-is_finished: True
+is_finished: true
 ---
 
 # Tomógrafo acústico y ecuación de la elipse

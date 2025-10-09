@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria analityczna
 - wektory
 - iloczyn skalarny
-is_finished: True
+is_finished: true
 ---
 
 # Wektory

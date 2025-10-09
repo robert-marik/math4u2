@@ -1,9 +1,10 @@
 ---
 keywords:
-- optimalization
+- differential and integral calculus
+- optimization
 - quadratic equation
 - derivation
-is_finished: True
+is_finished: true
 ---
 
 # Golf Ball Shot

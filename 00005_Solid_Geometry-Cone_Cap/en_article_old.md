@@ -1,8 +1,9 @@
 ---
-keywords: 
- - stereometry
- - cone
-is_finished: True
+keywords:
+- space geometry
+- stereometry
+- cone
+is_finished: true
 ---
 
 # Conical cap

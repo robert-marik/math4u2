@@ -2,8 +2,10 @@
 keywords:
 - números complejos
 - plano de Gauss
-- secuencias, convergencia, valor absoluto
-is_finished: True
+- secuencias
+- convergencia
+- valor absoluto
+is_finished: true
 ---
 
 # Conjunto de Mandelbrot

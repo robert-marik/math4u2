@@ -1,8 +1,9 @@
 ---
 keywords:
+- postupnosti a rady
 - geometrická postupnosť
 - finančná matematika
-is_finished: True
+is_finished: true
 ---
 
 # Pyramídová schéma

@@ -1,8 +1,9 @@
 ---
 keywords:
+- ciągi i szeregi
 - ciąg geometryczny
-- finanse
-is_finished: True
+- matematyka finansowa
+is_finished: true
 ---
 
 # Piramida finansowa

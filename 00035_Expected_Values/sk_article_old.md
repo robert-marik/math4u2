@@ -1,9 +1,10 @@
 ---
 keywords:
+- postupnosti a rady
 - pravdepodobnosť
 - očakávaná hodnota
 - geometrická postupnosť
-is_finished: True
+is_finished: true
 ---
 
 # Ktorý žreb je výhodný?

@@ -1,6 +1,6 @@
 ---
 title: Obvodové úhly – lodní navigace
-is_finished: True
+is_finished: true
 ---
 
 > **Úloha 2:** Na mapě úžiny mezi ostrovy Mallorca a Menorca jsou vyznačeny dva výrazné

@@ -1,9 +1,10 @@
 ---
 keywords:
+- rovnice a nerovnice
 - konečné lineárne hry
-- vektory
 - sústavy rovníc
-is_finished: True
+- modulárna aritmetika
+is_finished: true
 ---
 
 

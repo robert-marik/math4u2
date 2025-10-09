@@ -3,7 +3,7 @@ keywords:
 - trygonometria
 - prawo sinusów
 - prawo cosinusów
-is_finished: True
+is_finished: true
 ---
 
 # Przekraczanie rzeki

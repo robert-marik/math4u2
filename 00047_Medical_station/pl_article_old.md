@@ -1,10 +1,10 @@
 ---
 keywords:
-- funkcja
+- funkcje
 - funkcja liniowa
 - wartość bezwzględna
 - optymalizacja
-is_finished: True
+is_finished: true
 ---
 
 # Stacja medyczna na zawodach biegowych

@@ -1,9 +1,9 @@
 ---
 keywords:
-- función
+- funciones
 - función fraccionaria racional
 - asíntota
-is_finished: True
+is_finished: true
 ---
 
 

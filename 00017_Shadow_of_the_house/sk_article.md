@@ -1,9 +1,9 @@
 ---
 keywords:
-- voľné rovnobežné premietanie
+- geometria v priestore
 - osvetlenie
 - kabinetná axonometria
-is_finished: True
+is_finished: true
 ---
 
 # Tieň domu

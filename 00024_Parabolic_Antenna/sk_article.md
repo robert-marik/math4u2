@@ -3,7 +3,7 @@ keywords:
 - analytická geometria
 - kuželosečky
 - rovnica paraboly
-is_finished: True
+is_finished: true
 ---
 
 # Parabolická anténa

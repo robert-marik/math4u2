@@ -2,7 +2,7 @@
 keywords:
 - geometría analítica
 - ecuación paramétrica de la recta
-is_finished: True
+is_finished: true
 ---
 
 # Calculadora de parábola

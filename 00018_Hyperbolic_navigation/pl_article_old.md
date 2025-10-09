@@ -3,7 +3,7 @@ keywords:
 - geometria analityczna
 - przekroje analityczne
 - hibprbola
-is_finished: True
+is_finished: true
 ---
 
 # Nawigacja hiperboliczna

@@ -1,12 +1,13 @@
 ---
 keywords:
+- kombinatorika, pravděpodobnost a statistika
 - statistika
 - zpracování dat
 - aritmetický průměr
 - geometrický průměr
 - regresní analýza
 - GeoGebra
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

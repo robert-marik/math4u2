@@ -1,10 +1,11 @@
 ---
 keywords:
+- geometria w przestrzeni
 - stereometria
 - planimetria
 - okrąg
 - geografia
-is_finished: True
+is_finished: true
 ---
 
 

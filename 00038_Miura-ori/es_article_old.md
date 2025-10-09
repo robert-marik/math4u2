@@ -1,9 +1,12 @@
 ---
 keywords:
+- trigonometría
 - origami
 - plegado de papel
-- pliegue de Miura, funciones trigonométricas
-is_finished: True
+- Miura-ori
+- pliegue de Miura
+- funciones trigonométricas
+is_finished: true
 ---
 
 

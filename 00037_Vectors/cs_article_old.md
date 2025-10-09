@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytická geometrie
 - vektory
 - skalární součin
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

@@ -1,9 +1,9 @@
 ---
 keywords:
+- sequences and series
 - geometric sequence
-- geometric progression
 - financial literacy
-is_finished: True
+is_finished: true
 ---
 
 # Pyramid scheme

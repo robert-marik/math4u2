@@ -1,9 +1,10 @@
 ---
 keywords:
+- diferenciální a integrální počet
 - optimalizace
 - kvadratická rovnice
 - derivace
-is_finished: True
+is_finished: true
 difficulty: 3
 time: 30
 ---

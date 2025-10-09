@@ -1,9 +1,10 @@
 ---
 keywords:
+- kombinatorika, pravdepodobnosť a štatistika
 - aritmetický priemer
 - geometrický priemer
 - štatistika
-is_finished: True
+is_finished: true
 ---
 
 # Popis vývoja HDP

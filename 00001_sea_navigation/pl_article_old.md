@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria na płaszczyźnie
 - geometria
 - kąt obwodowy
-is_finished: True
+is_finished: true
 ---
 
 # Nawigacja na statku

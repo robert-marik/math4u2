@@ -1,8 +1,9 @@
 ---
 keywords:
+- kombinatorika, pravdepodobnosť a štatistika
 - kombinatorika
 - pravidlo súčinu
-is_finished: True
+is_finished: true
 ---
 
 # Prelamovanie hesiel

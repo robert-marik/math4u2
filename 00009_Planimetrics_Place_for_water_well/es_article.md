@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometría en el plano
 - planimetría
 - conjunto de puntos que comparten una propiedad
-is_finished: True
+is_finished: true
 ---
 
 # Ubicación de un pozo 

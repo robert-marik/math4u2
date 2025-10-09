@@ -1,11 +1,13 @@
---- 
+---
 keywords:
+- trigonometry
 - trigonometric functions
-- sine, cosine
+- sine
+- cosine
 - approximation
 - blood pressure
-is_finished: True
---- 
+is_finished: true
+---
 
 # Blood Pressure
 

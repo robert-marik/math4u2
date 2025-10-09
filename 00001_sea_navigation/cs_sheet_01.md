@@ -1,6 +1,6 @@
 ---
 title: Obvodové úhly – lodní navigace
-is_finished: True
+is_finished: true
 ---
 
 > **Úloha 1:** Na mapě jsou vyznačeny polohy tří majáků blízko města Bonifacio na

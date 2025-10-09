@@ -1,9 +1,9 @@
 ---
-keywords: 
- - stereometrie
- - kužel
- - objem
-is_finished: True
+keywords:
+- geometrie v prostoru
+- stereometrie
+- kužel
+is_finished: true
 difficulty: 1
 time: 15
 ---

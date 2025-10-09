@@ -1,8 +1,9 @@
 ---
 keywords:
+- exponenciály a logaritmy
 - exponenciální funkce
 - logaritmická funkce
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 30
 ---

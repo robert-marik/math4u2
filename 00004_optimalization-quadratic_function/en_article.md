@@ -1,8 +1,9 @@
 ---
-keywords: 
- - quadratic function
- - optimization
-is_finished: True
+keywords:
+- functions
+- quadratic function
+- optimization
+is_finished: true
 ---
 
 # Optimization of Car Purchase for Taxi Service

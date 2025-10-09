@@ -3,7 +3,7 @@ keywords:
 - analytic geometry
 - conic sections
 - the equation of a parabola
-is_finished: True
+is_finished: true
 ---
 
 # Parabolic antenna

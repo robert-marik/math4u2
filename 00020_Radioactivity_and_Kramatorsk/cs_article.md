@@ -1,6 +1,10 @@
 ---
-keywords: exponenciální funkce, logaritmická funkce, funkce, radioaktivita
-is_finished: True
+keywords:
+- exponenciály a logaritmy
+- exponenciální funkce
+- logaritmická funkce
+- radioaktivita
+is_finished: true
 difficulty: 2
 time: 20
 ---

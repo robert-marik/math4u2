@@ -1,8 +1,8 @@
 ---
 keywords:
-- geometry
+- plane geometry
 - trigonometry
-is_finished: True
+is_finished: true
 ---
 
 # A Sea View

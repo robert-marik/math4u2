@@ -1,9 +1,10 @@
 ---
 keywords:
+- kombinatorika, pravděpodobnost a statistika
 - aritmetický průměr
 - geometrický průměr
 - statistika
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 25
 ---

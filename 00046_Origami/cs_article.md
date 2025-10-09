@@ -1,10 +1,11 @@
 ---
 keywords:
+- goniometrie
 - origami
 - skládání papíru
 - vedlejší úhly
 - střídavé úhly
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 15
 ---

@@ -1,9 +1,9 @@
 ---
 keywords:
-- volné rovnoběžné promítání
+- geometrie v prostoru
 - kabinetní axonometrie
 - osvětlení
-is_finished: True
+is_finished: true
 difficulty: 3
 time: 40
 ---

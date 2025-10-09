@@ -1,7 +1,10 @@
 ---
 keywords:
+- równania i nierówności
 - skończone gry liniowe
-is_finished: True
+- układy równań
+- arytmetyka modułowa
+is_finished: true
 ---
 
 # Skończone gry liniowe

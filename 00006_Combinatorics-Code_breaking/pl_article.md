@@ -1,7 +1,9 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - kombinatoryka
-is_finished: True
+- reguła iloczynu
+is_finished: true
 ---
 
 

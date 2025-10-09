@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytic geometry
 - conic section
 - ellipse
-is_finished: True
+is_finished: true
 ---
 
 # Kepler's First Law of Planetary Motion

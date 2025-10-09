@@ -1,8 +1,9 @@
 ---
 keywords:
+- trigonometry
 - trigonometric functions
 - right triangle
-is_finished: True
+is_finished: true
 ---
 
 # Glued Joints

@@ -1,11 +1,13 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - statystyka
 - przetwarzanie danych
 - średnia arytmetyczna
 - średnia geometryczna
 - analiza regresji
-is_finished: True
+- GeoGebra
+is_finished: true
 ---
 
 # Początkowe rozprzestrzenienie się epidemii

@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytická geometria
 - vektory
 - skalárny súčin
-is_finished: True
+is_finished: true
 ---
 
 # Vektory

@@ -1,8 +1,11 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- analytic geometry
+- acoustic tomograph
+- ellipse
+- dot product
+- vector projection
+is_finished: false
 ---
 
 ### Instructions for translators

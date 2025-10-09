@@ -1,7 +1,9 @@
 ---
-keywords: 
- - statistika
-is_finished: True
+keywords:
+- kombinatorika, pravděpodobnost a statistika
+- statistika
+- finanční matematika
+is_finished: true
 difficulty: 1
 time: 15
 ---

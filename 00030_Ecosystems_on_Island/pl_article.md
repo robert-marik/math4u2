@@ -1,8 +1,9 @@
 ---
 keywords:
+- wykładniki i logaritmy
 - funkcja wykładnicza
 - funkcja logarytmiczna
-is_finished: True
+is_finished: true
 ---
 
 

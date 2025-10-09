@@ -1,9 +1,9 @@
 ---
 keywords:
-- trigonometrie
+- goniometrie
 - sinová věta
 - kosinová věta
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 25
 ---

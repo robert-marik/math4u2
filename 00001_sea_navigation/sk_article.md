@@ -1,9 +1,9 @@
 ---
 keywords:
+- geometria v rovine
 - geometria
 - obvodové uhly
-- množina G
-is_finished: True
+is_finished: true
 ---
 
 # Lodná navigácia

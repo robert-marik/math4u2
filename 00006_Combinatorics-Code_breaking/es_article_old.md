@@ -1,8 +1,9 @@
 ---
 keywords:
+- combinatoria, probabilidad y estadística
 - combinatoria
 - regla del producto
-is_finished: True
+is_finished: true
 ---
 
 # Descifrado de contraseña

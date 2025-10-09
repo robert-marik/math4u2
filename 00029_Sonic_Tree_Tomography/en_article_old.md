@@ -3,7 +3,7 @@ keywords:
 - analytic geometry
 - plane geometry
 - quadrilateral
-is_finished: True
+is_finished: true
 ---
 
 # Tree Tomography

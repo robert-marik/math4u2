@@ -1,6 +1,9 @@
 ---
-keywords: quadratic function, function, quadratic equation
-is_finished: True
+keywords:
+- functions
+- quadratic function
+- quadratic equation
+is_finished: true
 ---
 
 # Collapse of Cod Fisheries

@@ -1,8 +1,9 @@
 ---
 keywords:
+- basics of math
 - statements
 - mathematical logic
-is_finished: True
+is_finished: true
 ---
 
 # Logic circuits

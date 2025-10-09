@@ -1,8 +1,9 @@
 ---
 keywords:
+- ecuaciones e inecuaciones
 - sistemas de ecuaciones lineales
 - redondeo
-is_finished: True
+is_finished: true
 ---
 
 # El curioso jefe de almacén

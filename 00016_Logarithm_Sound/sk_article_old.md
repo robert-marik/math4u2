@@ -1,9 +1,10 @@
 ---
 keywords:
+- exponenciálne a logaritmické funkcie
 - logaritmus
 - logaritmická rovnica
 - exponenciálna rovnica
-is_finished: True
+is_finished: true
 ---
 
 # Zvuk

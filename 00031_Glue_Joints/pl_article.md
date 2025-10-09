@@ -1,5 +1,6 @@
 ---
 keywords:
+- trygonometria
 - funkcje trygonometryczne
 - trójkąt prostokątny
 is_finished: true

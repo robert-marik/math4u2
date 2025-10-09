@@ -1,8 +1,10 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- analytic geometry
+- quadratic equation
+- systems of equations
+- equation of a circle
+is_finished: false
 ---
 
 ### Instructions for translators

@@ -1,7 +1,9 @@
 ---
 keywords:
+- geometría en el plano
 - geometría
-is_finished: True
+- ángulo circunferencial
+is_finished: true
 ---
 
 # Navegación marítima

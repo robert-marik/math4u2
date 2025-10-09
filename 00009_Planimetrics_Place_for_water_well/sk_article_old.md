@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometria v rovine
 - planimetria
 - množina bodov danej vlastnosti
-is_finished: True
+is_finished: true
 ---
 
 # Umiestnenie studne na pozemku

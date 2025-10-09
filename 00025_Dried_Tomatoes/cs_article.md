@@ -1,11 +1,12 @@
 ---
 keywords:
+- funkce
 - procenta
 - nepřímá úměra
 - lineární lomená funkce
-is_finished: True
+is_finished: true
 difficulty: 3
-time: 35 
+time: 35
 ---
 
 

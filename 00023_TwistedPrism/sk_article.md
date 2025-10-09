@@ -1,10 +1,11 @@
 ---
 keywords:
+- geometria v priestore
 - Pythagorova veta
 - stereometria
 - trigonometria
 - skrútený hranol
-is_finished: True
+is_finished: true
 ---
 
 # Skrútený hranol

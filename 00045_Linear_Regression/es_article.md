@@ -1,9 +1,12 @@
 ---
 keywords:
+- combinatoria, probabilidad y estadística
 - vectores
 - producto escalar
-- regresión lineal, aprendizaje automático, procesamiento de datos
-is_finished: True
+- regresión lineal
+- aprendizaje automático
+- procesamiento de datos
+is_finished: true
 ---
 
 

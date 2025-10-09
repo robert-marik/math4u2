@@ -1,9 +1,10 @@
 ---
 keywords:
+- wykładniki i logaritmy
 - funkcja wykładnicza
 - funkcja logarytmiczna
 - radioaktywność
-is_finished: True
+is_finished: true
 ---
 
 # Śmiertelne mieszkanie w Kramatorsku

@@ -3,7 +3,7 @@ keywords:
 - analytic geometry
 - conic sections
 - hyperbola
-is_finished: True
+is_finished: true
 ---
 # Hyperbolic navigation
 

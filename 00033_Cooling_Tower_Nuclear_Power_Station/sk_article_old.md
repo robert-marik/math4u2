@@ -1,10 +1,11 @@
 ---
 keywords:
+- diferenciálny a integrálny počet
 - hyperbola
 - analytická geometria
 - objem
 - integrálny počet
-is_finished: True
+is_finished: true
 ---
 
 # Objem chladiacej veže jadrovej elektrárne

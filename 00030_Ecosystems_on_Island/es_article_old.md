@@ -1,8 +1,9 @@
 ---
 keywords:
+- exponentes y logaritmos
 - función exponencial
 - función logarítmica
-is_finished: True
+is_finished: true
 ---
 
 # Biodiversidad insular

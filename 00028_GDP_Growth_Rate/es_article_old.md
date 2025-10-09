@@ -1,9 +1,10 @@
 ---
 keywords:
+- combinatoria, probabilidad y estadística
 - media aritmética
 - media geométrica
 - estadística
-is_finished: True
+is_finished: true
 ---
 
 # Descripción de la evolución del PIB

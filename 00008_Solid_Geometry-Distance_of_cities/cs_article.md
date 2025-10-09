@@ -1,10 +1,11 @@
 ---
-keywords: 
- - stereometrie
- - planimetrie
- - kružnice
- - zeměpis
-is_finished: True
+keywords:
+- geometrie v prostoru
+- stereometrie
+- planimetrie
+- kružnice
+- zeměpis
+is_finished: true
 difficulty: 2
 time: 25
 ---

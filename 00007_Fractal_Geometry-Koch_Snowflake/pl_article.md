@@ -1,8 +1,10 @@
 ---
 keywords:
+- ciągi i szeregi
 - ciąg geometryczny
 - geometria fraktalna
-is_finished: True
+- płatek śniegu Kocha
+is_finished: true
 ---
 
 # Geometria fraktalna
@@ -23,11 +25,11 @@ samopodobieństwo ze współczynnikiem $r$ z oryginalnego objektu. Na przykład,
 składać się z czterech mniejszych kwadratów, które powstają z niego przez
 samopodobieństwo ze współczynnikiem $r=\frac{1}{2}$, tj.,
 $$d=\frac{\ln 4}{\ln2}=2.$$
-Zatem dla kwadratu jego wymiar fraktalny (wymiar Hausdorffa) jest równy
- jego normalnemu wymiarowi intuicyjnemu (wymiar topologiczny).
+Zatem dla kwadratu jego wymiar fraktalny (wymiar Hausdorffa) jest równy jego normalnemu wymiarowi intuicyjnemu (wymiar topologiczny).
+
 ## Płatek śniegu Kocha
 
- *Płatek śniegu Kocha* jest krzywą na płaszczyźnie utworzoną w iteracyjnym procesie
+*Płatek śniegu Kocha* jest krzywą na płaszczyźnie utworzoną w iteracyjnym procesie
 z trójkąta równobocznego.
 
 Na początku dany jest trójkąt równoboczny o bokach długości 1.

@@ -5,7 +5,7 @@ keywords:
 - posloupnosti
 - konvergence
 - absolutní hodnota
-is_finished: True
+is_finished: true
 difficulty: 3
 time: 20
 ---

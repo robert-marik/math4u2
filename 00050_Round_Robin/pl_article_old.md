@@ -1,7 +1,8 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - kombinatoryka
-is_finished: True
+is_finished: true
 ---
 
 

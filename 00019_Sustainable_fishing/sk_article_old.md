@@ -1,9 +1,9 @@
 ---
 keywords:
+- funkcie
 - kvadratická funkcia
-- funkcia
 - kvadratická rovnica
-is_finished: True
+is_finished: true
 ---
 
 # Kolabs rybolovu

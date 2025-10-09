@@ -1,8 +1,9 @@
 ---
 keywords:
+- kombinatorika, pravdepodobnosť a štatistika
 - štatistika
 - finačná matematika
-is_finished: True
+is_finished: true
 ---
 
 # Čítanie údajov z grafu 

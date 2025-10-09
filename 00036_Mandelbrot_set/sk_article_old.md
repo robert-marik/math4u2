@@ -5,7 +5,7 @@ keywords:
 - postupnosti
 - konvergencia
 - absolútna hodnota
-is_finished: True
+is_finished: true
 ---
 
 # Mandelbrotova množina

@@ -1,10 +1,11 @@
 ---
-keywords: 
- - Pythagorova věta
- - stereometrie
- - trigonometrie
- - zborcený hranol
-is_finished: True
+keywords:
+- geometrie v prostoru
+- Pythagorova věta
+- stereometrie
+- trigonometrie
+- zborcený hranol
+is_finished: true
 difficulty: 1
 time: 45
 ---

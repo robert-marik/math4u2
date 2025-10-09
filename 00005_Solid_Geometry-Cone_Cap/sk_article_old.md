@@ -1,9 +1,9 @@
 ---
 keywords:
+- geometria v priestore
 - stereometria
 - kužeľ
-
-is_finished: True
+is_finished: true
 ---
 # Klobúk na karneval
 

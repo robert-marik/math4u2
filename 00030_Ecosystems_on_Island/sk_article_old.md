@@ -1,8 +1,9 @@
 ---
 keywords:
-- mocninová funkcia
+- exponenciálne a logaritmické funkcie
+- exponenciálna funkcia
 - logaritmická funkcia
-is_finished: True
+is_finished: true
 ---
 
 # Rozmanitosť ekosystémov na ostrovoch

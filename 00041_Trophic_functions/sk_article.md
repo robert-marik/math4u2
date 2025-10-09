@@ -1,8 +1,9 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- functions
+- rational fractional function
+- asymptote
+is_finished: false
 ---
 
 ### Instructions for translators

@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometrie v rovině
 - planimetrie
 - množiny bodů daných vlastností
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 20
 ---

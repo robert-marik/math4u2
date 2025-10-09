@@ -1,9 +1,9 @@
 ---
 keywords:
-- planimetría
+- ecuaciones e inecuaciones
 - fracción encadenada
 - ecuación cuadrática
-is_finished: True
+is_finished: true
 ---
 
 # La proporción áurea y las fracciones continuas

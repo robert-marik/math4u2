@@ -1,5 +1,6 @@
 ---
 keywords:
+- geometría en el espacio
 - axonometría de armarios
 - iluminación
 is_finished: true

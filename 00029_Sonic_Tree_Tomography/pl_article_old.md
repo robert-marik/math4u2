@@ -3,7 +3,7 @@ keywords:
 - geometria analityczna
 - geometria płaszczyzny
 - czworokąt
-is_finished: True
+is_finished: true
 ---
 
 

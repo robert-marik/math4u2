@@ -1,8 +1,10 @@
 ---
-keywords: 
- - geometric progression
- - fractal
-is_finished: True
+keywords:
+- sequences and series
+- geometric progression
+- Koch snowflake
+- fractal
+is_finished: true
 ---
 
 # Fractal geometry 

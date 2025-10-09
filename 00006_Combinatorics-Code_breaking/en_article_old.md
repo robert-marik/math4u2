@@ -1,8 +1,9 @@
 ---
-keywords: 
- - combinatorics
- - product rule
-is_finished: True
+keywords:
+- combinatorics, probability and statistics
+- combinatorics
+- product rule
+is_finished: true
 ---
 
 # Password cracking

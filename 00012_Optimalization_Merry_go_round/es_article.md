@@ -1,9 +1,10 @@
 ---
 keywords:
+- funciones
 - optimización
 - función cuadrática
 - función de parte entera
-is_finished: True
+is_finished: true
 ---
 
 # Precio Óptimo de la Entrada

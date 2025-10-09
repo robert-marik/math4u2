@@ -3,7 +3,7 @@ keywords:
 - geometria analityczna
 - przekroje stożkowe
 - równanie paraboli
-is_finished: True
+is_finished: true
 ---
 
 

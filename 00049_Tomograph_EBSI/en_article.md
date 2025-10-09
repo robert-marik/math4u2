@@ -1,11 +1,11 @@
 ---
 keywords:
-- acoustic tomograph
 - analytic geometry
+- acoustic tomograph
 - ellipse
 - dot product
 - vector projection
-is_finished: True
+is_finished: true
 ---
 
 # Acoustic Tomograph and the Equation of an Ellipse

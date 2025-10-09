@@ -1,9 +1,10 @@
 ---
 keywords:
+- geometria analityczna
 - równanie kwadratowe
 - układy równań
 - równanie okręgu
-is_finished: True
+is_finished: true
 ---
 
 

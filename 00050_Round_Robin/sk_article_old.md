@@ -1,8 +1,8 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- combinatorics, probability and statistics
+- combinatorics
+is_finished: false
 ---
 
 ### Instructions for translators

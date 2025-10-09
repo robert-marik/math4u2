@@ -1,8 +1,9 @@
 ---
 keywords:
+- exponentials and logarithms
 - exponential function
 - logarithmic function
-is_finished: True
+is_finished: true
 ---
 
 # Island Biodiversity

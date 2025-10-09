@@ -1,9 +1,10 @@
 ---
 keywords:
+- combinatorics, probability and statistics
 - arithmetic mean
 - geometric mean
 - statistics
-is_finished: False
+is_finished: false
 ---
 
 # Description of GDP Trends

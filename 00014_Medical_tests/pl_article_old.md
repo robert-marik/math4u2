@@ -1,8 +1,9 @@
 ---
 keywords:
+- kombinatoryka, prawdopodobieństwo, statystyka
 - prawdopodobieństwo warunkowe
 - częstotliwość zjawisk
-is_finished: True
+is_finished: true
 ---
 
 # Testy diagnostyczne w medycynie

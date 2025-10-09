@@ -1,8 +1,9 @@
 ---
-keywords: 
- - kvadratická funkce
- - optimalizace
-is_finished: True
+keywords:
+- funkce
+- kvadratická funkce
+- optimalizace
+is_finished: true
 difficulty: 1
 time: 20
 ---

@@ -3,7 +3,7 @@ keywords:
 - geometría analítica
 - cónicas
 - ecuaciones de parábola
-is_finished: True
+is_finished: true
 ---
 
 # Antena parabólica

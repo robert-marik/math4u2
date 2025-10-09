@@ -1,8 +1,9 @@
 ---
 keywords:
+- geometría en el espacio
 - estereometría
 - cono
-is_finished: True
+is_finished: true
 ---
 
 # Gorra cónica

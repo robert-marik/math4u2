@@ -1,8 +1,9 @@
 ---
 keywords:
+- analytic geometry
 - vectors
 - dot product
-is_finished: True
+is_finished: true
 ---
 
 # Vectors

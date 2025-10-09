@@ -1,8 +1,9 @@
 ---
 keywords:
+- sucesiones y límites
 - progresión geométrica
 - formación financiera
-is_finished: True
+is_finished: true
 ---
 
 # Esquema piramidal

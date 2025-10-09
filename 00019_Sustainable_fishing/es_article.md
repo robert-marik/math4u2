@@ -1,9 +1,9 @@
 ---
 keywords:
+- funciones
 - función cuadrática
-- función
 - ecuación cuadrática
-is_finished: True
+is_finished: true
 ---
 
 # La Caída de la Pesca del Bacalao

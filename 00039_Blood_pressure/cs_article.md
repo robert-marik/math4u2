@@ -1,11 +1,12 @@
 ---
-keywords: 
-- goniometrické funkce 
+keywords:
+- goniometrie
+- goniometrické funkce
 - sinus
 - kosinus
 - aproximace
-- krevní tlak 
-is_finished: True
+- krevní tlak
+is_finished: true
 difficulty: 2
 time: 45
 ---

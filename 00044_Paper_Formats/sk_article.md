@@ -1,8 +1,10 @@
 ---
 keywords:
-- the first keyword
-- another keyword
-is_finished: False
+- sequences and series
+- ratio
+- geometric sequence
+- arithmetic sequence
+is_finished: false
 ---
 
 ### Instructions for translators

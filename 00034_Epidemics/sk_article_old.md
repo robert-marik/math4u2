@@ -1,12 +1,13 @@
 ---
 keywords:
+- kombinatorika, pravdepodobnosť a štatistika
 - štatistika
 - zpracovanie dát
 - aritmetický priemer
 - geometrický priemer
 - regresná analýza
 - GeoGebra
-is_finished: True
+is_finished: true
 ---
 
 # Počiatočné šírenie epidémie

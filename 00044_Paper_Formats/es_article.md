@@ -1,9 +1,10 @@
 ---
 keywords:
+- sucesiones y límites
 - proporción
 - sucesión geométrica
 - sucesión aritmética
-is_finished: True
+is_finished: true
 ---
 
 # Las matemáticas ocultas en una hoja de papel

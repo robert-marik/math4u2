@@ -1,9 +1,9 @@
 ---
 keywords:
+- matemáticas elementales
 - enunciados
 - lógica matemática
-
-is_finished: True
+is_finished: true
 ---
 
 

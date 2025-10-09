@@ -1,6 +1,9 @@
 ---
-keywords: kvadratická funkce, funkce, kvadratická rovnice
-is_finished: True
+keywords:
+- funkce
+- kvadratická funkce
+- kvadratická rovnice
+is_finished: true
 difficulty: 1
 time: 15
 ---

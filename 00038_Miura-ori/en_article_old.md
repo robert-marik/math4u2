@@ -1,11 +1,12 @@
 ---
 keywords:
+- trigonometry
 - origami
 - paper folding
 - Miura-ori
 - Miura fold
 - trigonometric functions
-is_finished: True
+is_finished: true
 ---
 
 # Miura-Ori

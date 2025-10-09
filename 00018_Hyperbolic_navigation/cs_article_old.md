@@ -3,7 +3,7 @@ keywords:
 - analytická geometrie
 - kuželosečky
 - hyperbola
-is_finished: True
+is_finished: true
 difficulty: 1
 time: 20
 ---

@@ -1,10 +1,10 @@
 ---
 keywords:
+- exponenciálne a logaritmické funkcie
 - exponenciálna funkcia
 - logaritmická funkcia
-- funkcia
 - rádioaktivita
-is_finished: True
+is_finished: true
 ---
 
 # Smrtiaci byt v Kramatorsku

@@ -1,6 +1,10 @@
 ---
-keywords: función exponencial, función logarítmica, función, radiactividad
-is_finished: True
+keywords:
+- exponentes y logaritmos
+- función exponencial
+- función logarítmica
+- radiactividad
+is_finished: true
 ---
 
 # Piso Mortal en Kramatorsk

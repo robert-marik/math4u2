@@ -1,9 +1,10 @@
 ---
 keywords:
+- wykładniki i logaritmy
 - logarytmy
 - równanie logarytmiczne
 - równanie wykładnicze
-is_finished: True
+is_finished: true
 ---
 
 # Dźwięk

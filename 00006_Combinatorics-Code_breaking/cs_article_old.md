@@ -1,8 +1,9 @@
 ---
-keywords: 
- - kombinatorika
- - pravidlo součinu
-is_finished: True
+keywords:
+- kombinatorika, pravděpodobnost a statistika
+- kombinatorika
+- pravidlo součinu
+is_finished: true
 difficulty: 1
 time: 25
 ---

@@ -3,7 +3,7 @@ keywords:
 - goniometria
 - sínusová veta
 - kosínusová veta
-is_finished: True
+is_finished: true
 ---
 
 # Preplávanie rieky

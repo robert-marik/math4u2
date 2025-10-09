@@ -1,5 +1,6 @@
 ---
 keywords:
+- equations and inequalities
 - systems of linear equations
 - rounding
 is_finished: true

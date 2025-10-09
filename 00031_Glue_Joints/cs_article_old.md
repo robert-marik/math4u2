@@ -1,8 +1,9 @@
 ---
 keywords:
+- goniometrie
 - goniometrické funkce
 - pravoúhlý trojúhelník
-is_finished: True
+is_finished: true
 difficulty: 2
 time: 45
 ---

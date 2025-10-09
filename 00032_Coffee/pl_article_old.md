@@ -1,7 +1,9 @@
 ---
 keywords:
-- optymalizacja
 - geometria analityczna
+- optymalizacja
+- ogólne równanie prostej
+- ogólne równanie płaszczyzny
 is_finished: true
 ---
 

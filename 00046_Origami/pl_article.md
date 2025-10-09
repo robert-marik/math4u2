@@ -1,10 +1,11 @@
 ---
 keywords:
+- trygonometria
 - origami
 - składanie papieru
 - kąty dodatkowe
 - kąty naprzemienne
-is_finished: True
+is_finished: true
 ---
 
 
