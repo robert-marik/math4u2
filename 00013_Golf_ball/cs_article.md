@@ -156,6 +156,39 @@ Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané do
 
 \fi
 
+> **Doplňující otázky k rozmyšlení.** Rozmyslete si, jak by se situace změnila v případě, že golfový míček odpalujeme z vyvýšeného místa, které se nachází ve výšce $h$ nad okolním terénem. 
+>
+>Bude trajektorií stále parabola? 
+>
+>Do jaké maximální výšky míček vyletí? 
+>
+>Jak daleko míček doletí? 
+>
+>Pod jakým úhlem je třeba (při dané počáteční rychlosti) míček odpálit, aby dolétl co nejdále? 
+
+\iffalse
+
+Pro souřadnice $[x(t),y(t)]$ polohy hmotného bodu v čase $t \geq 0$ bude v tomto případě platit
+
+$$
+\begin{aligned}
+        x(t) &= v_0 t\cos\alpha,\\
+        y(t) &= h+v_0t\sin\alpha-\frac{1}{2}gt^2.
+\end{aligned}\tag{2}
+$$
+
+Podobně jako v úloze 1 bychom došli s závěru, že trajektorie je dána funkcí 
+
+$$
+ y = f(x) = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ , 
+$$
+
+a tedy je touto trajektorií stále parabola. 
+
+
+
+\fi
+
 ## Literatura
 
 1. Kubera, Miroslav; Nečas, Tomáš; Beneš, Vojtěch. *Online učebnice
