@@ -27,12 +27,12 @@ svisle dolů. Vodorovná komponenta tíhového zrychlení je nulová, a
 proto ve vodorovném směru pohyb není tíhovým polem ovlivněn. Ve směru
 svislém je pohyb tělesa ovlivněn zrychlením $-g$ s počáteční rychlostí $v_0\sin\alpha$.
 
-Pro souřadnice $[x(t),y(t)]$ polohy hmotného bodu v čase $t \geq 0$ bude platit
+Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ bude platit
 
 $$
 \begin{aligned}
-        x(t) &= v_0 t\cos\alpha,\\
-        y(t) &= v_0t\sin\alpha-\frac{1}{2}gt^2.
+        x = x(t) &= v_0 t\cos\alpha,\\
+        y = y(t) &= v_0t\sin\alpha-\frac{1}{2}gt^2.
 \end{aligned}\tag{1}
 $$
 
@@ -40,8 +40,7 @@ $$
 
 ## Odpal golfového míčku
 
-Hráč golfu odpaluje míček počáteční rychlostí $v_0$ svírající s
-vodorovnou rovinou úhel $\alpha$. Předpokládejme, že na míček působí
+Hráč golfu odpaluje míček počáteční rychlostí $v_0$ pod úhlem $\alpha \in \left(0,\frac{\pi}{2}\right)$. Předpokládejme, že na míček působí
 zanedbatelné odporové síly. Pohyb míčku tedy splňuje podmínky pro
 pohyb šikmo vrženého tělesa v prostředí bez odporu vzduchu.
 
@@ -75,7 +74,7 @@ $$
  f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .
 $$
 
-Vypočítáme derivaci funkce $f$
+Vypočítáme derivaci funkce $f$:
 
 $$
 f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}\ .
@@ -100,27 +99,25 @@ musí být nalezený stacionární bod $x_{max}$ i bodem jejího maxima.
 Výšku vrhu $y_{max}$ vypočítáme dosazením získané souřadnice $x_{max}$ do funkce $f$. Po jednoduchých úpravách obdržíme: 
 
 $$
- y_{max}=\frac{v_0^2\sin^2\alpha}{2g}\ .
+ y_{max}=f(x_{max})=\frac{v_0^2\sin^2\alpha}{2g}\ .
 $$
 
 \fi
 
-> **Úloha 3.** Vypočítejte, při jakém úhlu $\alpha$ doletí 
-> míček při dané počáteční rychlosti do 
-> maximální vzdálenosti.
+> **Úloha 3.** Určete, jaký musí být úhel $\alpha$, aby (při dané počáteční rychlosti) míček doletěl do maximální vzdálenosti.
 
 \iffalse
 
 *Řešení.* Pro výpočet úhlu maximálního dostřelu potřebujeme získat $x$-ovou
 souřadnici $x_d$ místa dopadu jako funkci úhlu $\alpha$ a tuto funkci
 maximalizovat, tj. najdeme maximum funkce $x_d(\alpha).$ Vzhledem k
-tomu, že při dopadu míčku bude $y=0$, dosadíme do funkce
+tomu, že při dopadu míčku bude jeho výška nulová, položíme ve vztahu 
 
 $$
- y = f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
 $$
 
-za $y$ nulovou výšku a vyřešíme získanou rovnici: 
+$y=0$ a vyřešíme získanou rovnici: 
 
 $$
  0 = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ ,
@@ -135,14 +132,14 @@ Tato rovnice v součinovém tvaru má dvě řešení. První
 Snadno se vidí, že 
 
 $$
-x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha\ .
+x_d = x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha\ .
 $$ 
 
 Nyní je nutné nalézt maximum funkce $x_d(\alpha)$. 
 To je ale snadné, neboť pro $\alpha \in \left(0,\frac{\pi}{2}\right)$ je hodnota $\sin 2\alpha$ maximální, právě když 
 $\alpha=\frac{\pi}{4}$. 
 
-Maximálního dostřelu při golfu docílíme při odpalu pod úhlem
+Maximálního dostřelu tedy docílíme při odpalu míčku pod úhlem
 $\alpha=\frac{\pi}{4}$ a míček dopadne do vzdálenosti
 
 $$
@@ -158,22 +155,20 @@ Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané do
 
 > **Doplňující otázky k rozmyšlení.** Rozmyslete si, jak by se situace změnila v případě, že golfový míček odpalujeme z vyvýšeného místa, které se nachází ve výšce $h$ nad okolním terénem. 
 >
->Bude trajektorií stále parabola? 
->
->Do jaké maximální výšky míček vyletí? 
->
->Jak daleko míček doletí? 
->
->Pod jakým úhlem je třeba (při dané počáteční rychlosti) míček odpálit, aby dolétl co nejdále? 
+>1) Bude trajektorií stále parabola? 
+>2) Do jaké maximální výšky míček vyletí? 
+>3) Jak daleko míček doletí? 
+>4) Pod jakým úhlem je třeba (při dané počáteční rychlosti) míček odpálit, aby dolétl co nejdále? 
 
 \iffalse
 
-Pro souřadnice $[x(t),y(t)]$ polohy hmotného bodu v čase $t \geq 0$ bude v tomto případě platit
+*Odpověď na otázku 1.*
+Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ bude v tomto případě platit
 
 $$
 \begin{aligned}
-        x(t) &= v_0 t\cos\alpha,\\
-        y(t) &= h+v_0t\sin\alpha-\frac{1}{2}gt^2.
+       x = x(t) &= v_0 t\cos\alpha,\\
+       y = y(t) &= h+v_0t\sin\alpha-\frac{1}{2}gt^2.
 \end{aligned}\tag{2}
 $$
 
@@ -183,9 +178,67 @@ $$
  y = f(x) = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ , 
 $$
 
-a tedy je touto trajektorií stále parabola. 
+což je opět parabola (navíc pouze posunutá o $h$ ve směru osy $y$). 
 
+*Odpověď na otázku 2.*
+Při výpočtu maximální dosažené výšky odpáleného míčku dojdeme k identickému vztahu (derivace konstantní funkce je funkce nulová) 
 
+$$
+x_{max}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ . 
+$$
+
+ Dosazením $x_{max}$ do funkce $f$ pak dojdeme k tomu, že 
+
+$$
+ y_{max}=f(x_{max})=h+\frac{v_0^2\sin^2\alpha}{2g}\ .
+$$
+
+*Odpověď na otázku 3.*
+Ve vztahu 
+
+$$
+ y = h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x 
+$$
+
+položíme $y=0$ a získáme opět kvadratickou rovnici
+
+$$
+ -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h = 0. 
+$$
+
+ Tentokrát však tato rovnice není v sooučinovém tvaru a my ji vyřešíme dosazením do vzorce pro řešení kvadratické rovnice. Nejprve však bude dobré z rovnice odstranit zlomky vynásobením výrazem $-2v_0^2 \cos^2\alpha$. Získáme tak kvadratickou rovnici 
+
+ $$
+ gx^2-2v_0^2\sin\alpha \cos\alpha \cdot x - 2hv_0^2 \cos^2\alpha = 0.
+ $$
+
+Tato rovnice má dvě řešení: 
+
+$$
+x_{1,2}=\frac{2v_0^2\sin\alpha \cos\alpha \pm \sqrt{4v_0^4\sin^2\alpha \cos^2\alpha+8ghv_0^2\cos^2\alpha}}{2g}
+$$
+ 
+Úpravou posledního vztahu bychom dostali 
+
+$$
+x_{1,2}=\frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha \pm \sqrt{v_0^2\sin^2\alpha+2gh}\right)
+$$
+
+Není těžké si rozmyslet, že jeden z kořenů (se znaménkem mínus) je záporný, a proto golfový míček doletí do vzdálenosti 
+
+$$
+x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha+2gh}\right).
+$$
+
+Všimněme si, že v případě $h=0$ dostaneme (po úpravě) vztah 
+
+$$
+x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha}\right)=
+\frac{v_0\cos\alpha}{g} \cdot 2v_0\sin\alpha=
+\frac{v_0^2}{g} \sin 2\alpha, 
+$$
+
+který byl odvozen už dříve. 
 
 \fi
 
