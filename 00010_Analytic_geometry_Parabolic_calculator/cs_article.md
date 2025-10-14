@@ -117,7 +117,11 @@ Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $
 \fi
 
 >**Jedna zajímavost na závěr.**
-Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel (viz obrázek). Promyslete si, proč toto geometrické síto funguje. 
+Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel (viz obrázek níže). 
+Funguje to tak, že každý bod $[-a,a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b,b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ proškrtají všechna složená čísla. Pokud bychom se podívali, která přirozená čísla na ose $y$ nejsou proškrtaná, zjistili bychom, že to jsou právě prvočísla a číslo 1.  
+Promyslete si detailně, proč to opravdu takto funguje. 
+
+![Geometrické síto](geometricke_sito.jpg)
 
 [^1]: Obecně se grafům, díky kterým můžeme provádět aritmetické operace
     geometrickými konstrukcemi, říká *nomogramy*.
