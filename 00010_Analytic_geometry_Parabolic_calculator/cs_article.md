@@ -14,16 +14,16 @@ $f(x) = x^2$, který může posloužit jako kalkulačka k vynásobení dvou čí
 $a$ a $b$.[^1] Postup je následující:
 
  1. Na ose $x$ se vyznačí obrazy čísel $-a$ a $b$.
- 2. V těchto bodech se vztyčí kolmice k ose $x$ a sestrojí se jejich s grafem funkce $f$.
+ 2. V těchto bodech se vztyčí kolmice k ose $x$ a sestrojí se jejich průsečíky s grafem funkce $f$.
  3. Přímka procházející právě sestrojenými průsečíky protne osu $y$ v bodě,
-    jehož $y$-ová souřadnice je právě $ab$.
+    jehož $y$-ová souřadnice je rovna součinu $ab$.
 
 Uvedený postup si můžete vyzkoušet v přiloženém pracovním listu, jeho
 ilustrace je možná také v GeoGebře. Interaktivní applet najdete na
 stránkách <https://www.geogebra.org/m/sj5cjbaf>.
 
-> **Úloha.** Platí výše uvedený postup pro všechny dvojice čísel, nebo jen pro
-> některé? Dá se tento postup dokázat?
+> **Úloha.** Funguje výše uvedený postup pro všechny dvojice čísel $a$ a $b$, nebo jen pro
+> některé? Dokažte. 
 
 \iffalse
 
@@ -52,13 +52,17 @@ $$
 $$ 
 
 což je také směrový vektor přímky $p$. 
-Tuto úpravu je možné provést, neboť pro náš případ  $b\neq -a$ je $b+a\neq0$.
-Dostáváme tak parametrické rovnice
+Tuto úpravu je možné provést, neboť pro náš případ  $b\neq -a$ je $b+a\neq0$. Přímka $p$ má tedy parametrické vyjádření 
+
+$$
+p\colon \, X = A + t\cdot\overrightarrow{u}, \; t\in\mathbb{R}. 
+$$
+
+Následným rozepsáním pak dostaneme  
 
 $$
 \begin{aligned}
-p\colon X &= A + t\cdot\overrightarrow{u}, \; t\in\mathbb{R}\\
-p\colon x &= -a + t \\
+p\colon \, x &= -a + t \\
 y &= a^2 + t\cdot (b-a), \; t\in\mathbb{R}\,.
 \end{aligned}
 $$ 
