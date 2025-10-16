@@ -32,8 +32,8 @@ přímku popisovanou ve třetím bodě nebude možné jednoznačně sestrojit. U
 postup proto nebude fungovat, bude-li platit $-a=b$. Ukážeme, že kromě tohoto
 případu uvedený postup funguje pro všechny ostatní dvojice čísel $a$ a $b$.
 
-Sestrojme na ose $x$ dle postupu ze zadání obraz čísla $-a$ a $b$ a dále vztyčme
-v těchto bodech kolmice k ose $x$. Průsečíky těchto kolmic s parabolou označme
+Sestrojme na ose $x$ dle postupu ze zadání obrazy čísel $-a$ a $b$ a dále vztyčme
+v těchto bodech kolmice k ose $x$. Průsečíky těchto kolmic s parabolou $y=x^2$ označme
 $A$ a $B$, přímku $AB$ pak označme jako $p$. Přímka $p$ protíná osu $y$ v bodě
 $C$, o kterém dokážeme, že má $y$-ovou souřadnici rovnou součinu $ab$. 
 
