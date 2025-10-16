@@ -85,7 +85,7 @@ Fungovala by parabolická kalkulačka i v tomto případě?
 \iffalse
 
 *Odpověď na otázku.*
-Je jasné, že by nastal problém v případě $a=b$. Dále proto předpokládejme, že $a \neq b$. Nyní potřebujeme napsat rovnici přímky $q$ procházející body $A[a;a^2]$ a $B[b,b^2]$. Její směrový vektor je
+Je jasné, že by nastal problém v případě $a=b$. Dále proto předpokládejme, že $a \neq b$. Nyní potřebujeme napsat rovnici přímky $q$ procházející body $A[a;a^2]$ a $B[b;b^2]$. Její směrový vektor je
 
 $$
 \overrightarrow{v}=\overrightarrow{AB}= (b-a; b^2-a^2).
@@ -98,32 +98,35 @@ $$
 $$ 
 
 což je také směrový vektor naší přímky. 
-Tuto úpravu je možné provést, neboť jsme předpokládali, že $a \neq b$, tj. $b-a \neq 0$. 
-Dostáváme tak parametrické rovnice
+Tuto úpravu je možné provést, neboť jsme předpokládali, že $a \neq b$, tj. $b-a \neq 0$. Přímka $q$ má parametrické vyjádření 
+
+$$
+q\colon \, X = A + t\cdot\overrightarrow{u}, \; t\in\mathbb{R}. 
+$$
+
+Následným rozepsáním dostaneme 
 
 $$
 \begin{aligned}
-q\colon X &= A + t\cdot\overrightarrow{u}, \; t\in\mathbb{R}\\
-q\colon x &= a + t \\
+q\colon \, x &= a + t \\
 y &= a^2 + t\cdot (b+a), \; t\in\mathbb{R}\,.
 \end{aligned}
 $$ 
 
 Průsečík této přímky s osou $y$ má $x$-ovou souřadnici nulovou. 
-Proto dosazením $x=0$ do první rovnice dostaneme $t=-a$. Jestliže provedeme následné dosazení tohoto $t$ do druhé rovnice, dostaneme 
+Dosazením $x=0$ do první rovnice dostaneme $t=-a$. Jestliže provedeme následné dosazení tohoto $t$ do druhé rovnice, dostaneme 
 
 $$
- y=a^2 + t\cdot (b+a)=a^2 + (-a)\cdot (b+a)=-ab.   
+ y=a^2 + t\cdot (b+a)=a^2 + (-a)\cdot (b+a)=-ab.  
 $$
 
-Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $y$-ová souřadnice není $ab$ ale $-ab$. 
+Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $y$-ová souřadnice není $ab$ ale $-ab$. To znamená, že parabolická kalkulačka funguje (až na znaménko) i v tomto případě.
 
 \fi
 
 >**Jedna zajímavost na závěr.**
-Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel (viz obrázek níže). 
-Funguje to tak, že každý bod $[-a,a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b,b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ proškrtají všechna složená čísla. To znamená, že neproškrtaná přirozená čísla na ose $y$ jsou právě prvočísla a číslo 1.  
-Promyslete si detailně, proč to opravdu takto funguje. 
+Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel.  
+Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek). Promyslete si detailně, proč to opravdu takto funguje. 
 
 ![Geometrické síto](parabolicke_sito.png)
 
