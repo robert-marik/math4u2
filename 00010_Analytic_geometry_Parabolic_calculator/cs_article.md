@@ -121,7 +121,7 @@ Na principu parabolické kalkulačky funguje geometrická verze dobře známého
 Funguje to tak, že každý bod $[-a,a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b,b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ proškrtají všechna složená čísla. To znamená, že neproškrtaná přirozená čísla na ose $y$ jsou právě prvočísla a číslo 1.  
 Promyslete si detailně, proč to opravdu takto funguje. 
 
-![Geometrické síto](geometricke_sito.jpg)
+![Geometrické síto](parabolicke_sito.png)
 
 [^1]: Obecně se grafům, díky kterým můžeme provádět aritmetické operace
     geometrickými konstrukcemi, říká *nomogramy*.
