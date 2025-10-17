@@ -128,11 +128,11 @@ kde $\varphi$ je úhel ve stupních splňující podmínku
 
 $$
 \tag{1}
- \sin^2 \frac{\varphi}{2} = \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}, 
+ \sin^2 \frac{\varphi}{2} = \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}  
 $$
 
-kde 
-$\Delta\psi = |\psi_1-\psi_2|$ a 
+a 
+$\Delta\psi = |\psi_1-\psi_2|$, 
 $\Delta\lambda = |\lambda_1-\lambda_2|$. 
 
 Všimněme si, že v případě svou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$ a vztah $(1)$ se zredukuje na 
