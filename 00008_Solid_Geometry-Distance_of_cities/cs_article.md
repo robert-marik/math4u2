@@ -200,7 +200,7 @@ z &= \varrho \sin\psi,
 \end{gathered}
 >$$
 >
->Proto platí (vzorec pro sinus polovičního úhlu) 
+>Proto platí (použijeme vzorec pro sinus polovičního úhlu) 
 >
 >$$
 \begin{gathered}
