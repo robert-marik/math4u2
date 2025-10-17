@@ -93,6 +93,7 @@ $$
 $$
 
 $$
+\tag{1}
 \sin\frac{\varphi}{2} = \frac{r\sin34^{\circ}}{\varrho}
 = \frac{\varrho \cos39^{\circ}\sin 34^{\circ}}{\varrho} = \cos 39^{\circ}\sin 34^{\circ} \doteq 0{,}43457
 $$
@@ -115,37 +116,57 @@ Vidíme, že se obě dráhy liší přibližně o $150 \,\text{km}$.
 \fi
 
 >**Doplňující úloha 1.**
-Pokuste se odvodit obecný vzorec pro nejkratší vzdálenost dvou míst na Zemi, pokud $\varrho$ je zemský poloměr a obě místa mají stejnou zeměpisnou  šířku $\psi$. Dále předpokládejme, že zeměpisné délky jednotlivých míst jsou $\lambda_1$, $\lambda_2$. 
+Pokuste se zobecnit výše uvedený postup a odvodit obecný vzorec pro nejkratší vzdálenost dvou míst na Zemi, pokud $\varrho$ je zemský poloměr, $\psi$ je zeměpisná šířka obou míst (místa leží na stejné rovnoběžce) a $\lambda_1$, $\lambda_2$ jsou zeměpisné délky jednotlivých míst.  
 
->**Poznámka.**
-Předpokládejme, že Země je koule s poloměrem $\varrho$ a uvažujme dvě místa na Zemi. První místo má zeměpisnou šířku $\psi_1$ a zeměpisnou délku $\lambda_1$, zatímco druhé má zeměpisnou šířku $\psi_2$ a zeměpisnou délku $\lambda_2$. Pak lze nejkratší vzdálenost těchto dvou míst (označme ji $d$) vypočítat podle vzorce  
+Jinou technikou bychom mohli odvodit ještě obecnější výsledek. Toto odvození by vyžadovalo jisté znalosti analytické geometrie v prostoru, zejména odchylky dvou vektorů. 
 
-$$
- d=\frac{\varphi}{360} \cdot 2\pi \varrho, 
-$$
-
-kde $\varphi$ je úhel ve stupních splňující podmínku 
-
-$$
-\tag{1}
+>**Obecný vzorec pro nejkratší vzdálenost.**
+Předpokládejme, že Země je koule s poloměrem $\varrho$ a uvažujme dvě místa na Zemi. První místo má zeměpisnou šířku $\psi_1$ a zeměpisnou délku $\lambda_1$, zatímco druhé má zeměpisnou šířku $\psi_2$ a zeměpisnou délku $\lambda_2$. Pak lze nejkratší vzdálenost $d$ těchto dvou míst vypočítat podle vzorce  
+>
+>$$
+\tag{2}
+> d = \varrho \varphi, 
+>$$
+>
+>kde $\varphi$ je úhel (v radiánech)  splňující podmínku 
+>
+>$$
+\tag{3}
  \sin^2 \frac{\varphi}{2} = \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}  
-$$
+>$$
+>
+>a 
+>$\Delta\psi = |\psi_1-\psi_2|$, 
+$\Delta\lambda = |\lambda_1-\lambda_2|$ jsou rozdíly zeměpisných šířek a délek obou míst. 
 
-a 
-$\Delta\psi = |\psi_1-\psi_2|$, 
-$\Delta\lambda = |\lambda_1-\lambda_2|$. 
+>**Poznámka 1.**
+Vzorec pro nejkratší vzdálenost bychom (vzhledem k $(2)$ a $(3)$) mohli také psát ve tvaru 
+>
+>$$
+ d = 2\varrho \cdot \arcsin \left( 
+ \sqrt{
+ \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}
+ }
+ \right). 
+>$$
 
-Všimněme si, že v případě dvou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$ a vztah $(1)$ se zredukuje na 
-
-$$
+>**Poznámka 2.**
+Všimněme si, že v případě dvou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$, což znamená, že vztah $(3)$ lze zapsat ve tvaru 
+>
+>$$
  \sin^2 \frac{\varphi}{2} = \cos^2 \psi \sin^2 \frac{\Delta\lambda}{2}, 
-$$
-
-tj. 
-
-$$
+>$$
+>
+>tj. 
+>
+>$$
  \sin \frac{\varphi}{2} = \cos \psi \sin \frac{\Delta\lambda}{2}. 
-$$
+>$$
+>
+>Srovnejte poslední rovnost se vztahem $(1)$. 
+
+
+
 
 
 ## Literatura
