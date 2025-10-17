@@ -135,7 +135,7 @@ a
 $\Delta\psi = |\psi_1-\psi_2|$, 
 $\Delta\lambda = |\lambda_1-\lambda_2|$. 
 
-Všimněme si, že v případě svou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$ a vztah $(1)$ se zredukuje na 
+Všimněme si, že v případě dvou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$ a vztah $(1)$ se zredukuje na 
 
 $$
  \sin^2 \frac{\varphi}{2} = \cos^2 \psi \sin^2 \frac{\Delta\lambda}{2}, 
