@@ -201,6 +201,7 @@ z &= \varrho \sin\psi,
 >$$
 >
 >Proto platí (vzorec pro sinus polovičního úhlu) 
+>
 >$$
 \begin{gathered}
 2 \sin^2 \frac{\varphi}{2} = 1-\cos\varphi = 1 - \cos\psi_1 \cos\psi_2 \cdot \cos \Delta\lambda - \sin\psi_1 \sin\psi_2= \\
