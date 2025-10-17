@@ -143,6 +143,7 @@ $\Delta\lambda = |\lambda_1-\lambda_2|$ jsou rozdíly zeměpisných šířek a d
 Vzorec pro nejkratší vzdálenost bychom (vzhledem k $(2)$ a $(3)$) mohli také psát ve tvaru 
 >
 >$$
+\tag{4}
  d = 2\varrho \cdot \arcsin \left( 
  \sqrt{
  \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}
@@ -165,9 +166,52 @@ Všimněme si, že v případě dvou míst se stejnou zeměpisnou šířkou $\ps
 >
 >Srovnejte poslední rovnost se vztahem $(1)$. 
 
+\iffalse
+>**Vysvětlení vztahu (4).**
+Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo na zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak jsou jeho souřadnice 
+>
+>$$
+\tag{5}
+\begin{aligned}
+x &= \varrho \cos\psi \cos\lambda, \\
+y &= \varrho \cos\psi \sin\lambda, \\
+z &= \varrho \sin\psi, 
+\end{aligned}
+>$$
+>
+>kde $\varrho$ je poloměr Země. 
+>
+>Uvažujme nyní dvě místa $A$ a $B$ na zemském povrchu. Jedno se zeměpisnou šířkou $\psi_1$ a zeměpisnou délkou $\lambda_1$ a druhé se zeměpisnou šířkou $\psi_2$ a zeměpisnou délkou $\lambda_2$. Střed Země si označme jako $C$ (počátek soustavy souřadnic). Nyní nás zajímá velikost úhlu $\varphi$, který svírají vektory $\overrightarrow{CA}$ a $\overrightarrow{CB}$. Vzhledem ke vztahům $(5)$ dostaneme 
+>
+>$$
+\begin{gathered}
+\cos\varphi = \frac{\overrightarrow{CA} \cdot \overrightarrow{CB}}{\left|\overrightarrow{CA}\right| \cdot \left|\overrightarrow{CB}\right|}= \\
+=\cos\psi_1 \cos\lambda_1 \cos\psi_2 \cos\lambda_2 + 
+\cos\psi_1 \sin\lambda_1 \cos\psi_2 \sin\lambda_2 + 
+\sin\psi_1 \sin\psi_2= \\
+=\cos\psi_1 \cos\psi_2 \cdot \left(
+\cos\lambda_1 \cos\lambda_2 + \sin\lambda_1 \sin\lambda_2 \right) + 
+\sin\psi_1 \sin\psi_2
+= \\
+=\cos\psi_1 \cos\psi_2 \cdot \cos (\lambda_1-\lambda_2) + 
+\sin\psi_1 \sin\psi_2 = \\
+=\cos\psi_1 \cos\psi_2 \cdot \cos \Delta\lambda + 
+\sin\psi_1 \sin\psi_2. 
+\end{gathered}
+>$$
+>
+>Proto platí (vzorec pro sinus polovičního úhlu) 
+>$$
+\begin{gathered}
+2 \sin^2 \frac{\varphi}{2} = 1-\cos\varphi = 1 - \cos\psi_1 \cos\psi_2 \cdot \cos \Delta\lambda - \sin\psi_1 \sin\psi_2= \\
+=1 - \cos\psi_1 \cos\psi_2 - \sin\psi_1 \sin\psi_2 + \cos\psi_1 \cos\psi_2 - \cos\psi_1 \cos\psi_2 \cdot \cos \Delta\lambda = \\
+=(1-\cos\Delta\psi) + \cos\psi_1 \cos\psi_2 \cdot (1-\cos\Delta\lambda) =2 \sin^2 \frac{\Delta\psi}{2} + \cos\psi_1 \cos\psi_2 \cdot 2 \sin^2 \frac{\Delta\lambda}{2}. 
+\end{gathered}
+>$$
+>
+>Odtud po vydělení číslem $2$ dostaneme vztah $(3)$. Vztahy $(2)$ a následně $(4)$ jsou potom již jasné. 
 
-
-
+\fi
 
 ## Literatura
 * Novák V., Murdych Z. *Kartografie a topografie.* Praha: Státní pedagogické nakladatelství. (1988)
