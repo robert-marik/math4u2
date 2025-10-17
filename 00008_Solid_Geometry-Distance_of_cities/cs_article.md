@@ -33,10 +33,10 @@ O kolik kilometrů si však cestou po ortodromě polepšíme? Odpověď na tuto 
 ### Slovníček 
 * *Zeměpisná šířka* místa na zemském povrchu (vyjádřená ve 
 stupních a orientaci sever/jih) je odchylka přímky, která 
-prochází daným místem a středem Země, od roviny rovníku.
+prochází daným místem a středem Země, od roviny rovníku. Zeměpisnou šířku budeme označovat písmenem $\psi$, kde $\psi$ může nabývat hodnot od $-90^{\circ}$ (jižní pól) do $+90^{\circ}$ (severní pól). Záporné hodnoty odpovídají místům na jižní polokouli, zatímco kladné hodnoty místům na severní polokouli. 
 * *Zeměpisná délka* místa na zemském povrchu (vyjádřená ve 
 stupních a orientaci východ/západ) je odchylka roviny poledníku, 
-který prochází daným místem, od roviny nultého poledníku.
+který prochází daným místem, od roviny nultého poledníku. Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může nabývat hodnot od $-180^{\circ}$ do $+180^{\circ}$. Záporné hodnoty odpovídají místům na západní polokouli a kladné hodnoty místům na východní polokouli. 
 
 > **Úloha.** Lisabon i Washington se nachází přibližně na stejné 
 > rovnoběžce (asi $39^{\circ}$ severní šířky). O kolik kilometrů 
@@ -60,8 +60,8 @@ jako úsečka $AB$ se středem $O$.
 
 ![Pravoúhlý průmět](math4you_00008_02.jpg)
 
-Z obrázku je zřejmá rovnost $\lvert\sphericalangle CBO\rvert = \lvert\sphericalangle BCD\rvert$ 
-(úhly jsou střídavé) a užitím funkce kosinus v pravoúhlém trojúhelníku $BSO$ dostáváme $r=\varrho\cdot \cos 39^{\circ}$.
+Z obrázku je zřejmá rovnost $\lvert\sphericalangle CBO\rvert = \lvert\sphericalangle BCD\rvert = 39^{\circ}$ 
+(úhly jsou střídavé) a užitím funkce kosinus v pravoúhlém trojúhelníku $BCO$ dostáváme $r=\varrho\cdot \cos 39^{\circ}$.
 
 Dráhu letadla pohybujícího se po rovnoběžce (v obrázku níže je 
 trajektorie letadla znázorněná kratším obloukem $LW$) určíme 
@@ -94,11 +94,13 @@ $$
 
 $$
 \sin\frac{\varphi}{2} = \frac{r\sin34^{\circ}}{\varrho}
-= \frac{\varrho \cos39^{\circ}\sin 34^{\circ}}{\varrho} = \cos 39^{\circ}\sin 34^{\circ}
+= \frac{\varrho \cos39^{\circ}\sin 34^{\circ}}{\varrho} = \cos 39^{\circ}\sin 34^{\circ} \doteq 0{,}43457
 $$
 
 $$
-\frac{\varphi}{2}= \arcsin \left( \cos 39^{\circ}\sin 34^{\circ} \right) \doteq 25^{\circ}45' \quad \Rightarrow \quad \varphi \doteq 51^{\circ}30'.
+\frac{\varphi}{2} 
+%=\frac{180}{\pi} \cdot \arcsin \left( %\cos 39^{\circ}\sin 34^{\circ} \right) 
+\doteq 25^{\circ}45' 30''\quad \Rightarrow \quad \varphi \doteq 51^{\circ}31'.
 $$
 
 Dráhu letadla pohybujícího se po ortodromě určíme podobně jako v 
@@ -111,6 +113,40 @@ $$
 Vidíme, že se obě dráhy liší přibližně o $150 \,\text{km}$.
 
 \fi
+
+>**Doplňující úloha 1.**
+Pokuste se odvodit obecný vzorec pro nejkratší vzdálenost dvou míst na Zemi, pokud $\varrho$ je zemský poloměr a obě místa mají stejnou zeměpisnou  šířku $\psi$. Dále předpokládejme, že zeměpisné délky jednotlivých míst jsou $\lambda_1$, $\lambda_2$. 
+
+>**Poznámka.**
+Předpokládejme, že Země je koule s poloměrem $\varrho$ a uvažujme dvě místa na Zemi. První místo má zeměpisnou šířku $\psi_1$ a zeměpisnou délku $\lambda_1$, zatímco druhé má zeměpisnou šířku $\psi_2$ a zeměpisnou délku $\lambda_2$. Pak lze nejkratší vzdálenost těchto dvou míst (označme ji $d$) vypočítat podle vzorce  
+
+$$
+ d=\frac{\varphi}{360} \cdot 2\pi \varrho, 
+$$
+
+kde $\varphi$ je úhel ve stupních splňující podmínku 
+
+$$
+\tag{1}
+ \sin^2 \frac{\varphi}{2} = \sin^2 \frac{\Delta\psi}{2} + \cos \psi_1 \cos \psi_2 \cdot \sin^2 \frac{\Delta\lambda}{2}, 
+$$
+
+kde 
+$\Delta\psi = |\psi_1-\psi_2|$ a 
+$\Delta\lambda = |\lambda_1-\lambda_2|$. 
+
+Všimněme si, že v případě svou míst se stejnou zeměpisnou šířkou $\psi_1=\psi_2=\psi$ máme $\Delta \psi = 0$ a vztah $(1)$ se zredukuje na 
+
+$$
+ \sin^2 \frac{\varphi}{2} = \cos^2 \psi \sin^2 \frac{\Delta\lambda}{2}, 
+$$
+
+tj. 
+
+$$
+ \sin \frac{\varphi}{2} = \cos \psi \sin \frac{\Delta\lambda}{2}. 
+$$
+
 
 ## Literatura
 * Novák V., Murdych Z. *Kartografie a topografie.* Praha: Státní pedagogické nakladatelství. (1988)
