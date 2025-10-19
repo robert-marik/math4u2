@@ -218,5 +218,10 @@ z &= \varrho \sin\psi,
 * Novák V., Murdych Z. *Kartografie a topografie.* Praha: Státní pedagogické nakladatelství. (1988)
 * Hradecký F., Koman M., Vyšín J. *Několik úloh z geometrie jednoduchých těles.* Praha: Škola mladých matematiků. (1977). 36--38.
 
+## Odkazy
+* Ortodroma - https://cs.wikipedia.org/wiki/Ortodroma
+* Matematické metody v kartografii - https://web.natur.cuni.cz/~bayertom/images/courses/mmk/mk2.pdf
+
+
 ## Zdroje obrázků
 * Mercator projection. Strebe – Vlastní dílo, CC BY-SA 4.0, dostupné z <https://commons.wikimedia.org/wiki/File:Mercator_projection_Square.JPG> [cit. 14. 8. 2023]
