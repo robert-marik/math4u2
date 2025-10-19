@@ -130,5 +130,9 @@ Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\
 
 ![Geometrické síto](parabolicke_sito.png)
 
+## Odkazy 
+* A Parabola Sieve for Prime Numbers - https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
+
+
 [^1]: Obecně se grafům, díky kterým můžeme provádět aritmetické operace
     geometrickými konstrukcemi, říká *nomogramy*.
