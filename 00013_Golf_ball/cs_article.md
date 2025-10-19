@@ -277,3 +277,6 @@ což odpovídá dříve nalezenému optimálnímu úhlu $\alpha=\frac{\pi}{4}$.
    [online]. Dostupné z
    <https://mfi.upol.cz/files/26/2602/mfi_2602_129_137.pdf>
    [cit. 27.9.2023]
+
+## Odkazy
+* Vrh šikmý - https://cs.wikipedia.org/wiki/Vrh_%C5%A1ikm%C3%BD
