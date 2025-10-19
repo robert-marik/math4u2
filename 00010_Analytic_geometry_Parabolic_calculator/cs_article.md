@@ -132,6 +132,8 @@ Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\
 
 ## Odkazy 
 * A Parabola Sieve for Prime Numbers - https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
+* A Geometric Sieve for the Prime Numbers - 
+https://thatsmaths.com/2017/04/27/a-geometric-sieve-for-the-prime-numbers/
 
 
 [^1]: Obecně se grafům, díky kterým můžeme provádět aritmetické operace
