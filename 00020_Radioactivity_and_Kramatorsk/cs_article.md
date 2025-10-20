@@ -72,8 +72,7 @@ povrch. Proto je intenzita radiace v šestinásobné vzdálenosti celkem
 
 > **Úloha 2.** Cesium použité jako zdroj radioaktivního záření v
 > popsaném incidentu má poločas rozpadu 30 let. Určete, za jak dlouho
-> by radioaktivita klesla stejným násobkem, jako odpovídá přestěhování
-> postele v předchozí úloze.
+> by radioaktivita (v původní vzdálenosti půl metru) klesla na hodnotu, která by odpovídala aktuální radioaktivitě ve vzdálenosti $3$ metry ($6\times$ větší vzdálenost), tj. v případě přestěhování postele z předchozí úlohy.
 
 \iffalse
 
@@ -98,29 +97,55 @@ Protože po třiceti letech klesne množství na polovinu,
 tj. $N(30)=\frac{1}{2}N_0$, tak platí
 
 $$
--\lambda 30  = \ln \frac 12
+-\lambda \cdot 30  = \ln \frac 12, 
 $$
-a
+a tedy 
 $$
 \lambda = \frac 1{30}\ln 2.
 $$ 
 
 Po dosazení do (2) dostáváme 
 $$
--\frac 1{30}t\ln 2  = \ln \frac{N(t)}{N_0}
+-\frac{\ln 2}{30} \cdot t  = \ln \frac{N(t)}{N_0}
 $$
-a 
+a následně 
 $$
 t  = -30 \frac{\ln \frac{N(t)}{N_0}}{\ln 2}.
 $$
-Pro čas, kdy platí $\frac{N(t)}{N_0}=\frac {1}{36}$ dostáváme
+Pro čas $t$, kdy platí $\frac{N(t)}{N_0}=\frac {1}{36}$, dostáváme
 $$
 t  = -30 \frac{\ln \frac{1}{36}}{\ln 2}=
 30 \frac{\ln {36}}{\ln 2} \doteq 155.
 $$
 
 Poklesu ozáření ekvivalentnímu přesunu postele na druhou stranu pokoje
-bychom se dočkali po 155 letech.
+bychom se dočkali přibližně po 155 letech.
+
+\fi
+
+>**Úloha k rozmyšlení.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+
+\iffalse
+
+*Řešení.*
+Stejným způsbem jako v úloze 2 bychom dostali, že v případě použité radioaktivní látky s poločasem rozpadu $T$ platí 
+
+$$
+ \lambda = \frac{\ln 2}{T}. 
+$$
+
+Následně bychom se (opět stejným způsobem) dostali ke vztahu 
+
+$$
+ t  = -T \frac{\ln \frac{N(t)}{N_0}}{\ln 2}. 
+$$
+
+Nyní si stačí uvědomit, že pokud vzdálenost od zářiče vzroste $k$-krát, intenzita záření je $k^2$-krát menší. Proto pro čas $t$, pro který platí $\frac{N(t)}{N_0}=\frac{1}{k^2}$, dostáváme 
+
+$$
+ t  = -T \frac{\ln \frac{1}{k^2}}{\ln 2}=
+T \frac{\ln (k^2)}{\ln 2} = \frac{2T \ln k}{\ln 2}. 
+$$
 
 \fi
 
