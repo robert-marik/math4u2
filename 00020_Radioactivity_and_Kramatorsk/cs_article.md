@@ -123,7 +123,7 @@ bychom se dočkali přibližně po 155 letech.
 
 \fi
 
->**Úloha k rozmyšlení.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+>**Úloha k rozmyšlení 1.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
 
 \iffalse
 
@@ -149,6 +149,39 @@ $$
 
 >**Poznámka.**
 Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu obdržíme $t \doteq 155$ (stejně jako v úloze 2). 
+
+\fi
+
+>**Úloha k rozmyšlení 2.**
+Ukažte, že vztah $(1)$, tj. 
+$N(t) = N_0\mathrm{e}^{-\lambda t}$ lze psát ve tvaru 
+>
+>$$
+ N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}, 
+>$$
+>
+>kde $T$ je poločas rozpadu radioaktivní látky. 
+
+\iffalse
+
+*Řešení.*
+Dosazením $t=T$ do vztahu $(1)$  dostaneme (uvědomme si, že $T$ je poločas rozpadu)
+
+$$
+ \frac{N_0}{2}=N(T)=N_0 \mathrm{e}^{-\lambda T}=N_0 \left( \mathrm{e}^{-\lambda} \right)^T. 
+$$
+
+Nyní vykrátíme $N_0$ a umocníme na $\frac{1}{T}$. Tím dostaneme 
+
+$$
+ \mathrm{e}^{-\lambda}=\left( \frac{1}{2} \right)^{\frac{1}{T}}. 
+$$
+
+Dosazením poslední rovnosti zpět do vztahu $(1)$ obdržíme 
+
+$$
+ N(t)=N_0 \mathrm{e}^{-\lambda t} = N_0 \left( \mathrm{e}^{-\lambda} \right)^t = N_0 \left[ \left(\frac{1}{2}\right)^{\frac{1}{T}} \right]^t = N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}. 
+$$
 
 \fi
 
