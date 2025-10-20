@@ -147,6 +147,9 @@ $$
 T \frac{\ln (k^2)}{\ln 2} = \frac{2T \ln k}{\ln 2}. 
 $$
 
+>**Poznámka.**
+Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu obdržíme $t \doteq 155$ (stejně jako v úloze 2). 
+
 \fi
 
 ## Odkazy a literatura
