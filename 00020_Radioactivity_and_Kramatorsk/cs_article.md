@@ -154,7 +154,7 @@ Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu
 
 >**Úloha k rozmyšlení 2.**
 Ukažte, že vztah $(1)$, tj. 
-$N(t) = N_0\mathrm{e}^{-\lambda t}$ lze psát ve tvaru 
+$N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru 
 >
 >$$
  N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}, 
