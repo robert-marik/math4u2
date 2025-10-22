@@ -44,7 +44,7 @@ Hráč golfu odpaluje míček počáteční rychlostí $v_0$ pod úhlem $\alpha 
 zanedbatelné odporové síly. Pohyb míčku tedy splňuje podmínky pro
 pohyb šikmo vrženého tělesa v prostředí bez odporu vzduchu.
 
->**Úloha 1.**  Dokažte, že trajektorií golfového míčku je parabola.
+>**Úloha 1.**  Dokažte, že trajektorií golfového míčku je část paraboly.
 
 \iffalse
 
@@ -59,7 +59,7 @@ $$
 $$
 
 Odtud vidíme, že $y$-ová souřadnice trajektorie je kvadratickou funkcí
-$x$-ové souřadnice a trajektorií golfového míčku je proto parabola.
+$x$-ové souřadnice a trajektorií golfového míčku je proto jistá část paraboly. Konkrétně se jedná o část nacházející se nad osou $x$.
 
 \fi
 
@@ -155,7 +155,7 @@ Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané do
 
 > **Doplňující otázky k rozmyšlení.** Rozmyslete si, jak by se situace změnila v případě, že golfový míček odpalujeme z vyvýšeného místa, které se nachází ve výšce $h$ nad okolním terénem. 
 >
->1) Bude trajektorií stále parabola? 
+>1) Bude trajektorií stále nějaká část paraboly? 
 >2) Do jaké maximální výšky míček vyletí? 
 >3) Jak daleko míček doletí? 
 >4) Pod jakým úhlem je třeba (při dané počáteční rychlosti) míček odpálit, aby dolétl co nejdále? 
@@ -172,13 +172,13 @@ $$
 \end{aligned}\tag{2}
 $$
 
-Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je dána funkcí 
+Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je částí grafu funkce  
 
 $$
  y = f(x) = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ , 
 $$
 
-což je opět parabola (dokonce pouze posunutá o $h$ ve směru osy $y$). 
+což je opět funkce kvadratická (dokonce pouze posunutá o $h$ ve směru osy $y$). 
 
 *Odpověď na otázku 2.*
 Při výpočtu maximální dosažené výšky odpáleného míčku dojdeme ke vztahu 
