@@ -8,7 +8,7 @@ difficulty: 1
 time: 40
 ---
 
-# Zlatý řez a řetězový zlomek
+# Zlatý řez a řetězový zlomek 
 
 Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu, 
 jestliže pro délky uvažovaných úseček platí vztah
