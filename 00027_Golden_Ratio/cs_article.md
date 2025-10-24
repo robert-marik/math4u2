@@ -164,6 +164,7 @@ x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
 \iffalse
 
 *Řešení.* 
+![Zlatý obdélník](zlaty_obdelnik.svg)
 
 \fi
 
