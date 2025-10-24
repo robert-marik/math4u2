@@ -216,6 +216,8 @@ $$
  \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}.
 $$
 
+![Formát A4](format_A4.svg)
+
 \fi
 
 ## Literatura
