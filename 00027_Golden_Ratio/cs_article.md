@@ -120,6 +120,32 @@ Všimněte si, že jedním z řešení je opět zlatý řez.
 
 \fi
 
+### Doplňující informace k řetězovým zlomkům
+
+>**Vyjádření reálného čísla řetězovým zlomkem.** Lze ukázat, že každé číslo $x \in \mathbb{R}$ lze vyjádřit řetězovým zlomkem. Navíc, pokud je číslo $x$ racionální, je tento řetězový zlomek konečný (ukončený), zatímco pro iracionální $x$ je řetězový zlomek nekonečný (neukončený).  
+
+>**Geometrická interpretace řetězového zlomku.** Uvažujme kladné racionální číslo $x$ a jeho vyjádření (konečným) řetězovým zlomkem 
+>
+>$$
+x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
+>$$
+>
+>Na příkladě si ukážeme geometrický význam čísel $a_0, a_1, a_2, \dots, a_n$. 
+>
+>Uvažujme například zlomek $\frac{23}{16}$. Není těžké si rozmyslet, že tento zlomek lze psát ve tvaru řetězového zlomku následovně: 
+>
+>$$
+ \frac{23}{16}=1 + \cfrac{1}{2 + \cfrac{1}{3 + \cfrac{1}{2}}}.
+>$$
+>
+>Čísla $a_0=1$, $a_1=2$, $a_2=3$ a $a_3=2$ mají pěkný geometrický význam. 
+>
+>Uvažujme obdélník se stranami $23$ a $16$, do kterého vepíšeme co největší čtverec, tj. čtverec o straně $16$ (na obrázku níže je tento čtverec znázorněn žlutě). Tento čtverec se do našeho obdélníku vejde pouze 1, tj. $a_0=1$. Poté nám zbyde obdélník o stranách $16$ a $7$. Do tohoto obdélníku opět vepíšeme co možná největší čtverec, tj. čtverec o straně $7$. Tyto čtverce (na obrázku je vidíme znázozněné šedou barvou) se tam ale vejdou dva, tj. $a_1=2$. Nyní si snadno rozmyslíme, že dosud nemáme pokrytý obdélník o stranách $7$ a $2$. Do tohoto obdélníku vepíšeme čtverec o straně $2$ (větší se tam nevejde). Ale tyto čtverce se tam vejdou tři (červená barva), tj. $a_2=3$. Nakonec nám zbyde malý obdélník o stranách $2$ a $1$, který jsme schopni vyplnit dvěma čtverci (zelené, o straně 1), tzn. $a_3=2$. 
+>
+>![Řetězový zlomek - ilustrace](retez_zlomek.png)
+>
+
+
 ## Literatura
 
 * Wikipedia. *Golden ratio* [online]. Dostupné z https://en.wikipedia.org/wiki/Golden_ratio [cit. 10.\,11.\,2023].
