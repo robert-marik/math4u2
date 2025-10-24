@@ -128,7 +128,7 @@ Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $
 Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel.  
 Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek). Promyslete si detailně, proč to opravdu takto funguje. 
 
-![Parabolické prvočíselné síto](parabolicke_sito.png)
+![Parabolické prvočíselné síto](parabolicke_sito.svg)
 
 ## Odkazy 
 * A Parabola Sieve for Prime Numbers - https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
