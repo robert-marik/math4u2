@@ -126,8 +126,12 @@ x &= \frac{3x+2}{2x+1}\\
 $$
 
 Všimněme si, že výraz na pravé straně zadané rovnice i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$. 
-Pro taková $x$ jednoduchou úpravou získáme kvadratickou rovnici 
-$$2x^2 - 2x - 2 = 0.$$
+Jednoduchou úpravou získáme  kvadratickou rovnici 
+
+$$
+ x^2 - x - 1 = 0.
+$$
+
 Její kořeny jsou
 $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 Vidíme, že jedním z řešení je opět zlatý řez.
@@ -167,6 +171,7 @@ x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
 \iffalse
 
 *Řešení.* 
+Na obrázku níže vidíme, že při postupném pokrývání zlatého obdélníku je použit vždy jeden čtverec dané velikosti (barvy). To souvisí s tím, že vyjádření zlatého řezu řetězovým zlomkem obsahuje samé jedničky.  
 
 ![Zlatý obdélník](zlaty_obdelnik.svg)
 
@@ -200,7 +205,19 @@ $$
 
 \iffalse
 
-*Řešení.* Představme si obdélníkový papír s poměrem stran $\sqrt{2}$. Pro jednoduchost předpokládejme, že jeho rozměry jsou $\sqrt{2}$ a $1$. Do tohoto obdélníku se vejde jeden čtverec o straně $1$. Nepokrytý zůstane obdélník o stranách $1$ a $\sqrt{2}-1$. Do něj můžeme vepsat dva čtverce o straně $\sqrt{2}-1$, protože pro poměr jeho stran platí  
+*Řešení.* 
+Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec a poté použijeme vždy dva čtverce stejné velikosti (barvy) - viz obrázek níže. 
+
+![Formát A4](format_A4.svg)
+
+Ve skutečnosti vše souvisí s tím, že vyjádření  čísla $\sqrt{2}$ řetězovým zlomkem obsahuje jednu jedničku a poté samé dvojky. Přesněji, platí rovnost 
+
+$$
+ \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}.
+$$
+
+<!-- ZAPOZNÁMKOVÁNO
+ Představme si obdélníkový papír s poměrem stran $\sqrt{2}$. Pro jednoduchost předpokládejme, že jeho rozměry jsou $\sqrt{2}$ a $1$. Do tohoto obdélníku se vejde jeden čtverec o straně $1$. Nepokrytý zůstane obdélník o stranách $1$ a $\sqrt{2}-1$. Do něj můžeme vepsat dva čtverce o straně $\sqrt{2}-1$, protože pro poměr jeho stran platí  
 
 $$
  \frac{1}{\sqrt{2}-1}=\sqrt{2}+1 \doteq 2,41. 
@@ -214,13 +231,8 @@ $$
 
 Poměr vyšel stejný jako v předchozím kroku, což znamená, že se do posledně zmíněného obdélníku opět vejdou dva čtverce, atd. 
 
-Vše souvisí s tím, že platí 
-
-$$
- \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}.
-$$
-
-![Formát A4](format_A4.svg)
+KONEC ZAPOZNÁMKOVÁNÍ
+-->
 
 \fi
 
