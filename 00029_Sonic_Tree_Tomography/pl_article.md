@@ -1,4 +1,7 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - geometria analityczna
 - geometria płaszczyzny

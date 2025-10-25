@@ -1,4 +1,7 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - exponenciálne a logaritmické funkcie
 - logaritmus

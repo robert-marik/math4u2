@@ -1,181 +1,126 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
-- combinatorics, probability and statistics
-- combinatorics
-is_finished: false
----
-
-### Instructions for translators
-
-
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
-
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
+- kombinatorika, pravdepodobnosť a štatistika
+- kombinatorika
+is_finished: true
+difficulty: 3
+time: 40
 
 ---
----
-
-### Czech source
-
-
 # Round robin
 
-Představte si, že pořádáte školní turnaj ve stolním 
-tenise, šachu, e-sportu nebo třeba futsale. Chcete, 
-aby byl co nejspravedlivější – aby každý hráč měl 
-možnost utkat se se všemi ostatními. Právě k tomu 
-slouží systém každý s každým, známý také jako round 
+Predstavte si, že usporadúvate školský turnaj v stolnom 
+tenise, šachu, e-športe alebo napríklad futsale. Chcete, 
+aby bol čo najspravodlivejší – aby každý hráč mal 
+možnosť stretnúť sa so všetkými ostatnými. Práve na to 
+slúži systém každý s každým, známy tiež ako round 
 robin.
 
-Jeho hlavní výhodou je férovost: výsledné pořadí závisí 
-jen na výkonech hráčů nebo týmů, ne na náhodném 
-losu soupeřů. Na druhou stranu, počet zápasů rychle 
-roste s počtem účastníků – naplánovat takový turnaj 
-může být docela výzva. A právě zde přichází ke slovu 
-kombinatorika – matematika počítání možností.
+Jeho hlavnou výhodou je férovosť: výsledné poradie závisí 
+len na výkonoch hráčov alebo tímov, nie na náhodnom 
+losovaní súperov. Na druhú stranu, počet zápasov rýchlo 
+rastie s počtom účastníkov – naplánovať taký turnaj 
+môže byť celkom výzva. A práve tu prichádza ku slovu 
+kombinatorika – matematika počítania možností.
 
 ## Futsalový turnaj
 
-> **Úloha 1.** Na turnaj ve futsalu se přihlásilo 9 
-> týmů. Je vedený systémem round robin, tzn. každý tým 
-> hraje s každým jeden zápas. Tým za každou výhru v 
-> zápase dostává 2 body, za remízu 1 bod a za prohru 0 
-> bodů. O celkovém umístění týmu rozhodne závěrečný 
-> součet bodů za všechny zápasy
+> **Úloha 1.** Na turnaj vo futsale sa prihlásilo 9 
+> tímov. Je vedený systémom round robin, t. j. každý tím 
+> hrá s každým jeden zápas. Tím za každé víťazstvo v 
+> zápase dostáva 2 body, za remízu 1 bod a za prehru 0 
+> bodov. O celkovom umiestnení tímu rozhodne záverečný 
+> súčet bodov za všetky zápasy.
 >
-> Kolik zápasů je nutné na turnaji odehrát? Kolika 
-> způsoby je možné sestavit rozvrh turnaje, je-li k 
-> dispozici jediné hřiště, na kterém se zápasy postupně 
-> odehrávají?
+> Koľko zápasov je nutné na turnaji odohrať? Koľkými 
+> spôsobmi je možné zostaviť rozvrh turnaja, ak je k 
+> dispozícii jediné ihrisko, na ktorom sa zápasy postupne 
+> odohrávajú?
 
 \iffalse
 
-*Řešení.* Celkový počet odehraných zápasů odpovídá 
-počtu všech neuspořádaných dvojic vytvořených z devíti 
-týmů. Jinými slovy odpovídá počtu všech dvoučlenných 
-kombinací bez opakování vytvořených z devíti prvků. 
-Těch je celkem
+*Riešenie.* Celkový počet odohraných zápasov zodpovedá 
+počtu všetkých neusporiadaných dvojíc vytvorených z deviatich 
+tímov. Inými slovami zodpovedá počtu všetkých dvojčlenných 
+kombinácií bez opakovania vytvorených z deviatich prvkov. 
+Tých je celkom
 $$
 \binom{9}{2} = 36.
 $$
-Pro určení počtu způsobů sestavení turnaje hledáme 
-vlastně počet všech seřazení 36 zápasů, 
-proto je všech možných rozvrhů turnaje celkem
+Pre určenie počtu spôsobov zostavenia turnaja hľadáme 
+vlastne počet všetkých zoradení 36 zápasov, 
+preto je všetkých možných rozvrhov turnaja celkom
 $$
 36! =371\,993\,326\,789\,901\,217\,467\,999\,448\,150\,835\,200\,000\,000 \doteq 3{,}72\cdot 10^{41}.
 $$
-Poznamenejme, že kdybychom shromáždili srovnatelný 
-počet zrnek písku, z nichž každé bude mít objem 
-řádově $10^{-13}\,\text{m}^3$, celá hromada by měla 
-objem v řádech $10^{28}\,\text{m}^3$, což je 
-přibližně desetinásobek objemu Slunce. Spíše než o 
-hromadu by se proto jednalo o relativně hmotné 
-vesmírné těleso.
+Poznamenajme, že keby sme zhromaždili porovnateľný 
+počet zrniek piesku, z ktorých každé bude mať objem 
+rádovo $10^{-13}\,\text{m}^3$, celá kôpka by mala 
+objem v radoch $10^{28}\,\text{m}^3$, čo je 
+približne desaťnásobok objemu Slnka. Skôr než o 
+kôpku by sa preto jednalo o relatívne hmotné 
+vesmírne teleso.
 
 \fi
 
-> **Úloha 2.** Ukažte, že jestliže některý tým v 
-> turnaji z předchozí úlohy získal celkem 13 bodů, pak 
-> nutně patří mezi čtyři nejlepší týmy turnaje.
+> **Úloha 2.** Ukážte, že ak niektorý tím v 
+> turnaji z predchádzajúcej úlohy získal celkom 13 bodov, potom 
+> nutne patrí medzi štyri najlepšie tímy turnaja.
 
 \iffalse
 
-*Řešení.* Úlohu budeme řešit sporem. Připusťme, že by 5 
-týmů získalo 13 nebo více bodů. Protože jsou v každém 
-zápase mezi dva týmy rozděleny 2 body, je v celém 
-turnaji rozděleno celkem $2\cdot 36 = 72$ bodů. Přitom 
-je mezi 5 týmů rozděleno alespoň 65 bodů, mezi 
-zbývající čtyři týmy tak musí být rozděleno nejvýše 7 
-zbylých bodů. 
+*Riešenie.* Úlohu budeme riešiť sporom. Pripusťme, že by 5 
+tímov získalo 13 alebo viac bodov. Pretože sú v každom 
+zápase medzi dva tímy rozdelené 2 body, je v celom 
+turnaji rozdelených celkom $2\cdot 36 = 72$ bodov. Pritom 
+je medzi 5 tímov rozdelených aspoň 65 bodov, medzi 
+zostávajúce štyri tímy tak musí byť rozdelených nanajvýš 7 
+zostávajúcich bodov. 
 
-Ale tyto čtyři týmy navzájem mezi sebou odehrají celkem 
-$\binom{4}{2}=6$ zápasů a musí si proto rozdělit celkem 
-12 bodů, dohromady by se tedy muselo rozdělit alespoň 
-77 bodů, což není možné, dostáváme tedy spor. 
+Ale tieto štyri tímy navzájom medzi sebou odohrajú celkom 
+$\binom{4}{2}=6$ zápasov a musia si preto rozdeliť celkom 
+12 bodov, dokopy by sa teda muselo rozdeliť aspoň 
+77 bodov, čo nie je možné, dostávame teda spor. 
 
-Týmů s 13 nebo více body tak může být nejvýše čtyři.
+Tímov s 13 alebo viac bodmi tak môže byť najviac štyri.
 
 \fi
 
-## Férovejší soutěž
+## Férovejšia súťaž
 
-Na další ročník futsalového turnaje z předchozích úloh 
-se tentokrát přihlásilo 7 týmů. Při sestavování rozvrhu 
-turnaje si však organizátor dal novou podmínku, že 
-žádný tým nesmí hrát ve dvou zápasech těsně za sebou, 
-aby hráči nemuseli hrát unavení a turnaj byl férovější. 
+Na ďalší ročník futsalového turnaja z predchádzajúcich úloh 
+sa tentoraz prihlásilo 7 tímov. Pri zostavovaní rozvrhu 
+turnaja si však organizátor dal novú podmienku, že 
+žiadny tím nesmie hrať v dvoch zápasoch tesne za sebou, 
+aby hráči nemuseli hrať unavení a turnaj bol férovejší. 
 
-Libor vymyslel algoritmus, jak požadovanou posloupnost 
-zápasů sestavit. Vychází z následující tabulky.  
+Libor vymyslel algoritmus, ako požadovanú postupnosť 
+zápasov zostaviť. Vychádza z nasledujúcej tabuľky.  
 
-![Tabulka pro tvorbu programu férového turnaje](math4you_00050.svg)
+![Tabuľka pre tvorbu programu férového turnaja](math4you_00050.svg)
 
-Její každé pole v $i$-tém řádku a $j$-tém sloupci 
-odpovídá zápasu $(i+1)$-tého a $j$-tého týmu. Hledaná 
-posloupnost zápasů bude odpovídat pořadí polí, která 
-Libor postupně vybírá. Pro přehlednost budeme tato pole 
-značit dle týmů, jejichž zápas reprezentuje, tj. $[1;2]$, 
-$[3;5]$ atd. Dále označíme nejdelší diagonálu 
-začínající polem $[1;2]$ a končící polem $[6;7]$ jako 
-$D_1$, kratší diagonálu začínající polem $[1;3]$ a 
-končící polem $[5;7]$ jako $D_2$ apod.
+Jej každé pole v $i$-tom riadku a $j$-tom stĺpci 
+zodpovedá zápasu $(i+1)$-tého a $j$-tého tímu. Hľadaná 
+postupnosť zápasov bude zodpovedať poradiu polí, ktoré 
+Libor postupne vyberá. Pre prehľadnosť budeme tieto polia 
+označovať podľa tímov, ktorých zápas reprezentuje, t. j. $[1;2]$, 
+$[3;5]$ atď. Ďalej označíme najdlhšiu diagonálu 
+začínajúcu poľom $[1;2]$ a končiacu poľom $[6;7]$ ako 
+$D_1$, kratšiu diagonálu začínajúcu poľom $[1;3]$ a 
+končiacu poľom $[5;7]$ ako $D_2$ atď.
 
-Liborův algoritmus vypadá následovně:
-- jako první vybereme pole v prvním sloupci a posledním řádku, tj. $[1;7]$;
-- dále vybíráme po řadě pole diagonály $D_1$ v sudých sloupcích zleva doprava;
-- dále vybíráme po řadě zbylá pole diagonály $D_1$ v lichých sloupcích zleva doprava;
-- dále vybíráme zleva doprava všechna pole diagonály $D_2$;
-- dále vybíráme zleva doprava všechna pole diagonály $D_3$, následně $D_4$ atd.
+Liborov algoritmus vyzerá nasledovne:
+- ako prvé vyberieme pole v prvom stĺpci a poslednom riadku, t. j. $[1;7]$;
+- ďalej vyberáme po rade pole diagonály $D_1$ v párnych stĺpcoch zľava doprava;
+- ďalej vyberáme po rade zostávajúce polia diagonály $D_1$ v nepárnych stĺpcoch zľava doprava;
+- ďalej vyberáme zľava doprava všetky polia diagonály $D_2$;
+- ďalej vyberáme zľava doprava všetky polia diagonály $D_3$, následne $D_4$ atď.
 
-Pro turnaj o sedmi týmech tak dostaneme následující 
-pořadí zápasů
+Pre turnaj o siedmych tímoch tak dostaneme nasledujúce 
+poradie zápasov
 
 $$
 [1;7],\quad[2;3],\quad[4;5],\quad[6;7],\quad[1;2],\quad[3;4],\quad[5;6],
@@ -187,14 +132,14 @@ $$
 [3;6],\quad[4;7],\quad[1;5],\quad[2;6],\quad[3;7],\quad[1;6],\quad[2;7].
 $$
 
-> **Úloha 3.** Vypište užitím Liborova algoritmu 
-> posloupnost zápasů pro turnaj, kterého se účastní 9 
-> týmů a ověřte, že v ní nedojde k výskytu stejného 
-> týmu  ve dvou po sobě jdoucích zápasech.
+> **Úloha 3.** Vypíšte využitím Liborovho algoritmu 
+> postupnosť zápasov pre turnaj, ktorého sa zúčastní 9 
+> tímov a overte, že v nej nedôjde k výskytu rovnakého 
+> tímu v dvoch po sebe idúcich zápasoch.
 
 \iffalse
 
-*Řešení.* Užitím algoritmu dostáváme následující posloupnost 36 polí a je zřejmé, že každá dvě po sobě jdoucí pole mají všechny složky různé.
+*Riešenie.* Využitím algoritmu dostávame nasledujúcu postupnosť 36 polí a je zrejmé, že každé dve po sebe idúce polia majú všetky zložky rôzne.
 $$
 [1;9],\quad [2;3],\quad [4;5],\quad [6;7],\quad [8;9],\quad [1;2],\quad [3;4],\quad [5;6],\quad [7;8],\quad [1;3],\quad [2;4],\quad [3;5],
 $$
@@ -207,26 +152,26 @@ $$
 
 \fi
 
-> **Úloha 4.** Platí Liborův algoritmus obecně pro 
-> libovolný počet přihlášených týmů? Pokud ne, tak pro 
-> které? A dokážete sestavit pro tyto případy 
-> požadovanou posloupnost sami?
+> **Úloha 4.** Platí Liborov algoritmus všeobecne pre 
+> ľubovoľný počet prihlásených tímov? Ak nie, tak pre 
+> ktoré? A dokážete zostaviť pre tieto prípady 
+> požadovanú postupnosť sami?
 
 \iffalse
 
-*Řešení.* Označme $n$ počet přihlášených týmů (z 
-kontextu úlohy je přitom zřejmé, že $n>1$). Z Liborova 
-algoritmu odvodíme následující posloupnost polí, kterou 
-rozdělíme do několika navazujících sekcí dle jejich 
-výskytu v tabulce (u diagonály $D_1$ přitom musíme 
-rozlišit mezi paritou $n$):
+*Riešenie.* Označme $n$ počet prihlásených tímov (z 
+kontextu úlohy je pritom zrejmé, že $n>1$). Z Liborovho 
+algoritmu odvodíme nasledujúcu postupnosť polí, ktorú 
+rozdelíme do niekoľkých nadväzujúcich sekcií podľa ich 
+výskytu v tabuľke (pri diagonále $D_1$ pritom musíme 
+rozlišovať medzi paritou $n$):
 $$
 \begin{alignat*}{2}
 &[1;n], &&\quad\text{(1. pole)}\\[3mm]
-&[2;3],[4;5],\ldots , [n-1;n], &&\quad\text{(1. část diagonály } D_1\text{, liché } n) \\
-&[1;2],[3;4],\ldots , [n-2;n-1], &&\quad\text{(2. část diagonály } D_1\text{, liché } n)\\[3mm]
-&[2;3],[4;5],\ldots , [n-2;n-1], &&\quad\text{(1. část diagonály } D_1\text{, sudé } n) \\
-&[1;2],[3;4],\ldots , [n-1;n], &&\quad\text{(2. část diagonály } D_1\text{, sudé } n)\\[3mm]
+&[2;3],[4;5],\ldots , [n-1;n], &&\quad\text{(1. časť diagonály } D_1\text{, nepárne } n) \\
+&[1;2],[3;4],\ldots , [n-2;n-1], &&\quad\text{(2. časť diagonály } D_1\text{, nepárne } n)\\[3mm]
+&[2;3],[4;5],\ldots , [n-2;n-1], &&\quad\text{(1. časť diagonály } D_1\text{, párne } n) \\
+&[1;2],[3;4],\ldots , [n-1;n], &&\quad\text{(2. časť diagonály } D_1\text{, párne } n)\\[3mm]
 &[1;3],[2;4],\ldots , [n-2;n], &&\quad\text{(diagonála } D_2)\\
 &[1;4],[2;5],\ldots , [n-3;n], &&\quad\text{(diagonála } D_3)\\
 &\vdots &&\\
@@ -237,111 +182,103 @@ $$
 \end{alignat*}
 $$
 
-Dvě po sobě jdoucí pole, které patří do stejné sekce, stejné číslo 
-obsahovat nemohou. V obou částech diagonály $D_1$ můžeme totiž libovolná 
-dvě po sobě jdoucí pole zapsat ve tvaru $[j,j+1]$ a $[j+2,j+3]$ a v 
-libovolné diagonále $D_i$ pro $i>1$ mají zase libovolná dvě po sobě 
-jdoucí pole tvar $[j,j+i]$ a $[j+1,j+i+1]$. Stačí proto ověřit, za 
-jakých podmínek může poslední člen jedné sekce obsahovat stejné číslo 
-jako první člen následující sekce. Tyto speciální případy pak posoudíme 
+Dve po sebe idúce polia, ktoré patria do rovnakej sekcie, rovnaké číslo 
+obsahovať nemôžu. V oboch častiach diagonály $D_1$ môžeme totiž ľubovoľné 
+dve po sebe idúce polia zapísať v tvare $[j,j+1]$ a $[j+2,j+3]$ a v 
+ľubovoľnej diagonále $D_i$ pre $i>1$ majú zase ľubovoľné dve po sebe 
+idúce polia tvar $[j,j+i]$ a $[j+1,j+i+1]$. Stačí preto overiť, za 
+akých podmienok môže posledný člen jednej sekcie obsahovať rovnaké číslo 
+ako prvý člen nasledujúcej sekcie. Tieto špeciálne prípady potom posúdime 
 zvlášť.
 
-**1. pole – 1. část diagonály $D_1$.** Pole $[2;3]$ navazuje nezávisle na paritě $n$ na pole $[1;n]$. Požadovaná podmínka různosti všech čtyř složek tak není splněna pro $n=2$ a $n=3$. 
+**1. pole – 1. časť diagonály $D_1$.** Pole $[2;3]$ nadväzuje nezávisle na parite $n$ na pole $[1;n]$. Požadovaná podmienka rôznosti všetkých štyroch zložiek tak nie je splnená pre $n=2$ a $n=3$. 
 
-**1. část – 2. část diagonály $D_1$.** Pro lichá $n$ navazuje pole $[1;2]$ na pole $[n-1;n]$, odkud dostáváme již řečené případy $n=2$ a~$n=3$. Pro sudá $n$ na sebe navazují pole $[n-2;n-1]$ a $[1;2]$, zde musíme navíc vyjmout případ $n=4$.  
+**1. časť – 2. časť diagonály $D_1$.** Pre nepárne $n$ nadväzuje pole $[1;2]$ na pole $[n-1;n]$, odkiaľ dostávame už spomenuté prípady $n=2$ a~$n=3$. Pre párne $n$ na seba nadväzujú polia $[n-2;n-1]$ a $[1;2]$, tu musíme navyše vylúčiť prípad $n=4$.  
 
-**2. část diagonály $D_1$ – diagonála $D_2$.** Pro lichá $n$ na sebe navazují pole $[n-2;n-1]$ a $[1;3]$. Podmínka různosti složek tak není splněna pro $n\in\{2;3;4;5\}$. Jestliže je $n$ sudé, navazuje na sebe pole $[n-1;n]$ a pole $[1;3]$. Všechna dosud nevyjmutá čísla $n$ zkoumané podmínce vyhovují.
+**2. časť diagonály $D_1$ – diagonála $D_2$.** Pre nepárne $n$ na seba nadväzujú polia $[n-2;n-1]$ a $[1;3]$. Podmienka rôznosti zložiek tak nie je splnená pre $n\in\{2;3;4;5\}$. Ak je $n$ párne, nadväzuje na seba pole $[n-1;n]$ a pole $[1;3]$. Všetky doteraz nevylúčené čísla $n$ skúmanej podmienke vyhovujú.
 
-**Diagonála $D_i$ – diagonála $D_{i+1}$.** Pole $[1;i+2]$ navazuje na pole $[n-i;n]$. Dostáváme tak čtyři možné rovnosti, za kterých nebude daná podmínka splněna: 
+**Diagonála $D_i$ – diagonála $D_{i+1}$.** Pole $[1;i+2]$ nadväzuje na pole $[n-i;n]$. Dostávame tak štyri možné rovnosti, pri ktorých nebude daná podmienka splnená: 
 $$
 n-i = 1, \qquad n-i = i + 2, \qquad n = 1, \qquad n = i+2.
 $$ 
-Třetí z rovností jistě platit nemůže. První rovnost by znamenala, že 
-$i=n-1$, ale $i$ může nabývat nejvýše hodnoty $n-2$. Pokud by platila 
-čtvrtá rovnost, $i$ nabývá hodnoty právě $n-2$; diagonála $D_{n-2}$ je 
-však poslední sekcí, kterou je posloupnost ukončena, jelikož žádná další
-diagonála nenavazuje. Konečně druhou rovnost lze přepsat do tvaru 
-$i = \frac{n-2}{2}$. Pokud je $n$ liché, nemůže platit; pro libovolné 
-sudé $n$ však existuje dokonce jednoznačné $i$ takové, že platit bude. 
-Algoritmus proto selže pro libovolné sudé $n$; např. pro $n=14$ je 
-$i=6$, poslední člen diagonály $D_6$ je $[8;14]$ a první člen diagonály 
+Tretia z rovností isto platiť nemôže. Prvá rovnosť by znamenala, že 
+$i=n-1$, ale $i$ môže nadobúdať nanajvýš hodnotu $n-2$. Ak by platila 
+štvrtá rovnosť, $i$ nadobúda hodnotu práve $n-2$; diagonála $D_{n-2}$ je 
+však poslednou sekciou, ktorou je postupnosť ukončená, keďže žiadna ďalšia
+diagonála nenadväzuje. Konečne druhú rovnosť možno prepísať do tvaru 
+$i = \frac{n-2}{2}$. Ak je $n$ nepárne, nemôže platiť; pre ľubovoľné 
+párne $n$ však existuje dokonca jednoznačné $i$ také, že platiť bude. 
+Algoritmus preto zlyhá pre ľubovoľné párne $n$; napr. pre $n=14$ je 
+$i=6$, posledný člen diagonály $D_6$ je $[8;14]$ a prvý člen diagonály 
 $D_7$ je $[1;8]$.
 
-Liborův algoritmus tak bez výhrad funguje pro lichá $n$ s výjimkou 3 a 
-5. Dodejme však, že zřejmě triviálně funguje také pro $n=2$ (dva týmy 
-odehrají jediný zápas celého turnaje). Pro zbylá sudá $n$, $n=3$ a $n=5$ 
-bychom se nyní měli pokusit najít požadované posloupnosti jinak. 
-Konstatujme však nejdřív, že pro $n=3$ a $n=4$ je to nemožné, protože
+Liborov algoritmus tak bez výhrad funguje pre nepárne $n$ s výnimkou 3 a 
+5. Dodajme však, že zrejme triviálne funguje tiež pre $n=2$ (dva tímy 
+odohrajú jediný zápas celého turnaja). Pre zostávajúce párne $n$, $n=3$ a $n=5$ 
+by sme sa teraz mali pokúsiť nájsť požadované postupnosti inak. 
+Konštatujme však najprv, že pre $n=3$ a $n=4$ je to nemožné, pretože
 
-* pro $n=3$ musíme seřadit tři pole $[1;2]$, $[1;3]$, $[2;3]$, ale každé 
-takové seřazení nesplňuje zadanou podmínku;
-* pro $n=4$ zvolíme bez újmy na obecnosti první pole $[1;2]$, následovat 
-nutně musí pole $[3;4]$ a dále pak opět $[1;2]$, což není možné.
+* pre $n=3$ musíme zoradiť tri polia $[1;2]$, $[1;3]$, $[2;3]$, ale každé 
+takéto zoradenie nespĺňa zadanú podmienku;
+* pre $n=4$ zvolíme bez ujmy na všeobecnosti prvé pole $[1;2]$, nasledovať 
+nutne musí pole $[3;4]$ a ďalej potom opäť $[1;2]$, čo nie je možné.
 
-Pro ostatní $n$ již najít posloupnosti požadovaných vlastností umíme. 
-Protože je jich (a algoritmů, kterými je můžeme nalézt) více, udejme 
-alespoň některé příklady, které dostaneme úpravou původního Liborova 
-algoritmu. Pro $n=5$ jej modifikujeme následovně:
+Pre ostatné $n$ už nájsť postupnosti požadovaných vlastností vieme. 
+Pretože ich je (a algoritmov, ktorými ich môžeme nájsť) viac, uveďme 
+aspoň niektoré príklady, ktoré dostaneme úpravou pôvodného Liborovho 
+algoritmu. Pre $n=5$ ho modifikujeme nasledovne:
 
-* jako první vybereme pole v prvním sloupci a posledním řádku, tj. $[1;5]$;
-* dále vybíráme po řadě pole diagonály $D_1$ v sudých sloupcích zleva doprava;
-* dále vybíráme po řadě zbylá pole diagonály $D_1$ v lichých sloupcích zleva doprava;
-* dále vybíráme zprava doleva všechna pole diagonály $D_3$;
-* dále vybíráme zprava doleva všechna pole diagonály $D_2$.
+* ako prvé vyberieme pole v prvom stĺpci a poslednom riadku, t. j. $[1;5]$;
+* ďalej vyberáme po rade pole diagonály $D_1$ v párnych stĺpcoch zľava doprava;
+* ďalej vyberáme po rade zostávajúce polia diagonály $D_1$ v nepárnych stĺpcoch zľava doprava;
+* ďalej vyberáme sprava doľava všetky polia diagonály $D_3$;
+* ďalej vyberáme sprava doľava všetky polia diagonály $D_2$.
 
-Výsledná posloupnost je tvaru
+Výsledná postupnosť je tvaru
 $$
 [1;5],\quad [2;3],\quad [4;5],\quad [1;2],\quad [3;4],\quad [2;5],\quad [1;4],\quad [3;5],\quad [2;4],\quad [1,3].
 $$
 
-Pro sudá $n$ různá od 2 a 4 spočítáme číslo $k=\frac{n-2}{2}$. (Právě 
-toto číslo totiž bylo v diskuzi obecného případu "problematické".) 
-Následovně aplikujeme Liborův algoritmus s tím rozdílem, že při výběru 
-polí zaměníme pořadí diagonál $D_{k+1}$ a $D_{k+2}$. S ohledem na to, že 
-je zbytek algoritmu stejný, zkontrolujme pouze rozdílná napojení 
-dotčených sekcí.
+Pre párne $n$ rôzne od 2 a 4 spočítame číslo $k=\frac{n-2}{2}$. (Práve 
+toto číslo totiž bolo v diskusii všeobecného prípadu "problematické".) 
+Následne aplikujeme Liborov algoritmus s tým rozdielom, že pri výbere 
+polí zameníme poradie diagonál $D_{k+1}$ a $D_{k+2}$. S ohľadom na to, že 
+je zvyšok algoritmu rovnaký, skontrolujme len rozdielne napojenia 
+dotknutých sekcií.
 
-**Diagonála $D_k$ – diagonála $D_{k+2}$.** Na pole $[n-k;n]$ navazuje 
-pole $[1;k+3]$. Dosazením za $k$, úpravou a porovnáním možných shodných 
-složek dostáváme čtyři rovnosti
+**Diagonála $D_k$ – diagonála $D_{k+2}$.** Na pole $[n-k;n]$ nadväzuje 
+pole $[1;k+3]$. Dosadením za $k$, úpravou a porovnaním možných zhodných 
+zložiek dostávame štyri rovnosti
 $$
 \frac{n+2}{2} = 1, \qquad \frac{n+2}{2} = \frac{n+4}{2}, \qquad n = 1, \qquad n = \frac{n+4}{2}.
 $$
-Druhá a třetí z rovností platit nemůže a první (resp. čtvrtá) rovnost je 
-splněna právě tehdy, když $n=0$ (resp. $n=4$), což také neplatí.
+Druhá a tretia z rovností platiť nemôže a prvá (resp. štvrtá) rovnosť je 
+splnená práve vtedy, keď $n=0$ (resp. $n=4$), čo tiež neplatí.
 
 **Diagonála $D_{k+2}$ – diagonála $D_{k+1}$.** Na pole $[n-(k+2);n]$ 
-navazuje pole $[1;k+2]$. Dosazením a úpravou odvodíme opět čtyři 
-rovnosti, jejichž platnost by porušila zadanou podmínku:
+nadväzuje pole $[1;k+2]$. Dosadením a úpravou odvodíme opäť štyri 
+rovnosti, ktorých platnosť by porušila zadanú podmienku:
 $$
 \frac{n-2}{2} = 1, \qquad \frac{n-2}{2} = \frac{n+2}{2}, \qquad n = 1, \qquad n = \frac{n+2}{2}.
 $$
-Žádná z uvedených rovností však platit nemůže, protože $n$ nemůže být 4, 
+Žiadna z uvedených rovností však platiť nemôže, pretože $n$ nemôže byť 4, 
 1 ani 2.
 
 **Diagonála $D_{k+1}$ – diagonála $D_{k+3}$.** Na pole $[n-(k+1);n]$ 
-navazuje pole $[1;k+4]$. Obdobně jako v předchozích dvou případech 
-můžeme odvodit čtveřici rovností
+nadväzuje pole $[1;k+4]$. Obdobne ako v predchádzajúcich dvoch prípadoch 
+môžeme odvodiť štvoricu rovností
 $$
 \frac{n}{2} = 1, \qquad \frac{n}{2} = \frac{n+6}{2}, \qquad n = 1, \qquad n = \frac{n+6}{2}.
 $$
-První tři z uvedených rovností platit nemohou již z dříve uvedených 
-důvodů. Čtvrtá rovnost platí pro $n=6$; pro toto číslo však neexistuje 
-diagonála $D_{k+3}$, neboť $k+3 = \frac{6-2}{2} + 3 = 5$. (Připomeňme, 
-že pro $n=6$ jsou definovány pouze diagonály $D_1$–$D_4$.) Algoritmus 
-pro $n=6$ tak končí výběrem členů diagonály $D_{k+1}=D_3$.
+Prvé tri z uvedených rovností platiť nemôžu už z predtým uvedených 
+dôvodov. Štvrtá rovnosť platí pre $n=6$; pre toto číslo však neexistuje 
+diagonála $D_{k+3}$, pretože $k+3 = \frac{6-2}{2} + 3 = 5$. (Pripomeňme, 
+že pre $n=6$ sú definované len diagonály $D_1$–$D_4$.) Algoritmus 
+pre $n=6$ tak končí výberom členov diagonály $D_{k+1}=D_3$.
 
-Upravený algoritmus tak pro sudá $n$ různá od 2 a 4 sestrojí požadovanou 
-posloupnost polí. Jediná přirozená $n>1$, pro která žádná posloupnost 
-zadaných vlastností neexistuje, jsou proto 3 a 4.
+Upravený algoritmus tak pre párne $n$ rôzne od 2 a 4 skonštruuje požadovanú 
+postupnosť polí. Jediné prirodzené $n>1$, pre ktoré žiadna postupnosť 
+zadaných vlastností neexistuje, sú preto 3 a 4.
 
 \fi
-
-
 ---
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

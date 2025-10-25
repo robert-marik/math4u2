@@ -1,11 +1,14 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
-- space geometry
-- anamorphosis
-- solids
-- projection
-- central projection
-- perspective
+- geometria w przestrzeni
+- anamorfoza
+- bryły
+- rzuty
+- rzut centralny
+- perspektywa
 is_finished: false
 ---
 

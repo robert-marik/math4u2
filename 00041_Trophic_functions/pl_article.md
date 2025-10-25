@@ -1,8 +1,11 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
-- functions
-- rational fractional function
-- asymptote
+- funkcje
+- funkcja wymierna
+- asymptota
 is_finished: false
 ---
 

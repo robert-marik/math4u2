@@ -1,147 +1,90 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
-- plane geometry
-- Pythagorean theorem
-- perpendicular bisector
-is_finished: false
+- geometria v rovine
+- Pytagorova veta
+- os úsečky
+is_finished: true
 ---
 
-### Instructions for translators
+# Záchrana stroskotanca
 
+Lietadlo hľadá na otvorenom mori pozíciu stroskotanca, ktorý 
+má na svojom člne zariadenie vysielajúce tiesňový signál. 
+Zariadenie má len obmedzený dosah. Pri lete nad morom 
+posádka lietadla signál zachytí, ale po chvíli ho stratí. 
+Pilot preto lietadlo stočí a podarí sa mu signál na kratší 
+dobu opäť zachytiť. 
 
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
+Trajektória celého letu je aj s naznačeným smerom a miestami 
+zachytenia (body $A_1$ a $A_2$) a strát (body $B_1$ a 
+$B_2$) signálu znázornená na mape.
 
-### Instrukce pro překladatele
+![Trajektória letu lietadla](math4you_00043_01.svg)
 
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
-
----
----
-
-### Czech source
-
-
-# Záchrana trosečníka
-
-Letadlo hledá na otevřeném moři pozici trosečníka, který 
-má na svém voru zařízení vysílající tísňový signál. 
-Zařízení má pouze omezený dosah. Při letu nad mořem 
-posádka letadla signál zachytí, ale po chvíli jej ztratí. 
-Pilot proto letadlo stočí a podaří se mu signál na kratší 
-dobu opět zachytit. 
-
-Trajektorie celého letu je i s naznačeným směrem a místy 
-zachycení (body $A_1$ a $A_2$) a ztrát (body $B_1$ a 
-$B_2$) signálu znázorněn na mapě.
-
-![Trajektorie letu letadla](math4you_00043_01.svg)
-
-Během obou dob, kdy posádka přijímala signál, letadlo 
-neměnilo svou výšku, mezi body $B_1$ a $A_2$ snížilo svou 
+Počas oboch dôb, keď posádka prijímala signál, lietadlo 
+nemalo svoju výšku, medzi bodmi $B_1$ a $A_2$ znížilo svoju 
 výšku o $500\,\text{m}$.
 
-> **Úloha 1.** Konstrukčně určete v mapě pozici $X$ 
-> trosečníka.
+> **Úloha 1.** Konštrukčne určte v mape pozíciu $X$ 
+> stroskotanca.
 
 \iffalse
 
-*Řešení.* Omezený dosah trosečníkova tísňového signálu určuje v 
-prostoru nad hladinou polokouli, jejíž střed je polohou 
-trosečníka. Vodorovné řezy této polokoule jsou kruhy, které se 
-na mapě jeví jako soustředné se středem v bodě $X$. 
+*Riešenie.* Obmedzený dosah stroskotancovho tiesňového signálu určuje v 
+priestore nad hladinou pologuľu, ktorej stred je polohou 
+stroskotanca. Vodorovné rezy tejto pologule sú kruhy, ktoré sa 
+na mape javia ako sústredné so stredom v bode $X$. 
 
-Protože letadlo mezi body $A_1$ a $B_1$ nemění svou výšku, je 
-$A_1B_1$ tětivou jisté kružnice $k_1$ se středem v bodě $X$. 
-Ten tak musí ležet na ose úsečky $A_1B_1$. Ze stejného důvodu 
-musí bod $X$ ležet i na ose úsečky $A_2B_2$; je totiž středem 
-jisté kružnice $k_2$, jíž je tato úsečka tětivou. 
+Pretože lietadlo medzi bodmi $A_1$ a $B_1$ nemení svoju výšku, je 
+$A_1B_1$ tetivou istej kružnice $k_1$ so stredom v bode $X$. 
+Ten tak musí ležať na osi úsečky $A_1B_1$. Z rovnakého dôvodu 
+musí bod $X$ ležať aj na osi úsečky $A_2B_2$; je totiž stredom 
+istej kružnice $k_2$, ktorej je táto úsečka tetivou. 
 
-![Řešení Úlohy 1](math4you_00043_02.svg)
+![Riešenie Úlohy 1](math4you_00043_02.svg)
 
 \fi
 
-> **Úloha 2.** V lokalitě se nachází dopravní loď (pozice $L$). 
-> Může také zaznamenat trosečníkův tísňový signál, nebo je 
-> příliš daleko?
+> **Úloha 2.** V lokalite sa nachádza dopravná loď (pozícia $L$). 
+> Môže tiež zaznamenať stroskotancov tiesňový signál, alebo je 
+> príliš ďaleko?
 >
-> a) Velikosti úseček $LX$ a $A_1X$, $A_2X$ z řešení Úlohy 1 
-> přeneste na měřítko. Užitím takto určených vzdáleností 
-> (zaokrouhlených na celý nejmenší dílek stupnice) vyřešte 
-> úlohu početně.
+> a) Veľkosti úsečiek $LX$ a $A_1X$, $A_2X$ z riešenia Úlohy 1 
+> preneste na mierku. Užitím takto určených vzdialeností 
+> (zaokrúhlených na celý najmenší dielok stupnice) vyriešte 
+> úlohu početne.
 > 
-> b) Vyjděte z řešení Úlohy 1 a úlohu vyřešte znovu, tentokrát 
-> pouze užitím geometrických konstrukcí.
+> b) Vychádzajte z riešenia Úlohy 1 a úlohu vyriešte znovu, tentoraz 
+> len užitím geometrických konštrukcií.
 
 
 \iffalse
 
-*Řešení.*
+*Riešenie.*
 
-a) K vyřešení úlohy potřebujeme znát dosah trosečníkova 
-zařízení, což je poloměr $r$ polokoule zmíněné v řešení 
-předešlé úlohy. Přenesením úseček $A_1X$ a $A_2X$ na měřítko a 
-zaokrouhlením jejich délek na desetiny kilometru dostáváme 
+a) Na vyriešenie úlohy potrebujeme poznať dosah stroskotancovho 
+zariadenia, čo je polomer $r$ pologule zmienený v riešení 
+predošlej úlohy. Prenesením úsečiek $A_1X$ a $A_2X$ na mierku a 
+zaokrúhlením ich dĺžok na desatiny kilometra dostávame 
 $\lvert A_1X \rvert \doteq 2{,}9\,\text{km}$ 
-a $\lvert A_2X \rvert \doteq 3{,}4\,\text{km}$. Tyto délky jsou 
-zřejmě poloměry $r_1$ a $r_2$ kružnic $k_1$ a $k_2$.
+a $\lvert A_2X \rvert \doteq 3{,}4\,\text{km}$. Tieto dĺžky sú 
+zrejme polomery $r_1$ a $r_2$ kružníc $k_1$ a $k_2$.
 
-Uvažme takový průmět polokoule, ve kterém se kružnice $k_1$ a 
-$k_2$ zobrazí po řadě jako rovnoběžné úsečky $K_1L_1$ a 
-$K_2L_2$ takové, že mají stejnou osu $o$, jejich délky jsou po 
-řadě $2r_1$ a $2r_2$ a jejich vzdálenost je $0{,}5\,\text{km}$. 
-Označme dále střed polokoule $S$, střed úsečky $K_1L_1$ jako 
-$S_1$ a střed úsečky $K_2L_2$ jako $S_2$. Viz obrázek, ve 
-kterém je pro názornost vyznačena také mořská hladina přímkou $h$.
+Uvažujme taký priemet pologule, v ktorom sa kružnice $k_1$ a 
+$k_2$ zobrazia po rade ako rovnobežné úsečky $K_1L_1$ a 
+$K_2L_2$ také, že majú rovnakú os $o$, ich dĺžky sú po 
+rade $2r_1$ a $2r_2$ a ich vzdialenosť je $0{,}5\,\text{km}$. 
+Označme ďalej stred pologule $S$, stred úsečky $K_1L_1$ ako 
+$S_1$ a stred úsečky $K_2L_2$ ako $S_2$. Pozri obrázok, v 
+ktorom je pre názornosť vyznačená aj morská hladina priamkou $h$.
 
-![Pomocný průmět polokoule při řešení Úlohy 2a)](math4you_00043_03.svg)
+![Pomocný priemet pologule pri riešení Úlohy 2a)](math4you_00043_03.svg)
 
-Z Pythagorovy věty aplikované na trojúhelníky $SS_1K_1$ a 
-$SS_2L_2$ vyplývají rovnosti
+Z Pytagorovej vety aplikovanej na trojuholníky $SS_1K_1$ a 
+$SS_2L_2$ plynú rovnosti
 $$
 \begin{align*}
 r^2 &= r_1 ^2 + \lvert SS_1 \rvert ^2 \\
@@ -150,9 +93,9 @@ r^2 &= r_2 ^2 + \lvert SS_2 \rvert ^2.
 $$
 
 Platí však $\lvert SS_1 \rvert = \lvert SS_2 \rvert + 0{,}5$. 
-Dosazením do první rovnice a porovnáním obou stran dostáváme 
-lineární rovnici s jedinou neznámou $\lvert SS_2 \rvert$, 
-kterou vyřešíme:
+Dosadením do prvej rovnice a porovnaním oboch strán dostávame 
+lineárnu rovnicu s jedinou neznámou $\lvert SS_2 \rvert$, 
+ktorú vyriešime:
 $$
 \begin{align*}
 r_2 ^2 + \lvert SS_2 \rvert ^2 &= r_1 ^2 + \left( \left\lvert SS_2 \right\rvert + 0{,}5 \right) ^2 \\[1mm]
@@ -160,46 +103,37 @@ r_2 ^2 + \lvert SS_2 \rvert ^2 &= r_1 ^2 + \left( \left\lvert SS_2 \right\rvert 
 \end{align*}
 $$
 
-Vyjádřením $r$ z druhé rovnice a následným dosazením dostáváme
+Vyjadrením $r$ z druhej rovnice a následným dosadením dostávame
 $$
 r = \sqrt{r_2 ^2 + \left(r_2^2 - r_1^2 - 0{,}25 \right)^2 } \doteq 4{,}5\,\text{km}.
 $$
 
-Vzdálenost lodi od trosečníka je délkou úsečky $LX$. Přenesením 
-této úsečky na měřítko vyčteme $\lvert LX \rvert \doteq 4{,}
-0\,\text{km}$, úsečka je tedy kratší než dosah $r$ trosečníkova 
-signálu. Loď proto může tento signál zaznamenat.
+Vzdialenosť lode od stroskotanca je dĺžkou úsečky $LX$. Prenesením 
+tejto úsečky na mierku vyčítame $\lvert LX \rvert \doteq 4{,}
+0\,\text{km}$, úsečka je teda kratšia než dosah $r$ stroskotancovho 
+signálu. Loď preto môže tento signál zaznamenať.
 
-b) K odvození konstrukčního řešení úlohy (tj. sestrojení 
-poloměru $r$ polokoule) využijeme stejný pomocný průmět 
-polokoule jako v Úloze 2a. Střed polokoule $S$ je průsečíkem 
-společné osy $o$ úseček $K_1L_1$ a $K_2L_2$ a osy úsečky 
-$L_1L_2$, neboť ta je tětivou obrysové půlkružnice $k$. Hledaný 
-poloměr $r$ je pak např. velikostí úsečky $SK_1$,  viz obrázek.
+b) Na odvodenie konštrukčného riešenia úlohy (t. j. skonštruovanie 
+polomeru $r$ pologule) využijeme rovnaký pomocný priemet 
+pologule ako v Úlohe 2a. Stred pologule $S$ je priesečníkom 
+spoločnej osi $o$ úsečiek $K_1L_1$ a $K_2L_2$ a osi úsečky 
+$L_1L_2$, pretože tá je tetivou obrysu polkružnice $k$. Hľadaný 
+polomer $r$ je potom napr. veľkosťou úsečky $SK_1$, pozri obrázok.
 
-![Pomocný průmět polokoule při řešení Úlohy 2b)](math4you_00043_04.svg)
+![Pomocný priemet pologule pri riešení Úlohy 2b)](math4you_00043_04.svg)
 
-Při samotném provedení konstrukce přenášíme vzdálenosti $r_1$ a 
-$r_2$ z řešení Úlohy 1 (kde připomínáme, že platí 
-$r_1=\lvert A_1X\rvert$ a $r_2=\lvert A_2X\rvert$), vzdálenost 
-středů kružnic $|S_1S_2|=d_{0{,}5}$, kde $d_{0{,}5}$ označuje 
-vzdálenost na mapě odpovídající $0{,}5\,\text{km}$, kterou 
-nanášíme z měřítka.
+Pri samotnom vykonaní konštrukcie prenášame vzdialenosti $r_1$ a 
+$r_2$ z riešenia Úlohy 1 (kde pripomíname, že platí 
+$r_1=\lvert A_1X\rvert$ a $r_2=\lvert A_2X\rvert$), vzdialenosť 
+stredov kružníc $|S_1S_2|=d_{0{,}5}$, kde $d_{0{,}5}$ označuje 
+vzdialenosť na mape zodpovedajúcu $0{,}5\,\text{km}$, ktorú 
+nanášame z mierky.
 
-Průmět polokoule na mapě ohraničuje kružnice $l$ se středem v 
-bodě $X$ a poloměrem $r$, který přeneseme z pomocného průmětu. 
-Po sestrojení této kružnice je vidět, že se loď nachází v 
-dosahu nouzového signálu.
+Priemet pologule na mape ohraničuje kružnica $l$ so stredom v 
+bode $X$ a polomerom $r$, ktorý prenesieme z pomocného priemetu. 
+Po skonštruovaní tejto kružnice je vidieť, že sa loď nachádza v 
+dosahu núdzového signálu.
 
-![Řešení Úlohy 2b)](math4you_00043_05.svg)
+![Riešenie Úlohy 2b)](math4you_00043_05.svg)
 
 \fi
-
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

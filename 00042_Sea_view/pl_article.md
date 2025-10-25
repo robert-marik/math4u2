@@ -1,9 +1,12 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - geometria płaska
 - trygonometria
 is_finished: true
-
+---
 
 # Widok na morze
 

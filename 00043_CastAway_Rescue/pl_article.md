@@ -1,10 +1,13 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - geometria płaska
 - twierdzenie Pitagorasa
 - symetria
 is_finished: true
-
+---
 
 
 # Ratowanie rozbitka

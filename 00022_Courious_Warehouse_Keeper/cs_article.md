@@ -1,4 +1,7 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - rovnice a nerovnice
 - soustavy lineárních rovnic

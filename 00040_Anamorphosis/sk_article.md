@@ -1,287 +1,230 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
-- space geometry
-- anamorphosis
-- solids
-- projection
-- central projection
-- perspective
-is_finished: false
+- geometria v priestore
+- anamorfózy
+- telesá
+- premietanie
+- stredové premietanie
+- perspektíva
+is_finished: true
 ---
-
-### Instructions for translators
-
-
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
-
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
-
----
----
-
-### Czech source
-
 
 # Anamorfózy
 
-## Anamorfózy ve výtvarném umění 
+## Anamorfózy vo výtvarnom umení 
 
-Anamorfóza je druh vizuálního triku či umění, při němž část roviny nebo prostoru viděná z určitého úhlu odhaluje skrytý obraz. 
-Anamorfóza závisí na tom, zda pozorovatel najde správné místo, odkud se dívat. Tento druh umění má dlouhou a bohatou historii. 
-Jedním z nejznámějších obrazů využívajících anamorfózy jsou Velvyslanci (1533) německého malíře Hanse Holbeina mladšího (1497 – 1543). 
+Anamorfóza je druh vizuálneho triku či umenia, pri ktorom časť roviny alebo priestoru videná z určitého uhla odhaľuje skrytý obraz. 
+Anamorfóza závisí od toho, či pozorovateľ nájde správne miesto, odkiaľ sa pozerať. Tento druh umenia má dlhú a bohatú históriu. 
+Jedným z najznámejších obrazov využívajúcich anamorfózy sú Veľvyslanci (1533) nemeckého maliara Hansa Holbeina mladšieho (1497 – 1543). 
 
-![Velvyslanci](holbein.jpg)
+![Veľvyslanci](holbein.jpg)
 
-V dolní části obrazu je namalován jistý podivný protáhlý objekt. 
-O co se jedná je možné rozeznat pouze pokud se postavíte ke zdi u pravého rámu obrazu a zadíváte se tím směrem. 
-Pokud najdete správnou pozici odkud se dívat, uvidíte, že jde o lebku. 
+V dolnej časti obrazu je namaľovaný istý podivný predĺžený objekt. 
+O čo ide je možné rozoznať len vtedy, ak sa postavíte k stene pri pravom ráme obrazu a zadívate sa tým smerom. 
+Ak nájdete správnu pozíciu, odkiaľ sa pozerať, uvidíte, že ide o lebku. 
 
-Anamorfní umění může využívat také odrazy obrazů nebo soch ve válci[^1]. 
+Anamorfné umenie môže využívať aj odrazy obrazov alebo sôch vo valci[^1]. 
 
-Ke konci 20. století zažilo anamorfní umění velké oživení ve fotografii, kresbě a velkoplošných instalacích. 
-Někteří umělci tvoří anamorfní obrazy z předmětů denní potřeby jako elektronika, nebo obuv a ponožky[^2]. 
-S anamorfózami se můžeme potkat i v rámci street artu. 
-Často jde o kresby na chodníku, silnici či na zdi, které náhodného kolemjdoucího překvapí a na okamžik zarazí. 
-Může jít třeba o kresbu, která vypadá jako díra v zemi, do které hrozí pád, nohy vykukující ze zdi či kanálu a podobně.
-Anamorfózy založené na středovém promítání jsou přesvědčivější, pokud je sledujeme jedním okem nebo přes objektiv. 
-Pokud je ale střed promítání dostatečně daleko od pozorovaného objektu, je dobře vystínován nebo jeho okolí nějak podporuje dojem prostoru,
-je iluze přesvědčivější.
+Ku koncu 20. storočia zažilo anamorfné umenie veľké oživenie vo fotografii, kresbe a veľkoplošných inštaláciách. 
+Niektorí umělci vytvárajú anamorfné obrazy z predmetov dennej potreby ako elektronika, alebo obuv a ponožky[^2]. 
+S anamorfózami sa môžeme stretnúť aj v rámci street artu. 
+Často ide o kresby na chodníku, ceste či na stene, ktoré náhodného okoloidúceho prekvapia a na okamih zamedzia. 
+Môže ísť napríklad o kresbu, ktorá vyzerá ako diera v zemi, do ktorej hrozí pád, nohy vyčnievajúce zo steny či kanála a podobne.
+Anamorfózy založené na stredovom premietaní sú presvedčivejšie, ak ich sledujeme jedným okom alebo cez objektív. 
+Ak je ale stred premietania dostatočne ďaleko od pozorovaného objektu, je dobre vystienený alebo jeho okolie nejako podporuje dojem priestoru,
+je ilúzia presvedčivejšia.
 
-## Praktické využití  
+## Praktické využitie  
 
-Ve filmovém průmyslu se k natáčení filmů někdy používají  kamery s anamorfními čočkami. 
-Ty byly původně navrženy z toho důvodu, aby širokoformátové snímky plně využívaly plochu standardních filmových políček s výškou 35mm. 
-Jinak by širokoformátové snímky ponechaly horní a spodní část rámečku nevyužité. 
-Přes příchod digitálních snímačů s velkým rozlišením se anamorfní objektivy používají pro unikátnost výsledného obrazu i v dnešní době.
+Vo filmovom priemysle sa na natáčanie filmov niekedy používajú kamery s anamorfnými šošovkami. 
+Tie boli pôvodne navrhnuté z toho dôvodu, aby širokoformátové snímky plne využívali plochu štandardných filmových políčok s výškou 35 mm. 
+Inak by širokoformátové snímky ponechali hornú a spodnú časť rámčeka nevyužitú. 
+Napriek príchodu digitálnych snímačov s veľkým rozlíšením sa anamorfné objektívy používajú pre unikátnosť výsledného obrazu aj v dnešnej dobe.
 
-V některých městech zaváděly přechody pro chodce, které v určitém okamžiku vypadaly z pohledu přijíždějícího řidiče jako levitující hranoly. 
-Po krátké zkušební době byly většinou zrušeny, protože před nimi řidiči brzdili příliš prudce. 
+V niektorých mestách zavádzali priechody pre chodcov, ktoré v určitom okamihu vyzerali z pohľadu prichádzajúceho vodiča ako levitujúce hranoly. 
+Po krátkej skúšobnej dobe boli väčšinou zrušené, pretože pred nimi vodiči brzdili príliš prudko. 
 
-Techniku anamorfní projekce můžeme vidět na některých sportovních stadionech, kdy se používá k propagaci firemních značek, 
-které jsou namalovány na hrací plochu. Z úhlu televizní kamery se nápis jeví jako nápisy stojící svisle v rámci hrací plochy. 
+Techniku anamorfnej projekcie môžeme vidieť na niektorých športových štadiónoch, keď sa používa na propagáciu firemných značiek, 
+ktoré sú namaľované na hraciu plochu. Z uhla televíznej kamery sa nápis javí ako nápisy stojace zvisle v rámci hracej plochy. 
 
-## Anamorfózy základních těles 
+## Anamorfózy základných telies 
 
-V následujícím textu a příkladech vytvoříme anamorfózy základních těles pomocí středového promítání do roviny. 
-Rovině, ve které tyto anamorfní obrazy budeme rýsovat budeme říkat průmětna. 
-Průmětnou pro nás bude papír, na který budeme rýsovat. 
-Tím budeme omezeni co se týče velikosti objektů. Vzniklé obrazy pak budeme pozorovat okem kamery přes mobil nebo fotoaparát.
-Pokud máte možnost, můžete anamorfní obrazy vytvářet venku, ideálně mimo komunikace.  
+V nasledujúcom texte a príkladoch vytvoríme anamorfózy základných telies pomocou stredového premietania do roviny. 
+Rovine, v ktorej tieto anamorfné obrazy budeme rysovať budeme hovoriť priemetňa. 
+Priemetňou pre nás bude papier, na ktorý budeme rysovať. 
+Tým budeme obmedzení, čo sa týka veľkosti objektov. Vzniknuté obrazy potom budeme pozorovať okom kamery cez mobil alebo fotoaparát.
+Ak máte možnosť, môžete anamorfné obrazy vytvárať vonku, ideálne mimo komunikácií.  
 
-## Jehlan a kužel
+## Ihlan a kužeľ
 
-Asi nejjednodušší je vytvořit anamorfní obrazy jehlanu a kuželu, pokud ovšem jejich podstavy leží v průmětnách. 
-Pojďme si princip vysvětlit na jehlanu. Kromě tělesa je třeba zadat i střed promítání $S$ a jeho kolmý průmět do průmětny $S_1$. 
-Střed promítání si můžeme představit jako oko pozorovatele. Kolmý průmět jako místo, kde pozorovatel stojí.
-Vzdálenost $S _1S = d$ je tedy vzdálenost středu promítání od průmětny. 
-U pravidelného čtyřbokého jehlanu obdobně označíme jeho vrchol jako $V$ a kolmý průmět vrcholu do průmětny $V_1$. 
-Průsečík přímky $SV$ (takzvaného promítacího paprsku) s průmětnou pak získáme jako průsečík přímky $SV$ s přímkou $S_1V_1$ (viz následující obrázek nalevo). 
-Takový obrázek je dobré si načrtnout když přemýšlíme, jak iluze funguje, a jak bude středový průmět vypadat. 
-Pro určení anamorfózy jehlanu ale tento prostorový obrázek třeba není. 
+Asi najjednoduchšie je vytvoriť anamorfné obrazy ihlana a kužeľa, ak teda ich podstavy ležia v priemetňach. 
+Poďme si princíp vysvetliť na ihlane. Okrem telesa je treba zadať aj stred premietania $S$ a jeho kolmý priemet do priemetne $S_1$. 
+Stred premietania si môžeme predstaviť ako oko pozorovateľa. Kolmý priemet ako miesto, kde pozorovateľ stojí.
+Vzdialenosť $S_1S = d$ je teda vzdialenosť stredu premietania od priemetne. 
+U pravidelného štvorobokého ihlana obdobne označíme jeho vrchol ako $V$ a kolmý priemet vrcholu do priemetne $V_1$. 
+Priesečník priamky $SV$ (takzvaného premietacieho lúča) s priemetňou potom získame ako priesečník priamky $SV$ s priamkou $S_1V_1$ (pozri nasledujúci obrázok vľavo). 
+Taký obrázok je dobré si načrtnúť, keď premýšľame, ako ilúzia funguje, a ako bude stredový priemet vyzerať. 
+Pre určenie anamorfózy ihlana ale tento priestorový obrázok treba nie je. 
 
-![Anamorfóza jehlanu](jehlan_1.png)
+![Anamorfóza ihlana](jehlan_1.png)
 
-Důležitý je pro nás pouze lichoběžník $S_1V_1VS$, který si můžeme znázornit i v průmětně jako lichoběžník $S_1V_1(V)(S)$(předchozí obrázek napravo). 
-Body, které byly předtím v prostoru mimo průmětnu (body $V$ a $S$) nyní v průmětně uvádíme v závorce, abychom je vzájemně odlišili. 
-Body $(V)$ a $(S)$ vznikly pootočením roviny $S_1VS$ o $90^\circ$ do průmětny kolem přímky $S_1V_1$. 
-Pokud známe výšku jehlanu, vzdálenost oka pozorovatele od průmětny, a vzdálenost $S_1V_1$, pak můžeme lichoběžník narýsovat. 
-Protažením jeho stran, které nejsou vzájemně rovnoběžné, dostaneme průsečík $V_s$. 
+Dôležitý je pre nás len lichobežník $S_1V_1VS$, ktorý si môžeme znázorniť aj v priemetni ako lichobežník $S_1V_1(V)(S)$ (predchádzajúci obrázok vpravo). 
+Body, ktoré boli predtým v priestore mimo priemetne (body $V$ a $S$) teraz v priemetni uvádzame v zátvorke, aby sme ich vzájomne odlíšili. 
+Body $(V)$ a $(S)$ vznikli pootočením roviny $S_1VS$ o $90^\circ$ do priemetne okolo priamky $S_1V_1$. 
+Ak poznáme výšku ihlana, vzdialenosť oka pozorovateľa od priemetne, a vzdialenosť $S_1V_1$, potom môžeme lichobežník narysovať. 
+Predĺžením jeho strán, ktoré nie sú vzájomne rovnobežné, dostaneme priesečník $V_s$. 
 
-![Anamorfóza jehlanu](jehlan_2.png)
+![Anamorfóza ihlana](jehlan_2.png)
 
-Výsledek (viz předchozí obrázek nalevo) je vhodné nakreslit bez pomocných čar. Můžeme se na něj podívat okem kamery. 
-Při prohlídce přes oko kamery zjistíme, že neviditelné hrany dolní podstavy je vhodné nakreslit hustší čárkovanou čarou než průmět neviditelné boční hrany.
-Pokud chceme, aby jehlan vypadal věrohodně, obrázek vystínujeme. Stín můžeme jen odhadnout, vržený stín vrcholu si můžeme zvolit. 
-Anamorfóza jehlanu je hotová, kameru fotoaparátu (aby iluze fungovala), je třeba nastavit nad bod $S_1$ ve výšce rovné vzdálenosti $S_1(S)$.
-Výsledný obraz přes oko kamery by měl vypadat přibližně jako na následujícím obrázku.
+Výsledok (pozri predchádzajúci obrázok vľavo) je vhodné nakresliť bez pomocných čiar. Môžeme sa naň pozrieť okom kamery. 
+Pri prehliadke cez oko kamery zistíme, že neviditeľné hrany dolnej podstavy je vhodné nakresliť hustšou čiarkovanou čiarou než priemet neviditeľnej bočnej hrany.
+Ak chceme, aby ihlan vyzeral vierohodne, obrázok vystienujeme. Tieň môžeme len odhadnúť, vrhnutý tieň vrcholu si môžeme zvoliť. 
+Anamorfóza ihlana je hotová, kameru fotoaparátu (aby ilúzia fungovala), je treba nastaviť nad bod $S_1$ vo výške rovnej vzdialenosti $S_1(S)$.
+Výsledný obraz cez oko kamery by mal vyzerať približne ako na nasledujúcom obrázku.
 
-![Anamorfóza jehlanu, pohled kamerou ze středu $S$](stin_jehlanu.jpg)
+![Anamorfóza ihlana, pohľad kamerou zo stredu $S$](stin_jehlanu.jpg)
 
-> **Úloha 1.** Chceme na zem nakreslit tvar, který bude v prostoru vypadat jako kužel o výšce $1\,\mathrm{m}$ a s podstavou o poloměru $r=0{,}4\,\mathrm{m}$.
-> Střed promítání budeme opět značit $S$ a $S_1$ jeho kolmý průmět.
-> Předpokládáme, že oko průměrného pozorovatele je ve výšce $150\,\mathrm{cm}$ od země.
-> V jaké vzdálenosti musí být $V_s$ od $V_1$ ($V_s$ je středový průmět vrcholu kuželu do průmětny, $V_1$ je kolmý průmět vrcholu kuželu do průmětny)?
+> **Úloha 1.** Chceme na zem nakresliť tvar, ktorý bude v priestore vyzerať ako kužeľ o výške $1\,\mathrm{m}$ a s podstavou o polomere $r=0{,}4\,\mathrm{m}$.
+> Stred premietania budeme opäť značiť $S$ a $S_1$ jeho kolmý priemet.
+> Predpokladáme, že oko priemerného pozorovateľa je vo výške $150\,\mathrm{cm}$ od zeme.
+> V akej vzdialenosti musí byť $V_s$ od $V_1$ ($V_s$ je stredový priemet vrcholu kužeľa do priemetne, $V_1$ je kolmý priemet vrcholu kužeľa do priemetne)?
 
 \iffalse
 
-*Řešení.* Trojúhelníky $S_1V_sS$ a $V_1V_sV$ jsou podobné.   
+*Riešenie.* Trojuholníky $S_1V_sS$ a $V_1V_sV$ sú podobné.   
 
-![Výška kuželu](kuzel_vyska.png) 
+![Výška kužeľa](kuzel_vyska.png) 
 
-Platí tedy, že poměry příslušných stran, jsou si rovny: 
+Platí teda, že pomery príslušných strán sú si rovné: 
 
 $$\frac{x}{1}= \frac{x+3}{1{,}5},$$ 
 
 $$1{,}5\,x=x+3,$$ 
 
-odkud dostáváme $x=6$. Vzdálenost bodu $V_s$ od $V_1$ musí být $6$ metrů.
+odkiaľ dostávame $x=6$. Vzdialenosť bodu $V_s$ od $V_1$ musí byť $6$ metrov.
 
 \fi
 
-> **Úloha 2.** Máme danou podstavnou kružnici $k$ se středem $V_1$ a bod $V_s$ (zadání viz obrázek).
-> Představme si nyní v prostoru rotační kužel s podstavnou kružnicí $k$ a střed promítání $S$, takové že $V_s$ je středový průmět vrcholu kuželu.
-> $V_1$ je kolmý průmět vrcholu kuželu do průmětny (na papír). Určete obrys středového průmětu kuželu. 
+> **Úloha 2.** Máme danú podstavnú kružnicu $k$ so stredom $V_1$ a bod $V_s$ (zadanie pozri obrázok).
+> Predstavme si teraz v priestore rotačný kužeľ s podstavnou kružnicou $k$ a stred premietania $S$, také že $V_s$ je stredový priemet vrcholu kužeľa.
+> $V_1$ je kolmý priemet vrcholu kužeľa do priemetne (na papier). Určte obrys stredového priemetu kužeľa. 
 
-![Zadání úlohy 2](kuzel_uloha2_zadani.png)
+![Zadanie úlohy 2](kuzel_uloha2_zadani.png)
 
 \iffalse
 
-*Řešení.* Obrys kuželu bude (kromě části podstavné kružnice) tvořen tečnami z vrcholu $V_s$. 
-Přesněji to budou spojnice bodu $V_s$ s body dotyku $T$ a $T'$, 
-které získáme jako průsečíky Thaletovy kružnice $l$ nad průměrem $V_1V_s$ s kružnicí $k$. 
+*Riešenie.* Obrys kužeľa bude (okrem časti podstavnej kružnice) tvorený dotyčnicami z vrcholu $V_s$. 
+Presnejšie to budú spojnice bodu $V_s$ s bodmi dotyku $T$ a $T'$, 
+ktoré získame ako priesečníky Thaletovej kružnice $l$ nad priemerom $V_1V_s$ s kružnicou $k$. 
 
-![Řešení úlohy 2](kuzel_uloha2_reseni.png)
+![Riešenie úlohy 2](kuzel_uloha2_reseni.png)
 
 \fi
 
-> **Úloha 3.** Pro řešení předchozí úlohy určete polohu středu $S$ (pomocí $S_1$ a $(S)$),
-> jestliže známe výška $v$ prostorového kuželu a $d=\left|S_1S\right|$. 
-> Zadání viz následující obrázek, délky $v$ a $d$ jsou dány pomocí úseček.
+> **Úloha 3.** Pre riešenie predchádzajúcej úlohy určte polohu stredu $S$ (pomocou $S_1$ a $(S)$),
+> ak poznáme výšku $v$ priestorového kužeľa a $d=\left|S_1S\right|$. 
+> Zadanie pozri nasledujúci obrázok, dĺžky $v$ a $d$ sú dané pomocou úsečiek.
 
-![Zadání úlohy 3](kuzel_uloha3_zadani.png)
+![Zadanie úlohy 3](kuzel_uloha3_zadani.png)
 
 \iffalse
 
-*Řešení.* Bod $S$ musí splňovat dvě podmínky. Jeho vzdálenost od průmětny je rovna $d$ a musí ležet na spojnici $VV_s$. 
-Střed $S$ i bod $V$ leží v rovině kolmé na průmětnu. Průsečnice těchto dvou rovin je přímka $o=V_1V_s$. 
-Kolem této přímky můžeme vrchol $V$ poototočit o $90^\circ$ do průmětny. 
-Otočený obraz bodu $V$ označíme $(V)$, musí ležet ve vzdálenosti $v$ od bodu $V_1$ na kolmici na osu $o$. 
-Ve vzdálenosti $d$ od osy $o=V_1V_s$ narýsujeme přímku $p$. Bod $(S)$ musí ležet na průsečíku přímky $p$ a $(V)V_s$  
+*Riešenie.* Bod $S$ musí spĺňať dve podmienky. Jeho vzdialenosť od priemetne je rovná $d$ a musí ležať na spojnici $VV_s$. 
+Stred $S$ aj bod $V$ ležia v rovine kolmej na priemetňu. Priesečnica týchto dvoch rovín je priamka $o=V_1V_s$. 
+Okolo tejto priamky môžeme vrchol $V$ pootočiť o $90^\circ$ do priemetne. 
+Otočený obraz bodu $V$ označíme $(V)$, musí ležať vo vzdialenosti $v$ od bodu $V_1$ na kolmici na os $o$. 
+Vo vzdialenosti $d$ od osi $o=V_1V_s$ narysujeme priamku $p$. Bod $(S)$ musí ležať na priesečníku priamky $p$ a $(V)V_s$  
 
-![Řešení úlohy 3](kuzel_uloha3_reseni.png)
+![Riešenie úlohy 3](kuzel_uloha3_reseni.png)
 
 \fi
 
 
-## Hranol a válec
+## Hranol a valec
 
-Při anamorfním zobrazení hranolu a válce budeme využívat stejnolehlost. 
-Proč tomu tak je si vysvětlíme na příkladu krychle na následujícím obrázku. 
-Mezi horní podstavou krychle a jejím průmětem je v prostoru vztah stejnolehlosti se středem $S$ (plyne z podobnosti trojúhelníků). 
-Protože dolní podstava krychle je současně kolmým průmětem horní podstavy do průmětny, 
-funguje pak vztah stejnolehlosti mezi dolní podstavou a středovým průmětem horní podstavy se středem stejnolehlosti $S_1$.  
+Pri anamorfnom zobrazení hranola a valca budeme využívať súmernosť. 
+Prečo tomu tak je si vysvetlíme na príklade kocky na nasledujúcom obrázku. 
+Medzi hornou podstavou kocky a jej priemetom je v priestore vzťah súmernosti so stredom $S$ (plynie z podobnosti trojuholníkov). 
+Pretože dolná podstava kocky je súčasne kolmým priemetom hornej podstavy do priemetne, 
+funguje potom vzťah súmernosti medzi dolnou podstavou a stredovým priemetom hornej podstavy so stredom súmernosti $S_1$.  
 
-![Anamorfóza krychle](krychle_stejnolehlost.png)
+![Anamorfóza kocky](krychle_stejnolehlost.png)
  
-> **Úloha 4.** Určete anamorfózu krychle. Čtverec dolní podstavy je dán protilehlými vrcholy $A_1$, $C_1$.
-> Dále je dána poloha bodu $S_1$ (kolmý průmět středu promítání $S$), délka $d$ je zadána poloměrem kružnice $k$. 
+> **Úloha 4.** Určte anamorfózu kocky. Štvorec dolnej podstavy je daný protiľahlými vrcholmi $A_1$, $C_1$.
+> Ďalej je daná poloha bodu $S_1$ (kolmý priemet stredu premietania $S$), dĺžka $d$ je zadaná polomerom kružnice $k$. 
 
-![Zadání úlohy 4](krychle_zadani.png)
+![Zadanie úlohy 4](krychle_zadani.png)
 
 \iffalse 
 
-*Řešení.* Sestrojíme čtverec $A_1B_1C_1D_1$ s úhlopříčkou $A_1C_1$. Na obrázku .. vidíme, že bod $A_s$ je průsečík přímek $AS$ a $A_1S_1$. 
-Známe délky rovnoběžných stran lichoběžníka $A_1S_1SA$, takže můžeme opět provést jeho pootočení kolem strany $A_1S_1$ o $90^\circ$ do průmětny. 
-Délka $S_1(S)=d$ je dána poloměrem kružnice $k$ a délka $A_1(A)=a$ je délka strany čtverce $A_1B_1C_1D_1$. 
-Bod $A_s$ je průsečík přímky $S_1A_1$ a přímky $(S)(A)$. 
+*Riešenie.* Zostrojíme štvorec $A_1B_1C_1D_1$ s uhlopriečkou $A_1C_1$. Na obrázku .. vidíme, že bod $A_s$ je priesečník priamok $AS$ a $A_1S_1$. 
+Poznáme dĺžky rovnobežných strán lichobežníka $A_1S_1SA$, takže môžeme opäť vykonať jeho pootočenie okolo strany $A_1S_1$ o $90^\circ$ do priemetne. 
+Dĺžka $S_1(S)=d$ je daná polomerom kružnice $k$ a dĺžka $A_1(A)=a$ je dĺžka strany štvorca $A_1B_1C_1D_1$. 
+Bod $A_s$ je priesečník priamky $S_1A_1$ a priamky $(S)(A)$. 
 
-![Zobrazení čtverce dolní podstavy a určení bodu $A_s$](krychle_postup_1.png)
+![Zobrazenie štvorca dolnej podstavy a určenie bodu $A_s$](krychle_postup_1.png)
 
-Čtverec s vrcholem $A_s$ poté dorýsujeme pomocí stejnolehlosti. Boční hrany krychle odpovídají spojnicím vrcholů čtverců, 
-které si odpovídají ve stejnolehlosti. 
-Máme hotovo. Pokud ale chceme podpořit iluzi krychle, můžeme narýsovat ještě čverec, 
-který odpovídá čtverci $A_1B_1C_1D_1$ ve stejnolehlosti se středem  $S$ a koeficientem $0<k<1$. 
-Pokud ho vybarvíme šedě, určíme tím stín krychle (při směru osvětlení shora) a vytvoříme tím dojem, že krychle levituje v prostoru.
+Štvorec s vrcholom $A_s$ potom dorysujeme pomocou súmernosti. Bočné hrany kocky zodpovedajú spojeniam vrcholov štvorcov, 
+ktoré si zodpovedajú v súmernosti. 
+Máme hotovo. Ak ale chceme podporiť ilúziu kocky, môžeme narysovať ešte štvorec, 
+ktorý zodpovedá štvrocu $A_1B_1C_1D_1$ v súmernosti so stredom $S$ a koeficientom $0<k<1$. 
+Ak ho vyfarbíme šedou, určíme tým tieň kocky (pri smere osvetlenia zhora) a vytvoríme tým dojem, že kocka levituje v priestore.
 
-![Řešení úlohy 4 a jeho vylepšení](krychle_postup_2.png)
+![Riešenie úlohy 4 a jeho vylepšenie](krychle_postup_2.png)
 
 \fi
 
-> **Úloha 5.** Mějme dány dvě různě velké kružnice, zadání viz následující obrázek.
-> Určete střed jejich stejnolehlosti $S_1$ a jejich společné tečny tak, aby výsledný obrázek byl anamorfózou válce. 
+> **Úloha 5.** Majme dané dve rôzne veľké kružnice, zadanie pozri nasledujúci obrázok.
+> Určte stred ich súmernosti $S_1$ a ich spoločné dotyčnice tak, aby výsledný obrázok bol anamorfózou valca. 
 
-![Zadání úlohy 5](valec_zadani.png)
+![Zadanie úlohy 5](valec_zadani.png)
 
 \iffalse
 
-*Řešení.* Každé dvě nesoustředné kružnice s různými poloměry jsou stejnolehlé dvěma způsoby. 
-Nás zajímá ten způsob, kdy koeficient stejnolehlosti je kladný. Nejprve sestrojíme střed stejnolehlosti (viz následující obrázek).
+*Riešenie.* Každé dve nesústredné kružnice s rôznymi polomermi sú súmerné dvoma spôsobmi. 
+Nás zaujíma ten spôsob, keď koeficient súmernosti je kladný. Najprv zostrojíme stred súmernosti (pozri nasledujúci obrázok).
 
-![Nalezení středu stejnolehlosti](valec_1.png)
+![Nájdenie stredu súmernosti](valec_1.png)
 
-Body dotyku najdeme na Thaletových kružnicích nad průměry $S_1O_1$ a $S_1O_s$. 
-Teprve poté rýsujeme tečny (pokud rýsujeme pomocí pravítka a kružítka).
+Body dotyku nájdeme na Thaletových kružniciach nad priemrmi $S_1O_1$ a $S_1O_s$. 
+Až potom rysujeme dotyčnice (ak rysujeme pomocou pravítka a kružidla).
 
-![Určení společných tečen (řešení pro $k>0$)](valec_2.png)
+![Určenie spoločných dotyčníc (riešenie pre $k>0$)](valec_2.png)
 
-Výsledná anamorfóza válce je na následujícím obrázku.
+Výsledná anamorfóza valca je na nasledujúcom obrázku.
 
-![Zobrazení výsledku úlohy 5](valec_3.png)
+![Zobrazenie výsledku úlohy 5](valec_3.png)
  
 \fi
 
-> **Úloha 6.** Koeficient stejnolehlosti $H(S,k)$ v předchozím příkladu, která zobrazuje $O_1$ na $O_s$ je $k=1{,}5$.
-> Jaký musí být poměr $d:v$, kde $d=\left|S_1S\right|$ a $v=\left|O_1O\right|$ (výška pomyslného válce v prostoru),
-> aby prostorová iluze fungovala?
+> **Úloha 6.** Koeficient súmernosti $H(S,k)$ v predchádzajúcom príklade, ktorá zobrazuje $O_1$ na $O_s$ je $k=1{,}5$.
+> Aký musí byť pomer $d:v$, kde $d=\left|S_1S\right|$ a $v=\left|O_1O\right|$ (výška pomyselného valca v priestore),
+> aby priestorová ilúzia fungovala?
 
 \iffalse
 
-*Řešení.* Označme si $x=\left|S_1O_1\right|$. Díky koeficientu stejnolehlosti pak víme že $\left|S_1O_s\right|=1{,}5\,x$. 
-Z toho plyne $\left|O_1O_s\right|=0{,}5\,x$. Poté opět využijeme podobnosti trojúhelníků $S_1O_s(S)$ a $O_1O_s(O)$ na následujícím obrázku.
+*Riešenie.* Označme si $x=\left|S_1O_1\right|$. Vďaka koeficientu súmernosti potom vieme, že $\left|S_1O_s\right|=1{,}5\,x$. 
+Z toho plynie $\left|O_1O_s\right|=0{,}5\,x$. Potom opäť využijeme podobnosť trojuholníkov $S_1O_s(S)$ a $O_1O_s(O)$ na nasledujúcom obrázku.
 
-![Pomocný obrázek k úloze 6](valec_4.png)
+![Pomocný obrázok k úlohe 6](valec_4.png)
 
 $$\frac{d}{v}= \frac{1{,}5\,x}{0{,}5\,x}=3$$ 
 
-Poměr $d:v$ musí být roven $3:1$
+Pomer $d:v$ musí byť rovný $3:1$
 
 \fi
  
 
-## Odkazy a literatura
+## Odkazy a literatúra
 
-### Literatura
+### Literatúra
 
 https://en.wikipedia.org/wiki/Anamorphosis
 
-### Zdroje obrázků
+### Zdroje obrázkov
 
 - Velvyslanci 
     <https://en.wikipedia.org/wiki/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg>
@@ -293,14 +236,3 @@ https://en.wikipedia.org/wiki/Anamorphosis
 
 [^2]: https://www.youtube.com/watch?v=y__zPc3MZm4.
  
-
- 
-
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.
