@@ -6,7 +6,7 @@ keywords:
 - kosínus
 - aproximácia
 - krvný tlak
-is_finished: false
+is_finished: true
 ---
 
 # Krvný tlak 
@@ -136,113 +136,99 @@ Týmto sa práve bude zaoberať nasledujúca úloha.
 
 \iffalse
 
-*Řešení.*  Pro funkce $\sin x$ a $\cos x$ v základním tvaru platí 
+*Riešenie.*  Pre funkcie $\sin x$ a $\cos x$ v základnom tvare platí 
 $$
 \sin x=\cos\left(x-\frac{\pi}{2}\right),
 $$ 
-kde $\frac{\pi}{2}$ je čtvrtina periody.
-Perioda funkce $P_1$ je $p_1=\frac{6}{7}$, čtvrtina periody je 
+kde $\frac{\pi}{2}$ je štvrtina periódy.
+Perióda funkcie $P_1$ je $p_1=\frac{6}{7}$, štvrtina periódy je 
 $$
 \frac{p_1}{4}=\frac{6}{28}=\frac{3}{14}.
 $$
-Platí tedy 
+Platí teda 
 $$
 \sin\left(\frac{7\pi}{3}t\right)=\cos\left(\frac{7\pi}{3}\left(t-\frac{3}{14}\right)\right)
 $$
-a funkci $P_1$ můžeme vyjádřit následovně
+a funkciu $P_1$ môžeme vyjadriť nasledovne
 $$
 P_1=25\cdot\cos\left(\frac{7\pi}{3}t-\frac{1}{2}\pi\right)+105.
 $$ 
 
 \fi
 
-V předchozí úloze bychom mohli funkce také zaměnit a vyjadřovat funkci $P_2$ pomocí funkce sinus.
+V predchádzajúcej úlohe by sme mohli funkcie tiež zameniť a vyjadrovať funkciu $P_2$ pomocou funkcie sínus.
 
-> **Úloha 4.** Najděte předpis funkce, která aproximuje funkci krevního tlaku zdravého člověka v klidu.
-> Jeho srdeční frekvence je $50$ tepů za minutu. Maximální krevní tlak je $110\,\text{mm}\,\text{Hg}$ a minimální $70\,\text{mm}\,\text{Hg}$. 
+> **Úloha 4.** Nájdite predpis funkcie, ktorá aproximuje funkciu krvného tlaku zdravého človeka v pokoji.
+> Jeho srdcová frekvencia je $50$ tepov za minútu. Maximálny krvný tlak je $110\,\text{mm}\,\text{Hg}$ a minimálny $70\,\text{mm}\,\text{Hg}$.  
 
 \iffalse
 
-*Řešení.*  K aproximaci funkce krevního tlaku použijeme například funkci sinus (řešení pro funkci kosinus by bylo obdobné). 
+*Riešenie.* Na aproximáciu funkcie krvného tlaku použijeme napríklad funkciu sínus (riešenie pre funkciu kosínus by bylo obdobné). 
 
-Amplituda funkce je $\frac{110-70}{2}=20$ a funkce osciluje kolem hodnoty $\frac{110+70}{2}=90$. 
+Amplitúda funkcie je $\frac{110-70}{2}=20$ a funkcia osciluje okolo hodnoty $\frac{110+70}{2}=90$. 
 
-Perioda funkce je 
+Perióda funkcie je 
 $$
 p=\frac{60}{50}=\frac{6}{5},
 $$ 
-tj. jeden srdeční tep trvá $1{,}2$ sekundy. 
-Ze vztahu 
+t. j. jeden srdcový tep trvá $1{,}2$ sekundy. 
+Zo vzťahu 
 $$
 p=\frac{2\pi}{b} = 1{,}2
 $$
-pro periodu $p$ funkce dostáváme $b= \frac{5}{3}\pi$. 
+pre periódu $p$ funkcie dostávame $b= \frac{5}{3}\pi$. 
 
-Hodnotu $c$ můžeme zvolit libovolně, nejjednodušší je zvolit $c = 0.$ 
-Dosazením výše uvedených hodnot do obecného tvaru funkce dostáváme 
+Hodnotu $c$ môžeme zvoliť ľubovoľne, najjednoduchšie je zvoliť $c = 0.$ 
+Dosadením vyššie uvedených hodnôt do všeobecného tvaru funkcie dostávame 
 $$
 P(t) = 20\cdot\sin\left(\frac{5\pi}{3}t\right)+90.
 $$ 
 
-Tato funkce přibližně modeluje krevní tlak osoby se zadanými hodnotami jako funkci času (v sekundách). 
+Táto funkcia približne modeluje krvný tlak osoby so zadanými hodnotami ako funkciu času (v sekundách). 
 
 \fi
 
-## Auskultační technika měření krevního tlaku 
+## Auskultačná technika merania krvného tlaku 
 
-Na závěr ještě uveďme, jak se v realitě tlak opravdu měří. Jedna z přesných metod je tzv. auskultační technika. 
-Při této metoda se používá tonometr, skládající se z gumové manžety, nafukovacího vaku a manometru (mechnické měřidlo tlaku), a fonendoskop. 
+Na záver ešte uveďme, ako sa v realite tlak naozaj meria. Jedna z presných metód je tzv. auskultačná technika. 
+Pri tejto metóde sa používa tonometer, pozostávajúci z gumovej manžety, nafukovacieho vaku a manometra (mechanické meradlo tlaku), a fonendoskop. 
 
-Gumovou manžeta tonometru se nasadí zhruba na polovinu paže. Tlak v manžetě se zvýší tak, aby převyšoval tlak v tepně. 
-Tím se z manžety stane uměle vytvořená překážka krevnímu průtoku. 
-Postupným pomalým snižováním tlaku v manžetě dojde v určitém okamžiku k obnovení průtoku krve. 
+Gumová manžeta tonometra sa nasadí približne na polovicu ramena. Tlak v manžete sa zvýši tak, aby prevyšoval tlak v tepne. 
+Tým sa z manžety stane umelo vytvorená prekážka krvnému prietoku. 
+Postupným pomalým znižovaním tlaku v manžete dôjde v určitom okamihu k obnoveniu prietoku krvi. 
 
-Tlak v manžetě však na počátku způsobí deformaci tepny, díky níž je proudění pronikající krve turbulentní. 
-Hodnota tlaku, při níž začínají být ve fonendoskopu slyšitelné srdeční ozvy, odpovídá hodnotě systolického krevního tlaku.
+Tlak v manžete však na začiatku spôsobí deformáciu tepny, vďaka ktorej je prúdenie prenikajúcej krvi turbulentné. 
+Hodnota tlaku, pri ktorej začínajú byť vo fonendoskope počuteľné srdcové ozveny, zodpovedá hodnote systolického krvného tlaku.
 
-Ozvy jsou slyšitelné do té doby, dokud tlak v manžetě postačuje k deformaci tepny a tím k udržení turbulentního proudění. 
-Jakmile tlak v manžetě poklesne natolik, že již nestačí tepnu deformovat, 
-obnoví se původní proudění krve a ozvy přestanou být slyšitelné. 
-Tlak při poslední slyšitelné ozvě odpovídá hodnotě diastolického krevního tlaku. 
+Ozveny sú počuteľné dovtedy, kým tlak v manžete postačuje na deformáciu tepny a tým na udržanie turbulentného prúdenia. 
+Hneď ako tlak v manžete poklesne natoľko, že už nestačí tepnu deformovať, 
+obnoví sa pôvodné prúdenie krvi a ozveny prestanú byť počuteľné. 
+Tlak pri poslednej počuteľnej ozvene zodpovedá hodnote diastolického krvného tlaku. 
  
-### Zpřesnění 
+### Spresňovanie 
 
-Zbývá dodat, že realističtější vyjádření funkce krevního tlaku je náročnější 
-a vyžaduje součty goniometrických funkcí s různými periodami. 
+Zostáva dodať, že realistickejšie vyjadrenie funkcie krvného tlaku je náročnejšie 
+a vyžaduje súčty goniometrických funkcií s rôznymi periódami. 
 
-Na následujícím obrázku vidíme konkrétní příklad takového součtu a příslušný graf. 
-Současně je na obrázku znázorněno měření krevního tlaku. Rychlost vypouštění manžety je přibližně konstantní. 
-Tlak v manžetě tedy klesá konstantní rychlostí (opět přibližně) a na obrázku je znázorněn přímkou.
+Na nasledujúcom obrázku vidíme konkrétny príklad takéhoto súčtu a príslušný graf. 
+Súčasne je na obrázku znázornené meranie krvného tlaku. Rýchlosť vypúšťania manžety je približne konštantná. 
+Tlak v manžete teda klesá konštantnou rýchlosťou (opäť približne) a na obrázku je znázornený priamkou.
 
-![Příklad součtu sinu a kosinu s různými periodami](cuff_pressure_cz.png)
+![Príklad súčtu sínu a kosínu s rôznymi periódami](cuff_pressure_cz.png)
  
-Zpřesňování průběhu funkce krevního tlaku pomocí součtů sinů a kosinů už souvisí s tzv. Fourierovou větou, 
-která říká, že spojitou periodickou funkci lze vyjádřit jako součet nekonečného počtu funkcí sinus a kosinus, 
-přičemž každý z těchto členů má určitou amplitudu a periodu. 
+Spresňovanie priebehu funkcie krvného tlaku pomocou súčtov sínusov a kosínusov už súvisí s tzv. Fourierovou vetou, 
+ktorá hovorí, že spojitú periodickú funkciu možno vyjadriť ako súčet nekonečného počtu funkcií sínus a kosínus, 
+pričom každý z týchto členov má určitú amplitúdu a periódu. 
 
-Tento výsledek získal v roce 1822 francouzský matematik Joseph Fourier jako součást řešení rovnice vedení tepla.
-Jedná se o klíčový koncept pro analýzu a pochopení jakýchkoli periodických jevů. 
-Fourierova věta je základem zpracování signálů. 
+Tento výsledok získal v roku 1822 francúzsky matematik Joseph Fourier ako súčasť riešenia rovnice vedenia tepla.
+Jedná sa o kľúčový koncept pre analýzu a pochopenie akýchkoľvek periodických javov. 
+Fourierova veta je základom spracovania signálov. 
 
-
-[^1]: Aproximace znamená přibližné, ale věrné vyjádření  čísla nebo funkce, ale také fyzikálního zákona či přírodního jevu.
+[^1]: Aproximácia znamená približné, ale verné vyjadrenie  čísla alebo funkcie, ale tiež fyzikálneho zákona či prírodného javu.
  
-## Literatura
+## Literatúra
 
 * https://www.vaia.com/en-us/textbooks/math/calculus-an-applied-approach-8-edition/chapter-8/problem-72-health-the-function-p100-20-cos-5-pi-t-3-approxim/
 * https://www.vaia.com/en-us/textbooks/math/precalculus-9-edition/chapter-4/problem-90-the-function-p100-20-cos-frac5-pi-t3-approximates/#short-answer
 * https://www.bloodpressureuk.org/your-blood-pressure/understanding-your-blood-pressure/what-do-the-numbers-mean/
  
-
-  
-
- 
-
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

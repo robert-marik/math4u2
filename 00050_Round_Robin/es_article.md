@@ -1,181 +1,125 @@
 ---
 keywords:
-- combinatorics, probability and statistics
-- combinatorics
-is_finished: false
+- combinatoria, probabilidad y estadística
+- combinatoria
+is_finished: true
 ---
 
-### Instructions for translators
 
 
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
-
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
 
 
----
----
+# Round robin: un sistema justo de competición
 
-### Czech source
-
-
-# Round robin
-
-Představte si, že pořádáte školní turnaj ve stolním 
-tenise, šachu, e-sportu nebo třeba futsale. Chcete, 
-aby byl co nejspravedlivější – aby každý hráč měl 
-možnost utkat se se všemi ostatními. Právě k tomu 
-slouží systém každý s každým, známý také jako round 
+Imagina que organizas un torneo escolar de tenis  
+de mesa, ajedrez, deportes electrónicos o fútbol sala. Quieres 
+que sea lo más justo posible, que cada jugador tenga 
+la oportunidad de enfrentarse a todos los demás. Para eso  
+sirve el sistema de todos contra todos, también conocido como round 
 robin.
 
-Jeho hlavní výhodou je férovost: výsledné pořadí závisí 
-jen na výkonech hráčů nebo týmů, ne na náhodném 
-losu soupeřů. Na druhou stranu, počet zápasů rychle 
-roste s počtem účastníků – naplánovat takový turnaj 
-může být docela výzva. A právě zde přichází ke slovu 
-kombinatorika – matematika počítání možností.
+Su principal ventaja es la equidad: la clasificación final depende 
+únicamente del rendimiento de los jugadores o equipos, y no del azar 
+del sorteo de los oponentes. Por otro lado, el número de partidos aumenta 
+rápidamente con el número de participantes, por lo que planificar un torneo de este tipo 
+puede ser todo un reto. Y aquí es donde entra en juego 
+la combinatoria, la matemática del cálculo de posibilidades.
 
-## Futsalový turnaj
+## Torneo de fútbol sala
 
-> **Úloha 1.** Na turnaj ve futsalu se přihlásilo 9 
-> týmů. Je vedený systémem round robin, tzn. každý tým 
-> hraje s každým jeden zápas. Tým za každou výhru v 
-> zápase dostává 2 body, za remízu 1 bod a za prohru 0 
-> bodů. O celkovém umístění týmu rozhodne závěrečný 
-> součet bodů za všechny zápasy
+> **Tarea 1.** Se han inscrito 9 equipos en el torneo de fútbol  
+> sala. Se juega por el sistema de liguilla, es decir, cada equipo 
+> juega un partido contra cada uno de los demás. El equipo recibe 2 puntos por 
+> cada victoria en un partido, 1 punto por un empate y 0 
+> puntos por una derrota. La clasificación general del equipo se decide por la suma final 
+> de puntos de todos los partidos.
 >
-> Kolik zápasů je nutné na turnaji odehrát? Kolika 
-> způsoby je možné sestavit rozvrh turnaje, je-li k 
-> dispozici jediné hřiště, na kterém se zápasy postupně 
-> odehrávají?
+> ¿Cuántos partidos hay que jugar en un torneo? ¿De cuántas 
+> maneras se puede elaborar el calendario del torneo si solo hay 
+> un campo disponible en el que se juegan los partidos 
+> sucesivamente?
 
-\iffalse
 
-*Řešení.* Celkový počet odehraných zápasů odpovídá 
-počtu všech neuspořádaných dvojic vytvořených z devíti 
-týmů. Jinými slovy odpovídá počtu všech dvoučlenných 
-kombinací bez opakování vytvořených z devíti prvků. 
-Těch je celkem
+
+*Solución.* El número total de partidos jugados corresponde 
+número de todas las parejas no ordenadas formadas a partir de nueve 
+equipos. En otras palabras, corresponde al número de todas las combinaciones 
+de dos elementos sin repetición formadas a partir de nueve elementos. 
+Hay un total de
 $$
 \binom{9}{2} = 36.
 $$
-Pro určení počtu způsobů sestavení turnaje hledáme 
-vlastně počet všech seřazení 36 zápasů, 
-proto je všech možných rozvrhů turnaje celkem
+Para determinar el número de formas de organizar el torneo, buscamos 
+en realidad el número total de combinaciones de 36 partidos, 
+por lo que el número total de posibles calendarios del torneo es
 $$
 36! =371\,993\,326\,789\,901\,217\,467\,999\,448\,150\,835\,200\,000\,000 \doteq 3{,}72\cdot 10^{41}.
 $$
-Poznamenejme, že kdybychom shromáždili srovnatelný 
-počet zrnek písku, z nichž každé bude mít objem 
-řádově $10^{-13}\,\text{m}^3$, celá hromada by měla 
-objem v řádech $10^{28}\,\text{m}^3$, což je 
-přibližně desetinásobek objemu Slunce. Spíše než o 
-hromadu by se proto jednalo o relativně hmotné 
-vesmírné těleso.
+Cabe señalar que si reuniéramos un número comparable 
+de granos de arena, cada uno con un volumen 
+del orden de $10^{-13}\,\text{m}^3$, el montón tendría 
+un volumen del orden de $10^{28}\,\text{m}^3$, que es 
+aproximadamente diez veces el volumen del Sol. Por lo tanto 
+más que un montón, se trataría de un cuerpo celeste 
+relativamente masivo.
 
-\fi
 
-> **Úloha 2.** Ukažte, že jestliže některý tým v 
-> turnaji z předchozí úlohy získal celkem 13 bodů, pak 
-> nutně patří mezi čtyři nejlepší týmy turnaje.
 
-\iffalse
+> **Tarea 2.** Demuestra que si algún equipo en 
+> el torneo de la tarea anterior obtuvo un total de 13 puntos, entonces 
+> necesariamente se encuentra entre los cuatro mejores equipos del torneo.
 
-*Řešení.* Úlohu budeme řešit sporem. Připusťme, že by 5 
-týmů získalo 13 nebo více bodů. Protože jsou v každém 
-zápase mezi dva týmy rozděleny 2 body, je v celém 
-turnaji rozděleno celkem $2\cdot 36 = 72$ bodů. Přitom 
-je mezi 5 týmů rozděleno alespoň 65 bodů, mezi 
-zbývající čtyři týmy tak musí být rozděleno nejvýše 7 
-zbylých bodů. 
 
-Ale tyto čtyři týmy navzájem mezi sebou odehrají celkem 
-$\binom{4}{2}=6$ zápasů a musí si proto rozdělit celkem 
-12 bodů, dohromady by se tedy muselo rozdělit alespoň 
-77 bodů, což není možné, dostáváme tedy spor. 
 
-Týmů s 13 nebo více body tak může být nejvýše čtyři.
+*Solución.* Resolveremos el problema mediante un sistema de desempate. Supongamos que 5 
+equipos obtienen 13 o más puntos. Dado que en cada 
+partido se reparten 2 puntos entre los dos equipos, en todo el 
+torneo se reparten un total de $2\cdot 36 = 72$ puntos. Sin embargo, 
+entre los 5 equipos se reparten al menos 65 puntos, por lo que entre 
+los cuatro equipos restantes deben repartirse como máximo los 7 
+puntos restantes. 
 
-\fi
+Pero estos cuatro equipos jugarán entre sí un total de 
+$\binom{4}{2}=6$ partidos y, por lo tanto, deben repartirse un total de 
+12 puntos, por lo que en total habría que repartir al menos 
+77 puntos, lo cual no es posible, por lo que obtenemos una contradicción. 
 
-## Férovejší soutěž
+Por lo tanto, solo puede haber un máximo de cuatro equipos con 13 o más puntos.
 
-Na další ročník futsalového turnaje z předchozích úloh 
-se tentokrát přihlásilo 7 týmů. Při sestavování rozvrhu 
-turnaje si však organizátor dal novou podmínku, že 
-žádný tým nesmí hrát ve dvou zápasech těsně za sebou, 
-aby hráči nemuseli hrát unavení a turnaj byl férovější. 
 
-Libor vymyslel algoritmus, jak požadovanou posloupnost 
-zápasů sestavit. Vychází z následující tabulky.  
 
-![Tabulka pro tvorbu programu férového turnaje](math4you_00050.svg)
+## Una competición más justa
 
-Její každé pole v $i$-tém řádku a $j$-tém sloupci 
-odpovídá zápasu $(i+1)$-tého a $j$-tého týmu. Hledaná 
-posloupnost zápasů bude odpovídat pořadí polí, která 
-Libor postupně vybírá. Pro přehlednost budeme tato pole 
-značit dle týmů, jejichž zápas reprezentuje, tj. $[1;2]$, 
-$[3;5]$ atd. Dále označíme nejdelší diagonálu 
-začínající polem $[1;2]$ a končící polem $[6;7]$ jako 
-$D_1$, kratší diagonálu začínající polem $[1;3]$ a 
-končící polem $[5;7]$ jako $D_2$ apod.
+Para la próxima edición del torneo de fútbol sala de las tareas anteriores 
+esta vez se inscribieron 7 equipos. Sin embargo, al elaborar el calendario 
+del torneo, el organizador estableció una nueva condición: 
+ningún equipo podía jugar dos partidos seguidos, 
+para que los jugadores no tuvieran que jugar cansados y el torneo fuera más justo. 
 
-Liborův algoritmus vypadá následovně:
-- jako první vybereme pole v prvním sloupci a posledním řádku, tj. $[1;7]$;
-- dále vybíráme po řadě pole diagonály $D_1$ v sudých sloupcích zleva doprava;
-- dále vybíráme po řadě zbylá pole diagonály $D_1$ v lichých sloupcích zleva doprava;
-- dále vybíráme zleva doprava všechna pole diagonály $D_2$;
-- dále vybíráme zleva doprava všechna pole diagonály $D_3$, následně $D_4$ atd.
+Libor ideó un algoritmo para crear la secuencia deseada 
+de partidos. Se basa en la siguiente tabla.  
 
-Pro turnaj o sedmi týmech tak dostaneme následující 
-pořadí zápasů
+![Tabla para crear un programa de torneo justo](math4you_00050.svg)
+
+Cada campo en la fila $i$ y la columna $j$ 
+corresponde al partido entre el equipo $(i+1)$ y el equipo $j$. La secuencia 
+de partidos buscada corresponderá al orden de los campos que 
+Libor selecciona gradualmente. Para mayor claridad, marcaremos estos campos 
+según los equipos cuyo partido representan, es decir, $[1;2]$, 
+$[3;5]$, etc. A continuación, marcaremos la diagonal más larga 
+que comienza en el campo $[1;2]$ y termina en el campo $[6;7]$ como 
+$D_1$, la diagonal más corta que comienza en el campo $[1;3]$ y 
+termina en el campo $[5;7]$ como $D_2$, etc.
+
+El algoritmo de Libor es el siguiente:
+- primero seleccionamos los campos de la primera columna y la última fila, es decir, $[1;7]$;
+- a continuación, seleccionamos por orden los campos de la diagonal $D_1$ en las columnas pares de izquierda a derecha;
+- a continuación, seleccionamos por orden los campos restantes de la diagonal $D_1$ en las columnas impares de izquierda a derecha;
+- a continuación, seleccionamos de izquierda a derecha todos los campos de la diagonal $D_2$;
+- a continuación, seleccionamos de izquierda a derecha todos los campos de la diagonal $D_3$, y, a continuación $D_4$, etc.
+
+Para el torneo de siete equipos, obtendremos el siguiente 
+orden de partidos
 
 $$
 [1;7],\quad[2;3],\quad[4;5],\quad[6;7],\quad[1;2],\quad[3;4],\quad[5;6],
@@ -187,14 +131,14 @@ $$
 [3;6],\quad[4;7],\quad[1;5],\quad[2;6],\quad[3;7],\quad[1;6],\quad[2;7].
 $$
 
-> **Úloha 3.** Vypište užitím Liborova algoritmu 
-> posloupnost zápasů pro turnaj, kterého se účastní 9 
-> týmů a ověřte, že v ní nedojde k výskytu stejného 
-> týmu  ve dvou po sobě jdoucích zápasech.
+> **Tarea 3.** Utilizando el algoritmo de Libor, escribe 
+> la secuencia de partidos para un torneo en el que participan 9 
+> equipos y compruebe que no se repita el mismo 
+> equipo  en dos partidos consecutivos.
 
-\iffalse
 
-*Řešení.* Užitím algoritmu dostáváme následující posloupnost 36 polí a je zřejmé, že každá dvě po sobě jdoucí pole mají všechny složky různé.
+
+*Solución.* Al aplicar el algoritmo, obtenemos la siguiente secuencia de 36 campos y es evidente que cada dos campos consecutivos tienen todos los componentes diferentes.
 $$
 [1;9],\quad [2;3],\quad [4;5],\quad [6;7],\quad [8;9],\quad [1;2],\quad [3;4],\quad [5;6],\quad [7;8],\quad [1;3],\quad [2;4],\quad [3;5],
 $$
@@ -205,21 +149,21 @@ $$
 [3;7],\quad [4;8],\quad [5;9],\quad [1;6],\quad [2;7],\quad [3;8],\quad [4;9],\quad [1;7],\quad [2;8],\quad [3;9],\quad [1;8],\quad [2;9].
 $$
 
-\fi
 
-> **Úloha 4.** Platí Liborův algoritmus obecně pro 
-> libovolný počet přihlášených týmů? Pokud ne, tak pro 
-> které? A dokážete sestavit pro tyto případy 
-> požadovanou posloupnost sami?
 
-\iffalse
+> **Tarea 4.** ¿El algoritmo de Libor se aplica en general a 
+> cualquier número de equipos inscritos? Si no es así, ¿a 
+> cuáles? ¿Y pueden elaborar ustedes mismos la 
+> secuencia requerida para estos casos?
 
-*Řešení.* Označme $n$ počet přihlášených týmů (z 
-kontextu úlohy je přitom zřejmé, že $n>1$). Z Liborova 
-algoritmu odvodíme následující posloupnost polí, kterou 
-rozdělíme do několika navazujících sekcí dle jejich 
-výskytu v tabulce (u diagonály $D_1$ přitom musíme 
-rozlišit mezi paritou $n$):
+
+
+*Solución.* Denotemos por $n$ el número de equipos inscritos (del 
+contexto de la tarea se desprende que $n>1$). A partir del algoritmo 
+de Libor, derivamos la siguiente secuencia de campos, que 
+dividiremos en varias secciones consecutivas según su 
+aparición en la tabla (en la diagonal $D_1$ debemos 
+distinguir entre la paridad $n$):
 $$
 \begin{alignat*}{2}
 &[1;n], &&\quad\text{(1. pole)}\\[3mm]
@@ -237,111 +181,105 @@ $$
 \end{alignat*}
 $$
 
-Dvě po sobě jdoucí pole, které patří do stejné sekce, stejné číslo 
-obsahovat nemohou. V obou částech diagonály $D_1$ můžeme totiž libovolná 
-dvě po sobě jdoucí pole zapsat ve tvaru $[j,j+1]$ a $[j+2,j+3]$ a v 
-libovolné diagonále $D_i$ pro $i>1$ mají zase libovolná dvě po sobě 
-jdoucí pole tvar $[j,j+i]$ a $[j+1,j+i+1]$. Stačí proto ověřit, za 
-jakých podmínek může poslední člen jedné sekce obsahovat stejné číslo 
-jako první člen následující sekce. Tyto speciální případy pak posoudíme 
-zvlášť.
+Dos campos consecutivos que pertenecen a la misma sección no pueden contener el 
+mismo número. En ambas partes de la diagonal $D_1$ podemos escribir dos campos 
+consecutivos arbitrarios en la forma $[j,j+1]$ y $[j+2,j+3]$ y en 
+cualquier diagonal $D_i$ para $i>1$ dos campos consecutivos arbitrarios 
+tienen de nuevo la forma $[j,j+i]$ y $[j+1,j+i+1]$. Por lo tanto, basta con verificar 
+en qué condiciones el último miembro de una sección puede contener el mismo número 
+que el primer miembro de la sección siguiente. Estos casos especiales se evaluarán 
+por separado.
 
-**1. pole – 1. část diagonály $D_1$.** Pole $[2;3]$ navazuje nezávisle na paritě $n$ na pole $[1;n]$. Požadovaná podmínka různosti všech čtyř složek tak není splněna pro $n=2$ a $n=3$. 
+**1. campo – 1. parte de la diagonal $D_1$.** El campo $[2;3]$ se conecta independientemente de la paridad $n$ al campo $[1;n]$. Por lo tanto, la condición requerida de que los cuatro componentes sean diferentes no se cumple para $n=2$ y $n=3$. 
 
-**1. část – 2. část diagonály $D_1$.** Pro lichá $n$ navazuje pole $[1;2]$ na pole $[n-1;n]$, odkud dostáváme již řečené případy $n=2$ a~$n=3$. Pro sudá $n$ na sebe navazují pole $[n-2;n-1]$ a $[1;2]$, zde musíme navíc vyjmout případ $n=4$.  
+**Parte 1 – Parte 2 de la diagonal $D_1$.** Para los valores impares de $n$ el campo $[1;2]$ se une al campo $[n-1;n]$, de donde obtenemos los casos ya mencionados $n=2$ y ~$n=3$. Para los valores pares de $n$ los campos $[n-2;n-1]$ y $[1;2]$ se unen, aquí debemos excluir además el caso $n=4$.  
 
-**2. část diagonály $D_1$ – diagonála $D_2$.** Pro lichá $n$ na sebe navazují pole $[n-2;n-1]$ a $[1;3]$. Podmínka různosti složek tak není splněna pro $n\in\{2;3;4;5\}$. Jestliže je $n$ sudé, navazuje na sebe pole $[n-1;n]$ a pole $[1;3]$. Všechna dosud nevyjmutá čísla $n$ zkoumané podmínce vyhovují.
+**Parte 2 de la diagonal $D_1$ – diagonal $D_2$.** Para los valores impares de $n$ se suceden los campos $[n-2;n-1]$ y $[1;3]$. Por lo tanto, la condición de diversidad de los componentes no se cumple para $n\in\{2;3;4;5\}$. Si $n$ es par, se suceden los campos $[n-1;n]$ y $[1;3]$. Todos los números $n$ no excluidos hasta ahora cumplen la condición examinada.
 
-**Diagonála $D_i$ – diagonála $D_{i+1}$.** Pole $[1;i+2]$ navazuje na pole $[n-i;n]$. Dostáváme tak čtyři možné rovnosti, za kterých nebude daná podmínka splněna: 
+**Diagonal $D_i$ – diagonal $D_{i+1}$.** El campo $[1;i+2]$ se une al campo $[n-i;n]$. De este modo, obtenemos cuatro posibles igualdades en las que no se cumplirá la condición dada: 
 $$
 n-i = 1, \qquad n-i = i + 2, \qquad n = 1, \qquad n = i+2.
 $$ 
-Třetí z rovností jistě platit nemůže. První rovnost by znamenala, že 
-$i=n-1$, ale $i$ může nabývat nejvýše hodnoty $n-2$. Pokud by platila 
-čtvrtá rovnost, $i$ nabývá hodnoty právě $n-2$; diagonála $D_{n-2}$ je 
-však poslední sekcí, kterou je posloupnost ukončena, jelikož žádná další
-diagonála nenavazuje. Konečně druhou rovnost lze přepsat do tvaru 
-$i = \frac{n-2}{2}$. Pokud je $n$ liché, nemůže platit; pro libovolné 
-sudé $n$ však existuje dokonce jednoznačné $i$ takové, že platit bude. 
-Algoritmus proto selže pro libovolné sudé $n$; např. pro $n=14$ je 
-$i=6$, poslední člen diagonály $D_6$ je $[8;14]$ a první člen diagonály 
-$D_7$ je $[1;8]$.
+La tercera igualdad no puede ser cierta. La primera igualdad significaría que 
+$i=n-1$, pero $i$ puede tomar como máximo el valor $n-2$. Si se cumpliera 
+la cuarta igualdad, $i$ tomaría el valor $n-2$; sin embargo, la diagonal $D_{n-2}$ es 
+la última sección con la que termina la sucesión, ya que no hay ninguna otra
+diagonal que la continúe. Por último, la segunda igualdad se puede reescribir en la forma 
+$i = \frac{n-2}{2}$. Si $n$ es impar, no puede ser válida; sin embargo, para cualquier 
+$n$ par existe incluso un $i$ único tal que será válida. 
+Por lo tanto, el algoritmo falla para cualquier $n$; par; por ejemplo, para $n=14$ es 
+$i=6$, el último término de la diagonal $D_6$ es $[8;14]$ y el primer término de la diagonal 
+$D_7$ es $[1;8]$.
 
-Liborův algoritmus tak bez výhrad funguje pro lichá $n$ s výjimkou 3 a 
-5. Dodejme však, že zřejmě triviálně funguje také pro $n=2$ (dva týmy 
-odehrají jediný zápas celého turnaje). Pro zbylá sudá $n$, $n=3$ a $n=5$ 
-bychom se nyní měli pokusit najít požadované posloupnosti jinak. 
-Konstatujme však nejdřív, že pro $n=3$ a $n=4$ je to nemožné, protože
+El algoritmo de Libor funciona sin reservas para los valores impares de $n$ con excepción de 3 y 
+5. Sin embargo, cabe añadir que también funciona de forma trivial para $n=2$ (dos equipos 
+juegan un único partido en todo el torneo). Para los valores pares restantes de $n$, $n=3$ y $n=5$ 
+ahora deberíamos intentar encontrar las secuencias requeridas de otra manera. 
+Sin embargo, primero observemos que para $n=3$ y $n=4$ esto es imposible, porque
 
-* pro $n=3$ musíme seřadit tři pole $[1;2]$, $[1;3]$, $[2;3]$, ale každé 
-takové seřazení nesplňuje zadanou podmínku;
-* pro $n=4$ zvolíme bez újmy na obecnosti první pole $[1;2]$, následovat 
-nutně musí pole $[3;4]$ a dále pak opět $[1;2]$, což není možné.
+* para $n=3$ debemos ordenar tres campos $[1;2]$, $[1;3]$, $[2;3]$, pero cada 
+una de estas ordenaciones no cumple la condición especificada;
+* para $n=4$ elegiremos sin perjuicio de la generalidad el primer campo $[1;2]$, al que necesariamente 
+debe seguir el campo $[3;4]$ y luego nuevamente $[1;2]$, lo cual no es posible.
 
-Pro ostatní $n$ již najít posloupnosti požadovaných vlastností umíme. 
-Protože je jich (a algoritmů, kterými je můžeme nalézt) více, udejme 
-alespoň některé příklady, které dostaneme úpravou původního Liborova 
-algoritmu. Pro $n=5$ jej modifikujeme následovně:
+Para los demás $n$ ya sabemos cómo encontrar las sucesiones con las propiedades requeridas. 
+Dado que hay más (y más algoritmos con los que podemos encontrarlas), daremos 
+al menos algunos ejemplos que obtenemos modificando el algoritmo original  
+de Libor. Para $n=5$ lo modificamos de la siguiente manera:
 
-* jako první vybereme pole v prvním sloupci a posledním řádku, tj. $[1;5]$;
-* dále vybíráme po řadě pole diagonály $D_1$ v sudých sloupcích zleva doprava;
-* dále vybíráme po řadě zbylá pole diagonály $D_1$ v lichých sloupcích zleva doprava;
-* dále vybíráme zprava doleva všechna pole diagonály $D_3$;
-* dále vybíráme zprava doleva všechna pole diagonály $D_2$.
+* Primero seleccionamos los campos de la primera columna y la última fila, es decir, $[1;5]$;
+* a continuación, seleccionamos sucesivamente los campos de la diagonal $D_1$ en las columnas pares de izquierda a derecha;
+* a continuación, seleccionamos sucesivamente los campos restantes de la diagonal $D_1$ en las columnas impares de izquierda a derecha;
+* a continuación, seleccionamos de derecha a izquierda todos los campos de la diagonal $D_3$;
+* a continuación, seleccionamos de derecha a izquierda todos los campos de la diagonal $D_2$.
 
-Výsledná posloupnost je tvaru
+La secuencia resultante tiene la forma
 $$
 [1;5],\quad [2;3],\quad [4;5],\quad [1;2],\quad [3;4],\quad [2;5],\quad [1;4],\quad [3;5],\quad [2;4],\quad [1,3].
 $$
 
-Pro sudá $n$ různá od 2 a 4 spočítáme číslo $k=\frac{n-2}{2}$. (Právě 
-toto číslo totiž bylo v diskuzi obecného případu "problematické".) 
-Následovně aplikujeme Liborův algoritmus s tím rozdílem, že při výběru 
-polí zaměníme pořadí diagonál $D_{k+1}$ a $D_{k+2}$. S ohledem na to, že 
-je zbytek algoritmu stejný, zkontrolujme pouze rozdílná napojení 
-dotčených sekcí.
+Para los números pares $n$ distintos de 2 y 4, calculamos el número $k=\frac{n-2}{2}$. (Precisamente 
+este número era «problemático» en la discusión del caso general) 
+A continuación, aplicamos el algoritmo de Libor con la diferencia de que, al seleccionar 
+los campos, intercambiamos el orden de las diagonales $D_{k+1}$ y $D_{k+2}$. Teniendo en cuenta que 
+el resto del algoritmo es el mismo, comprobemos solo las conexiones diferentes 
+de las secciones afectadas.
 
-**Diagonála $D_k$ – diagonála $D_{k+2}$.** Na pole $[n-k;n]$ navazuje 
-pole $[1;k+3]$. Dosazením za $k$, úpravou a porovnáním možných shodných 
-složek dostáváme čtyři rovnosti
+**Diagonal $D_k$ – diagonal $D_{k+2}$.** Al campo $[n-k;n]$ le sigue 
+el campo $[1;k+3]$. Sustituyendo por $k$, ajustando y comparando los posibles componentes coincidentes 
+obtenemos cuatro igualdades
 $$
 \frac{n+2}{2} = 1, \qquad \frac{n+2}{2} = \frac{n+4}{2}, \qquad n = 1, \qquad n = \frac{n+4}{2}.
 $$
-Druhá a třetí z rovností platit nemůže a první (resp. čtvrtá) rovnost je 
-splněna právě tehdy, když $n=0$ (resp. $n=4$), což také neplatí.
+La segunda y tercera igualdad no pueden ser válidas y la primera (o cuarta) igualdad se 
+cumple precisamente cuando $n=0$ (o $n=4$), lo que tampoco es válido.
 
-**Diagonála $D_{k+2}$ – diagonála $D_{k+1}$.** Na pole $[n-(k+2);n]$ 
-navazuje pole $[1;k+2]$. Dosazením a úpravou odvodíme opět čtyři 
-rovnosti, jejichž platnost by porušila zadanou podmínku:
+**Diagonal $D_{k+2}$ – diagonal $D_{k+1}$.** Al campo $[n-(k+2);n]$ 
+le sigue el campo $[1;k+2]$. Sustituyendo y modificando, deducimos de nuevo cuatro 
+igualdades cuya validez infringiría la condición dada:
 $$
 \frac{n-2}{2} = 1, \qquad \frac{n-2}{2} = \frac{n+2}{2}, \qquad n = 1, \qquad n = \frac{n+2}{2}.
 $$
-Žádná z uvedených rovností však platit nemůže, protože $n$ nemůže být 4, 
-1 ani 2.
+Sin embargo, ninguna de las ecuaciones anteriores puede ser válida, ya que $n$ no puede ser 4, 
+1 ni 2.
 
-**Diagonála $D_{k+1}$ – diagonála $D_{k+3}$.** Na pole $[n-(k+1);n]$ 
-navazuje pole $[1;k+4]$. Obdobně jako v předchozích dvou případech 
-můžeme odvodit čtveřici rovností
+**Diagonal $D_{k+1}$ – diagonal $D_{k+3}$.** Al campo $[n-(k+1);n]$ 
+le sigue el campo $[1;k+4]$. Al igual que en los dos casos anteriores, 
+podemos deducir cuatro ecuaciones
 $$
 \frac{n}{2} = 1, \qquad \frac{n}{2} = \frac{n+6}{2}, \qquad n = 1, \qquad n = \frac{n+6}{2}.
 $$
-První tři z uvedených rovností platit nemohou již z dříve uvedených 
-důvodů. Čtvrtá rovnost platí pro $n=6$; pro toto číslo však neexistuje 
-diagonála $D_{k+3}$, neboť $k+3 = \frac{6-2}{2} + 3 = 5$. (Připomeňme, 
-že pro $n=6$ jsou definovány pouze diagonály $D_1$–$D_4$.) Algoritmus 
-pro $n=6$ tak končí výběrem členů diagonály $D_{k+1}=D_3$.
+Las tres primeras igualdades mencionadas no pueden ser válidas por las razones expuestas 
+anteriormente. La cuarta igualdad es válida para $n=6$; sin embargo, para este número no existe 
+la diagonal $D_{k+3}$, ya que $k+3 = \frac{6-2}{2} + 3 = 5$. (Recordemos, 
+que para $n=6$ solo se definen las diagonales $D_1$–$D_4$.) El algoritmo 
+para $n=6$ termina así con la selección de los miembros de la diagonal $D_{k+1}=D_3$.
 
-Upravený algoritmus tak pro sudá $n$ různá od 2 a 4 sestrojí požadovanou 
-posloupnost polí. Jediná přirozená $n>1$, pro která žádná posloupnost 
-zadaných vlastností neexistuje, jsou proto 3 a 4.
-
-\fi
+El algoritmo modificado construye así la secuencia de campos requerida para los valores pares de $n$  
+distintos de 2 y 4. Por lo tanto, los únicos valores naturales de $n>1$, para los que no existe ninguna secuencia 
+con las propiedades especificadas son 3 y 4.
 
 
----
----
 
-### English source
 
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.
+

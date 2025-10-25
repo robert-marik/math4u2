@@ -1,365 +1,306 @@
 ---
 keywords:
-- functions
-- rational fractional function
-- asymptote
-is_finished: false
+- funkcie
+- racionálna lomená funkcia
+- asymptota
+is_finished: true
 ---
 
-### Instructions for translators
+# Trofické funkcie v modeloch dravca a koristi
 
+Pri štúdiu prírody hrajú neoceniteľnú úlohu matematické modely. Tieto
+modely otvárajú cestu k predpovediam budúceho vývoja, ale plnia aj
+ďalšie a důležitejšie úlohy.
 
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
+Používanie ekologických modelov býva niekedy spomínané ako fyzikálne postupy 
+v ekológii, pretože sa študuje ekosystém z hľadiska vývoja populácií a
+používajú sa na to matematické metódy pôvodne
+odvodené na riešenie fyzikálnych úloh. Výstupy z modelov potom nesú napríklad 
+nasledujúce informácie.
 
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
-
----
----
-
-### Czech source
-
-
-# Trofické funkce v modelech dravce a kořisti
-
-Při studiu přírody hrají neocenitelnou roli matematické modely. Tyto
-modely otevírají cestu k předpovědím budoucího vývoje, ale plní i
-další a důležitější role.
-
-Používání ekologických modelů bývá někdy zmiňováno jako fyzikální postupy 
-v ekologii, protože se studuje ekosystém z hlediska vývoje populací a
-používají se k tomu matematické metody původně
-odvozené na řešení fyzikálních úloh. Výstupy z modelů poté nesou například 
-následující informace.
-
-* **Predikce** Schopnost pracovat s matematickými modely ekosystémů
-    umožňuje předpovídat budoucí vývoj. Může se jednat o vývoj v
-    neměnném prostředí, nebo vývoj v prostředí, ve kterém se některý z
-    parametrů mění. Znalost modelu potom umožní posoudit, jaký má tato
-    změna vliv na ekosystém.
-* **Porozumění principům** Matematické modely umožňují ekologům a
-    vědcům zkoumat interakce mezi různými složkami ekosystémů a
-    porozumět dynamice těchto systémů. Pomáhají tím identifikovat
-    faktory ovlivňující strukturu a funkci těchto ekosystémů.
-* **Optimalizace rozhodování** Matematické modelování ekosystémů může
-     být použito k optimalizaci rozhodování v oblastech jako je
-     ochrana biodiverzity nebo management lesů a rybolovu. 
-     Pomáhá identifikovat nejlepší strategie pro
-     dosažení vytyčených cílů.
+* **Predikcia** Schopnosť pracovať s matematickými modelmi ekosystémov
+    umožňuje predpovedať budúci vývoj. Môže sa jednať o vývoj v
+    nemennom prostredí, alebo vývoj v prostredí, v ktorom sa niektorý z
+    parametrov mení. Znalosť modelu potom umožní posúdiť, aký má táto
+    zmena vplyv na ekosystém.
+* **Porozumenie princípom** Matematické modely umožňujú ekológom a
+    vedcom skúmať interakcie medzi rôznymi zložkami ekosystémov a
+    porozumieť dynamike týchto systémov. Pomáhajú tým identifikovať
+    faktory ovplyvňujúce štruktúru a funkciu týchto ekosystémov.
+* **Optimalizácia rozhodovania** Matematické modelovanie ekosystémov môže
+     byť použité na optimalizáciu rozhodovania v oblastiach ako je
+     ochrana biodiverzity alebo manažment lesov a rybolovu. 
+     Pomáha identifikovať najlepšie stratégie na
+     dosiahnutie vytýčených cieľov.
   
-Jedním ze základních vztahů v ekosystémech je vztah _dravce a
-kořisti_. Tento vztah může být jedinou interakcí v ekosystému nebo
-může být doplněn interakcemi dalšími. Důležitost modelování soužití
-dravce a kořisti si objasníme na následujících historicky významných
-modelech.
+Jedným zo základných vzťahov v ekosystémoch je vzťah _dravca a
+koristi_. Tento vzťah môže byť jedinou interakciou v ekosystéme alebo
+môže byť doplnený interakciami ďalšími. Dôležitosť modelovania spolužitia
+dravca a koristi si objasníme na nasledujúcich historicky významných
+modeloch.
 
-## Lotkův-Volterrův model
+## Lotkov-Volterrov model
 
-V roce 1926 publikoval jeden z prvních modelů dravce a kořisti italský
-matematik Vito Voterra. Motivací k sestavení tohoto modelu byla
-skutečnost, že během omezení rybolovu za první světové války v
-úlovcích vzrostlo procento dravých ryb. Na tuto skutečnost upozornil
-Volterru jeho zeť, mořský biolog Umberto D'Ancona, který si uvedený jev
-nedokázal zdůvodnit. Dokonce čekal pravý opak: při omezení rybolovu
-předpokládal zvýšení procentuálního podílu druhů menších ryb, které jsou
-potravou pro dravce. Volterrův model toto chování vysvětluje jako
-důsledek jednoduché představy interakce mezi dravými rybami a kořistí. 
+V roku 1926 publikoval jeden z prvých modelov dravca a koristi taliansky
+matematik Vito Volterra. Motiváciou k zostaveniu tohto modelu bola
+skutočnosť, že počas obmedzenia rybolovu za prvej svetovej vojny v
+úlovkoch vzrástlo percento dravých rýb. Na túto skutočnosť upozornil
+Volterru jeho zať, morský biológ Umberto D'Ancona, ktorý si uvedený jav
+nedokázal zdôvodniť. Dokonca čakal pravý opak: pri obmedzení rybolovu
+predpokladal zvýšenie percentuálneho podielu druhov menších rýb, ktoré sú
+potravou pre dravce. Volterrov model toto správanie vysvetľuje ako
+dôsledok jednoduchej predstavy interakcie medzi dravými rybami a korisťou. 
 
-Model obsahuje dvě rovnice. První rovnice 
-popisující populaci kořisti obsahuje předpoklad, že tato populace 
-přirozeně roste, ale růst je zpomalen
-působením dravců. Více dravců vede k většímu zpomalení
-růstu kořisti. Příliš mnoho dravců může vést dokonce k tomu, že velikost populace kořisti
-bude klesat a kořist vymře. Rovnice věnovaná populaci dravců 
-obsahuje předpoklad, že bez přítomnosti kořisti populace dravce vymírá. 
-Čím více kořisti ale mají dravci k dispozici, tím spíše se toto vymírání
-převrátí v nárůst populace dravce.
+Model obsahuje dve rovnice. Prvá rovnica 
+popisujúca populáciu koristi obsahuje predpoklad, že táto populácia 
+prirodzene rastie, ale rast je spomalený
+pôsobením dravcov. Viac dravcov vedie k väčšiemu spomaleniu
+rastu koristi. Príliš veľa dravcov môže viesť dokonca k tomu, že veľkosť populácie koristi
+bude klesať a korisť vymrie. Rovnica venovaná populácii dravcov 
+obsahuje predpoklad, že bez prítomnosti koristi populácia dravca vymiera. 
+Čím viac koristi ale majú dravce k dispozícii, tým skôr sa toto vymieranie
+obráti v nárast populácie dravca.
 
-V systému popsaném výše vznikají přirozeně cykly. Dostatek kořisti
-umožní nárůst populace dravců. Mnoho dravců poté působí na populaci
-kořisti negativně do té míry, že populace kořisti začne vymírat. Toto
-vymírání má za následek nedostatek potravy pro dravce a
-ti začnou také vymírat. Po čase je populace dravce
-redukována natolik, že kořist přítomnost dravce pociťuje
-málo. Proto může její populace zase růst a namnožit se do původního stavu. To však
-opět umožní růst populace dravce a uzavírá se cyklus. Velmi pěkně jsou
-periodické změny velikosti obou populací patrné ze záznamů výkupu kožešin
-sněžného zajíce a rysa v oblasti Hudsonova zálivu.
+V systéme popísanom vyššie vznikajú prirodzene cykly. Dostatok koristi
+umožní nárast populácie dravcov. Mnoho dravcov potom pôsobí na populáciu
+koristi negatívne do tej miery, že populácia koristi začne vymierať. Toto
+vymieranie má za následok nedostatok potravy pre dravce a
+tí začnú tiež vymierať. Po čase je populácia dravca
+redukovaná natoľko, že korisť prítomnosť dravca pociťuje
+málo. Preto môže jej populácia zase rásť a namnožiť sa do pôvodného stavu. To však
+opäť umožní rast populácie dravca a uzatvára sa cyklus. Veľmi pekne sú
+periodické zmeny veľkosti oboch populácií zreteľné zo záznamov výkupu kožušín
+snehovej zajaca a rysa v oblasti Hudsonovho zálivu.
 
-Volterra svým modelem vysvětlil nejenom vznik cyklů, ale i to, že
-omezením lovu se rovnovážná poloha, okolo které populace dravce a
-kořisti oscilují, posune ve prospěch dravce a nikoliv kořisti. Tento
-jev, kterého si všiml D'Ancona, se nazývá _Volterrův efekt_.
+Volterra svojim modelom vysvetlil nielen vznik cyklov, ale aj to, že
+obmedzením lovu sa rovnovážna poloha, okolo ktorej populácie dravca a
+koristi oscilujú, posunie v prospech dravca a nie koristi. Tento
+jav, ktorého si všimol D'Ancona, sa nazýva _Volterrov efekt_.
 
-Stejný model jako Volterra navrhl již v roce 1910 americký matematik
-Alfred J. Lotka, a proto se model dnes nazývá Lotkův-Volterrův model.
+Rovnaký model ako Volterra navrhol už v roku 1910 americký matematik
+Alfred J. Lotka, a preto sa model dnes nazýva Lotkov-Volterrov model.
 
-![Vlevo typický průběh velikosti populací dravce a kořisti. Po maximu kořisti následuje maximum dravce a poté propad obou populací. Vpravo liška ostrovní, která se z vrcholového predátora na svém ostrově stala kořistí na pokraji vyhubení.](1.jpg)
+![Vľavo typický priebeh veľkosti populácií dravca a koristi. Po maxime koristi nasleduje maximum dravca a potom prepad oboch populácií. Vpravo líška ostrovná, ktorá sa z vrcholového predátora na svojom ostrove stala korisťou na pokraji vyhubenia.](1.jpg)
 
 
-## Model obaleče smrkového
+## Model bukač smrekový
 
-Podobné periodické výkyvy jako v Lotkově-Volterrově modelu je možné
-pozorovat i v kanadských lesích. Zde přibližně po 30 až 40 letech
-docházelo k masovému přemnožení obaleče smrkového (_Choristoneura
-fumiferana_). Populace tohoto motýla je relativně malá, ale některé
-roky se zvýší tisícinásobně a jeho housenky dokáží zahubit až 80% stromů v
-lese a ten tak prakticky zničit. Jeden z posledních masových výskytů byl
-od roku 2006 v Quebecu. Zde bylo do roku 2019 zasaženo cca 9,6 milionu
-hektarů lesa [^1], což je více než rozloha Maďarska.
+Podobné periodické výkyvy ako v Lotkovom-Volterrovom modeli je možné
+pozorovať aj v kanadských lesoch. Tu približne po 30 až 40 rokoch
+dochádzalo k masovému premnoženiu bukača smrekového (_Choristoneura
+fumiferana_). Populácia tohto motýľa je relatívne malá, ale niektoré
+roky sa zvýši tisícnásobne a jeho húsenice dokážu zahubiť až 80% stromov v
+lese a ten tak prakticky zničiť. Jeden z posledných masových výskytov bol
+od roku 2006 v Quebecu. Tu bolo do roku 2019 zasiahnutých cca 9,6 milióna
+hektárov lesa [^1], čo je viac ako rozloha Maďarska.
 
-[^1]: Zdroj viz <https://www.nrcan.gc.ca>.
 
-V roce 1978 navrhli vědci D. Ludwig, D. D. Jones a C. S. Holling model, který
-dokázal nejenom modelovat vývoj populace obaleče, ale pomohl objasnit
-i důvody, proč k popisovanému přemnožení dochází. Důvodem byla
-predace. V tomto případě šlo o konzumaci housenek obaleče ptáky. Ptáci
-sloužili v přírodě jako faktor omezující počty housenek, ovšem jenom
-do jistého limitu. Když se les dostatečně rozrostl, poskytl dostatek
-potravy i populaci housenek. Populace housenek se pak rozrostla do
-takové míry, že ptáci dosáhli při konzumaci potravy své saturace a
-nedokázali dál stavy housenek redukovat. Tím se role ptáků jako
-predátorů stala méně významnou a populace housenek se mohla velmi
-rychle množit a poté zdevastovat les.
+[^1]: Zdroj pozri <https://www.nrcan.gc.ca>.
 
-V tomto případě je predace důležitá pro omezení populace
-housenek. Protože ptáci jako predátoři mají mnohem pomalejší cyklus
-rozmnožování než obaleč, je možné jejich populaci považovat za
-konstantní. Díky saturaci poté ptáci dokáží omezit rychlost růstu
-obaleče jen do omezené míry. Toto omezení však od určité velikosti
-populace obaleče přestává stačit a dojde k jeho nekontrolovatelnému přemnožení.
+V roku 1978 navrhli vedci D. Ludwig, D. D. Jones a C. S. Holling model, ktorý
+dokázal nielen modelovať vývoj populácie bukača, ale pomohol objasniť
+aj dôvody, prečo k popisovanému premnoženiu dochádza. Dôvodom bola
+predácia. V tomto prípade išlo o konzumáciu húseníc bukača vtákmi. Vtáky
+slúžili v prírode ako faktor obmedzujúci počty húseníc, avšak len
+do istého limitu. Keď sa les dostatočne rozrástol, poskytol dostatok
+potravy aj populácii húseníc. Populácia húseníc sa potom rozrástla do
+takej miery, že vtáky dosiahli pri konzumácii potravy svoju saturáciu a
+nedokázali ďalej stavy húseníc redukovať. Tým sa úloha vtákov ako
+predátorov stala menej významnou a populácia húseníc sa mohla veľmi
+rýchlo množiť a potom zdevastovať les.
 
-## Model lišky ostrovní
+V tomto prípade je predácia dôležitá pre obmedzenie populácie
+húseníc. Pretože vtáky ako predátori majú oveľa pomalší cyklus
+rozmnožovania než bukač, je možné ich populáciu považovať za
+konštantnú. Vďaka saturácii potom vtáky dokážu obmedziť rýchlosť rastu
+bukača len do obmedzenej miery. Toto obmedzenie však od určitej veľkosti
+populácie bukača prestáva stačiť a dôjde k jeho nekontrolovateľnému premnoženiu.
 
-Liška ostrovní (_Urocyon littoralis_) je jedinečný živočišný druh,
-endemit žijící jenom na ostrůvcích okolo Kalifornie. Je velká jako
-kočka a díky absenci přirozených nepřátel důvěřivá. Jako druh je
-citlivá a zranitelná vlivem malé genetické variability a malé
-odolnosti vůči nemocem zavlečeným z pevniny. Je to jedna z nejmenších
-psovitých šelem. Na rozdíl od ostatních psovitých šelem ale umí šplhat po
-stromech.
+## Model líšky ostrovnej
 
-Vlivem činnosti člověka se populace lišky ostrovní dostala na přelomu
-tisíciletí do velkých potíží. Na ostrově San Miguel klesla populace z
-450 dospělých jedinců v roce 1994 na 15 v roce 1999 [^2]. Podobná situace
-byla i na okolních ostrovech, z nichž každý je osídlen samostatným
-poddruhem lišky ostrovní. Příčinou úhynu byl celý řetězec událostí:
-produkce insekticidu DDT ve 40. letech 20. století měla za následek
-vymření orla bělohlavého (_Haliaeetus leucocephalus_) a ten byl
-nahrazen orlem skalním (_Aquila chrysaetos_). Predátora živícího
-se rybami tímto na ostrově vystřídal predátor preferující savce. Toto bylo
-pro lišky ostrovní fatální. Lišky, dříve vrcholní predátoři, se najednou staly 
-kořistí a na přelomu tisíciletí se ocitly těsně před vyhubením. A na
-rozdíl od Lotkova--Volterrova modelu nebylo možné doufat v návrat
-lišek na původní stavy díky oscilacím, protože orli měli i
-alternativní potravu v podobě divokých prasat a skunků.
+Líška ostrovná (_Urocyon littoralis_) je jedinečný živočíšny druh,
+endemit žijúci len na ostrovčekoch okolo Kalifornie. Je veľká ako
+mačka a vďaka absencii prirodzených nepriateľov dôverčivá. Ako druh je
+citlivá a zraniteľná vplyvom malej genetickej variability a malej
+odolnosti voči chorobám zavlečeným z pevniny. Je to jedna z najmenších
+psovitých šeliem. Na rozdiel od ostatných psovitých šeliem ale vie šplhať po
+stromoch.
 
-[^2]: Zdroj viz <https://www.iucnredlist.org/species/22781/13985603>.
+Vplyvom činnosti človeka sa populácia líšky ostrovnej dostala na prelome
+tisícročí do veľkých ťažkostí. Na ostrove San Miguel klesla populácia z
+450 dospelých jedincov v roku 1994 na 15 v roku 1999 [^2]. Podobná situácia
+bola aj na okolných ostrovoch, z ktorých každý je osídlený samostatným
+poddruhom líšky ostrovnej. Príčinou úhynu bol celý reťazec udalostí:
+produkcia insekticídu DDT v 40. rokoch 20. storočia mala za následok
+vymretie orla bielohlavého (_Haliaeetus leucocephalus_) a ten bol
+nahradený orlom skalným (_Aquila chrysaetos_). Predátora živiaceho
+sa rybami týmto na ostrove vystriedal predátor preferujúci cicavce. Toto bolo
+pre líšky ostrovné fatálne. Líšky, predtým vrcholní predátori, sa zrazu stali 
+korisťou a na prelome tisícročí sa ocitli tesne pred vyhubením. A na
+rozdiel od Lotkovho–Volterrovho modelu nebolo možné dúfať v návrat
+líšok na pôvodné stavy vďaka osciláciám, pretože orly mali aj
+alternatívnu potravu v podobe divokých ošípaných a skunkov.
 
-Naštěstí se nesmírným úsilím podařilo lišky ostrovní jako druh
-zachránit. Nejprve se podařilo správně identifikovat příčiny jejich 
-úbytku. Poté již stačilo populaci lišek opětovně rozmnožit a zajistit
-podmínky, ve kterých je populace stabilní. To zahrnovalo vybití
-divokých prasat, přesídlení orlů skalních, návrat orlů bělohlavých,
-umělé rozmnožení lišek, jejich návrat do přírody a jejich vakcinaci
-proti zavlečeným chorobám. To vše se podařilo v rekordním čase, za
-jednu dekádu. Jednalo se o jeden z nejúspěšnějších záchranných
-programů pro savce.
+[^2]: Zdroj pozri <https://www.iucnredlist.org/species/22781/13985603>.
 
-## Trofické funkce
+Našťastie sa nesmiernym úsilím podarilo líšky ostrovné ako druh
+zachrániť. Najprv sa podarilo správne identifikovať príčiny ich 
+úbytku. Potom už stačilo populáciu líšok opätovne rozmnožiť a zabezpečiť
+podmienky, v ktorých je populácia stabilná. To zahrňovalo vybíjanie
+divokých ošípaných, presídlenie orlov skalných, návrat orlov bielohlavých,
+umelé rozmnoženie líšok, ich návrat do prírody a ich vakcináciu
+proti zavlečeným chorobám. To všetko sa podarilo v rekordnom čase, za
+jednu dekádu. Jednalo sa o jeden z najúspešnejších záchranných
+programov pre cicavce.
 
-Důležitou komponentou modelů dravce a kořisti, ať se jedná o
-kterýkoliv z výše uvedených případů, je _trofická funkce_. Tato funkce
-modeluje působení jednoho predátora na populaci kořisti. Udává
-rychlost, s jakou zpomaluje růst kořisti jeden dravec. Je-li $x$
-velikost populace kořisti a $y$ rychlost, s jakou jeden dravec
-zpomaluje růst kořisti (tj. množství kořisti ulovené dravcem za
-jednotku času), můžeme tuto funkci matematicky zapsat ve tvaru
+## Trofické funkcie
+
+Dôležitou komponentou modelov dravca a koristi, či ide o
+ktorýkoľvek z vyššie uvedených prípadov, je _trofická funkcia_. Táto funkcia
+modeluje pôsobenie jedného predátora na populáciu koristi. Udáva
+rýchlosť, s akou spomaľuje rast koristi jeden dravec. Je-li $x$
+veľkosť populácie koristi a $y$ rýchlosť, s akou jeden dravec
+spomaľuje rast koristi (t. j. množstvo koristi ulovenej dravcom za
+jednotku času), môžeme túto funkciu matematicky zapísať v tvare
 $$y=f(x).$$ 
-Budeme se snažit najít přirozené předpoklady, které
-trofická funkce musí splňovat. Poté se pro ni pokusíme najít vhodný
+Budeme sa snažiť nájsť prirodzené predpoklady, ktoré
+trofická funkcia musí spĺňať. Potom sa pre ňu pokúsime nájsť vhodný
 analytický tvar.
 
-> **Úloha 1.** Předpoklady o působení dravce na kořist mají odraz ve
-    vlastnostech, které musí mít trofická funkce. 
+> **Úloha 1.** Predpoklady o pôsobení dravca na korisť majú odraz vo
+    vlastnostiach, ktoré musí mať trofická funkcia. 
 > 
-> 1. Dravec v prostředí s chudou nabídkou potravy má i chudý
->    úlovek. Více kořisti znamená snazší dosah kořisti a tím i větší
->    úlovek.
-> 1. Bez potravy dravec nic neuloví. Pokud je množství kořisti nulové,
->    je nulové i množství kořisti, které dravec uloví za jednotku času.
-> 1. Dravci konzumují potravu jenom do své saturace. Je-li potravy
->    nadbytek, dravci neuloví za jednotku času více potravy než odpovídá
->    jejich saturaci.
+> 1. Dravec v prostredí s chudobnou ponukou potravy má aj chudobný
+>    úlovok. Viac koristi znamená ľahšie dosiahnutie koristi a tým aj väčší
+>    úlovok.
+> 1. Bez potravy dravec nič neuloví. Ak je množstvo koristi nulové,
+>    je nulové aj množstvo koristi, ktoré dravec uloví za jednotku času.
+> 1. Dravce konzumujú potravu len do svojej saturácie. Je-li potravy
+>    nadostatok, dravce neuloví za jednotku času viac potravy než zodpovedá
+>    ich saturácii.
 > 
-> Vyjádřete tyto vlastnosti pomocí pojmů, které používáme pro popis
->  vlastností funkcí. Jaké vlastnosti funkcí odpovídá každý z uvedených
->  bodů?
+> Vyjadrite tieto vlastnosti pomocou pojmov, ktoré používame na popis
+>  vlastností funkcií. Aké vlastnosti funkcií zodpovedá každý z uvedených
+>  bodov?
 
 \iffalse
 
-_Řešení._
+_Riešenie._
 
-1. Funkce $y=f(x)$ je rostoucí.
+1. Funkcia $y=f(x)$ je rastúca.
 
-2. Funkce $y=f(x)$ prochází počátkem, tj. platí $f(0)=0$.
+2. Funkcia $y=f(x)$ prechádza počiatkom, t. j. platí $f(0)=0$.
 
-3. Funkce $y=f(x)$ je shora ohraničená. Jelikož je funkce rostoucí a 
-shora ohraničená, tak má její graf vodorovnou asymptotu v nekonečnu.
+3. Funkcia $y=f(x)$ je zhora ohraničená. Keďže je funkcia rastúca a 
+zhora ohraničená, tak má jej graf vodorovnú asymptotu v nekonečne.
 
 \fi
 
-## Trofická funkce Hollingova typu II
+## Trofická funkcia Hollingova typu II
 
-Trofická funkce udává, kolik kořisti zahubí jeden dravec za jednotku
-času při dané velikosti populace kořisti. Musí tedy být definována na
-množině nezáporných čísel a funkční hodnoty budou nezáporné (toto plyne 
-i z bodů 1 a 2 v předchozí úloze). V předchozí části bylo ukázáno, že 
-trofická funkce má procházet počátkem
-a růst k vodorovné asymptotě (růst a ohraničenost shora). Tyto
-vlastnosti nebudou splněny, pokud budeme hledat trofickou funkci mezi
-lineárními funkcemi. Zkusíme tedy nejjednodušší nelineární funkci,
-nepřímou úměrnost.
+Trofická funkcia udáva, koľko koristi zahubí jeden dravec za jednotku
+času pri danej veľkosti populácie koristi. Musí teda byť definovaná na
+množine nezáporných čísel a funkčné hodnoty budú nezáporné (toto plynie 
+aj z bodov 1 a 2 v predchádzajúcej úlohe). V predchádzajúcej časti bolo ukázané, že 
+trofická funkcia má prechádzať počiatkom
+a rásť k vodorovnej asymptote (rast a ohraničenosť zhora). Tieto
+vlastnosti nebudú splnené, ak budeme hľadať trofickú funkciu medzi
+lineárnymi funkciami. Skúsime teda najjednoduchšiu nelineárnu funkciu,
+nepriamu úmernosť.
 
-![Vlevo dvě typické trofické funkce, nazývané funkce Hollingova typu. Funkce
-typu II roste stále pomaleji. Funkce typu III roste ze začátku pomalu, růst se zrychluje a poté opět zpomaluje. Vpravo funkce typu II jako část
-transformovaného grafu nepřímé úměrnosti. (vlastní obrázek)](2.svg)
+![Vľavo dve typické trofické funkcie, nazývané funkcie Hollingova typu. Funkcia
+typu II rastie stále pomalšie. Funkcia typu III rastie zo začiatku pomaly, rast sa zrýchľuje a potom opäť spomaľuje. Vpravo funkcia typu II ako časť
+transformovaného grafu nepriamej úmernosti. (vlastný obrázok)](2.svg)
 
-> **Úloha 2.** Vyjděte z grafu funkce $y=\frac 1x$. Na této funkci
->    provádějte transformace, které mění graf způsobem popsaným níže.
+> **Úloha 2.** Vychádzajte z grafu funkcie $y=\frac 1x$. Na tejto funkcii
+>    vykonávajte transformácie, ktoré menia graf spôsobom popísaným nižšie.
 >
-> 1. Přeškálujte graf $k$-krát ve svislém směru. Tím se nezmění monotonie
->    ani poloha vodorovné asymptoty, ale můžeme měnit rychlost růstu.
-> 1. Převraťte graf okolo vodorovné osy a posuňte o $S$ nahoru. Tím
->    docílíme toho, že pro kladné $x$ bude funkce rostoucí a poroste k
->    asymptotě $S$.
-> 1. Po uvedených transformacích má graf v nule svislou asymptotu a
->    jeden průsečík s vodorovnou osou vpravo od počátku. Posuňte graf
->    doleva tak, aby se svislá asymptota dostala vlevo od svislé osy a
->    průsečík s osou $x$ se posunul do počátku.
+> 1. Preškálujte graf $k$-krát vo zvislom smere. Tým sa nezmení monotónnosť
+>    ani poloha vodorovnej asymptoty, ale môžeme meniť rýchlosť rastu.
+> 1. Prevráťte graf okolo vodorovnej osi a posuňte o $S$ nahor. Tým
+>    dosiahneme toho, že pre kladné $x$ bude funkcia rastúca a porastie k
+>    asymptote $S$.
+> 1. Po uvedených transformáciách má graf v nule zvislú asymptotu a
+>    jeden priesečník s vodorovnou osou vpravo od počiatku. Posuňte graf
+>    doľava tak, aby sa zvislá asymptota dostala vľavo od zvislej osi a
+>    priesečník s osou $x$ sa posunul do počiatku.
 
 \iffalse
 
-_Řešení._ Funkce, jejíž graf vznikne přeškálováním grafu funkce
-$y=\frac{1}{x}$ ve svislém směru $k$-krát je $$y=\frac{k}{x}.$$
-Převrácení dosáhneme vynásobením funkce fakorem $-1$ a posunu docílíme
-přičtením hodnoty $S$. Těmito úpravami dostáváme funkci $$y=S-\frac{k}{x}.$$ Posun
-doleva o $b$ zajistíme substitucí výrazu $x+b$ za $x$. Tím dostáváme
-funkci $$y=S-\frac {k}{x+b}.$$ Po převedení na společného jmenovatele
-má funkce tvar 
+_Riešenie._ Funkcia, ktorej graf vznikne preškálovaním grafu funkcie
+$y=\frac{1}{x}$ vo zvislom smere $k$-krát je $$y=\frac{k}{x}.$$
+Prevrátenie dosiahneme vynásobením funkcie faktorom $-1$ a posunu dosiahneme
+pripočítaním hodnoty $S$. Týmito úpravami dostávame funkciu $$y=S-\frac{k}{x}.$$ Posun
+doľava o $b$ zabezpečíme substitúciou výrazu $x+b$ za $x$. Tým dostávame
+funkciu $$y=S-\frac {k}{x+b}.$$ Po prevedení na spoločného menovateľa
+má funkcia tvar 
 $$y=\frac{Sx+Sb}{x+b}-\frac{k}{x+b}=\frac{Sx + (Sb-k)}{x+b}.$$ 
-Má-li platit $f(0)=0,$ musí být splněna podmínka
+Má-li platiť $f(0)=0,$ musí byť splnená podmienka
 $$Sb-k=0.$$ 
-Tato podmínka ukazuje, že tři konstanty nejsou nezávislé,
-ale je mezi nimi uvedená vazba.
+Táto podmienka ukazuje, že tri konštanty nie sú nezávislé,
+ale je medzi nimi uvedená väzba.
 
 \fi
 
-*Poznámka.* V předchozí úloze jsme odvodili analytický tvar pro
-  jednu ze základních trofických funkcí. Jedná se o rostoucí funkci,
-  která z počátku roste směrem k vodorovné asymptotě a rychlost růstu
-  postupně klesá. Taková funkce se nazývá Hollingova funkce II
-  typu. Bývá obvyklé ji psát ve tvaru $$f(x)=\frac {Sx}{x+b},\tag{1}$$
-  kde $S$ je hladina saturace a $b$ konstanta, jejíž význam objasníme
-  v následující úloze.
+*Poznámka.* V predchádzajúcej úlohe sme odvodili analytický tvar pre
+  jednu zo základných trofických funkcií. Jedná sa o rastúcu funkciu,
+  ktorá zo začiatku rastie smerom k vodorovnej asymptote a rýchlosť rastu
+  postupne klesá. Taká funkcia sa nazýva Hollingova funkcia II
+  typu. Býva obvyklé ju písať v tvare $$f(x)=\frac {Sx}{x+b},\tag{1}$$
+  kde $S$ je hladina saturácie a $b$ konštanta, ktorej význam objasníme
+  v nasledujúcej úlohe.
 
-> **Úloha 3.** Ukažte, že pro velikost populace rovnu $b$ 
-je hodnota trofické funkce (1) rovna polovině hodnoty 
-saturace.
+> **Úloha 3.** Ukážte, že pre veľkosť populácie rovnú $b$ 
+je hodnota trofickej funkcie (1) rovná polovici hodnoty 
+saturácie.
 
 \iffalse
 
-_Řešení._ Přímým dosazením do (1) dostáváme
+_Riešenie._ Priamym dosadením do (1) dostávame
 $$f(b)=\frac{Sb}{b+b}=\frac {Sb}{2b}=\frac S2.$$ 
-Tím je tvrzení dokázáno.
+Tým je tvrdenie dokázané.
 
 \fi
 
-Následující úkol ukazuje opačný proces, kdy z trofické funkce ve tvaru
-(1) odvodíme tvar ukazující postupné transformace funkce $y=\frac 1x$.
+Nasledujúca úloha ukazuje opačný proces, keď z trofickej funkcie v tvare
+(1) odvodíme tvar ukazujúci postupné transformácie funkcie $y=\frac 1x$.
 
-> **Úloha 4.** Upravte předpis funkce $$y=\frac {6x}{x+2}$$ do základního tvaru, tj. tak, abychom mohli vyčíst postupné transformace funkce $y=\frac 1x$ na graf zadané funkce.
+> **Úloha 4.** Upravte predpis funkcie $$y=\frac {6x}{x+2}$$ do základného tvaru, t. j. tak, aby sme mohli vyčítať postupné transformácie funkcie $y=\frac 1x$ na graf zadanej funkcie.
 
 \iffalse 
 
-_Řešení._ Úlohu vyřešíme tak, že zlomek šikovně upravíme. V čitateli vytvoříme násobek
-jmenovatele, zlomek rozdělíme na dva a zkrátíme:
+_Riešenie._ Úlohu vyriešime tak, že zlomok šikovne upravíme. V čitateli vytvoríme násobok
+menovateľa, zlomok rozdelíme na dva a skrátime:
 
 $$\frac {6x}{x+2} = \frac {6(x+2)-12}{x+2}=\frac {6(x+2)}{x+2}-\frac {12}{x+2}=6-12\frac 1{x+2}$$
 
-Tento výpočet ukazuje, že graf uvedené funkce obdržíme rozšířením
-grafu funkce ve svislém směru dvanáctkrát, převrácením okolo vodorovné
-osy, posunutím o šest jednotek nahoru a dvě jednotky doleva.
+Tento výpočet ukazuje, že graf uvedenej funkcie obdržíme rozšírením
+grafu funkcie vo zvislom smere dvanásťkrát, prevrátením okolo vodorovnej
+osi, posunutím o šesť jednotiek nahor a dve jednotky doľava.
 
-Stejného výsledku bychom docílili i tak, že bychom jmenovatele vydělili čitatelem.
+Rovnakého výsledku by sme dosiahli aj tak, že by sme menovateľa vydelili čitateľom.
 
 \fi
 
-> **Úloha 5.** Sestavte trofickou funkci, pokud víte, že rychlost
-    konzumace potravy při saturaci predátorů je $6$, a že konzumace probíhá
-    poloviční rychlostí pro populaci kořisti o velikosti $210$.
+> **Úloha 5.** Zostavte trofickú funkciu, ak viete, že rýchlosť
+    konzumácie potravy pri saturácii predátorov je $6$, a že konzumácia prebieha
+    polovičnou rýchlosťou pre populáciu koristi o veľkosti $210$.
 
 \iffalse
 
-*Řešení.* Díky poznámce před třetí úlohou o obecném tvaru trofické funkce víme, že předpis bude tvaru
+*Riešenie.* Vďaka poznámke pred treťou úlohou o všeobecnom tvare trofickej funkcie vieme, že predpis bude tvaru
 $$
 y=\frac{Sx}{x+b},
 $$
-kde $S$ je hodnota saturace predátora, tj.
+kde $S$ je hodnota saturácie predátora, t. j.
 $$
 y=\frac{6x}{x+b}\,.
 $$
-Hodnotu parametru $b$ můžeme rovnou říci díky Úloze 3, ale můžeme ji též rychle dopočítat z druhé podmínky ze zadání, jelikož víme, že
+Hodnotu parametra $b$ môžeme rovno povedať vďaka Úlohe 3, ale môžeme ju tiež rýchlo dopočítať z druhej podmienky zo zadania, keďže vieme, že
 $$
 3=\frac{6\cdot 210}{210+b}
 $$
-a odtud plyne $b=210$. Předpis výsledné funkce je tedy
+a odtiaľ plynie $b=210$. Predpis výslednej funkcie je teda
 $$
 y=\frac{6x}{x+210}.
 $$
@@ -367,23 +308,15 @@ $$
 
 \fi
 
-## Literatura a odkazy
+## Literatúra a odkazy
 
-### Literatura
+### Literatúra
 
 * Wikipedia, <https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations> March 3, 2024
 * R Mařík, Dynamické modely populací, <https://robert-marik.github.io/dmp/uvod.html>, March 3, 2024
 * D. Ludwig, D.D. Jones, C.S. Holling: Qualitative analysis of insect outbreak systems: the spruce budworm and forest, Journal of Animal Ecology 47(1): 315–332, February 1978.
 
-### Zdroje obrázků
+### Zdroje obrázkov
 
 * <https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations#/media/File:Lotka_Volterra_dynamics.svg>
 * <https://www.npr.org/sections/thetwo-way/2016/08/11/489695842/once-nearly-extinct-california-island-foxes-no-longer-endangered> Kevork Djansezian/AP 
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

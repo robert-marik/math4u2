@@ -1,8 +1,8 @@
 ---
 keywords:
-- functions
-- rational fractional function
-- asymptote
+- funkcje
+- funkcja wymierna
+- asymptota
 is_finished: false
 ---
 
