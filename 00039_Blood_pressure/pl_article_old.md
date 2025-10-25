@@ -1,11 +1,11 @@
 ---
 keywords:
-- trigonometry
-- trigonometric functions
-- sine
-- cosine
-- approximation
-- blood pressure
+- trygonometria
+- funkcje trygonometryczne
+- sinus
+- cosinus
+- aproksymacja
+- ciśnienie krwi
 is_finished: false
 ---
 

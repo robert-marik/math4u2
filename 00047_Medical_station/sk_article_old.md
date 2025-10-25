@@ -1,223 +1,165 @@
 ---
 keywords:
-- functions
-- linear function
-- absolute value
-- optimization
-is_finished: false
+- funkcie
+- lineárne funkcie
+- absolútna hodnota
+- optimalizácia
+is_finished: true
+difficulty: 3
+time: 40
 ---
 
-### Instructions for translators
+# Zdravotnícke stanovište na bežeckom preteku
 
+Predstavte si, že pomáhate organizovať veľký bežecký pretek. Na trať sa chystajú desiatky pretekárov 
+a vašou úlohou je rozhodnúť, kam umiestniť zdravotnícke stanovište, aby bolo čo najviac nápomocné. 
+Malo by byť blízko štartu? Alebo radšej niekde uprostred? A čo keď je kontrolných bodov na trati viac? 
+Kde bude to správne miesto, odkiaľ to bude všade tak akurát ďaleko?
 
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
+Možno to znie jednoducho, ale keď sa nad tým zamyslíte, zistíte, že nájsť najlepšie možné umiestnenie nie je 
+zas tak jednoduché. V nasledujúcich úlohách si takúto situáciu rozoberieme. A kto vie, možno práve vďaka nám dobehnú 
+pretekár v poriadku do cieľa.
 
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
-
----
----
-
-### Czech source
-
-
-# Zdravotnické stanoviště na běžeckém závodě
-
-Představte si, že pomáháte organizovat velký běžecký závod. Na trať se chystají desítky závodníků 
-a vaším úkolem je rozhodnout, kam umístit zdravotnické stanoviště, aby bylo co nejvíce nápomocné. 
-Mělo by být blízko startu? Nebo raději někde uprostřed? A co když je kontrolních bodů na trati víc? 
-Kde bude to správné místo, odkud to bude všude tak akorát daleko?
-
-Možná to zní jednoduše, ale když se nad tím zamyslíte, tak zjistíte, že najít nejlepší možné umístění není 
-zas tak snadné. V následujících úlohách si takovou situaci rozebereme. A kdo ví, třeba právě díky nám doběhne 
-závodník v pořádku do cíle.
-
->**Úloha 1.** Na běžecké trase dlouhé $45\,\text{km}$ se nachází tři kontrolní stanoviště 
->a je třeba na ni umístit stanoviště zdravotníků. První kontrolní stanoviště je 
->zřízeno na 13. kilometru, druhé na 26. kilometru a třetí na 37. kilometru. 
->Protože má být zdravotní stanoviště co možná nejblíže kontrolním stanovištím, 
->startu i cíli, organizátor běhu jej chce zřídit tak, aby byl součet vzdáleností od něj 
->k uvedeným pěti lokacím co nejmenší.
+>**Úloha 1.** Na bežeckej trati dlhej $45\,\text{km}$ sa nachádzajú tri kontrolné stanovištia 
+>a je potrebné na ňu umiestniť stanovište zdravotníkov. Prvé kontrolné stanovište je 
+>zriadené na 13. kilometri, druhé na 26. kilometri a tretie na 37. kilometri. 
+>Pretože má byť zdravotné stanovište čo možno najbližšie kontrolným stanovištiam, 
+>štartu i cieľu, organizátor behu ho chce zriadiť tak, aby bol súčet vzdialeností od neho 
+>k uvedeným piatim lokáciám co najmenší.
 >
->Na kterém kilometru trasy má organizátor stanoviště zdravotníků zřídit? 
->Je to jediná lokace, kterou má zvolit? Předpokládejme, že závod končí jinde 
->než začal a že neexistuje kratší cesta mezi stanovišti než po závodní trase.
+>Na ktorom kilometri trate má organizátor stanovište zdravotníkov zriadiť? 
+>Je to jediná lokácia, ktorú má zvoliť? Predpokladajme, že pretek končí inde 
+>ako začal a že neexistuje kratšia cesta medzi stanovišťami než po pretekárskej trati.
 
 \iffalse
 
-*Řešení.* Nechť je zdravotnické stanoviště na $x$-tém kilometru běžecké trasy. 
-Vzdálenost od startu je potom rovna $x\,\text{km}$, od prvního stanoviště 
-$\lvert x - 13 \rvert\,\text{km}$, od druhého stanoviště $\lvert x - 26 \rvert\,\text{km}$, 
-od třetího stanoviště $\lvert x-37 \rvert\,\text{km}$ a od cíle $(45-x)\,\text{km}$. 
-Chceme tedy najít minimální hodnotu funkce
+*Riešenie.* Nech je zdravotnícke stanovište na $x$-tom kilometri bežeckej trate. 
+Vzdialenosť od štartu je potom rovná $x\,\text{km}$, od prvého stanovišťa 
+$\lvert x - 13 \rvert\,\text{km}$, od druhého stanovišťa $\lvert x - 26 \rvert\,\text{km}$, 
+od tretieho stanovišťa $\lvert x-37 \rvert\,\text{km}$ a od cieľa $(45-x)\,\text{km}$. 
+Chceme teda nájsť minimálnu hodnotu funkcie
 $$
 \begin{align*}
 f(x) &= x + \lvert x - 13 \rvert + \lvert x - 26 \rvert + \lvert x-37 \rvert + (45-x) = \\
 &= \lvert x - 13 \rvert + \lvert x - 26 \rvert + \lvert x-37 \rvert + 45
 \end{align*}
 $$
-na intervalu $\langle 0;45\rangle$.
+na intervale $\langle 0;45\rangle$.
 
-Grafem funkce $f$ na tomto intervalu je lomená čára složená ze čtyř na 
-sebe navazujících úseček, které postupně spojují body $[0;121]$, 
-$[13;82]$, $[26;69]$, $[37;80]$ a $[45;104]$. Druhé souřadnice zmíněných 
-bodů získáme dosazením prvních do předpisu funkce $f$. 
+Grafom funkcie $f$ na tomto intervale je lomená čiara zložená zo štyroch na 
+seba nadväzujúcich úsečiek, ktoré postupne spájajú body $[0;121]$, 
+$[13;82]$, $[26;69]$, $[37;80]$ a $[45;104]$. Druhé súradnice spomínaných 
+bodov získame dosadením prvých do predpisu funkcie $f$. 
 
- ![Graf funkce $f$](math4you_00047_01.svg)
+ ![Graf funkcie $f$](math4you_00047_01.svg)
 
-Z tohoto grafu je pak zřejmé, že nejmenší hodnotu má funkce $f$ právě v 
-bodě $x=26$, tj. přímo na druhém stanovišti. Tam (a nikde jinde) by se 
-mělo nacházet stanoviště zdravotníků.
+Z tohto grafu je potom zrejmé, že najmenšiu hodnotu má funkcia $f$ práve v 
+bode $x=26$, t. j. priamo na druhom stanovišti. Tam (a nikde inde) by sa 
+malo nachádzať stanovište zdravotníkov.
 
-*Poznámka*. Úlohu lze řešit i jiným způsobem, bez funkcí a absolutních 
-hodnot. Znázorněme trasu závodu úsečkou $SC$, na které jsou umístěny 
-body $K_1$, $K_2$ a $K_3$ tak, aby jejich poloha odpovídala poloze 
-prvního, druhého a třetího kontrolního stanoviště na trase.
+*Poznámka*. Úlohu možno riešiť aj iným spôsobom, bez funkcií a absolutných 
+hodnôt. Znázornime trať preteku úsečkou $SC$, na ktorej sú umiestnené 
+body $K_1$, $K_2$ a $K_3$ tak, aby ich poloha zodpovedala polohe 
+prvého, druhého a tretieho kontrolného stanovišťa na trati.
 
- ![Rozmístění bodů $K_1$, $K_2$ a $K_3$ na úsečce $SC$](math4you_00047_02.svg)
+ ![Rozmiestnenie bodov $K_1$, $K_2$ a $K_3$ na úsečke $SC$](math4you_00047_02.svg)
 
-Naším úkolem je na úsečku $SC$ umístit bod $Z$ tak, aby byl součet 
+Našou úlohou je na úsečku $SC$ umiestniť bod $Z$ tak, aby bol súčet 
 $$
 \lvert SZ \rvert + \lvert K_1Z \rvert + \lvert K_2Z \rvert + \lvert K_3Z \rvert + \lvert CZ \rvert \tag{$\star$}
 $$
-co nejmenší. Hodnotu tohotu součtu budeme zkoumat v závislosti na tom, 
-na které z úseček $SK_1$, $K_1K_3$ a $K_3C$ bod $Z$ leží.
+čo najmenší. Hodnotu tohoto súčtu budeme skúmať v závislosti na tom, 
+na ktorej z úsečiek $SK_1$, $K_1K_3$ a $K_3C$ bod $Z$ leží.
 
-Jestliže platí $Z\in SK_1$, lze upravit součet $(\star)$ následujícím způsobem:
+Ak platí $Z\in SK_1$, možno upraviť súčet $(\star)$ nasledujúcim spôsobom:
 $$
 \overbrace{\lvert SZ \rvert + \lvert CZ \rvert}^{45}{} + \lvert K_1Z \rvert + {}\overbrace{\lvert K_2Z \rvert}^{\lvert K_1Z \rvert + 13}{} + {}\overbrace{\lvert K_3Z \rvert}^{\lvert K_1Z \rvert + 24} = 3\cdot \lvert K_1Z \rvert + 82.
 $$
-Pro $Z\in K_1K_3$ upravíme zkoumaný výraz takto:
+Pre $Z\in K_1K_3$ upravíme skúmaný výraz takto:
 $$
 \overbrace{\lvert SZ \rvert + \lvert CZ \rvert}^{45}{}  + {}\overbrace{\lvert K_1Z \rvert + \lvert K_3Z \rvert}^{24}{} + \lvert K_2Z \rvert = \lvert K_2Z \rvert + 69.
 $$
-A konečně pro $Z\in K_3C$ upravujeme součet $(\star)$ následovně:
+A napokon pre $Z\in K_3C$ upravujeme súčet $(\star)$ nasledovne:
 $$
 \overbrace{\lvert SZ \rvert + \lvert CZ \rvert}^{45}{}  + \overbrace{\lvert K_1Z \rvert}^{\lvert K_3Z \rvert + 24}{} + {}\overbrace{\lvert K_2Z \rvert}^{\lvert K_3Z \rvert + 11}{} + \lvert K_3Z \rvert = 3\cdot \lvert K_3Z \rvert + 80.
 $$
 
-Porovnáme-li všechna tři vyjádření, je vidět, že nejmenší hodnotu bude mít 
-součet $(\star)$ právě tehdy, bude-li $Z\in K_1K_3$ a navíc $Z=K_2$ (hodnota součtu 
-bude v takovém případě $69$). Proto musí být zdravotnické stanoviště 
-v místě 2. kontrolního stanoviště.
+Ak porovnáme všetky tri vyjadrenia, je vidieť, že najmenšiu hodnotu bude mať 
+súčet $(\star)$ práve vtedy, keď bude $Z\in K_1K_3$ a navyše $Z=K_2$ (hodnota súčtu 
+bude v takom prípade $69$). Preto musí byť zdravotnícke stanovište 
+v mieste 2. kontrolného stanovišťa.
 
 \fi
 
-**Úloha 2.** Jak se řešení předchozí úlohy změní, jestliže budou 
-stanoviště čtyři, a to na 17., 30., 35. a 40. kilometru?
+**Úloha 2.** Ako sa zmení riešenie predchádzajúcej úlohy, ak budú 
+stanovištia štyri, a to na 17., 30., 35. a 40. kilometri?
 
 \iffalse
 
-*Řešení.* Podobně jako v řešení úlohy 1 sestavíme předpis funkce
+*Riešenie.* Podobne ako v riešení úlohy 1 zostavíme predpis funkcie
 $$
 \begin{align*}
 g(x) &= x + \lvert x-17 \rvert + \lvert x-30 \rvert + \lvert x-35 \rvert + \lvert x-40 \rvert + 45-x =\\
 &=\lvert x-17 \rvert + \lvert x-30 \rvert + \lvert x-35 \rvert + \lvert x-40 \rvert + 45,
 \end{align*}
 $$
-jejímž grafem je lomená čára složená z pěti na sebe navazujících 
-úseček, které postupně spojují body $[0;167]$, $[17;99]$, $[30;73]$, 
+ktorej grafom je lomená čiara zložená z piatich na seba nadväzujúcich 
+úsečiek, ktoré postupne spájajú body $[0;167]$, $[17;99]$, $[30;73]$, 
 $[35;73]$, $[40;83]$ a $[45;103]$. 
 
- ![Graf funkce $g$](math4you_00047_03.svg)
+ ![Graf funkcie $g$](math4you_00047_03.svg)
 
-Z grafu je nyní vidět, že své minimální hodnoty nabývá funkce $g$ v 
-libovolném bodě intervalu $\langle 30;35 \rangle$. Zdravotnické 
-stanoviště tak může být kdekoliv mezi druhým a třetím kontrolním 
-stanovištěm.
+Z grafu je teraz vidieť, že svojej minimálnej hodnoty nadobúda funkcia $g$ v 
+ľubovoľnom bode intervalu $\langle 30;35 \rangle$. Zdravotnícke 
+stanovište tak môže byť kdekoľvek medzi druhým a tretím kontrolným 
+stanovišťom.
 
-*Poznámka.* I tuto úlohu můžeme řešit podobně jako ve druhém řešení 
-předešlé úlohy. Na úsečku $SC$ umístíme body $K_1$, $K_2$, $K_3$, $K_4$ 
-jako na obrázku. 
+*Poznámka.* Aj túto úlohu môžeme riešiť podobne ako v druhom riešení 
+predošlej úlohy. Na úsečku $SC$ umiestnime body $K_1$, $K_2$, $K_3$, $K_4$ 
+ako na obrázku. 
 
- ![Rozmístění bodů $K_1$, $K_2$ a $K_3$ na úsečce $SC$](math4you_00047_04.svg)
+ ![Rozmiestnenie bodov $K_1$, $K_2$ a $K_3$ na úsečke $SC$](math4you_00047_04.svg)
 
-Nyní budeme zkoumat hodnotu součtu $\lvert SZ \rvert + \lvert K_1Z \rvert + \lvert K_2Z \rvert + \lvert K_3Z \rvert + \lvert K_4Z \rvert + \lvert CZ \rvert$ 
-v závislosti na tom, na které z pěti částí úsečky $SC$ bod $Z$ leží. 
+Teraz budeme skúmať hodnotu súčtu $\lvert SZ \rvert + \lvert K_1Z \rvert + \lvert K_2Z \rvert + \lvert K_3Z \rvert + \lvert K_4Z \rvert + \lvert CZ \rvert$ 
+v závislosti na tom, na ktorej z piatich častí úsečky $SC$ bod $Z$ leží. 
 
-Podrobně řešit úlohu tímto způsobem nebudeme, zmíníme však alespoň 
-případ $Z\in K_2K_3$, pro který můžeme zkoumaný součet upravit na
+Podrobne riešiť úlohu týmto spôsobom nebudeme, zmienime však aspoň 
+prípad $Z\in K_2K_3$, pre ktorý môžeme skúmaný súčet upraviť na
 $$
 \overbrace{\lvert SZ \rvert + \lvert CZ \rvert}^{45}{} + \overbrace{\lvert K_1Z \rvert + \lvert K_4Z \rvert}^{23}{} + \overbrace{\lvert K_2Z \rvert + \lvert K_3Z \rvert}^{5}=73.
 $$
-Jde tak vidět, že pro libovolný bod $Z\in K_2K_3$ má součet stejnou 
+Ide tak vidieť, že pre ľubovoľný bod $Z\in K_2K_3$ má súčet rovnakú 
 hodnotu.
 
 \fi
 
-Úlohu můžeme i zobecnit.
+Úlohu môžeme aj zovšeobecniť.
 
-> **Úloha 3.** Na závodní trati je rozmístěno $n$ různých stanovišť. 
-> Kde máme umístit zdravotní stanoviště tak, aby součet vzdáleností 
-> zdravotního stanoviště od všech kontrolních stanovišť, od startu a od 
-> cíle byl co nejmenší?
+> **Úloha 3.** Na pretekárskej trati je rozmiestnených $n$ rôznych stanovíšť. 
+> Kde máme umiestniť zdravotné stanovište tak, aby súčet vzdialeností 
+> zdravotného stanovišťa od všetkých kontrolných stanovíšť, od štartu a od 
+> cieľa bol čo najmenší?
 
 \iffalse
 
-*Řešení.* Nechť se zdravotnické stanoviště nachází na $x$-tém kilometru 
-trasy dlouhé $d\,\text{km}$ a kontrolní stanoviště se nachází postupně 
-na $x_1$-tém, $x_2$-tém,$\ldots$ , $x_n$-tém kilometru trasy. Platí 
-přitom jistě $0 < x_1 < x_2 < \ldots x_n < d$. 
+*Riešenie.* Nech sa zdravotnícke stanovište nachádza na $x$-tom kilometri 
+trate dlhej $d\,\text{km}$ a kontrolné stanovištia sa nachádzajú postupne 
+na $x_1$-tom, $x_2$-tom,$\ldots$ , $x_n$-tom kilometri trate. Platí 
+pritom iste $0 < x_1 < x_2 < \ldots x_n < d$. 
 
-Funkce $f$, jejíž minimum nyní budeme na intervalu $\langle 0;d \rangle$ 
-hledat, má předpis tvaru
+Funkcia $f$, ktorej minimum teraz budeme na intervale $\langle 0;d \rangle$ 
+hľadať, má predpis tvaru
 $$
 \begin{align*}
 f(x) &= x + \lvert x - x_1 \rvert +  \lvert x - x_2 \rvert + \ldots + \lvert x - x_n \rvert + (d-x) =\\
 {} &= \lvert x - x_1 \rvert +  \lvert x - x_2 \rvert + \ldots + \lvert x - x_n \rvert + d.
 \end{align*}
 $$
-Vyjádřeme nyní tuto funkci v jednotlivých intervalech $\langle 0;x_1 )$, $\langle x_1;x_2 )$, $\ldots$ , $\langle x_{n-1};x_n )$, $\langle x_n;d \rangle$ 
-tak, aby se v jejím předpisu nevyskytovaly výrazy s absolutními 
-hodnotami. V tabulce jsou v těchto intervalech vyjádřeny jednotlivé 
-výrazy s absolutními hodnotách a v jejím posledním řádku je vyjádřena 
-celá funkce $f(x)$ 
+Vyjadrime teraz túto funkciu v jednotlivých intervaloch $\langle 0;x_1 )$, $\langle x_1;x_2 )$, $\ldots$ , $\langle x_{n-1};x_n )$, $\langle x_n;d \rangle$ 
+tak, aby sa v jej predpise nevyskytovali výrazy s absolutnými 
+hodnotami. V tabuľke sú v týchto intervaloch vyjadrené jednotlivé 
+výrazy s absolutnými hodnotami a v jej poslednom riadku je vyjadrená 
+celá funkcia $f(x)$ 
 
 |                           | $\langle 0;x_1 )$ | $\langle x_1;x_2 )$ | $\langle x_2;x_3 )$ | $\ldots$ | $\langle x_{n-1};x_n )$ | $\langle x_n;d \rangle$ |
 |---------------------------|-------------------|---------------------|---------------------|----------|--------------------------|--------------------------|
@@ -230,7 +172,7 @@ celá funkce $f(x)$
 | **$f(x)$**                | $-nx + k_0$       | $-(n-2)x + k_1$     | $-(n-4)x + k_2$     | $\ldots$ | $(n-2)x + k_{n-1}$       | $nx + k_n$               |
 
 
-Pro konstanty $k_i$ v posledním řádku platí
+Pre konštanty $k_i$ v poslednom riadku platí
 $$
 \begin{align*}
 k_0 &=x_1+x_2+\ldots + x_n +d \\
@@ -240,37 +182,29 @@ k_n &=-x_1-x_2-\ldots - x_n +d.
 \end{align*}
 $$
 
-Soustřeďme se nyní na směrnice přímek, které tvoři grafy získaných 
-lineárních funkcí. Všimněme si, že každá následující směrnice je o 2 
-větší než předchozí. Úlohu budeme řešit zvlášť pro $n$ liché a $n$ sudé.
+Sústreďme sa teraz na smernice priamok, ktoré tvoria grafy získaných 
+lineárnych funkcií. Všimnime si, že každá nasledujúca smernica je o 2 
+väčšia než predchádzajúca. Úlohu budeme riešiť osobitne pre $n$ nepárne a $n$ párne.
 
-Pro lichá $n$ to znamená, že žádná z těchto směrnic není nulová. 
-Označíme-li $m=\frac{n+1}{2}$, v intervalu $\left\langle x_{m-1}; x_{m} \right) $ 
-má totiž graf funkce směrnici $-1$ a v následujícím intervalu 
-$\left\langle x_{m}; x_{m+1} \right) $ má graf směrnici 1. Dále to 
-znamená, že pro lichá $n$ je celá funkce $f$ na intervalu $\left\langle 0; x_{m} \right)$ 
-klesající (protože směrnice všech dílčích funkcí jsou tu záporné) a na 
-intervalu $\left\langle x_{m};d \right\rangle$ zase rostoucí (protože 
-jsou tyto směrnice kladné). Odtud dostáváme, že v bodě $x_{m}$ musí být 
-minimum funkce $f$, a proto pro lichá $n$ musí být zdravotnické 
-stanoviště na $\frac{n+1}{2}$-tém stanovišti.
+Pre nepárne $n$ to znamená, že žiadna z týchto smerníc nie je nulová. 
+Označíme-li $m=\frac{n+1}{2}$, v intervale $\left\langle x_{m-1}; x_{m} \right) $ 
+má totiž graf funkcie smernicu $-1$ a v nasledujúcom intervale 
+$\left\langle x_{m}; x_{m+1} \right) $ má graf smernicu 1. Ďalej to 
+znamená, že pre nepárne $n$ je celá funkcia $f$ na intervale $\left\langle 0; x_{m} \right)$ 
+klesajúca (pretože smernice všetkých dielčích funkcií sú tu záporné) a na 
+intervale $\left\langle x_{m};d \right\rangle$ zase rastúca (pretože 
+sú tieto smernice kladné). Odtiaľ dostávame, že v bode $x_{m}$ musí byť 
+minimum funkcie $f$, a preto pre nepárne $n$ musí byť zdravotnícke 
+stanovište na $\frac{n+1}{2}$-tom stanovišti.
 
-Pro sudá $n$ je jedna ze směrnic nulová, a to směrnice grafu dílčí 
-funkce na intervalu $\left\langle x_{p}; x_{p+1} \right) $, kde $p=\frac{n}{2}$. 
-Na intervalu $\left\langle 0; x_{p} \right)$ je tak celá funkce $f$ 
-klesající, na intervalu $\left\langle x_{p}; x_{p+1} \right) $ 
-konstantní a na intervalu  $\left\langle x_{p+1}; d \right\rangle $ 
-rostoucí. Nejnižší hodnoty tak nabývá funkce $f$ v libovolném bodu 
-intervalu $\left\langle x_{p}; x_{p+1} \right\rangle $. Pro sudá $n$ 
-proto můžeme zdravotnické stanoviště postavit kdekoli mezi $\frac{n}{2}
-$-tým a $(\frac{n}{2}+1)$-tým stanovištěm.
+Pre párne $n$ je jedna zo smerníc nulová, a to smernica grafu dielčej 
+funkcie na intervale $\left\langle x_{p}; x_{p+1} \right) $, kde $p=\frac{n}{2}$. 
+Na intervale $\left\langle 0; x_{p} \right)$ je tak celá funkcia $f$ 
+klesajúca, na intervale $\left\langle x_{p}; x_{p+1} \right) $ 
+konštantná a na intervale  $\left\langle x_{p+1}; d \right\rangle $ 
+rastúca. Najnižšej hodnoty tak nadobúda funkcia $f$ v ľubovoľnom bode 
+intervalu $\left\langle x_{p}; x_{p+1} \right\rangle $. Pre párne $n$ 
+preto môžeme zdravotnícke stanovište postaviť kdekoľvek medzi $\frac{n}{2}
+$-tym a $(\frac{n}{2}+1)$-tým stanovišťom.
 
 \fi
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

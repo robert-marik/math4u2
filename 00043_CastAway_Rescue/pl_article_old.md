@@ -4,7 +4,7 @@ keywords:
 - twierdzenie Pitagorasa
 - symetria
 is_finished: true
-
+---
 
 
 # Ratowanie rozbitka

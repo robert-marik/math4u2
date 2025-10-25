@@ -1,246 +1,186 @@
 ---
 keywords:
-- analytic geometry
-- acoustic tomograph
-- ellipse
-- dot product
-- vector projection
-is_finished: false
+- analytická geometria
+- akustický tomograf
+- elipsa
+- skalárny súčin
+- projekcia vektora
+is_finished: true
 ---
 
-### Instructions for translators
+# Akustický tomograf a rovnica elipsy
 
-
-1. Open this file on GitHub server. If you see `https://um.mendelu.cz/...` in
-   URL, click `View on GitHub` to open this file on github.com.
-1. If you see this file on GitHub server, you can edit the content of the file.
-   Open the file in an editor. You can use simple editor (pres `e` on GitHub).
-   However, an advanced VS Code editor (press `.` on GitHub) is better, since it
-   provides preview how the Markdown code renders. Alternatively press pencil
-   for simple editor or press triangle next to the pencil to get access to VS
-   Code described as `github.dev`. 
-1. Fix the keywords in the preamble.
-1. Depending on which language version you want to use as a source for your
-   translation, delete either English or Czech version below.
-1. Translate to your language. Keep Markdown marking and math notation. If you
-   use a tool to get first version of the translation, make sure that the markup
-   is preserved. 
-1. In VS Code you can open the preview in another window by pressing `Ctrl+V`
-   and `K`. Keep the preview open as you work, or close using a mouse.
-1. Instead of saving, you have to commit and push the changes to the repository.
-   Fill the Message under `Source control` (describe your changes, such as
-   "Polish translation started") and then press Commit&Push.
-1. Make sure that your changes appear in the commit history. In rare cases
-   (if you work with simultaneously with someone else) you have to download
-   /Pull/ and merge his and yours changes. Usualy Sync (Pull & Push) should
-   work.
-1. When you finish the translation, change `is_finished: False` in header to `is_finished: True`.
-
-### Instrukce pro překladatele
-
-1. Otevřete tento soubor na serveru GitHub. Pokud máte soubor otevřen na `https://um.mendelu.cz/...`, otevřete jej na serveru github.com.
-1. Pokud tento soubor vidíte na serveru GitHub, můžete obsah souboru upravit.
-   Otevřete soubor v editoru. Můžete použít jednoduchý editor (stiskněte `e` na GitHubu).
-   Lepší je však pokročilý editor VS Code (stikněte `.` na GitHubu), protože poskytuje náhled, jak se kód Markdown interpretuje. Případně stiskněte tužku
-   pro jednoduchý editor nebo stiskněte trojúhelníček vedle tužky, abyste získali přístup k editoru VS
-   Code popsaný jako `github.dev`. 
-1. Opravte klíčová slova v preambuli.
-1. V závislosti na tom, kterou jazykovou verzi chcete použít jako zdrojový kód pro svůj
-   překladu, odstraňte níže uvedenou anglickou nebo českou verzi.
-1. Přeložte do svého jazyka. Ponechte značení Markdown a matematický zápis. Pokud
-   použijete nástroj typu DeepL pro získání první verze překladu, ujistěte se, že zápis matematických výrazů
-   byl zachován. 
-1. Ve VS Code můžete náhled otevřít v jiném okně stisknutím `Ctrl+V`.
-   a `K`. Během práce nechte náhled otevřený nebo jej zavřete pomocí myši.
-1. Místo uložení musíte změny zaregistrovat a odeslat do úložiště.
-   Vyplňte zprávu v poli `Zpráva` (popište své změny, např.
-   "Zahájen překlad do polštiny") a poté stiskněte tlačítko Commit&Push.
-1. Ujistěte se, že se vaše změny objeví v historii revizí. Ve výjimečných případech
-   (pokud pracujete současně s někým jiným) musíte stáhnout
-   /Pull/ a sloučit jeho a vaše změny. Obvykle by synchronizace (Pull & Push) měla
-   fungovat.
-1. Po dokončení překladu změňte `is_finished: False` v záhlaví na `is_finished: True`.
-
-
----
----
-
-### Czech source
-
-
-# Akustický tomograf a rovnice elipsy
-
-Představte si, že potřebujete posoudit zdravotní stav starého stromu, aniž byste ho museli 
-porazit nebo do něj řezat. Moderní technologie dnes umožňují takové posouzení provést šetrně 
-a přitom přesně – a jedním z klíčových nástrojů je přitom rovnice elipsy. Pomocí metody EBSI 
-(elliptise-based spatial interpolation) lze z naměřených dat odhadnout fyzikální vlastnosti 
-dřeva uvnitř kmene a získat tak představu o jeho pevnosti a zdraví. K tomu je ale třeba umět 
-zacházet s rovnicí elipsy i tehdy, když je elipsa v obecné poloze vzhledem k osám. V takovém 
-případě využijeme skalární součin pro nalezení projekce vektoru do požadovaného směru.
+Predstavte si, že potrebujete posúdiť zdravotný stav starého stromu, ani by ste ho museli 
+poraziť alebo doň rezať. Moderné technológie dnes umožňujú takéto posúdenie vykonať šetrne 
+a pritom presne – a jedným z kľúčových nástrojov je pritom rovnica elipsy. Pomocou metódy EBSI 
+(elliptise-based spatial interpolation) možno z nameraných údajov odhadnúť fyzikálne vlastnosti 
+dreva vnútri kmeňa a získať tak predstavu o jeho pevnosti a zdraví. K tomu je však potrebné vedieť 
+zaobchádzať s rovnicou elipsy aj vtedy, keď je elipsa vo všeobecnej polohe vzhľadom k osiam. V takom 
+prípade využijeme skalárny súčin pre nájdenie projekcie vektora do požadovaného smeru.
 
 
 ## Akustický tomograf
 
-V praxi arboristy, odborníka pro péči o dřeviny mimo les, je častým úkolem posouzení vitality 
-a zdravotního stavu stromu. Toto je nutné udělat s nulovým nebo minimálním zásahem, který kondici 
-stromu výrazně neovlivní. Jednou z velmi málo invazivních metod je použití akustického tomografu. 
-Jedná se o přístroj, který dokáže měřit "*dobu letu*" zvukového signálu (anglicky používaný 
-termín *time of flight*, TOF) mezi dvěma senzory. S pomocí metod analytické geometrie je poté možno 
-určit vzdálenost mezi senzory a s využitím předpokladu o šíření zvukových signálů přímými paprsky se 
-dá zjistit rychlost šíření zvuku v materiálu. Tato hodnota je velice důležitým indikátorem fyzikálně-mechanických 
-vlastností, protože ve zdravém dřevě (angl. *sound wood*) se zvuk šíří rychleji než ve dřevě 
-degradovaném (angl. *degraded wood*).
+V praxi arboristu, odborníka pre starostlivosť o dreviny mimo lesa, je častou úlohou posúdenie vitality 
+a zdravotného stavu stromu. Toto je nutné urobiť s nulovým alebo minimálnym zásahom, ktorý kondíciu 
+stromu výrazne neovplyvní. Jednou z veľmi málo invazívnych metód je použitie akustického tomografu. 
+Jedná sa o prístroj, ktorý dokáže merať "*dobu letu*" zvukového signálu (anglicky používaný 
+termín *time of flight*, TOF) medzi dvoma senzormi. S pomocou metód analytickej geometrie je potom možné 
+určiť vzdialenosť medzi senzormi a s využitím predpokladu o šírení zvukových signálov priamymi lúčmi sa 
+dá zistiť rýchlosť šírenia zvuku v materiáli. Táto hodnota je veľmi dôležitým indikátorom fyzikálno-mechanických 
+vlastností, pretože v zdravom dreve (angl. *sound wood*) sa zvuk šíri rýchlejšie ako v dreve 
+degradovanom (angl. *degraded wood*).
 
-## Problematika rekonstrukce obrazu
+## Problematika rekonštrukcie obrazu
 
-Rekonstrukce obrazu v akustickém tomografu vychází z předpokladu přímého šíření paprsků v řezu kmene.
-Nejsou tedy brány v úvahu odrazy nebo lom vlnění. Kvalita tohoto předpokladu je
-předmětem aktuálního vědeckého zkoumání, nicméně předpoklad tohoto typu je nutné
-pro praktické využití metody učinit.
+Rekonštrukcia obrazu v akustickom tomografe vychádza z predpokladu priameho šírenia lúčov v reze kmeňa.
+Nie sú teda brané do úvahy odrazy alebo lom vlnenia. Kvalita tohto predpokladu je
+predmetom aktuálneho vedeckého skúmania, avšak predpoklad tohto typu je nutné
+pre praktické využitie metódy urobiť.
 
-Protože se vychází z poměrně malého množství paprsků (akustický tomograf má
-typicky 12, nejvýše 24 senzorů, pro stromy malého průměru i méně), je nutné využít nějakou metodu
-interpolace a průměrování. Tímto se úloha stává odlišnou například od tomografů
-používaných ve zdravotnictví, kde zobrazovacích paprsků je řádově více a je také
-lépe definována geometrie měření: zdroje a snímače jsou umístěny například po obvodu
-kruhu a nikoliv po nepravidelném obvodu kmene stromu. Pro odstranění nedostatků spojených s použitím akustického tomografu pro stromy bylo vyvinuto
-několik technik, které umožňují interpolaci a průměrování naměřených hodnot.
+Pretože sa vychádza z pomerne malého množstva lúčov (akustický tomograf má
+typicky 12, najviac 24 senzorov, pre stromy malého priemeru aj menej), je nutné využiť nejakú metódu
+interpolácie a spriemerovávania. Týmto sa úloha stáva odlišnou napríklad od tomografov
+používaných v zdravotníctve, kde zobrazovacích lúčov je rádovo viac a je tiež
+lepšie definovaná geometria merania: zdroje a snímače sú umiestnené napríklad po obvode
+kruhu a nie po nepravidelnom obvode kmeňa stromu. Pre odstránenie nedostatkov spojených s použitím akustického tomografu pre stromy bolo vyvinutých
+niekoľko techník, ktoré umožňujú interpoláciu a spriemerovávania nameraných hodnôt.
 
-![Vlevo paprsky s barevně odlišenými rychlostmi. Vpravo ukázka rekonstrukce
-obrazu z akustického tomografu. Uprostřed kmene se zvuk šíří pomaleji, dřevo zda
-má horší mechanické vlastnosti. Může jít o degradaci.](tree.jpg)
+![Vľavo lúče s farebne odlíšenými rýchlosťami. Vpravo ukážka rekonštrukcie
+obrazu z akustického tomografu. Uprostred kmeňa sa zvuk šíri pomalšie, drevo tam
+má horšie mechanické vlastnosti. Môže ísť o degradáciu.](tree.jpg)
 
-## EBSI metoda a její následovníci
+## EBSI metóda a jej nástupcovia
 
-Řada metod rekonstrukce obrazu v akustickém tomografu vychází z předpokladu, že rychlost šíření zvuku je ovlivněna kvalitou
-dřeva v eliptickém okolí spojnice dvou senzorů. Tento předpoklad byl otestován
-na reálných měřeních 
-v Du et al. (2015), kde byl navržen i vzorec, dávající do souvislosti vzdálenost
-senzorů a excentricitu elipsy. Tento přístup zaznamenal lepší výsledky než
-postupy založené na prostém průsečíku paprsků a průměrování rychlostí v těchto
-průsečících. Metoda dostala název Ellipse-based spatial
-interpolation a zkratku EBSI. 
+Rad metód rekonštrukcie obrazu v akustickom tomografe vychádza z predpokladu, že rýchlosť šírenia zvuku je ovplyvnená kvalitou
+dreva v eliptickom okolí spojnice dvoch senzorov. Tento predpoklad bol otestovaný
+na reálnych meraniach 
+v Du et al. (2015), kde bol navrhnutý aj vzorec, dávajúci do súvislosti vzdialenosť
+senzorov a excentricitu elipsy. Tento prístup zaznamenal lepšie výsledky ako
+postupy založené na prostom priesečníku lúčov a spriemerovávaní rýchlostí v týchto
+priesečníkoch. Metóda dostala názov Ellipse-based spatial
+interpolation a skratku EBSI. 
 
 
-Praktická implementace metody rekonstrukce obrazu spočívá v tom, že průřez kmene
-se rozdělí na jednotlivé buňky, ve kterých se naměřené hodnoty v jistém smyslu zprůměrují. 
-V EBSI metodě pro každou
-buňku určíme rychlost jako průměr rychlostí všech paprsků, v jejichž eliptickém
-okolí působnosti se buňka nachází. 
+Praktická implementácia metódy rekonštrukcie obrazu spočíva v tom, že prierez kmeňa
+sa rozdelí na jednotlivé bunky, v ktorých sa namerané hodnoty v istom zmysle spriemerujú. 
+V EBSI metóde pre každú
+bunku určíme rýchlosť ako priemer rýchlostí všetkých lúčov, v ktorých eliptickom
+okolí pôsobnosti sa bunka nachádza. 
 
-![Rozdělení průřezu na buňky je nutné nejenom pro běh algoritmu, ale i pro
-následné ověření shody výstupu algoritmu s reálným stavem. Zdroj: projekt DYNATREE, autor V. Semík.](cut_with_cells.png)
+![Rozdelenie prierezu na bunky je nutné nielen pre beh algoritmu, ale aj pre
+následné overenie zhody výstupu algoritmu s reálnym stavom. Zdroj: projekt DYNATREE, autor V. Semík.](cut_with_cells.png)
 
-V dalších pracích byla metoda EBSI ještě rozšířena
+V ďalších prácach bola metóda EBSI ešte rozšírená
 Okolo každého
-paprsku uvažujeme opět elipsu definující oblast působnosti tohoto paprsku (viz. Obrázek 3).
-Data se zpracovávají dvoukolově metodami RSEN a
+lúča uvažujeme opäť elipsu definujúcu oblasť pôsobnosti tohto lúča (viz. Obrázok 3).
+Údaje sa spracovávajú dvojkolovo metódami RSEN a
 SISE (z anglického *ray sementation by elliptical neighborhood* a *spatial
-interpolation by segmented ellipse*) popsanými v Du et al (2018). 
+interpolation by segmented ellipse*) popísanými v Du et al (2018). 
 
-Detailní popis metod je možné najít v původní literatuře, nicméně i z
-uvedeného zjednodušeného popisu je zřejmé, že zásadní dílčí úlohou při
-implementaci obrazové rekonstrukce je ověření, zda bod v rovině leží uvnitř
-elipsy či zda leží vně.
+Detailný popis metód je možné nájsť v pôvodnej literatúre, avšak aj zo
+uvedeného zjednodušeného popisu je zrejmé, že zásadnou dielčou úlohou pri
+implementácii obrazovej rekonštrukcie je overenie, či bod v rovine leží vnútri
+elipsy či či leží vonku.
 
-![V EBSI metodě je poměr délky hlavní a vedlejší poloosy elipsy dán vzdáleností
-mezi senzory, tj. délkou hlavní poloosy.](elipses.svg)
+![V EBSI metóde je pomer dĺžky hlavnej a vedľajšej poloosy elipsy daný vzdialenosťou
+medzi senzormi, t. j. dĺžkou hlavnej poloosy.](elipses.svg)
 
-## Rovnice elipsy
+## Rovnica elipsy
 
-Z předešlé motivační části vyplývá, že pro praktickou implementaci rekonstrukce obrazu pomocí 
-EBSI metody je nutné umět efektivně pracovat s elipsou v různých polohách, což zahrnuje 
-libovolné pootočení os a libovolné posunutí středu elipsy. Potřebujeme efektivně zjišťovat, zda nějaký bod
-leží uvnitř či vně elipsy.
+Z predošlej motivačnej časti vyplýva, že pre praktickú implementáciu rekonštrukcie obrazu pomocou 
+EBSI metódy je nutné vedieť efektívne pracovať s elipsou v rôznych polohách, čo zahŕňa 
+ľubovoľné pootočenie osí a ľubovoľné posunutie stredu elipsy. Potrebujeme efektívne zisťovať, či nejaký bod
+leží vnútri či vonku elipsy.
 
-Elipsa je množina bodů v rovině, pro které platí, že součet vzdáleností bodu od
-dvou ohnisek je konstantní. Elipsu je možno určit pomocí hlavní a vedlejší osy.
-Uvažujme elipsu s délkou hlavní poloosy $a$ a délkou vedlejší poloosy $b$. Rovnice elipsy se
-středem v počátku soustavy souřadnic a hlavní osou ve směru osy $x$ má v tomto případě tvar
+Elipsa je množina bodov v rovine, pre ktoré platí, že súčet vzdialeností bodu od
+dvoch ohnisiek je konštantný. Elipsu je možné určiť pomocou hlavnej a vedľajšej osi.
+Uvažujme elipsu s dĺžkou hlavnej poloosy $a$ a dĺžkou vedľajšej poloosy $b$. Rovnica elipsy so
+stredom v počiatku sústavy súradníc a hlavnou osou v smere osi $x$ má v tomto prípade tvar
 $$
 \frac{x^2}{a^2}+\frac{y^2}{b^2}=1.
 $$
-Body ležící uvnitř elipsy pak splňují nerovnici
+Body ležiace vnútri elipsy potom spĺňajú nerovnicu
 $$
 \frac{x^2}{a^2}+\frac{y^2}{b^2}<1.
 $$
-My však pracujeme s elipsami v obecné poloze, jejich 
-rovnice se sice dají transformovat do stejného 
-tvaru, ale to je poněkud pracný a pro naše účely i 
-zbytečný proces. Raději než pracovat se souřadnicemi 
-budeme využívat vzdáleností bodu od hlavní a od
-vedlejší poloosy. Pokud má elipsa výše uvedenou rovnici, 
-tak tyto vzdálenosti jsou přímo $x$-ové a $y$-ové 
-souřadnice daného bodu. 
+My však pracujeme s elipsami vo všeobecnej polohe, ich 
+rovnice sa síce dajú transformovať do rovnakého 
+tvaru, ale to je pomerne pracný a pre naše účely aj 
+zbytočný proces. Radšej než pracovať so súradnicami 
+budeme využívať vzdialenosti bodu od hlavnej a od
+vedľajšej poloosy. Ak má elipsa vyššie uvedenú rovnicu, 
+tak tieto vzdialenosti sú priamo $x$-ové a $y$-ové 
+súradnice daného bodu. 
 
-Tedy je-li $d_1$ vzdálenost bodu od přímky definované 
-vedlejší osou (pro stručnost vzdálenost od vedlejší osy) 
-a vzdálenost bodu od hlavní osy $d_2$, pak bod leží 
-uvnitř elipsy právě tehdy, když platí 
+Teda ak je $d_1$ vzdialenosť bodu od priamky definovanej 
+vedľajšou osou (pre stručnosť vzdialenosť od vedľajšej osi) 
+a vzdialenosť bodu od hlavnej osi $d_2$, potom bod leží 
+vnútri elipsy práve vtedy, keď platí 
 $$
 \frac{d_1^2}{a^2}+\frac{d_2^2}{b^2}<1.\tag{1}
 $$
-Pro ověření zda bod leží nebo neleží uvnitř elipsy tedy 
-stačí určit vzdálenost bodu od hlavní a od vedlejší osy 
-a ověřit platnost výše uvedené nerovnosti (1). 
+Pre overenie či bod leží alebo neleží vnútri elipsy teda 
+stačí určiť vzdialenosť bodu od hlavnej a od vedľajšej osi 
+a overiť platnosť vyššie uvedenej nerovnice (1). 
 
-## Délka projekce vektoru a skalární součin
+## Dĺžka projekcie vektora a skalárny súčin
 
-Obrázek znázorňuje hlavní a vedlejší osy elipsy, jednotkové vektory ve směru
-těchto os, spojnici testovaného bodu se středem elipsy a vyznačení vzdáleností
-bodu od jednotlivých os elipsy. 
+Obrázok znázorňuje hlavnú a vedľajšiu os elipsy, jednotkové vektory v smere
+týchto osí, spojnicu testovaného bodu so stredom elipsy a vyznačenie vzdialeností
+bodu od jednotlivých osí elipsy. 
 
-![Hlavní a vedlejší osa elipsy a jednotkové vektory ve směrech těchto os.
-Testujeme, zda koncový bod vektoru $\vec u$ leží uvnitř či vně elipsy.](elipsa.svg)
+![Hlavná a vedľajšia os elipsy a jednotkové vektory v smeroch týchto osí.
+Testujeme, či koncový bod vektora $\vec u$ leží vnútri či vonku elipsy.](elipsa.svg)
 
-Pro jednoduchost uvažujme, že úhel mezi vektory $\vec u$ a $\vec e_1$ je ostrý. Z definice skalárního součinu a z faktu, že vektor $\vec e_1$ je jednotkovým vektorem plyne
+Pre jednoduchost uvažujme, že uhol medzi vektormi $\vec u$ a $\vec e_1$ je ostrý. Z definície skalárneho súčinu a z faktu, že vektor $\vec e_1$ je jednotkovým vektorom vyplýva
 
 $$\vec u\cdot\vec e_1 = |\vec u||\vec e_1|\cos\varphi = |\vec u| \cos\varphi = d_1.$$
 
-Vzdálenost od vedlejší osy je tedy možno určit pomocí skalárního součinu. Kolmý
-průmět vektoru do přímky se nazývá projekce a z obrázku je patrné, že $d_1$ je
-vlastně délka projekce vektoru $\vec u$ do směru určeného vektorem $\vec
-e_1$. V případě, že by úhel mezi vektory $\vec u$ a $\vec e_1$ byl tupý, vychází
-hodnota $d_1$ záporná, což se však v testovacím kriteriu (1) neprojeví.
+Vzdialenosť od vedľajšej osi je teda možné určiť pomocou skalárneho súčinu. Kolmý
+priemer vektora do priamky sa nazýva projekcia a z obrázku je zrejmé, že $d_1$ je
+vlastne dĺžka projekcie vektora $\vec u$ do smeru určeného vektorom $\vec
+e_1$. V prípade, že by uhol medzi vektormi $\vec u$ a $\vec e_1$ bol tupý, vychádza
+hodnota $d_1$ záporná, čo sa však v testovacom kritériu (1) neprejaví.
 
-Analogicky, délka projekce vektoru $\vec u$ do směru definovaného vektorem $\vec
-e_2$ je (až na případné znaménko, které se opět v testu (1) neprojeví) dána vztahem 
+Analogicky, dĺžka projekcie vektora $\vec u$ do smeru definovaného vektorom $\vec
+e_2$ je (až na prípadné znamienko, ktoré sa opäť v teste (1) neprejaví) daná vzťahom 
 
 $$d_2=\vec u\cdot \vec e_2.$$
 
 **Poznámka.**
-Poznamenejme, že výpočet skalárního součinu se provádí pomocí souřadnic podle vzorce
+Poznamenajme, že výpočet skalárneho súčinu sa vykonáva pomocou súradníc podľa vzorca
 
 $$\vec u\cdot\vec v = u_1v_1+u_2v_2,$$
 
-kde $\vec u = (u_1, u_2)$ a $\vec v=(v_1,v_2)$. Tento výpočet je možné realizovat v počítačích velmi rychle a použitím vhodných programovacích technik (vektorizace) je možné výpočet provést současně pro tisíce bodů řádově stokrát rychleji než použitím cyklu založeného na postupném testování jednotlivých bodů.
+kde $\vec u = (u_1, u_2)$ a $\vec v=(v_1,v_2)$. Tento výpočet je možné realizovať v počítačoch veľmi rýchlo a použitím vhodných programovacích techník (vektorizácia) je možné výpočet vykonať súčasne pre tisíce bodov rádovo stokrát rýchlejšie ako použitím cyklu založeného na postupnom testovaní jednotlivých bodov.
 
 **Poznámka.**
-Jednotkový vektor $\vec e_1$ ve směru hlavní osy je možné určit buď jako podíl vektoru ze středu do hlavního vrcholu a délky tohoto vektoru, anebo pomocí úhlu, který svírá hlavní osa s osou $x$. Je-li tento úhel $\alpha$, je jednotkový vektor dán vztahem 
+Jednotkový vektor $\vec e_1$ v smere hlavnej osi je možné určiť buď ako podiel vektora zo stredu do hlavného vrcholu a dĺžky tohto vektora, alebo pomocou uhla, ktorý zviera hlavná os s osou $x$. Ak je tento uhol $\alpha$, je jednotkový vektor daný vzťahom 
 
 $$\vec e_1=(\cos\alpha, \sin\alpha).$$
 
-Jednotkový vektor ve směru vedlejší osy je na $\vec e_1$ kolmý. Je tedy možné brát například 
+Jednotkový vektor v smere vedľajšej osi je na $\vec e_1$ kolmý. Je teda možné brať napríklad 
 
 $$\vec e_2 = (-\sin\alpha, \cos\alpha).$$
 
-## Ukázka použití
+## Ukážka použitia
 
-> **Úloha 1.** Elipsa má hlavní osu o délce $a=3$ a vedlejší osu o délce $b=1{,}5$. Střed elipsy
-> je v počátku a hlavní osa svírá s vodorovným směrem úhel $\alpha=30^\circ$.
-> Určete, zda bod $X=[1{,}6;1{,}6]$ leží uvnitř či vně elipsy. (Použité hodnoty jsou
-> hodnotami z Obrázku 4. Bod $X$ je koncovým bodem vektoru $\vec u$.)
+> **Úloha 1.** Elipsa má hlavnú os o dĺžke $a=3$ a vedľajšiu os o dĺžke $b=1{,}5$. Stred elipsy
+> je v počiatku a hlavná os zviera s vodorovným smerom uhol $\alpha=30^\circ$.
+> Určte, či bod $X=[1{,}6;1{,}6]$ leží vnútri či vonku elipsy. (Použité hodnoty sú
+> hodnotami z Obrázku 4. Bod $X$ je koncovým bodom vektora $\vec u$.)
 
 \iffalse
 
-*Řešení.*
-Jednotkový vektor se směru hlavní osy je $\vec e_1=(\cos 30^\circ,
-\sin 30^\circ)$. Vektor $\vec u$ je dán souřadnicemi bodu $X$, tj. $\vec
-u=(1{,}6;1{,}6)$. Skalární součin je tedy 
+*Riešenie.*
+Jednotkový vektor so smerom hlavnej osi je $\vec e_1=(\cos 30^\circ,
+\sin 30^\circ)$. Vektor $\vec u$ je daný súradnicami bodu $X$, t. j. $\vec
+u=(1{,}6;1{,}6)$. Skalárny súčin je teda 
 
 $$d_1=\vec u\cdot \vec e_1 = 1{,}6\cdot\cos 30^\circ + 1{,}6\cdot\sin 30^\circ\doteq 2{,}186.$$
 
-Podobně, délka projekce do směru vedlejší osy dané vektorem $\vec e_2=(-\sin 30^\circ,\, \cos 30^\circ)$ je
+Podobne, dĺžka projekcie do smeru vedľajšej osi danej vektorom $\vec e_2=(-\sin 30^\circ,\, \cos 30^\circ)$ je
 
 $$d_2=\vec u\cdot \vec e_2 = -1{,}6\cdot\sin 30^\circ + 1{,}6\cdot\cos 30^\circ
 \doteq 0{,}586.$$
@@ -251,19 +191,19 @@ $$
 \frac{d_1^2}{a^2} + \frac{d_2^2}{b^2} \doteq 0{,}683<1.
 $$
 
-Bod tedy leží uvnitř elipsy. Situace je na následujícím obrázku. 
+Bod teda leží vnútri elipsy. Situácia je na nasledujúcom obrázku. 
 
-![Testovaný bod leží uvnitř elipsy.](elipsa2.svg)
+![Testovaný bod leží vnútri elipsy.](elipsa2.svg)
 
 \fi
 
-## Závěr
+## Záver
 
-V textu byly představeny základní kroky, na nichž je založena rekonstrukce obrazu v akustickém tomografu. Jedním z dílčích úkolů je ověření, zda zkoumaný bod leží uvnitř či vně elipsy, která je v obecné poloze a je zadána svými poloosami. Pro toto ověření je výhodné použít rovnici elipsy založenou nikoliv na souřadnicích, ale na vzdálenostech od hlavní a vedlejší osy. Tuto vzdálenost je možné určit pomocí skalárního součinu vektorů. 
+V texte boli predstavené základné kroky, na ktorých je založená rekonštrukcia obrazu v akustickom tomografe. Jednou z dielčích úloh je overenie, či skúmaný bod leží vnútri či vonku elipsy, ktorá je vo všeobecnej polohe a je zadaná svojimi poloosami. Pre toto overenie je výhodné použiť rovnicu elipsy založenú nie na súradniciach, ale na vzdialenostiach od hlavnej a vedľajšej osi. Túto vzdialenosť je možné určiť pomocou skalárneho súčinu vektorov. 
 
-## Literatura a zdroje obrázků
+## Literatúra a zdroje obrázkov
 
-### Literatura
+### Literatúra
 
 1. Du, X., Li, S., Li, G., Feng, H., and Chen, S. (2015). "Stress wave tomography
 of wood internal defects using ellipse-based spatial interpolation and velocity
@@ -272,17 +212,8 @@ compensation," BioRes. 10(3), 3948-3962. http://doi.org/10.15376/biores.10.3.394
    in Wood Based on Segmented Propagation Rays of Stress Waves. Appl. Sci. 2018,
    8, 1778. https://doi.org/10.3390/app8101778 
 
-### Zdroje obrázků
+### Zdroje obrázkov
 
 1. Projekt DYNATREE – Tree Dynamics: Understanding of Mechanical Response to Loading, <https://starfos.tacr.cz/cs/projekty/LL1909>.
-2. Vlastní obrázky
+2. Vlastné obrázky
  
-
-
----
----
-
-### English source
-
-Not available on July 10. If you want to start from English
-translation, wait until it appears on <https://um.mendelu.cz/math4u/site/> anc copy the English text by hand.

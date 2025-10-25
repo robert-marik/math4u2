@@ -3,7 +3,7 @@ keywords:
 - geometria płaska
 - trygonometria
 is_finished: true
-
+---
 
 # Widok na morze
 

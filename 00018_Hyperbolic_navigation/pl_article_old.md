@@ -2,7 +2,7 @@
 keywords:
 - geometria analityczna
 - przekroje analityczne
-- hibprbola
+- hiperbola
 is_finished: true
 ---
 
