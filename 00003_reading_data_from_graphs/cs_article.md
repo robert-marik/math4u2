@@ -1,4 +1,7 @@
 ---
+# workflow: in progress
+# workflow: translating
+# workflow: finished
 keywords:
 - kombinatorika, pravděpodobnost a statistika
 - statistika
