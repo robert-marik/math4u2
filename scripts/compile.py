@@ -18,9 +18,9 @@ for dir in math4u.directories:
 
 # copy file foot.png to _site directories
 import shutil
-dest = f"_site/foot.png"
-shutil.copy("foot.svg", dest)
-shutil.copy("head.svg", dest)
+
+shutil.copy("foot.svg", "_site/foot.svg")
+shutil.copy("head.svg", "_site/head.svg")
 exit()
 
 # %%
