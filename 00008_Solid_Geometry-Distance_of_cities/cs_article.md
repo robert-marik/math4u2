@@ -170,6 +170,7 @@ Všimněme si, že v případě dvou míst se stejnou zeměpisnou šířkou $\ps
 >Srovnejte poslední rovnost se vztahem $(1)$. 
 
 \iffalse
+
 >**Vysvětlení vztahu (4).**
 Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo na zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak jsou jeho souřadnice 
 >
