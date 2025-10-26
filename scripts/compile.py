@@ -1,7 +1,5 @@
 # %%
-
 import math4u
-import sys
 
 # print(math4u.directories)
 
@@ -15,9 +13,14 @@ for dir in math4u.directories:
             copy = True
             file.to_html()
             file.to_pdf(output_path=f"_site/{problem.directory}/{file.path.name.split('.')[0]}.pdf")
-            # file.pandiff()
     if copy:
         problem.copy_files_from_repository()
+
+# copy file foot.png to _site directories
+import shutil
+dest = f"_site/foot.png"
+shutil.copy("foot.svg", dest)
+shutil.copy("head.svg", dest)
 exit()
 
 # %%
