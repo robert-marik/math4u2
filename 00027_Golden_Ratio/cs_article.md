@@ -16,15 +16,15 @@ time: 40
 Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu, 
 jestliže pro délky uvažovaných úseček platí vztah
 $$\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.$$
-Tento poměr se často značí řeckým písmenem $\varphi$ a má hodnotu přibližně $1{,}618$. 
+Tento poměr (podíl $\frac{|AB|}{|AC|}$) se často značí řeckým písmenem $\varphi$ a má hodnotu přibližně $1{,}618$. 
 
 ![Úsečka rozdělená v poměru zlatého řezu](00027_1.jpg)
 
-Pěkným příkladem využití zlatého řezu v běžném životě je platební karta. Ta má tvar tzv. zlatého 
-obdélníku. To znamená, že délky jeho stran jsou v poměru zlatého řezu. Zlatý obdélník je oblíbený tvar díky jeho 
+Pěkným příkladem využití zlatého řezu v běžném životě je platební karta. Ta má přibližně tvar tzv. zlatého 
+obdélníku (délky stran zlatého obdélníku jsou v poměru zlatého řezu). Zlatý obdélník je oblíbený tvar díky jeho 
 vyváženému vzhledu; není ani příliš dlouhý, ani příliš široký.
 
-![Zlatý obdélník a zlatá spirála](00027_2.jpg)
+![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
 Zlatý řez úzce souvisí s Fibonacciho posloupností. Členy Fibonacciho posloupnosti jsou čísla 
 $1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, ..., kde každý další člen posloupnosti 
@@ -34,7 +34,7 @@ limita poměrů dvou po sobě jdoucích členů této posloupnosti je rovna prá
 
 Pokud sestrojíme čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je 
 pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku. Tento obdélník je blízký zlatému obdélníku. Do každého 
-čtverce pak můžeme vepsat čtvrtkružnici. Dostaneme jistou spirálu, která je blízká tzv. zlaté spirále. Ta je 
+čtverce pak můžeme vepsat čtvrtkružnici. Dostaneme Fibonacciho spirálu, která je blízká tzv. zlaté spirále. Ta je 
 speciálním případem logaritmické spirály.
 
 V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít v 
@@ -46,7 +46,7 @@ galaxie.
 
 Zlatý řez je hojně využíván v umění pro dosažení esteticky působivých a harmonických kompozic. 
 Malíři a fotografové používají tento poměr k určení umístění klíčových prvků ve svých obrazech. 
-Architekti často integrují poměr zlatého řez do návrhů budov.
+Architekti často integrují poměr zlatého řezu do návrhů budov.
 
 ## Řetězový zlomek
 
@@ -74,6 +74,8 @@ $$\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.$$
 
 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}= 1 + \cfrac{1}{1 + \cfrac{1}{2}}= 1 + \cfrac{1}{\frac{3}{2}}=\frac{5}{3}\doteq1{,}67$$
 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}=1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{2}}}=1 + \cfrac{1}{1 + \cfrac{1}{\frac{3}{2}}}=1 + \cfrac{1}{\frac{5}{3}}=\frac{8}{5}=1{,}6$$
+
+Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$. Zároveň si můžeme všimnout, že vypočtená racionální čísla jsou podíly po sobě jdoucích členů Fibonacciho posloupnosti. Přitom již víme, že tyto podíly konvergují právě ke zlatému řezu $\varphi$. 
 
 \fi
 
@@ -126,7 +128,7 @@ x &= \frac{3x+2}{2x+1}\\
 $$
 
 Všimněme si, že výraz na pravé straně zadané rovnice i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$. 
-Jednoduchou úpravou získáme  kvadratickou rovnici 
+Jednoduchou úpravou pak získáme  kvadratickou rovnici 
 
 $$
  x^2 - x - 1 = 0.
@@ -171,7 +173,7 @@ x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
 \iffalse
 
 *Řešení.* 
-Na obrázku níže vidíme, že při postupném pokrývání zlatého obdélníku je použit vždy jeden čtverec dané velikosti (barvy). To souvisí s tím, že vyjádření zlatého řezu řetězovým zlomkem obsahuje samé jedničky.  
+Na obrázku níže vidíme, že při postupném pokrývání zlatého obdélníku je použit vždy jeden čtverec dané velikosti (barvy). To souvisí s tím, že vyjádření zlatého řezu řetězovým zlomkem obsahuje samé jedničky. Vzhledem k tomu, že je tento řetězový zlomek nekonečný, nelze zlatý obdélník výše popsaným způsobem pokrýt konečně mnoha čtverci. 
 
 ![Zlatý obdélník](zlaty_obdelnik.svg)
 
@@ -181,7 +183,7 @@ Na obrázku níže vidíme, že při postupném pokrývání zlatého obdélník
 
 \iffalse 
 
-*Řešení.* Označme si delší stranu jako $x$ a kratší jako $y$. Po přeložení na polovinu dostaneme obdélník s rozměry $y$ a $\frac{x}{2}$. Protože přeložený papír má mít stejný poměr stran jako papír původní, dostaneme rovnici 
+*Řešení.* Označme si delší stranu jako $x$ a kratší jako $y$. Po přeložení na polovinu dostaneme obdélník s rozměry $y$ a $\frac{x}{2}$. Protože přeložený papír má mít stejný poměr stran jako papír původní, obdržíme rovnici 
 
 $$
  \frac{x}{y} = \frac{y}{\frac{x}{2}}, 
@@ -201,12 +203,12 @@ $$
 
 \fi
 
->**Úloha k přemýšlení 3.** Co by se stalo, kdybychom chtěli obdobným způsobem vyplnit list papíru formátu A? Pokud jste předchozí úlohu nevyřešili, prozradíme, že poměr stran papíru formátu A je $\sqrt{2}$.  
+>**Úloha k přemýšlení 3.** Co by se stalo, kdybychom chtěli obdobným způsobem (pomocí čtverců jako v úloze k přemýšlení 1) vyplnit list papíru formátu A? Pokud jste předchozí úlohu (úloha 2) nevyřešili, prozradíme, že poměr stran papíru formátu A je $\sqrt{2}$.  
 
 \iffalse
 
 *Řešení.* 
-Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec a poté použijeme vždy dva čtverce stejné velikosti (barvy) - viz obrázek níže. 
+Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek níže. 
 
 ![Formát A4](format_A4.svg)
 
