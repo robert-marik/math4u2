@@ -16,7 +16,7 @@ time: 40
 Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu, 
 jestliže pro délky uvažovaných úseček platí vztah
 $$\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.$$
-Tento poměr (podíl $\frac{|AB|}{|AC|}$) se často značí řeckým písmenem $\varphi$ a má hodnotu přibližně $1{,}618$. 
+Tento poměr (podíl $\frac{|AB|}{|AC|}$, který je stejný jako $\frac{|AC|}{|CB|}$) se často značí řeckým písmenem $\varphi$ a má hodnotu přibližně $1{,}618$. 
 
 ![Úsečka rozdělená v poměru zlatého řezu](00027_1.jpg)
 
@@ -34,7 +34,7 @@ limita poměrů dvou po sobě jdoucích členů této posloupnosti je rovna prá
 
 Pokud sestrojíme čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je 
 pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku. Tento obdélník je blízký zlatému obdélníku. Do každého 
-čtverce pak můžeme vepsat čtvrtkružnici. Dostaneme Fibonacciho spirálu, která je blízká tzv. zlaté spirále. Ta je 
+čtverce pak můžeme vepsat čtvrtkružnici. Dostaneme Fibonacciho spirálu, která připomíná tzv. zlatou spirálu. Ta je 
 speciálním případem logaritmické spirály.
 
 V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít v 
@@ -104,6 +104,26 @@ Nyní můžeme vypočítat hodnotu zlatého řezu $\varphi$:
 $$\varphi=\frac{|AB|}{|AC|}=\frac{1}{x} = \frac{1}{\frac{-1 + \sqrt{5}}{2}}=\frac{2}{\sqrt{5}-1}.$$
 Usměrněním zlomku pak dostaneme
 $$\varphi=\frac{\sqrt{5}+1}{2}\doteq1{,}618.$$
+
+*Poznámka.* Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme rovnici 
+
+$$
+ 1+\frac{1}{\varphi}=\varphi, 
+$$
+
+která vede na kvadratickou rovnici 
+
+$$
+ \varphi^2 - \varphi - 1 = 0. 
+$$
+
+Tato rovnice má dvě řešení 
+
+$$
+ \varphi_{1,2}=\frac{1 \pm \sqrt{5}}{2}. 
+$$
+
+Nás však zajímá pouze kladné řešení. Tím se dostáváme k tomu, že $\varphi=\frac{1+\sqrt{5}}{2}$.
 
 \fi
 
