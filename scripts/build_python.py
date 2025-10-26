@@ -522,7 +522,9 @@ def main():
         devel = True
     else:
         devel = False
-    # update_git = False        
+    
+    update_git = False        
+    devel = True
     
     os.makedirs('_site',exist_ok=True)
 
