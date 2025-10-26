@@ -1,10 +1,12 @@
+from fileinput import filename
 from pathlib import Path
 import yaml
 import subprocess
 import os
 import logging
 import shutil
-
+import pandas as pd
+import rich
 
 from datetime import datetime
 now = datetime.now()
@@ -13,6 +15,8 @@ langs = ["en", "es", "cs", "sk", "pl"]
 
 DIR_PATH = Path("..")
 DIR_OLDPATH = Path("../../math4u")
+
+df_image_settings = pd.read_csv("image2pdf_setting.csv", dtype=str)
 
 figure_name={
     "cs": "Obrázek",
@@ -253,12 +257,12 @@ LATEXFILE_HEADER = r"""
 \AddToShipoutPictureBG{%
   \AtPageUpperLeft{%
     \raisebox{-\height}{%
-      \oldincludegraphics[width=\paperwidth]{../head.pdf}%
+      \oldincludegraphics[width=\paperwidth]{../../head.pdf}%
     }%
   }%
   \AtPageLowerLeft{%
     \raisebox{-20pt}{%
-      \oldincludegraphics[width=\paperwidth]{../foot.pdf}%
+      \oldincludegraphics[width=\paperwidth]{../../foot.pdf}%
     }%
   }%
 }
@@ -294,6 +298,8 @@ LATEXFILE_HEADER = r"""
 \def\meta{}
 \let\oldsection\section
 \def\section#1{\oldsection{#1}\par{\itshape \meta\par} \bigskip }
+
+%%%METADATA
 
 """
 
@@ -354,7 +360,6 @@ class File:
         self.yaml_header = self._extract_yaml_header()
         self.parent = parent
 
-
     def _extract_yaml_header(self):
         if self.content.startswith("---"):
             end = self.content.find("\n---", 3)
@@ -413,6 +418,20 @@ class File:
         file_content = file_content.stdout
         return file_content
 
+    @property
+    def latex_old_content(self):
+        file_content = subprocess.run(
+                ["pandoc", 
+                 "-f", "markdown",
+                 "-t", "latex",
+                 f"{DIR_PATH}/{str(self.path).replace('.md', '_old.md')}"
+                 ],     
+                capture_output = True, # Python >= 3.7 only
+                text = True # Python >= 3.7 only
+                )
+        file_content = file_content.stdout
+        return file_content
+
     def to_html(self):
         target = Path("_site") / self.path.parent/ f"{self.language}_article.html"
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -428,46 +447,145 @@ class File:
         target.write_text(html_page, encoding="utf-8")
         return target
 
-    def pandiff(self):
-        target = Path("_site") / self.path.parent/ f"{self.language}_article_diff.html"
-        target.parent.mkdir(parents=True, exist_ok=True)
-        new_file = f"{DIR_PATH}/{self.path}"
-        old_file = f"{DIR_OLDPATH}/{self.path}"
-        if not os.path.isfile(old_file):
-            raise FileNotFoundError(old_file)
-            return
-        print(f"Comparing {new_file} to {old_file}")
-        diff_output = subprocess.run(
-                ["pandiff", 
-                 old_file,
-                 new_file,
-                 "--output", 
-                 str(target),
-                 "-s"
-                 ],     
-                capture_output = True, # Python >= 3.7 only
-                text = True # Python >= 3.7 only
-                )
-        # check if pandiff was successful
-        if diff_output.returncode != 0:
-            # error occurred
-            print(f"pandiff failed: {diff_output.stderr}")
-        print(target)
-        return target
+    # def pandiff(self):
+    #     target = Path("_site") / self.path.parent/ f"{self.language}_article_diff.html"
+    #     target.parent.mkdir(parents=True, exist_ok=True)
+    #     new_file = f"{DIR_PATH}/{self.path}"
+    #     old_file = f"{DIR_OLDPATH}/{self.path}"
+    #     if not os.path.isfile(old_file):
+    #         raise FileNotFoundError(old_file)
+    #         return
+    #     print(f"Comparing {new_file} to {old_file}")
+    #     diff_output = subprocess.run(
+    #             ["pandiff", 
+    #              old_file,
+    #              new_file,
+    #              "--output", 
+    #              str(target),
+    #              "-s"
+    #              ],     
+    #             capture_output = True, # Python >= 3.7 only
+    #             text = True # Python >= 3.7 only
+    #             )
+    #     # check if pandiff was successful
+    #     if diff_output.returncode != 0:
+    #         # error occurred
+    #         print(f"pandiff failed: {diff_output.stderr}")
+    #     return target
     
+    # def to_pdf(self, output_path=None, remove_iffalse=True):
+    #     content = self.latex_content
+    #     if remove_iffalse:
+    #         content = content.replace(r"\iffalse","").replace(r"\fi","")
+    #     temp_tex = Path("_temp") / self.parent.directory /f"{self.language}_article.tex"
+    #     # create parent directory
+    #     temp_tex.parent.mkdir(parents=True, exist_ok=True)
+    #     # copy all files from problem directory to _temp/problem_directory
+    #     self.parent.copy_files_from_repository(skip_md=True, target="_temp")
+    #     temp_tex.write_text(LATEXFILE_HEADER + content + LATEXFILE_FOOT, encoding="utf-8")
+    #     cmd = ["xelatex", str(temp_tex)]
+    #     proc = subprocess.run(cmd, capture_output=True, text=True)
+    #     if proc.returncode != 0:
+    #         print(f"pdflatex failed: {proc.stderr}")
+
     def to_pdf(self, output_path=None):
         content = self.latex_content
-        print(content)
-        temp_md = Path("_temp") / f"{self.language}_article.md"
-        temp_md.parent.mkdir(parents=True, exist_ok=True)
-        temp_md.write_text(self.content, encoding="utf-8")
-        temp_tex = Path("_temp") / f"{self.language}_article.tex"
-        temp_tex.write_text(LATEXFILE_HEADER + content + LATEXFILE_FOOT, encoding="utf-8")
-        cmd = ["pdflatex", "-interaction=nonstopmode", str(temp_tex)]
-        proc = subprocess.run(cmd, capture_output=True, text=True)
-        if proc.returncode != 0:
-            print(f"pdflatex failed: {proc.stderr}")
+        old_content = self.latex_old_content
+        def osetri_text(text):
+            text = text.replace(u'\u2006'," ")
+            text = text.replace(u'\u2004'," ")
+            text = text.replace(r'\begin{figure}',r'\begin{figure}[H]')
+            text = text.replace(r'.svg',r'.pdf')
+            text = text.replace(r'\includesvg[keepaspectratio]', r'\includegraphics')
+            text = text.replace(r'\textbackslash iffalse',r'\iffalse')
+            text = text.replace(r'\textbackslash fi',r'\fi')
 
+            return {'reduced':text, 'full':text.replace(r"\iffalse","").replace(r"\fi","")}
+
+        def osetri_soubor(text):
+            babel = ""
+            if self.language=="cs":
+                babel = r"\usepackage[czech]{babel}"
+            if self.language=="sk":
+                babel = r"\usepackage[slovak]{babel}"
+            if self.language=="pl":
+                babel = r"\usepackage[polish]{babel}"
+            if self.language=="es":
+                babel = r"\usepackage[spanish]{babel}"
+            text = text.replace("%%%BABEL",babel)
+ 
+            keywords = self.yaml_header.get("keywords", [])
+            kwds = ', '.join(keywords)
+            metadata = f"""
+                \\def\\meta{{
+                Keywords:  {kwds} 
+
+                }}
+                """
+            text = text.replace("%%%METADATA",metadata)
+            for n,i,s in df_image_settings[df_image_settings['number']==self.parent.directory[:5]].values:
+                text = text.replace(r"\includegraphics{"+i+"}",r"\oldincludegraphics["+s+"]{"+i+"}")
+
+            return text
+
+
+        
+        content = osetri_text(content)['full']
+        old_content = osetri_text(old_content)['full']
+
+        temp_tex = Path("_temp") / self.parent.directory / f"{self.language}_article.tex"
+        temp_tex_old = Path("_temp") / self.parent.directory / f"{self.language}_article_old.tex"
+        tex_dir = temp_tex.parent  # adresář, kde bude probíhat kompilace
+
+        # vytvoření adresáře
+        tex_dir.mkdir(parents=True, exist_ok=True)
+
+        # zkopírování všech potřebných souborů
+        self.parent.copy_files_from_repository(skip_md=True, target="_temp")
+
+        # zapsání latexového souboru
+        temp_tex.write_text(osetri_soubor(LATEXFILE_HEADER + content + LATEXFILE_FOOT), 
+                            encoding="utf-8")
+        temp_tex_old.write_text(osetri_soubor(LATEXFILE_HEADER + old_content + LATEXFILE_FOOT), 
+                                encoding="utf-8")
+
+        # spuštění kompilace v adresáři, kde je tex soubor
+        cmd = ["xelatex", temp_tex.name]
+        proc = subprocess.run(cmd, capture_output=True, text=True, cwd=tex_dir)
+        if proc.returncode != 0:
+            print(f"xelatex failed: {proc.stderr}")
+        else:
+            print("PDF compilation succeeded.")
+
+        # latexdiff
+        diff_tex = Path("_temp") / self.parent.directory / f"{self.language}_article_diff.tex"
+        cmd_diff = ["latexdiff", temp_tex_old.name, temp_tex.name]
+        with open(diff_tex, "w", encoding="utf-8") as f:
+            proc_diff = subprocess.run(cmd_diff, stdout=f, stderr=subprocess.PIPE,
+                                       text=True, cwd=tex_dir)
+        if proc_diff.returncode != 0:
+            print(f"latexdiff failed: {proc_diff.stderr}")
+        else:
+            print("latexdiff generation succeeded.")
+        # kompilace
+        cmd = ["xelatex", diff_tex.name]
+        proc = subprocess.run(cmd, capture_output=True, text=True, cwd=tex_dir)        
+        if proc_diff.returncode != 0:
+            print(f"latex of diff failed: {proc_diff.stderr}")
+        else:
+            print("Latex diff generation succeeded.")
+
+        if output_path:
+            output_pdf = tex_dir / f"{self.language}_article.pdf"
+            output_path = Path(output_path)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            if output_pdf.exists():
+                output_pdf.replace(output_path)
+
+            output_pdf = tex_dir / f"{self.language}_article_diff.pdf"
+            output_path = Path(output_path.parent) / f"{self.language}_article_diff.pdf"
+            if output_pdf.exists():
+                output_pdf.replace(output_path)
 
 def get_problem(directory):
     return Problem(directory)

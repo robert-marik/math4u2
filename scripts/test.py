@@ -14,7 +14,7 @@ for dir in math4u.directories:
             print(file)
             copy = True
             file.to_html()
-            # file.to_pdf()
+            file.to_pdf(output_path=f"_site/{problem.directory}/{file.path.name.split('.')[0]}.pdf")
             # file.pandiff()
     if copy:
         problem.copy_files_from_repository()
