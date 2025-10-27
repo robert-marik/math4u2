@@ -200,6 +200,8 @@ LATEXFILE_HEADER = r"""
 
 \let\rmdefault\sfdefault
 
+%%%GRAPHICSPATH
+
 % Determine if the image is too wide for the page.
 \makeatletter
 \def\ScaleIfNeeded{%
@@ -527,11 +529,10 @@ class File:
                 text = text.replace(r"\includegraphics{"+i+"}",r"\oldincludegraphics["+s+"]{"+i+"}")
 
             return text
-
-
         
         content = osetri_text(content)['full']
         old_content = osetri_text(old_content)['full']
+        LATEXFILE_HEADER_ = LATEXFILE_HEADER.replace("%%%GRAPHICSPATH", r"\graphicspath{{../../}{../}{}{../../../"+self.parent.directory+"/}}")
 
         temp_tex = Path("_temp") / self.parent.directory / f"{self.language}_article.tex"
         temp_tex_old = Path("_temp") / self.parent.directory / f"{self.language}_article_old.tex"
@@ -541,12 +542,12 @@ class File:
         tex_dir.mkdir(parents=True, exist_ok=True)
 
         # zkopírování všech potřebných souborů
-        self.parent.copy_files_from_repository(skip_md=True, target="_temp")
+        # self.parent.copy_files_from_repository(skip_md=True, target="_temp")
 
         # zapsání latexového souboru
-        temp_tex.write_text(osetri_soubor(LATEXFILE_HEADER + content + LATEXFILE_FOOT), 
+        temp_tex.write_text(osetri_soubor(LATEXFILE_HEADER_ + content + LATEXFILE_FOOT), 
                             encoding="utf-8")
-        temp_tex_old.write_text(osetri_soubor(LATEXFILE_HEADER + old_content + LATEXFILE_FOOT), 
+        temp_tex_old.write_text(osetri_soubor(LATEXFILE_HEADER_ + old_content + LATEXFILE_FOOT), 
                                 encoding="utf-8")
 
         # spuštění kompilace v adresáři, kde je tex soubor
