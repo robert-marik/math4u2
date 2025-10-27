@@ -19,25 +19,30 @@ time: 30
 Šikmý vrh je nejobecnější způsob uvedení tělesa v homogenním tíhovém
 poli do pohybu.  Předpokládejme, že hmotný bod byl šikmo vržen v
 prostředí bez odporu počáteční rychlostí $v_0$, přičemž příslušný vektor počáteční rychlosti $\vec {v}_0$ svírá s
-vodorovnou rovinou úhel $\alpha \in \left(0,\frac{\pi}{2}\right)$. Při zavedení kartézského souřadného
-systému s osou $x$ vodorovnou a osou $y$ svislou vzhůru
-bude pro tento vektor platit 
+vodorovnou rovinou úhel $\alpha \in \left(0,\frac{\pi}{2}\right)$. V kartézské soustavě souřadnic bude pro tento vektor platit (viz obrázek)
 
-$$\vec{v}_0=(v_0\cos\alpha,v_0\sin\alpha).$$
+$$\vec{v}_0=(v_0\cos\alpha;v_0\sin\alpha).$$
 
 Pohyb tělesa je ovlivněn tíhovým zrychlením o velikosti $g$ mířícím
-svisle dolů. Vodorovná komponenta tíhového zrychlení je nulová, a
-proto ve vodorovném směru pohyb není tíhovým polem ovlivněn. Ve směru
-svislém je pohyb tělesa ovlivněn zrychlením $-g$ s počáteční rychlostí $v_0\sin\alpha$.
+svisle dolů. Ve vodorovném směru na těleso nepůsobí žádná složka tíhového zrychlení, a proto je pohyb ve vodorovném směru rovnoměrný. Naopak, ve směru svislém se pohyb odehrává pod vlivem tíhového zrychlení. Proto pro vektor $\vec{v}=(v_x;v_y)$ okamžité rychlosti v čase $t \geq 0$ platí 
 
-Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ bude platit
+$$
+\begin{aligned}
+        v_x=v_x(t) &= v_0 \cos\alpha,\\
+        v_y=v_y(t) &= v_0\sin\alpha-gt.
+\end{aligned}
+$$
+
+Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ tedy bude platit 
 
 $$
 \begin{aligned}
         x = x(t) &= v_0 t\cos\alpha,\\
-        y = y(t) &= v_0t\sin\alpha-\frac{1}{2}gt^2.
+        y = y(t) &= v_0t\sin\alpha-\frac{1}{2}gt^2,
 \end{aligned}\tag{1}
 $$
+
+protože okamžitá rychlost v čase $t$ je derivací polohy v čase $t$. Přesněji, $v_x(t)=x'(t)$ a $v_y(t)=y'(t)$. 
 
 ![Šikmý vrh](math4you_00013.jpg)
 
