@@ -165,7 +165,7 @@ $$
 
 Funkci $x_d(\alpha) = \frac{v_0^2}{g}\sin2\alpha$ jsme mohli získat i snadněji využitím 
 symetrie paraboly. Vrchol paraboly totiž leží uprostřed trajektorie míčku. 
-Proto pro místo dopadu $x_{d}$ platí $x_d(\alpha) = 2\cdot x_{max}$. 
+Proto pro místo dopadu $x_{d}$ platí $x_d(\alpha) = 2\cdot x_{0}$. 
 Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané dosazením $y=0$ do funkce $y=f(x)$.
 
 \fi
@@ -189,27 +189,34 @@ $$
 \end{aligned}\tag{2}
 $$
 
-Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je částí grafu funkce  
+Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je částí grafu funkce dané předpisem 
 
 $$
- y = f(x) = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ , 
+ y = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}, 
 $$
 
-což je opět funkce kvadratická (dokonce pouze posunutá o $h$ ve směru osy $y$). 
+tj. 
+
+$$
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h. 
+$$
+
+Tato kvadratická funkce se od kvadratické funkce odvozené v úloze 1 liší pouze v absolutním členu (jejich grafy jsou vzájemně posunuté o $h$ ve směru osy $y$).  
+
 
 *Odpověď na otázku 2.*
 Při výpočtu maximální dosažené výšky odpáleného míčku dojdeme ke vztahu 
 
 $$
-x_{max}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ , 
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ , 
 $$
 
 který je stejný jako vztah dříve odvozený. To souvisí s tím, že derivace konstantní funkce je funkce nulová (rozmyslete si). 
 
- Dosazením $x_{max}$ do funkce $f$ pak dojdeme k tomu, že 
+ Dosazením $x_{0}$ do funkce $f$ pak dojdeme k tomu, že 
 
 $$
- y_{max}=f(x_{max})=h+\frac{v_0^2\sin^2\alpha}{2g}\ .
+ y_{max}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}\ .
 $$
 
 *Odpověď na otázku 3.*
@@ -225,7 +232,7 @@ $$
  -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h = 0. 
 $$
 
- Tentokrát však tato rovnice není v součinovém tvaru, a proto ji budeme řešit použitím obecného vzorce pro řešení kvadratické rovnice. Nejprve však bude dobré z rovnice odstranit zlomky vynásobením výrazem $-2v_0^2 \cos^2\alpha$. Získáme tak kvadratickou rovnici 
+ Tentokrát však tato rovnice není v součinovém tvaru, a proto ji budeme řešit použitím obecného vzorce pro nalezení kořenů kvadratické rovnice. Nejprve však bude dobré z rovnice odstranit zlomky vynásobením výrazem $-2v_0^2 \cos^2\alpha$. Získáme tak kvadratickou rovnici 
 
  $$
  gx^2-2v_0^2\sin\alpha \cos\alpha \cdot x - 2hv_0^2 \cos^2\alpha = 0.
@@ -237,13 +244,13 @@ $$
 x_{1,2}=\frac{2v_0^2\sin\alpha \cos\alpha \pm \sqrt{4v_0^4\sin^2\alpha \cos^2\alpha+8ghv_0^2\cos^2\alpha}}{2g}
 $$
  
-Úpravou posledního vztahu bychom dostali 
+Úpravou bychom dostali 
 
 $$
 x_{1,2}=\frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha \pm \sqrt{v_0^2\sin^2\alpha+2gh}\right). 
 $$
 
-Není těžké si rozmyslet, že jeden z kořenů (konkrétně ten se znaménkem mínus) je záporný, a proto odpálený golfový míček doletí do vzdálenosti 
+Není těžké si rozmyslet, že jeden z kořenů (konkrétně ten se znaménkem mínus) je záporný, a proto naší úloze vyhovuje jen jeden kořen (se znaménkem plus). To znamená, že odpálený golfový míček doletí do vzdálenosti 
 
 $$
 x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha+2gh}\right).
@@ -260,19 +267,19 @@ $$
 který byl odvozen už dříve. 
 
 *Odpověď na otázku 4.*
-Zde je situace mnohem složitější. Museli bychom totiž maximalizovat funkci 
+Zde je situace mnohem složitější. Museli bychom totiž hledat maximum funkce  
 
 $$
 x_d(\alpha) = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha+2gh}\right), 
 $$
 
-což by bylo poměrně komplikované. Pomocí metod diferenciálního počtu bychom mohli zjistit, že maximum nastává pro úhel $\alpha$ splňující rovnost  
+což by bylo poměrně komplikované. Přeskočme tedy odvození a uveďme si jen výsledek. Maximum nastává pro úhel $\alpha$ splňující rovnost  
 
 $$
 \sin\alpha = \frac{v_0}{\sqrt{2v_0^2+2gh}}. 
 $$
 
-Vidíme, že v tomto případě do optimálního úhlu mluví počáteční rychlost $v_0$ golfového míčku, výška $h$ místa, ze kterého míček odpalujeme, a dokonce i gravitační zrychlení $g$. 
+Vidíme, že v tomto případě optimální úhel závisí na počáteční rychlost $v_0$ golfového míčku, výšce $h$ místa, ze kterého míček odpalujeme, a dokonce i na gravitačním zrychlení $g$. 
 
 Můžeme si ale všimnout, že v případě $h=0$ se poslední vztah změní na 
 
