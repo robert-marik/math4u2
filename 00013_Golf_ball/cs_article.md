@@ -61,7 +61,7 @@ Nejprve vyjádříme z první rovnice čas $t=\frac{x}{v_0\cos\alpha}$ a
 dosadíme ho do rovnice druhé:
 
 $$
- y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .
+ y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x.
 $$
 
 Odtud vidíme, že funkce $f$ popisující trajektorii míčku je kvadratická funkce 
@@ -89,26 +89,26 @@ Grafem funkce $f$ je parabola. Tím je dokázáno, že trajektorie golfového m�
 předchozí úlohy:
 
 $$
- f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .
+ f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x.
 $$
 
 Vypočítáme derivaci funkce $f$:
 
 $$
-f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}\ .
+f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}.
 $$
 
 Pro nalezení stacionárního bodu položíme derivaci rovnu nule a
 dostaneme rovnici
 
 $$
-\frac{g}{v_0^2\cos^2\alpha}\cdot x=\frac{\sin\alpha}{\cos\alpha}\ .
+\frac{g}{v_0^2\cos^2\alpha}\cdot x=\frac{\sin\alpha}{\cos\alpha}.
 $$
 
 Jejím řešením je
 
 $$
-x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ .
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}.
 $$
 
 Vzhledem k tomu, že se jedná o konkávní kvadratickou  funkci, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
@@ -116,7 +116,7 @@ Vzhledem k tomu, že se jedná o konkávní kvadratickou  funkci, musí být nal
 Výšku vrhu $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme: 
 
 $$
- y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}\ .
+ y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
 $$
 
 \fi
@@ -137,11 +137,11 @@ $$
 $y=0$ a vyřešíme získanou rovnici: 
 
 $$
- 0 = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ ,
+ 0 = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x,
 $$
 
 $$
- 0 = x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right)\ .
+ 0 = x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right).
 $$
 
 Tato rovnice v součinovém tvaru má dvě řešení. První 
@@ -149,7 +149,7 @@ Tato rovnice v součinovém tvaru má dvě řešení. První
 Snadno se vidí, že 
 
 $$
-x_d = x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha\ .
+x_d = x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha.
 $$ 
 
 Nyní je nutné nalézt maximum funkce $x_d(\alpha)$. 
@@ -160,7 +160,7 @@ Maximálního dostřelu tedy docílíme při odpalu míčku pod úhlem
 $\alpha=\frac{\pi}{4}$ a míček dopadne do vzdálenosti
 
 $$
-x_d \left(\frac{\pi}{4} \right) =\frac{v_0^2}{g}\sin\left(2\cdot \frac{\pi}{4} \right)=\frac{v_0^2}{g}\ .
+x_d \left(\frac{\pi}{4} \right) =\frac{v_0^2}{g}\sin\left(2\cdot \frac{\pi}{4} \right)=\frac{v_0^2}{g}.
 $$ 
 
 Funkci $x_d(\alpha) = \frac{v_0^2}{g}\sin2\alpha$ jsme mohli získat i snadněji využitím 
@@ -208,7 +208,7 @@ Tato kvadratická funkce se od kvadratické funkce odvozené v úloze 1 liší p
 Při výpočtu maximální dosažené výšky odpáleného míčku dojdeme ke vztahu 
 
 $$
-x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ , 
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}, 
 $$
 
 který je stejný jako vztah dříve odvozený. To souvisí s tím, že derivace konstantní funkce je funkce nulová (rozmyslete si). 
@@ -216,7 +216,7 @@ který je stejný jako vztah dříve odvozený. To souvisí s tím, že derivace
  Dosazením $x_{0}$ do funkce $f$ pak dojdeme k tomu, že 
 
 $$
- y_{max}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}\ .
+ y_{max}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}.
 $$
 
 *Odpověď na otázku 3.*
@@ -244,7 +244,7 @@ $$
 x_{1,2}=\frac{2v_0^2\sin\alpha \cos\alpha \pm \sqrt{4v_0^4\sin^2\alpha \cos^2\alpha+8ghv_0^2\cos^2\alpha}}{2g}
 $$
  
-Úpravou bychom dostali 
+Úpravou dostaneme  
 
 $$
 x_{1,2}=\frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha \pm \sqrt{v_0^2\sin^2\alpha+2gh}\right). 
