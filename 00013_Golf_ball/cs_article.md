@@ -33,7 +33,7 @@ $$
 \end{aligned}
 $$
 
-Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ tedy bude platit 
+Pro souřadnice $[x;y]$ polohy hmotného bodu v čase $t \geq 0$ tedy bude platit 
 
 $$
 \begin{aligned}
@@ -48,26 +48,36 @@ protože okamžitá rychlost v čase $t$ je derivací polohy v čase $t$. Přesn
 
 ## Odpal golfového míčku
 
-Hráč golfu odpaluje míček počáteční rychlostí $v_0$ pod úhlem $\alpha \in \left(0,\frac{\pi}{2}\right)$. Předpokládejme, že na míček působí
-zanedbatelné odporové síly. Pohyb míčku tedy splňuje podmínky pro
+Hráč golfu odpaluje míček počáteční rychlostí $v_0$ pod úhlem $\alpha \in \left(0,\frac{\pi}{2}\right)$. Předpokládejme, že na míček nepůsobí žádné odporové síly. Pohyb míčku tedy splňuje podmínky pro
 pohyb šikmo vrženého tělesa v prostředí bez odporu vzduchu.
 
 >**Úloha 1.**  Dokažte, že trajektorií golfového míčku je část paraboly.
 
 \iffalse
 
-*Řešení.* Pro nalezení rovnice trajektorie, tedy funkce $y=f(x)$, je
-nutné z rovnic (1) určujících polohu bodu odstranit parametr $t$.
+*Řešení.* Chceme nalézt rovnici trajektorie ve tvaru $y=f(x)$. Proto je nutné převést parametrické vyjádření trajektorie (1) na rovnici obecnou. 
 
-Proto vyjádříme z první rovnice čas $t=\frac{x}{v_0\cos\alpha}$ a
+Nejprve vyjádříme z první rovnice čas $t=\frac{x}{v_0\cos\alpha}$ a
 dosadíme ho do rovnice druhé:
 
 $$
- y = f(x) = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .
+ y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .
 $$
 
-Odtud vidíme, že $y$-ová souřadnice trajektorie je kvadratickou funkcí
-$x$-ové souřadnice a trajektorií golfového míčku je proto jistá část paraboly. Konkrétně se jedná o část nacházející se nad osou $x$.
+Odtud vidíme, že funkce $f$ popisující trajektorii míčku je kvadratická funkce 
+
+$$
+ f(x)=Ax^2+Bx, 
+$$
+
+kde 
+
+$$
+ A=-\frac{g}{2v_0^2\cos^2\alpha} \quad \text{a} \quad 
+ B=\frac{\sin\alpha}{\cos\alpha}.
+$$
+
+Grafem funkce $f$ je parabola. Tím je dokázáno, že trajektorie golfového míčku je jistou částí této paraboly. 
 
 \fi
 
@@ -98,16 +108,15 @@ $$
 Jejím řešením je
 
 $$
-x_{max}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ .
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ .
 $$
 
-Vzhledem k tomu, že trajektorií pohybu je konkávní kvadratická funkce,
-musí být nalezený stacionární bod $x_{max}$ i bodem jejího maxima. 
+Vzhledem k tomu, že se jedná o konkávní kvadratickou  funkci, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
  
-Výšku vrhu $y_{max}$ vypočítáme dosazením získané souřadnice $x_{max}$ do funkce $f$. Po jednoduchých úpravách obdržíme: 
+Výšku vrhu $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme: 
 
 $$
- y_{max}=f(x_{max})=\frac{v_0^2\sin^2\alpha}{2g}\ .
+ y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}\ .
 $$
 
 \fi
