@@ -358,7 +358,11 @@ class File:
             end = self.content.find("\n---", 3)
             if end != -1:
                 yaml_content = self.content[3:end]
-                return yaml.safe_load(yaml_content)
+                try:
+                    return yaml.safe_load(yaml_content)
+                except yaml.YAMLError as e:
+                    logging.error(f"YAML parsing error in file {self.path}: {e}")
+                return {}
         return {}
     
     def __repr__(self):

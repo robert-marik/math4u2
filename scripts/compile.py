@@ -8,7 +8,10 @@ for dir in math4u.directories:
     problem = math4u.Problem(directory=dir)
     copy = False
     for file in problem.Files:
-        yaml = file.yaml_header
+        try:
+            yaml = file.yaml_header
+        except:
+            continue
         if 'workflow' in yaml.keys():
             print(file)
             copy = True
