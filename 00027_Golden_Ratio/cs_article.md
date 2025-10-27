@@ -169,8 +169,8 @@ Vidíme, že jedním z řešení je opět zlatý řez.
 >$$
 x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
 >$$
-
-Na příkladě si ukážeme geometrický význam čísel $a_0, a_1, a_2, \dots, a_n$. 
+>
+>Na příkladě si ukážeme geometrický význam čísel $a_0, a_1, a_2, \dots, a_n$. 
 
 Uvažujme například zlomek $\frac{23}{16}$. Není těžké si rozmyslet, že tento zlomek lze psát ve tvaru řetězového zlomku následovně: 
 
