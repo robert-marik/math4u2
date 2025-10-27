@@ -1,6 +1,6 @@
 ---
-workflow: in progress
-# workflow: translating
+# workflow: in progress
+workflow: translating
 # workflow: finished
 keywords:
 - analytická geometrie
@@ -16,10 +16,10 @@ Eva našla při surfování na internetu jednu zajímavost týkající se grafu 
 $f(x) = x^2$, který může posloužit jako kalkulačka k vynásobení dvou čísel
 $a$ a $b$.[^1] Postup je následující:
 
- 1. Na ose $x$ se vyznačí obrazy čísel $-a$ a $b$.
- 2. V těchto bodech se vztyčí kolmice k ose $x$ a sestrojí se jejich průsečíky s grafem funkce $f$.
- 3. Přímka procházející právě sestrojenými průsečíky protne osu $y$ v bodě,
-    jehož $y$-ová souřadnice je rovna součinu $ab$.
+ 1. V kartézské soustavě souřadnic sestrojíme graf funkce $f(x)=x^2$. 
+ 1. Na ose $x$ vyznačíme obrazy čísel $-a$ a $b$, tj. body $[-a;0]$ a $[b;0]$. 
+ 1. V těchto bodech vztyčíme kolmice k ose $x$ a sestrojíme jejich průsečíky s grafem funkce $f$.
+ 1. Přímka procházející právě sestrojenými průsečíky protne osu $y$ v bodě, jehož $y$-ová souřadnice je rovna součinu $ab$.
 
 Uvedený postup si můžete vyzkoušet v přiloženém pracovním listu, jeho
 ilustrace je možná také v GeoGebře. Interaktivní applet najdete na
@@ -31,18 +31,18 @@ stránkách <https://www.geogebra.org/m/sj5cjbaf>.
 \iffalse
 
 *Řešení.* Z postupu je patrné, že jestliže obrazy čísel $-a$ a $b$ splynou,
-přímku popisovanou ve třetím bodě nebude možné jednoznačně sestrojit. Uvedený
+přímku popisovanou ve čtvrtém bodě nebude možné jednoznačně sestrojit. Uvedený
 postup proto nebude fungovat, bude-li platit $-a=b$. Ukážeme, že kromě tohoto
 případu uvedený postup funguje pro všechny ostatní dvojice čísel $a$ a $b$.
 
-Sestrojme na ose $x$ dle postupu ze zadání obrazy čísel $-a$ a $b$ a dále vztyčme
+Sestrojme na ose $x$ obrazy čísel $-a$ a $b$ a dále vztyčme
 v těchto bodech kolmice k ose $x$. Průsečíky těchto kolmic s parabolou $y=x^2$ označme
 $A$ a $B$, přímku $AB$ pak označme jako $p$. Přímka $p$ protíná osu $y$ v bodě
 $C$, o kterém dokážeme, že má $y$-ovou souřadnici rovnou součinu $ab$. 
 
 ![K důkazu](math4you_00010.jpg)
 
-Přímka $p$ je dána dvěma body $A[-a;a^2]$ a $B[b;b^2]$, tedy její směrový vektor je
+Přímka $p$ je dána dvěma body $A=[-a;a^2]$ a $B=[b;b^2]$, tedy její směrový vektor je
 
 $$
 \overrightarrow{v}=\overrightarrow{AB}= (b+a; b^2-a^2).
@@ -65,8 +65,8 @@ Následným rozepsáním pak dostaneme
 
 $$
 \begin{aligned}
-p\colon \, x &= -a + t \\
-y &= a^2 + t\cdot (b-a), \; t\in\mathbb{R}\,.
+p\colon \, x &= -a + t, \\
+y &= a^2 + t\cdot (b-a), \; t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
@@ -82,13 +82,13 @@ což jsme měli dokázat.
 
 >**Doplňující otázka k rozmyšlení.**
 Co by se stalo, kdybychom 
-na ose $x$ nevyznačovali čísla $-a$ a $b$, ale čísla $a$ a $b$? 
+na ose $x$ nevyznačovali obrazy čísel $-a$ a $b$, ale čísel  $a$ a $b$? 
 Fungovala by parabolická kalkulačka i v tomto případě? 
 
 \iffalse
 
 *Odpověď na otázku.*
-Je jasné, že by nastal problém v případě $a=b$. Dále proto předpokládejme, že $a \neq b$. Nyní potřebujeme napsat rovnici přímky $q$ procházející body $A[a;a^2]$ a $B[b;b^2]$. Její směrový vektor je
+Je jasné, že by nastal problém v případě $a=b$. Dále proto předpokládejme, že $a \neq b$. Nyní potřebujeme napsat rovnici přímky $q$ procházející body $A=[a;a^2]$ a $B=[b;b^2]$. Její směrový vektor je
 
 $$
 \overrightarrow{v}=\overrightarrow{AB}= (b-a; b^2-a^2).
@@ -111,8 +111,8 @@ Následným rozepsáním dostaneme
 
 $$
 \begin{aligned}
-q\colon \, x &= a + t \\
-y &= a^2 + t\cdot (b+a), \; t\in\mathbb{R}\,.
+q\colon \, x &= a + t, \\
+y &= a^2 + t\cdot (b+a), \; t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
@@ -128,8 +128,7 @@ Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $
 \fi
 
 >**Jedna zajímavost na závěr.**
-Na principu parabolické kalkulačky funguje geometrická verze dobře známého Eratosthenova síta pro hledání prvočísel.  
-Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek). Promyslete si detailně, proč to opravdu takto funguje. 
+Na principu parabolické kalkulačky je založena geometrická verze Eratosthenova síta pro hledání prvočísel. Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek). Promyslete si detailně, proč to opravdu takto funguje. 
 
 ![Parabolické prvočíselné síto](parabolicke_sito.svg)
 

@@ -8,7 +8,10 @@ for dir in math4u.directories:
     problem = math4u.Problem(directory=dir)
     copy = False
     for file in problem.Files:
-        yaml = file.yaml_header
+        try:
+            yaml = file.yaml_header
+        except:
+            continue
         if 'workflow' in yaml.keys():
             print(file)
             copy = True
@@ -30,8 +33,8 @@ files
 
 # %%
 
-import rich
-rich.inspect(files[0])
+#import rich
+#rich.inspect(files[0])
 # %%
 
 df = pd.DataFrame(
@@ -42,7 +45,7 @@ df['html'] = df['directory'] + "/" + df['name'] + ".html"
 df['pdf'] = df['directory'] + "/" + df['name'] + ".pdf"
 df['diff2old'] = df['directory'] + "/" + df['name'] + "_diff.pdf"
 df.to_csv("math4u_file_workflow.csv")
-shutil.copy("math4u_file_workflow.csv", "_site/math4u_file_workflow.csv")
+shutil.copy("math4u_file_workflow.csv", "_site/rwp_data.csv")
 shutil.copy("index_html", "_site/index.html")
 
 
