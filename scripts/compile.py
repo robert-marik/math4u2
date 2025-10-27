@@ -30,8 +30,8 @@ files
 
 # %%
 
-import rich
-rich.inspect(files[0])
+#import rich
+#rich.inspect(files[0])
 # %%
 
 df = pd.DataFrame(
@@ -42,7 +42,7 @@ df['html'] = df['directory'] + "/" + df['name'] + ".html"
 df['pdf'] = df['directory'] + "/" + df['name'] + ".pdf"
 df['diff2old'] = df['directory'] + "/" + df['name'] + "_diff.pdf"
 df.to_csv("math4u_file_workflow.csv")
-shutil.copy("math4u_file_workflow.csv", "_site/math4u_file_workflow.csv")
+shutil.copy("math4u_file_workflow.csv", "_site/rwp_data.csv")
 shutil.copy("index_html", "_site/index.html")
 
 
