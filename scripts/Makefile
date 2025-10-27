@@ -10,6 +10,7 @@ all: html
 # Kompilace HTML
 html:
 	@echo "🚀 Spouštím generování HTML..."
+	git pull
 	python3 compile.py
 	@echo "✅ Hotovo: HTML vygenerováno do $(SITE_DIR)/"
 
