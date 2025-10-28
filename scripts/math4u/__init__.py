@@ -444,6 +444,12 @@ class File:
             with open(test_css_file) as f:
                 css = "\n".join(f.readlines())
         html_page = makeHEAD(css=css, title=self.path)
+        html_page += f"Workflow: {self.yaml_header.get('workflow','unknown')}<br>\n"
+        keywords = self.yaml_header.get('keywords', [])
+        if keywords:
+            html_page += f"<div class='header_keywords'>Keywords: <span>{'; '.join(keywords)}</span></div>\n"
+        html_page += f"<div class='time'>Last update: {datetime.now().strftime('%d/%m/%Y %H:%M')}</div>\n"
+        html_page += "<hr>\n"
         html_page += self.html_content
         html_page += file_action
         html_page += FOOT
