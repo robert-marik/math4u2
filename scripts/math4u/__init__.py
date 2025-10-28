@@ -279,6 +279,7 @@ LATEXFILE_HEADER = r"""
 %%%BABEL
                    
 \usepackage{float}
+\usepackage{datetime}
 
 \def\arctg{\mathop{\mathrm{arctg}}}
 
@@ -299,6 +300,9 @@ LATEXFILE_HEADER = r"""
 """
 
 LATEXFILE_FOOT = r"""
+
+\bigskip
+\textit{Compilation: \today, \currenttime}
 
 \clearpage
 \end{document}
