@@ -89,13 +89,13 @@ Grafem funkce $f$ je parabola. Tím je dokázáno, že trajektorie golfového m�
 předchozí úlohy:
 
 $$
- f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x.
+ f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
 $$
 
 Vypočítáme derivaci funkce $f$:
 
 $$
-f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}.
+f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}
 $$
 
 Pro nalezení stacionárního bodu položíme derivaci rovnu nule a
@@ -111,9 +111,9 @@ $$
 x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}.
 $$
 
-Vzhledem k tomu, že se jedná o konkávní kvadratickou  funkci, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
+Vzhledem k tomu, že funkce $f$ je konkávní kvadratickou  funkcí, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
  
-Výšku vrhu $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme: 
+Výšku vrhu $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme  
 
 $$
  y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
@@ -127,7 +127,7 @@ $$
 
 *Řešení.* Pro výpočet úhlu maximálního dostřelu potřebujeme získat $x$-ovou
 souřadnici $x_d$ místa dopadu jako funkci úhlu $\alpha$ a tuto funkci
-maximalizovat, tj. najdeme maximum funkce $x_d(\alpha).$ Vzhledem k
+maximalizovat, tj. najít maximum funkce $x_d$. Vzhledem k
 tomu, že při dopadu míčku bude jeho výška nulová, položíme ve vztahu 
 
 $$
@@ -152,7 +152,7 @@ $$
 x_d = x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha.
 $$ 
 
-Nyní je nutné nalézt maximum funkce $x_d(\alpha)$. 
+Nyní je nutné nalézt maximum funkce $x_d$. 
 To je ale snadné, neboť pro $\alpha \in \left(0,\frac{\pi}{2}\right)$ je hodnota $\sin 2\alpha$ maximální, právě když 
 $\alpha=\frac{\pi}{4}$. 
 
@@ -165,8 +165,8 @@ $$
 
 Funkci $x_d(\alpha) = \frac{v_0^2}{g}\sin2\alpha$ jsme mohli získat i snadněji využitím 
 symetrie paraboly. Vrchol paraboly totiž leží uprostřed trajektorie míčku. 
-Proto pro místo dopadu $x_{d}$ platí $x_d(\alpha) = 2\cdot x_{0}$. 
-Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané dosazením $y=0$ do funkce $y=f(x)$.
+Proto pro místo dopadu $x_{d}$ platí $x_d = 2\cdot x_{0}$, kde $x_0$ je hodnota vypočtená v úloze 2. 
+Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané dosazením $y=0$ do vztahu $y=f(x)$.
 
 \fi
 
@@ -189,7 +189,7 @@ $$
 \end{aligned}\tag{2}
 $$
 
-Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je částí grafu funkce dané předpisem 
+Podobně jako v úloze 1 bychom došli k závěru, že trajektorie je částí grafu funkce $f$ dané předpisem 
 
 $$
  y = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}, 
@@ -223,7 +223,7 @@ $$
 Ve vztahu 
 
 $$
- y = h-\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x 
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h 
 $$
 
 položíme $y=0$ a získáme opět kvadratickou rovnici
@@ -279,7 +279,7 @@ $$
 \sin\alpha = \frac{v_0}{\sqrt{2v_0^2+2gh}}. 
 $$
 
-Vidíme, že v tomto případě optimální úhel závisí na počáteční rychlost $v_0$ golfového míčku, výšce $h$ místa, ze kterého míček odpalujeme, a dokonce i na gravitačním zrychlení $g$. 
+Vidíme, že v tomto případě optimální úhel závisí na počáteční rychlosti $v_0$ golfového míčku, výšce $h$ místa, ze kterého míček odpalujeme, a dokonce i na gravitačním zrychlení $g$. 
 
 Můžeme si ale všimnout, že v případě $h=0$ se poslední vztah změní na 
 
