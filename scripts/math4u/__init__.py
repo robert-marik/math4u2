@@ -1,4 +1,13 @@
-from fileinput import filename
+"""Math4u package: classes and functions for handling Math4u problems and files.
+
+Allows to work with Math4u problems and files, including conversion to HTML and PDF.
+
+Allows to find the differences between old and new versions of the files. The old files are assumed 
+to be in the directory ../../math4u (the DIR_OLDPATH variable).
+
+Copyright 2024 Math4u project
+"""
+
 from pathlib import Path
 import yaml
 import subprocess
@@ -6,7 +15,6 @@ import os
 import logging
 import shutil
 import pandas as pd
-import rich
 from math4u.snippets import makeHEAD, FOOT, file_action, figure_name, LATEXFILE_HEADER, LATEXFILE_FOOT
 
 from datetime import datetime
@@ -25,7 +33,9 @@ directories = [d.name for d in DIR_PATH.iterdir() if d.is_dir() and d.name.start
 directories.sort()
 
 class Problem:
+    """Class representing a Math4u problem, identified by its directory."""
     def __init__(self, directory=None, number=None):
+        """Initialize Problem by directory name or number."""
         if directory is not None:
             self.directory = directory
         else:
@@ -49,6 +59,10 @@ class Problem:
         return f"Problem(directory={self.directory})"
     
     def copy_files_from_repository(self, skip_md=True, target="_site"):
+        """Copy all files from the problem directory in the repository to the target directory.
+        
+        If skip_md is True, markdown files are not copied.
+        """
         # copy all files from DIR_PATH to _site/directory
         target_dir = Path(target) / self.directory
         target_dir.mkdir(parents=True, exist_ok=True)
@@ -63,7 +77,9 @@ class Problem:
                 
 
 class File:
+    """Class representing a file in a Math4u problem."""
     def __init__(self, path, parent=None):
+        """Initialize File with its path and parent Problem."""
         self.path = Path(path)
         self.language = self.path.name.split("_")[0]
         self.content = (DIR_PATH / self.path).read_text(encoding="utf-8")
@@ -71,6 +87,7 @@ class File:
         self.parent = parent
 
     def _extract_yaml_header(self):
+        """Extract YAML header from the file content."""
         if self.content.startswith("---"):
             end = self.content.find("\n---", 3)
             if end != -1:
@@ -87,6 +104,7 @@ class File:
     
     @property
     def html_content(self, ini_path=DIR_PATH):
+        """Convert markdown content to HTML using pandoc."""
         file_content = subprocess.run(
                 ["pandoc", 
                  "--mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js",
@@ -120,6 +138,7 @@ class File:
 
     @property
     def latex_content(self):
+        """Convert markdown content to LaTeX using pandoc."""
         file_content = subprocess.run(
                 ["pandoc", 
                  "-f", "markdown",
@@ -134,6 +153,7 @@ class File:
 
     @property
     def latex_old_content(self):
+        """Convert old markdown content to LaTeX using pandoc."""
         file_content = subprocess.run(
                 ["pandoc", 
                  "-f", "markdown",
@@ -147,6 +167,10 @@ class File:
         return file_content
 
     def to_html(self):
+        """Convert the file to HTML and save it to the _site directory.
+        
+        Returns the path to the generated HTML file.
+        """
         target = Path("_site") / self.path.parent/ f"{self.language}_article.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         css = ""    
@@ -167,51 +191,17 @@ class File:
         target.write_text(html_page, encoding="utf-8")
         return target
 
-    # def pandiff(self):
-    #     target = Path("_site") / self.path.parent/ f"{self.language}_article_diff.html"
-    #     target.parent.mkdir(parents=True, exist_ok=True)
-    #     new_file = f"{DIR_PATH}/{self.path}"
-    #     old_file = f"{DIR_OLDPATH}/{self.path}"
-    #     if not os.path.isfile(old_file):
-    #         raise FileNotFoundError(old_file)
-    #         return
-    #     print(f"Comparing {new_file} to {old_file}")
-    #     diff_output = subprocess.run(
-    #             ["pandiff", 
-    #              old_file,
-    #              new_file,
-    #              "--output", 
-    #              str(target),
-    #              "-s"
-    #              ],     
-    #             capture_output = True, # Python >= 3.7 only
-    #             text = True # Python >= 3.7 only
-    #             )
-    #     # check if pandiff was successful
-    #     if diff_output.returncode != 0:
-    #         # error occurred
-    #         print(f"pandiff failed: {diff_output.stderr}")
-    #     return target
-    
-    # def to_pdf(self, output_path=None, remove_iffalse=True):
-    #     content = self.latex_content
-    #     if remove_iffalse:
-    #         content = content.replace(r"\iffalse","").replace(r"\fi","")
-    #     temp_tex = Path("_temp") / self.parent.directory /f"{self.language}_article.tex"
-    #     # create parent directory
-    #     temp_tex.parent.mkdir(parents=True, exist_ok=True)
-    #     # copy all files from problem directory to _temp/problem_directory
-    #     self.parent.copy_files_from_repository(skip_md=True, target="_temp")
-    #     temp_tex.write_text(LATEXFILE_HEADER + content + LATEXFILE_FOOT, encoding="utf-8")
-    #     cmd = ["xelatex", str(temp_tex)]
-    #     proc = subprocess.run(cmd, capture_output=True, text=True)
-    #     if proc.returncode != 0:
-    #         print(f"pdflatex failed: {proc.stderr}")
-
     def to_pdf(self, output_path=None):
+        """Convert the file to PDF using LaTeX and save it to the specified output path.
+        
+        If output_path is None, the PDF is saved to _site/directory/language_article.pdf.
+        """
         content = self.latex_content
         old_content = self.latex_old_content
         def osetri_text(text):
+            """Fix LaTeX source before compilation. Remove problematic characters.
+            
+            Set images processing."""
             text = text.replace(u'\u2006'," ")
             text = text.replace(u'\u2004'," ")
             text = text.replace(r'\begin{figure}',r'\begin{figure}[H]')
@@ -223,6 +213,7 @@ class File:
             return {'reduced':text, 'full':text.replace(r"\iffalse","").replace(r"\fi","")}
 
         def osetri_soubor(text):
+            """Fix LaTeX source before compilation. Set language-specific options. Set metadata."""
             babel = ""
             if self.language=="cs":
                 babel = r"\usepackage[czech]{babel}"
@@ -307,9 +298,11 @@ class File:
                 output_pdf.replace(output_path)
 
 def get_problem(directory):
+    """Get a Problem instance for the given directory."""
     return Problem(directory)
 
 def get_all_problems():
+    """Get a list of all Problem instances in the base directory."""
     base_path = Path(__file__).parent.parent
     problem_dirs = [p for p in base_path.iterdir() if p.is_dir() and p.name.startswith("00")]
     return [get_problem(p) for p in problem_dirs]

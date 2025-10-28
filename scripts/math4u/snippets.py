@@ -1,3 +1,9 @@
+"""
+Snippets and constants used in Math4u files.
+
+Copyright 2024 Math4u project
+"""
+
 from datetime import datetime
 now = datetime.now()
 
