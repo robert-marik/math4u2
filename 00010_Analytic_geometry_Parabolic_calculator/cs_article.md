@@ -31,16 +31,16 @@ stránkách <https://www.geogebra.org/m/sj5cjbaf>.
 \iffalse
 
 *Řešení.* Z postupu je patrné, že jestliže obrazy čísel $-a$ a $b$ splynou,
-přímku popisovanou ve čtvrtém bodě nebude možné jednoznačně sestrojit. Uvedený
+přímku popisovanou ve čtvrtém kroku nebude možné jednoznačně sestrojit. Uvedený
 postup proto nebude fungovat, bude-li platit $-a=b$. Ukážeme, že kromě tohoto
 případu uvedený postup funguje pro všechny ostatní dvojice čísel $a$ a $b$.
 
 Sestrojme na ose $x$ obrazy čísel $-a$ a $b$ a dále vztyčme
 v těchto bodech kolmice k ose $x$. Průsečíky těchto kolmic s parabolou $y=x^2$ označme
 $A$ a $B$, přímku $AB$ pak označme jako $p$. Přímka $p$ protíná osu $y$ v bodě
-$C$, o kterém dokážeme, že má $y$-ovou souřadnici rovnou součinu $ab$. 
+$C$, o kterém dokážeme, že má $y$-ovou souřadnici rovnou součinu $ab$ (viz obrázek 1). 
 
-![K důkazu](math4you_00010.jpg)
+![Parabolická kalkulačka](math4you_00010.jpg)
 
 Přímka $p$ je dána dvěma body $A=[-a;a^2]$ a $B=[b;b^2]$, tedy její směrový vektor je
 
@@ -55,7 +55,7 @@ $$
 $$ 
 
 což je také směrový vektor přímky $p$. 
-Tuto úpravu je možné provést, neboť pro náš případ  $b\neq -a$ je $b+a\neq0$. Přímka $p$ má tedy parametrické vyjádření 
+Tuto úpravu je možné provést, neboť pro náš případ  $-a \neq b$ je $b+a\neq0$. Přímka $p$ má tedy parametrické vyjádření 
 
 $$
 p\colon \, X = A + t\cdot\overrightarrow{u}, \; t\in\mathbb{R}. 
@@ -123,12 +123,12 @@ $$
  y=a^2 + t\cdot (b+a)=a^2 + (-a)\cdot (b+a)=-ab.  
 $$
 
-Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $y$-ová souřadnice není $ab$ ale $-ab$. To znamená, že parabolická kalkulačka funguje (až na znaménko) i v tomto případě.
+Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $y$-ová souřadnice není $ab$, ale $-ab$. To znamená, že parabolická kalkulačka funguje (až na znaménko) i v tomto případě.
 
 \fi
 
 >**Jedna zajímavost na závěr.**
-Na principu parabolické kalkulačky je založena geometrická verze Eratosthenova síta pro hledání prvočísel. Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek). Promyslete si detailně, proč to opravdu takto funguje. 
+Na principu parabolické kalkulačky je založena geometrická verze Eratosthenova síta pro hledání prvočísel. Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek 2). Promyslete si detailně, proč to opravdu takto funguje. 
 
 ![Parabolické prvočíselné síto](parabolicke_sito.svg)
 
