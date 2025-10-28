@@ -15,9 +15,9 @@ for dir in math4u.directories:
         if 'workflow' in yaml.keys():
             print(file)
             copy = True
-            files.append(file)
             file.to_html()
             file.to_pdf(output_path=f"_site/{problem.directory}/{file.path.name.split('.')[0]}.pdf")
+            files.append(file)
     if copy:
         problem.copy_files_from_repository()
 
@@ -37,9 +37,15 @@ files
 #rich.inspect(files[0])
 # %%
 
+# get current date and time
+from datetime import datetime
+now = datetime.now()
+date_time = now.strftime("%Y-%m-%d %H:%M")
+
 df = pd.DataFrame(
-[[i.language, str(i.path.parent), i.path.name.split(".")[0], i.yaml_header['workflow'], i.yaml_header['keywords']] for i in files]
-, columns=['language', 'directory', 'name', 'workflow', 'keywords'])
+[[i.language, str(i.path.parent), i.path.name.split(".")[0], i.yaml_header['workflow'], 
+  "; ".join(i.yaml_header['keywords']), date_time] for i in files]
+, columns=['language', 'directory', 'name', 'workflow', 'keywords','date_time'])
 df.to_csv("math4u_file_workflows.csv")
 df['html'] = df['directory'] + "/" + df['name'] + ".html"
 df['pdf'] = df['directory'] + "/" + df['name'] + ".pdf"
