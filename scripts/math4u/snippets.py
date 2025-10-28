@@ -291,6 +291,7 @@ LATEXFILE_HEADER = r"""
 LATEXFILE_FOOT = r"""
 
 \bigskip
+\vfill
 \textit{Compilation: \today, \currenttime}
 
 \clearpage
