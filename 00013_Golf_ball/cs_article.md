@@ -81,12 +81,11 @@ Grafem funkce $f$ je parabola. Tím je dokázáno, že trajektorie golfového m�
 
 \fi
 
->**Úloha 2.** Vypočítejte výšku vrhu, tj. maximální výšku $y_{max}$, do které se dostane odpálený míček.
+>**Úloha 2.** Vypočítejte maximální výšku $y_{max}$, do které se dostane odpálený míček.
 
 \iffalse
 
-*Řešení.* Pro výpočet výšky vrhu potřebujeme vypočítat extrém funkce $f$ z
-předchozí úlohy:
+*Řešení.* Pro výpočet maximální výšky, do které se dostane odpálený míček, potřebujeme najít extrém funkce $f$ popisující trajektorii míčku:
 
 $$
  f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
@@ -113,7 +112,7 @@ $$
 
 Vzhledem k tomu, že funkce $f$ je konkávní kvadratickou  funkcí, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
  
-Výšku vrhu $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme  
+Maximální výšku $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme  
 
 $$
  y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
@@ -180,7 +179,7 @@ Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané do
 \iffalse
 
 *Odpověď na otázku 1.*
-Pro souřadnice $[x,y]$ polohy hmotného bodu v čase $t \geq 0$ bude v tomto případě platit
+Pro souřadnice $[x,y]$ polohy míčku v čase $t \geq 0$ bude v tomto případě platit
 
 $$
 \begin{aligned}
