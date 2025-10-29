@@ -1,0 +1,39 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=120mm,paperheight=15mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+%\noindent\centering\mbox{}\vfill
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{ffdxqq}{rgb}{1.,0.8431372549019608,0.}
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-6.,-0.4) rectangle (6.,0.8);
+\draw [dash pattern=on 2pt off 2pt] (-5,0)--(5,0);
+\draw [fill=ffdxqq] (2.3,0.) circle (5pt);
+\draw (2.3,0.5) node {$S$};
+\draw [fill=qqqqff] (-5,0) circle (2.5pt);
+\draw [fill=qqqqff] (5,0) circle (2.5pt);
+\draw (0,0.5) node {$O$};
+\fill (0,0) circle (2.5pt);
+\draw (-5,0.5) node {afel};
+\draw (5,0.5) node {perihel};
+\draw (-2.5,-0.3) node {$a$};
+\draw (1.15,-0.3) node {$e$};
+\end{tikzpicture}
+%\vfill
+\end{document}

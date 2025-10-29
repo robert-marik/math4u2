@@ -1,0 +1,65 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=88mm,paperheight=88mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-4.1,-4.1) rectangle (4.1,4.1);
+\draw [shift={(0.,2.0651111699579157)}] (0,0) -- (-172.0895130352339:0.5282379026998822) arc (-172.0895130352339:-53.790141949912:0.5282379026998822) -- cycle;
+\draw [shift={(0.,0.)}] (0,0) -- (45.804663931767344:0.5282379026998822) arc (45.804663931767344:152.31254394037043:0.5282379026998822) -- cycle;
+\draw (0.,0.) circle (4.cm);
+\draw [shift={(0.,0.)},dash pattern=on 4pt off 4pt]  plot[domain=0.:3.141592653589793,variable=\t]({1.*4.*cos(\t r)+0.*1.466149467692485*sin(\t r)},{0.*4.*cos(\t r)+1.*1.466149467692485*sin(\t r)});
+\draw [shift={(0.,0.)},samples=200]  plot[domain=-3.141592653589793:0.,variable=\t]({1.*4.*cos(\t r)+0.*1.466149467692485*sin(\t r)},{0.*4.*cos(\t r)+1.*1.466149467692485*sin(\t r)});
+\draw [shift={(0.,2.0651111699579157)},samples=200]  plot[domain=-3.4074860360443653:0.2658933824545717,variable=\t]({1.*3.327676877327507*cos(\t r)+0.*1.2197179205865787*sin(\t r)},{0.*3.327676877327507*cos(\t r)+1.*1.2197179205865787*sin(\t r)});
+\draw [shift={(0.,2.0651111699579157)},dash pattern=on 4pt off 4pt]  plot[domain=0.2658933824545717:2.875699271135221,variable=\t]({1.*3.327676877327507*cos(\t r)+0.*1.2197179205865787*sin(\t r)},{0.*3.327676877327507*cos(\t r)+1.*1.2197179205865787*sin(\t r)});
+\draw [dash pattern=on 1pt off 4pt on 6pt off 4pt] (0.,3.721613324673191)-- (0.,-3.721613324673191);
+\draw [dotted] (-3.111604323794874,1.6327598856269165)-- (0.,2.0651111699579157);
+\draw [dotted] (0.,2.0651111699579157)-- (0.8625029326446934,0.8870756916029205);
+\draw [dotted] (0.8625029326446934,0.8870756916029205)-- (0.,0.);
+\draw [dotted] (-3.111604323794874,1.6327598856269165)-- (0.,0.);
+\draw [dotted] (-3.111604323794874,1.6327598856269165)-- (0.8625029326446934,0.8870756916029205);
+\draw [shift={(0.,0.)},line width=2pt]  plot[domain=4.57793924940166:5.762056193742959,variable=\t]({-0.9482443483245543*4.*cos(\t r)+-0.3175415813252516*1.1251997112582115*sin(\t r)},{0.3175415813252516*4.*cos(\t r)+-0.9482443483245543*1.1251997112582115*sin(\t r)});
+\draw [shift={(0.,0.)},samples=100]  plot[domain=-0.5211291134366274:0.,variable=\t]({-0.9482443483245543*4.*cos(\t r)+-0.3175415813252516*1.1251997112582115*sin(\t r)},{0.3175415813252516*4.*cos(\t r)+-0.9482443483245543*1.1251997112582115*sin(\t r)});
+\draw [shift={(0.,0.)},dash pattern=on 4pt off 4pt]  plot[domain=0.:3.141592653589793,variable=\t]({-0.9482443483245543*4.*cos(\t r)+-0.3175415813252516*1.1251997112582115*sin(\t r)},{0.3175415813252516*4.*cos(\t r)+-0.9482443483245543*1.1251997112582115*sin(\t r)});
+\draw [shift={(0.,0.)}]  plot[domain=3.141592653589793:4.57793924940166,variable=\t]({-0.9482443483245543*4.*cos(\t r)+-0.3175415813252516*1.1251997112582115*sin(\t r)},{0.3175415813252516*4.*cos(\t r)+-0.9482443483245543*1.1251997112582115*sin(\t r)});
+\draw [dotted] (0.,0.)-- (3.560579353939137,-0.668091617683024);
+\begin{footnotesize}
+\draw [color=black] (0.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-0.3408907473939438,-0.10946819615660283) node {$C$};
+\draw [color=black] (0.,2.0651111699579157)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.2401709455759266,2.3556420164428515) node {$O$};
+\draw[color=black] (-1.3,2.1) node {$r$};
+\draw [color=black] (0.,3.721613324673191)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.31060266593591096,3.75) node {$S$};
+\draw [color=black] (0.,-3.721613324673191)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.29299473584591484,-3.55) node {$J$};
+\draw[color=black] (2.8,1.7) node {$k$};
+\draw [color=black] (0.8625029326446934,0.8870756916029205)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.8916643589057813,1.22) node {$L$};
+\draw [color=black] (-3.111604323794874,1.6327598856269165)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-3.3342388626932764,1.3519900013130737) node {$W$};
+\draw[color=black] (3.2335190608752593,0.013787314473369866) node {$h$};
+\draw[color=black] (-0.72,1.7) node {$68^{\circ}$};
+\draw[color=black] (-0.39,0.55) node {$\varphi $};
+\draw[color=black] (1.8,-0.6) node {$\varrho$};
+\end{footnotesize}
+\end{tikzpicture}
+
+%\vfill
+\end{document}

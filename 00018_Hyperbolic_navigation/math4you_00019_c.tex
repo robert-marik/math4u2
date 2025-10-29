@@ -1,0 +1,63 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=125mm,paperheight=81mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+%\noindent\centering\mbox{}\vfill
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-5,
+xmax=7.5,
+ymin=-1,
+ymax=7,
+xtick={2.923},
+xticklabels={},
+ytick={3.692},
+yticklabels={},]
+\clip(-5,-1) rectangle (7.7,7);
+\fill (-4.,0) circle (2.5pt);
+\fill (4.,0) circle (2.5pt);
+\fill (6.,6.) circle (2.5pt);
+%\fill (2.923,3.692) circle (2.5pt);
+\draw[dotted] (2.923,3.692) -- (0,3.692);
+\draw[dotted] (2.923,3.692) -- (2.923,0);
+\draw[dashed] (4,0) -- (6,6);
+\begin{scriptsize}
+\draw (2.923,-0.4) node {$\frac{19}{13}$};
+\draw (-0.4,3.692) node {$\frac{24}{13}$};
+\draw (3.8,0.4) node {$P_1$};
+\draw (5.7,3.2) node {$S_{P_1P_3}$};
+\draw (4.1,6.8) node {$h$};
+\draw (7.2,2.6) node {$o$};
+\draw (2.8,4.2) node {$A$};
+\draw (0.4,-0.4) node {$O$};
+\draw (-4,0.4) node {$P_2$};
+\draw (5.6,6) node {$P_3$};
+\draw (7.2,-0.35) node {$x$};
+\draw (0.35,6.8) node {$y$};
+\end{scriptsize}
+\draw [samples=50,domain=-0.8:0.8,line width=2.pt] plot ({2.*(1+(\x)^2)/(1-(\x)^2)},{3.4641016151377544*2*(\x)/(1-(\x)^2)});
+\draw [samples=50,domain=-0.8:0.8,dotted] plot ({2.*(-1-(\x)^2)/(1-(\x)^2)},{3.4641016151377544*(-2)*(\x)/(1-(\x)^2)});
+\draw [line width=2.pt,domain=-5.374417183552562:7.914621205196774] plot(\x,{(--28.-2.*\x)/6.});
+\end{axis}
+\end{tikzpicture}
+%\vfill
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=88mm,paperheight=88mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=1]
+\clip(-4.1,-4.1) rectangle (4.5,4.1);
+\draw [shift={(0.,0.)}] (0,0) -- (-99.:1.2) arc (-99.:-90.:1.2) -- cycle;
+\draw [shift={(0.,0.)}] (0,0) -- (-167.:0.6) arc (-167.:-90.:0.6) -- cycle;
+\draw (0.,0.) circle (4.cm);
+\draw (0.,0.) circle (3.1085838458278836cm);
+\draw (0.,0.)-- (0.,-4.);
+\draw (0.,0.)-- (-0.4862896509547885,-3.070312020286594);
+\draw (0.,0.)-- (-3.028911043249651,-0.6992792136352896);
+\draw [shift={(0.,0.)},line width=2.pt]  plot[domain=3.368485456349056:4.5553093477052,variable=\t]({1.*3.108583845827884*cos(\t r)+0.*3.108583845827884*sin(\t r)},{0.*3.108583845827884*cos(\t r)+1.*3.108583845827884*sin(\t r)});
+\draw [dotted] (0.,3.1085838458278836)-- (0.,0.);
+\begin{footnotesize}
+\draw [color=black] (0.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (1.55,0.) node {\scriptsize $S=J=O=C$};
+\draw[color=black] (-1.31,2.45) node {$k$};
+\draw [color=black] (0.,-4.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.3,-3.62) node {$D$};
+\draw [color=black] (-0.4862896509547885,-3.070312020286594)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-0.75,-2.66) node {$L$};
+\draw[color=black] (0.3,-1.3) node {$9^{\circ}$};
+\draw [color=black] (-3.028911043249651,-0.6992792136352896)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-2.7,-0.26) node {$W$};
+\draw[color=black] (-0.65,-0.75) node {$77^{\circ}$};
+\draw [color=black] (0.,-3.1085838458278836)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.27,-2.74) node {$B$};
+\draw [color=black] (0.,3.1085838458278836)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (0.27,3.56) node {$A$};
+\draw[color=black] (-0.27,1.74) node {$r$};
+\end{footnotesize}
+\end{tikzpicture}
+
+%\vfill
+\end{document}

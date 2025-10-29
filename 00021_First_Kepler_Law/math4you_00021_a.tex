@@ -1,0 +1,58 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=140mm,paperheight=101mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+%\noindent\centering\mbox{}\vfill
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{ffdxqq}{rgb}{1.,0.8431372549019608,0.}
+\centering
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-7.,-4.8) rectangle (7.,5.2);
+\draw [rotate around={26.56505117707799:(0.,0.)}] (0.,0.) ellipse (4.701562118716424cm and 4.135781226823933cm);
+\draw [dash pattern=on 2pt off 2pt] (-4.205204999155144,-2.102602499577572)-- (4.205204999155145,2.1026024995775723);
+\draw [dash pattern=on 2pt off 2pt] (-4.51931636382441,0.3317421781230974)-- (4.504822560928053,1.2567550300277144);
+\draw [dash pattern=on 2pt off 2pt] (0.4208533235634817,4.254714011901237)-- (3.597153270383097,-2.291826659192998);
+\draw [fill=ffdxqq] (2.,1.) circle (5pt);
+\draw (1.5,1.3) node {$S$};
+\draw [fill=qqqqff] (4.205204999155145,2.1026024995775723) circle (2.5pt);
+\draw [fill=qqqqff] (-4.205204999155144,-2.102602499577572) circle (2.5pt);
+\draw [fill=qqqqff] (4.504822560928053,1.2567550300277144) circle (2.5pt);
+\draw [fill=qqqqff] (-4.51931636382441,0.3317421781230974) circle (2.5pt);
+\draw [fill=qqqqff] (0.4208533235634817,4.254714011901237) circle (2.5pt);
+\draw [fill=qqqqff] (3.597153270383097,-2.291826659192998) circle (2.5pt);
+\draw (-5.,-1.85) node {afel};
+\draw (-5.,-2.35) node {\footnotesize (4.\,7.)};
+\draw (5.1,2.6) node {perihel};
+\draw (5.1,2.1) node {\footnotesize (4.\,1.)};
+\draw (5.7,1.25) node {slunovrat};
+\draw (5.7,0.75) node {\footnotesize (21.\,12.)};
+\draw (-5.7,0.58) node {slunovrat};
+\draw (-5.7,0.08) node {\footnotesize (21.\,6.)};
+\draw (1.1,5) node {rovnodennost};
+\draw (1.1,4.5) node {\footnotesize (20.\,3.)};
+\draw (5.1,-2.1) node {rovnodennost};
+\draw (5.1,-2.6) node {\footnotesize (22.\,9.)};
+\draw (3.1,1.8) node {\rotatebox{26.56505117707799}{\footnotesize 147{,}105}};
+\draw (-0.9,-0.8) node {\rotatebox{26.56505117707799}{\footnotesize 152{,}100}};
+\draw (3.3,0.9) node {\rotatebox{5.85}{\footnotesize 147{,}176}};
+\draw (-1.,0.9) node {\rotatebox{5.85}{\footnotesize 152{,}028}};
+\draw (0.5,2.5) node {\footnotesize 148{,}969};
+\draw (2.3,-1.3) node {\footnotesize 150{,}162};
+\end{tikzpicture}
+%\vfill
+\end{document}

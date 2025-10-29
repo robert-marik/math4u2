@@ -1,0 +1,63 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=120mm,paperheight=33mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5.8,-0.6) rectangle (5.8,2.6);
+\fill[color=blue,fill=blue,fill opacity=0.2] (-6.,2.) -- (6.,2.) -- (6.,0.) -- (-6.,0.) -- cycle;
+\draw [shift={(-5.,0.)}] (0,0) -- (0.:0.4) arc (0.:90.:0.4) -- cycle;
+\draw [shift={(5.,0.)}] (0,0) -- (121.91859778594572:0.6) arc (121.91859778594572:168.6900675259798:0.6) -- cycle;
+\draw [shift={(5.,0.)}] (0,0) -- (168.6900675259798:1.6) arc (168.6900675259798:180.:1.6) -- cycle;
+\draw [shift={(-1.853846153846154,1.3707692307692307)}] (0,0) -- (-58.081402214054286:0.6) arc (-58.081402214054286:-11.30993247402021:0.6) -- cycle;
+\draw [line width=1.pt] (-6.,2.)-- (6.,2.);
+\draw [line width=1.pt] (-6.,0.)-- (6.,0.);
+\draw [->] (5.,0.) -- (-1.,0.);
+\draw [->] (5.,0.) -- (-1.8538461538461544,1.3707692307692307);
+\draw [dotted] (-1.,0.)-- (-1.853846153846154,1.3707692307692307);
+\draw [->] (5.,0.) -- (4.146153846153846,1.3707692307692307);
+\draw [dotted] (-1.853846153846154,1.3707692307692307)-- (4.146153846153846,1.3707692307692307);
+\draw [dotted] (-1.853846153846154,1.3707692307692307)-- (-5.,2.);
+\draw [dotted] (-5.,2.)-- (-5.,0.);
+\fill (-4.83,0.17) circle (0.03);
+\begin{small}
+\draw [color=black] (-6.,2.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (6.,2.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (-6.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [color=black] (6.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw [fill=black] (5.,0.) circle (3.0pt);
+\draw[color=black] (5.24,-0.33) node {$A$};
+\draw [fill=black] (-5.,2.) circle (3.0pt);
+\draw[color=black] (-4.86,2.41) node {$B$};
+\draw [color=black] (-1.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-1.4,-0.31) node {$M$};
+\draw [color=black] (-1.853846153846154,1.3707692307692307)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-1.72,1.75) node {$K$};
+\draw [color=black] (4.146153846153846,1.3707692307692307)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (4.28,1.75) node {$L$};
+\draw [color=black] (-5.,0.)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (-4.88,-0.33) node {$P$};
+\draw[color=black] (3.0,0.19) node {$\beta$};
+\draw[color=black] (4.3,0.5) node {$\alpha$};
+\draw[color=black] (-1.14,0.9) node {$\alpha$};
+\end{small}
+\end{tikzpicture}
+
+%\vfill
+\end{document}

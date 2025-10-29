@@ -1,0 +1,50 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=101mm,paperheight=51mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.6]
+\clip(-3.2,-0.2) rectangle (13.5,8.2);
+\draw (0.,0.)-- (7.,0.);
+\draw (7.,0.)-- (9.,2.);
+\draw (0.,0.)-- (0.,4.);
+\draw (0.,4.)-- (7.,4.);
+\draw (7.,4.)-- (9.,6.);
+\draw (9.,6.)-- (9.,2.);
+\draw (7.,4.)-- (7.,0.);
+\draw (0.,4.)-- (3.,8.);
+\draw (3.,8.)-- (6.,8.);
+\draw (6.,8.)-- (7.,4.);
+\draw (6.,8.)-- (9.,6.);
+\draw (-3.,2.)-- (-3.,0.);
+\draw [dotted] (-3.,0.)-- (-1.,1.);
+\draw (14.,6.5)-- (14.,3.5);
+\draw (14.,3.5)-- (9.,3.5);
+\draw (14.,6.5)-- (8.25,6.5);
+\draw (1.875,6.5)-- (-2.986,6.5);
+\draw (-3.006,3.5)-- (0.,3.5);
+\draw (-2.986,6.5)-- (-3.006,3.5);
+\draw (-2.986,6.5)-- (-2.672,6.814);
+\draw (-2.672,6.814)-- (2.1105,6.814);
+\draw (7.779,6.814)-- (14.314,6.814);
+\draw (14.314,6.814)-- (14.314,3.814);
+\draw (14.314,3.814)-- (14.,3.5);
+\draw (14.,6.5)-- (14.314,6.814);
+\end{tikzpicture}
+\end{document}

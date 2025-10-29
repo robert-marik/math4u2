@@ -1,0 +1,52 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=70mm,paperheight=102mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+inner axis line style={->},
+xmin=-2.5,
+xmax=4,
+ymin=-1,
+ymax=9,
+xtick={1},
+xticklabels={},
+ytick={6,8},
+yticklabels={},]
+\clip(-2.5,-1.2) rectangle (4.5,9);
+\draw[line width=1.6pt,color=black,smooth,samples=200,domain=-2:4] plot(\x,{-2*((\x)-3)*((\x)+1)});
+\draw[dotted] (1,0)--(1,8);
+\draw[dotted] (1,8)--(0,8);
+\begin{scriptsize}
+\draw[color=black] (-3,7) node {$f$};
+\draw[color=black] (0.4,-0.4) node {$O$};
+\draw[color=black] (-1.5,-0.4) node {$-4$};
+\draw[color=black] (1.,-0.4) node {$4$};
+\draw[color=black] (2.6,-0.4) node {$12$};
+\draw[color=black] (3.85,-0.4) node {$x$};
+\draw[color=black] (0.4,8.7) node {$y$};
+\draw[color=black] (-0.8,8.) node {$32\,000$};
+\draw[color=black] (-0.8,6.) node {$24\,000$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

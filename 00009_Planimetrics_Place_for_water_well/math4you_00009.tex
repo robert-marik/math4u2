@@ -1,0 +1,68 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=116mm,paperheight=96mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.7]
+\clip(-1,-4.2) rectangle (15.5,9.5);
+\fill[color=brown,fill=brown,fill opacity=0.4] (1.,6.) -- (1.,2.) -- (6.,2.) -- (6.,6.) -- cycle;
+\fill[color=brown,fill=brown,fill opacity=0.4] (10.,-1.) -- (10.,3.) -- (14.,3.) -- (14.,-1.) -- cycle;
+\draw (0.,-1.)-- (8.,-3.);
+\draw (0.,7.)-- (0.,-1.);
+\draw (8.,-3.)-- (8.,6.);
+\draw (15.015384615384615,5.123076923076923)-- (15.,-3.);
+\draw (15.,-3.)-- (8.,-3.);
+\draw (1.,6.)-- (1.,2.);
+\draw (1.,2.)-- (6.,2.);
+\draw (6.,2.)-- (6.,6.);
+\draw (6.,6.)-- (1.,6.);
+\draw (0.64,2.34) circle (0.3333333333333333cm);
+\draw (9.66,-0.72) circle (0.3333333333333333cm);
+\fill[fill opacity=0.3] (0.64,2.34) circle (0.3333333333333333cm);
+\fill[fill opacity=0.3] (9.66,-0.72) circle (0.3333333333333333cm);
+\draw (10.,-1.)-- (10.,3.);
+\draw (10.,3.)-- (14.,3.);
+\draw (14.,3.)-- (14.,-1.);
+\draw (14.,-1.)-- (10.,-1.);
+\draw (10.,5.)-- (11.,5.);
+\draw (11.,5.)-- (11.,3.);
+\draw (11.,3.)-- (10.,3.);
+\draw (10.,3.)-- (10.,5.);
+\draw [dash pattern=on 6pt off 6pt,domain=-4.8:15.5] plot(\x,{(--63.39040293594034-1.*\x)/8.});
+\draw [domain=-4.8:15.5] plot(\x,{(-70.78080587188067--1.*\x)/-8.});
+\draw [domain=-4.8:15.5] plot(\x,{(-56.--1.*\x)/-8.});
+\begin{small}
+\draw [color=black] (9.66,-0.72)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (11.5,-2) node {$P_2$};
+\draw [color=black] (0.64,2.34)-- ++(-2.5pt,0 pt) -- ++(5.0pt,0 pt) ++(-2.5pt,-2.5pt) -- ++(0 pt,5.0pt);
+\draw[color=black] (4,1) node {$P_1$};
+\draw [color=black] (0.,-3.5) ++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw [color=black] (0.33,-3.5)++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw [color=black] (0.66,-3.5)++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw [color=black] (0.99,-3.5)++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw [color=black] (1.32,-3.5)++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw [color=black] (1.65,-3.5)++(0pt,2.5pt) -- ++(0 pt,-5.0pt);
+\draw (0.,-3.5)-- (1.65,-3.5);
+\draw[color=black] (0.,-3.9) node {$0$};
+\draw[color=black] (1.9,-3.9) node {$5\,\text{m}$};
+\end{small}
+\end{tikzpicture}
+
+%\vfill
+\end{document}
