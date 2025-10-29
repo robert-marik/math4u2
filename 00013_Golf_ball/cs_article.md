@@ -1,6 +1,6 @@
 ---
-workflow: in progress
-# workflow: translating
+# workflow: in progress
+workflow: translating
 # workflow: finished
 keywords:
 - diferenciální a integrální počet
