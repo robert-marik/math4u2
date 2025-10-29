@@ -26,9 +26,9 @@
 \begin{axis}[
 x=1cm,y=1cm,
 axis lines=middle,
-xmin=-1.5,
+xmin=-1.8,
 xmax=15.5,
-ymin=-0.75,
+ymin=-0.8,
 ymax=4,
 tick style={draw=none},
 xtick={},
@@ -39,13 +39,15 @@ yticklabels={},]
 \draw [line width=1.6pt,color=ffqqqq]  plot[domain=0:0.6435011087932844,variable=\t]({1*1.774*cos(\t r)+0*1.774*sin(\t r)},{0*1.774*cos(\t r)+1*1.774*sin(\t r)});
 \draw[line width=1.6pt,dash pattern=on 3pt off 5pt,color=ffqqqq,smooth,samples=200,domain=0:15] plot(\x,{0-0.05*(\x)^(2)+0.75*(\x)});
 \draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (0,3);
-\draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (4,0);
+\draw [-,line width=1.0pt,decorate, decoration={brace,amplitude=8}] (-0.08,0) -- (-0.08,3);
+\draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (4,0); 
+\draw [-,line width=1.0pt,decorate, decoration={brace, mirror,amplitude=8}] (0,-0.08) -- (4,-0.08); 
 \draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (4,3);
 \draw [line width=1.6pt,dash pattern=on 3pt off 5pt,color=qqqqff] (0,3)-- (4,3);
 \draw [line width=1.6pt,dash pattern=on 3pt off 5pt,color=qqqqff] (4,3)-- (4,0);
 \begin{scriptsize}
-\draw[color=qqqqff] (-0.9,1.5) node {$v_0\sin\alpha$};
-\draw[color=qqqqff] (2.01,-0.42) node {$v_0\cos\alpha$};
+\draw[color=qqqqff] (-1.1,1.5) node {$v_0\sin\alpha$};
+\draw[color=qqqqff] (2.01,-0.6) node {$v_0\cos\alpha$};
 \draw[color=qqqqff] (1.75,1.82) node {$\vec{v}_0$};
 \draw[color=ffqqqq] (1.91,0.62) node {$\alpha$};
 \draw(-0.25,3.85) node {$y$};
@@ -54,4 +56,4 @@ yticklabels={},]
 \end{scriptsize}
 \end{axis}
 \end{tikzpicture}
-\end{document}
+\end{document} 
