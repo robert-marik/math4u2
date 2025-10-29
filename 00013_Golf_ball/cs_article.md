@@ -55,13 +55,13 @@ pohyb šikmo vrženého tělesa v prostředí bez odporu vzduchu.
 
 \iffalse
 
-*Řešení.* Chceme nalézt rovnici trajektorie ve tvaru $y=f(x)$. Proto je nutné převést parametrické vyjádření trajektorie (1) na rovnici obecnou. 
+*Řešení.* Chceme nalézt rovnici trajektorie ve tvaru $y=f(x)$. Proto je nutné převést parametrické vyjádření (1) této trajektorie na obecnou rovnici. 
 
-Nejprve vyjádříme z první rovnice čas $t=\frac{x}{v_0\cos\alpha}$ a
+Nejprve vyjádříme z první rovnice čas $t$, tj. $t=\frac{x}{v_0\cos\alpha}$, a
 dosadíme ho do rovnice druhé:
 
 $$
- y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x.
+ y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
 $$
 
 Odtud vidíme, že funkce $f$ popisující trajektorii míčku je kvadratická funkce 
@@ -81,7 +81,7 @@ Grafem funkce $f$ je parabola. Tím je dokázáno, že trajektorie golfového m�
 
 \fi
 
->**Úloha 2.** Vypočítejte maximální výšku $y_{max}$, do které se dostane odpálený míček.
+>**Úloha 2.** Vypočítejte maximální výšku $y_{\text{max}}$, do které se dostane odpálený míček.
 
 \iffalse
 
@@ -112,10 +112,10 @@ $$
 
 Vzhledem k tomu, že funkce $f$ je konkávní kvadratickou  funkcí, musí být nalezený stacionární bod $x_{0}$ i bodem jejího (lokálního i globálního) maxima. 
  
-Maximální výšku $y_{max}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme  
+Maximální výšku $y_{\text{max}}$ vypočítáme dosazením $x_{0}$ do funkce $f$. Po jednoduchých úpravách obdržíme  
 
 $$
- y_{max}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
+ y_{\text{max}}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
 $$
 
 \fi
@@ -136,11 +136,10 @@ $$
 $y=0$ a vyřešíme získanou rovnici: 
 
 $$
- 0 = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x,
-$$
-
-$$
- 0 = x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right).
+\begin{aligned}
+ 0 &= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x \\[5mm]
+ 0 &= x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right)
+\end{aligned}
 $$
 
 Tato rovnice v součinovém tvaru má dvě řešení. První 
@@ -179,7 +178,7 @@ Tím se vyhneme řešení kvadratické rovnice v součinovém tvaru získané do
 \iffalse
 
 *Odpověď na otázku 1.*
-Pro souřadnice $[x,y]$ polohy míčku v čase $t \geq 0$ bude v tomto případě platit
+Pro souřadnice $[x;y]$ polohy míčku v čase $t \geq 0$ bude v tomto případě platit
 
 $$
 \begin{aligned}
@@ -210,12 +209,12 @@ $$
 x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}, 
 $$
 
-který je stejný jako vztah dříve odvozený. To souvisí s tím, že derivace konstantní funkce je funkce nulová (rozmyslete si). 
+který je stejný jako vztah odvozený dříve v úloze 2. To souvisí s tím, že derivace konstantní funkce je funkce nulová (rozmyslete si). 
 
  Dosazením $x_{0}$ do funkce $f$ pak dojdeme k tomu, že 
 
 $$
- y_{max}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}.
+ y_{\text{max}}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}.
 $$
 
 *Odpověď na otázku 3.*
@@ -263,7 +262,7 @@ x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alp
 \frac{v_0^2}{g} \sin 2\alpha, 
 $$
 
-který byl odvozen už dříve. 
+který byl odvozen už dříve v úloze 3. 
 
 *Odpověď na otázku 4.*
 Zde je situace mnohem složitější. Museli bychom totiž hledat maximum funkce  
@@ -278,7 +277,7 @@ $$
 \sin\alpha = \frac{v_0}{\sqrt{2v_0^2+2gh}}. 
 $$
 
-Vidíme, že v tomto případě optimální úhel závisí na počáteční rychlosti $v_0$ golfového míčku, výšce $h$ místa, ze kterého míček odpalujeme, a dokonce i na gravitačním zrychlení $g$. 
+Vidíme, že v tomto případě optimální úhel závisí na počáteční rychlosti $v_0$ golfového míčku, výšce $h$ místa, ze kterého míček odpalujeme, a dokonce i na tíhovém zrychlení $g$. 
 
 Můžeme si ale všimnout, že v případě $h=0$ se poslední vztah změní na 
 
