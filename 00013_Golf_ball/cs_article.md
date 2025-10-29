@@ -137,7 +137,7 @@ $y=0$ a vyřešíme získanou rovnici:
 
 $$
 \begin{aligned}
- 0 &= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x \\[5mm]
+ 0 &= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x \\[3mm]
  0 &= x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right)
 \end{aligned}
 $$
