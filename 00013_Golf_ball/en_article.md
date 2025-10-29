@@ -43,7 +43,7 @@ $$
 \end{aligned}\tag{1}
 $$
 
-![Oblique motion](math4you_00013.jpg)
+![Oblique motion](sikmy_vrh_upraveny.svg)
 
 ## Motion of a Golf Ball
 
