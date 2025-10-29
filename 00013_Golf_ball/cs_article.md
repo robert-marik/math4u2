@@ -44,7 +44,7 @@ $$
 
 protože okamžitá rychlost v čase $t$ je derivací polohy v čase $t$. Přesněji, $v_x(t)=x'(t)$ a $v_y(t)=y'(t)$. 
 
-![Šikmý vrh](math4you_00013.jpg)
+![Šikmý vrh](sikmy_vrh_upraveny.svg)
 
 ## Odpal golfového míčku
 

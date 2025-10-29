@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\usepackage[paperwidth=180mm,paperheight=50mm,top=0mm,bottom=0mm,left=0mm,right=0mm,headsep=0mm,footskip=0mm,showframe=false,headheight=0pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{amsmath,amssymb,amsthm,thmtools,framed,blkarray}
+\usepackage{tikz-cd}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+%\pgfplotsset{ignore zero/.style={  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}}}
+\pgfplotsset{standard/.style={separate axis lines,
+  axis lines=middle, axis line style={-,big arrow}}}
+\usepackage{mathrsfs,url}
+\usetikzlibrary{arrows}
+%
+\begin{document}
+\thispagestyle{empty}
+\centering
+\noindent
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+xmin=-1.5,
+xmax=15.5,
+ymin=-0.75,
+ymax=4,
+tick style={draw=none},
+xtick={},
+xticklabels={},
+ytick={},
+yticklabels={},]
+\clip(-2,-0.75) rectangle (16,4);
+\draw [line width=1.6pt,color=ffqqqq]  plot[domain=0:0.6435011087932844,variable=\t]({1*1.774*cos(\t r)+0*1.774*sin(\t r)},{0*1.774*cos(\t r)+1*1.774*sin(\t r)});
+\draw[line width=1.6pt,dash pattern=on 3pt off 5pt,color=ffqqqq,smooth,samples=200,domain=0:15] plot(\x,{0-0.05*(\x)^(2)+0.75*(\x)});
+\draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (0,3);
+\draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (4,0);
+\draw [->,line width=1.6pt,color=qqqqff] (0,0) -- (4,3);
+\draw [line width=1.6pt,dash pattern=on 3pt off 5pt,color=qqqqff] (0,3)-- (4,3);
+\draw [line width=1.6pt,dash pattern=on 3pt off 5pt,color=qqqqff] (4,3)-- (4,0);
+\begin{scriptsize}
+\draw[color=qqqqff] (-0.9,1.5) node {$v_0\sin\alpha$};
+\draw[color=qqqqff] (2.01,-0.42) node {$v_0\cos\alpha$};
+\draw[color=qqqqff] (1.75,1.82) node {$\vec{v}_0$};
+\draw[color=ffqqqq] (1.91,0.62) node {$\alpha$};
+\draw(-0.25,3.85) node {$y$};
+\draw(15.25,-0.25) node {$x$};
+\draw(-0.2,-0.2) node {$0$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
