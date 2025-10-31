@@ -107,23 +107,22 @@ zlomek může být konečný (někdy říkáme ukončený) i nekonečný (někdy
 Lze ukázat, že zlatý řez je možné  vyjádřit nekonečným řetězovým zlomkem
 $$\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.$$
 
-> **Úloha 2.**
-> Vypočítejte přibližné hodnoty zlatého řezu pomocí následujících konečných řetězových zlomků:
+>**Úloha 2.** Vypočítejte přibližné hodnoty zlatého řezu pomocí následujících konečných řetězových zlomků:
 >
-> 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}\$$
-> 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}$$
+>1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}$$
+>2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}$$
 
 \iffalse
 
 *Řešení.* 
 
 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}= 1 + \cfrac{1}{1 + \cfrac{1}{2}}= 1 + \cfrac{1}{\frac{3}{2}}=\frac{5}{3}\doteq1{,}67$$
+
 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}=1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{2}}}=1 + \cfrac{1}{1 + \cfrac{1}{\frac{3}{2}}}=1 + \cfrac{1}{\frac{5}{3}}=\frac{8}{5}=1{,}6$$
 
-Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$. Zároveň si můžeme všimnout, že vypočtená racionální čísla $\frac{5}{3}$ a $\frac{8}{5}$  jsou podíly po sobě jdoucích členů Fibonacciho posloupnosti. Přitom již víme, že posloupnost takovýchto podílů konverguje právě ke zlatému řezu $\varphi$. 
+Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$. Více se o racionálních aproximacích zlatého řezu $\varphi$ dozvíme v kapitole o Fibonacciho posloupnosti. 
 
 \fi
-
 
 > **Úloha 3.**
 > Ukažte, že poměr zlatého řezu $\varphi$ splňuje následující rovnost: 
@@ -155,7 +154,7 @@ x &= \frac{3x+2}{2x+1}\\
 \end{aligned}
 $$
  
-Celou rovnici přenásobíme výrazem ve jmenovateli a po úpravě získáme kvadratickou rovnici 
+Získanou rovnici přenásobíme výrazem ve jmenovateli a po úpravě obdržíme kvadratickou rovnici 
 
 $$
  x^2 - x - 1 = 0.
@@ -167,7 +166,7 @@ $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 Všimněme si, že výraz na pravé straně zadané rovnice i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením původní rovnice. 
 Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 
-**Poznámka.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
+**Poznámka.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
 
 $$
  1+\cfrac{1}{1+\cfrac{1}{\varphi}}=1+\frac{1}{\varphi}=\varphi, 
@@ -285,7 +284,7 @@ pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obráz
 
 ![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
-V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít v 
+V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít například v 
 uspořádání listů na stoncích. Listy vyrůstají nad sebou tak, aby si navzájem nestínily, přechod od 
 jednoho listu k dalšímu má charakter šroubovitého výstupu kolem stonku. Podobné uspořádání můžeme 
 najít u šupin borové šišky, semen slunečnice nebo u kůry ananasu. Fibonacciho spirálu najdeme 
