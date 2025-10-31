@@ -275,7 +275,7 @@ Zlatý řez úzce souvisí s Fibonacciho posloupností. Členy Fibonacciho poslo
 $1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, $\dots$, kde každý další člen posloupnosti 
 získáme součtem předchozích dvou členů. Jednotlivé prvky této posloupnosti označujeme také jako 
 Fibonacciho čísla. A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Platí, že 
-limita poměrů dvou po sobě jdoucích členů této posloupnosti je rovna právě zlatému řezu $\varphi$. 
+limita posloupnosti poměrů dvou po sobě jdoucích členů této posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
 Pro zajímavost uveďme, že $\frac{1}{1}=1$, $\frac{2}{1}=2$, $\frac{3}{2}=1{,}5$, $\frac{5}{3} \doteq 1{,}6667$, $\frac{8}{5} = 1{,}6$, $\frac{13}{8} = 1{,}625$, $\frac{21}{13} \doteq 1{,}6154$, $\frac{34}{21} \doteq 1{,}6190$, $\frac{55}{34} \doteq 1{,}6176$, atd. 
 
 Pokud sestrojíme čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je 
