@@ -255,7 +255,7 @@ Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr s
 *Řešení.* 
 Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku 4 je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek 4 níže. 
 
-![Formát A4](format_A4.svg)
+![Obdélník formátu A](format_A4.svg)
 
 Ve skutečnosti vše souvisí s tím, že vyjádření čísla $\sqrt{2}$ řetězovým zlomkem obsahuje jednu jedničku a poté samé dvojky. 
  
