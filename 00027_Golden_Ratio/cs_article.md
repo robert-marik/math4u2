@@ -70,14 +70,14 @@ $$
 Usměrněním zlomku pak dostaneme
 $$\varphi=\frac{\sqrt{5}+1}{2}\doteq1{,}618.$$
 
-**Poznámka.** Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme rovnici 
+**Poznámka.** Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme vztah 
 
 $$
 \tag{2}
- 1+\frac{1}{\varphi}=\varphi, 
+ 1+\frac{1}{\varphi}=\varphi. 
 $$
 
-která vede na kvadratickou rovnici 
+Pro určení hodnoty $\varphi$ stačí vyřešit příslušnou  rovnici. Vynásobíme-li obě strany této rovnice výrazem $\varphi$, dostaneme (po převedení všech členů na jednu stranu rovnice) kvadratickou rovnici 
 
 $$
  \varphi^2 - \varphi - 1 = 0. 
