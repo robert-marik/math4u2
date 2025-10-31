@@ -13,9 +13,12 @@ time: 40
 
 # Zlatý řez, řetězový zlomek a Fibonacciho posloupnost 
 
-ÚVOD ke zlatému řezu (malířství).... DOPLNIT 
+## Zlatý řez 
 
-Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu (viz obrázek 1), 
+Dříve, než si objasníme, co přesně zlatý řez je, uveďme,  kde všude se s ním můžeme setkat. Pěkným příkladem je využití v umění. Zlatý řez totiž napomáhá dosáhnout esteticky působivých a harmonických kompozic, které jsou pro lidské oko přirozeně přitažlivé. Umělci a fotografové často využívají zlatý řez při rozvržení obrazu či fotografie, aby umístili klíčové prvky do bodů, které působí přirozeně vyváženě a dynamicky. Malíři, jako byl Leonardo da Vinci nebo Sandro Botticelli, jej záměrně používali ve svých dílech, například v Moně Lise nebo Zrození Venuše. Architekti pak integrují poměr zlatého řezu do návrhů budov a konstrukcí, aby docílili harmonických proporcí - příkladem může být Parthenon v Athénách nebo moderní stavby, které tento princip využívají pro dosažení vizuální rovnováhy a elegance.
+Tento poměr se ale objevuje i v přírodě - například ve tvaru lastur, květů nebo uspořádání listů na stonku.  
+
+**Definice zlatého řezu.** Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu (viz obrázek 1), 
 jestliže pro délky uvažovaných úseček platí vztah
 $$\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.$$
 Tento poměr (podíl $\frac{|AB|}{|AC|}$, který je stejný jako $\frac{|AC|}{|CB|}$) se často značí řeckým písmenem $\varphi$. 
@@ -70,6 +73,7 @@ $$\varphi=\frac{\sqrt{5}+1}{2}\doteq1{,}618.$$
 **Poznámka.** Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme rovnici 
 
 $$
+\tag{2}
  1+\frac{1}{\varphi}=\varphi, 
 $$
 
@@ -116,7 +120,7 @@ $$\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.$$
 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}= 1 + \cfrac{1}{1 + \cfrac{1}{2}}= 1 + \cfrac{1}{\frac{3}{2}}=\frac{5}{3}\doteq1{,}67$$
 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}=1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{2}}}=1 + \cfrac{1}{1 + \cfrac{1}{\frac{3}{2}}}=1 + \cfrac{1}{\frac{5}{3}}=\frac{8}{5}=1{,}6$$
 
-Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$. Zároveň si můžeme všimnout, že vypočtená racionální čísla $\frac{5}{3}$ a $\frac{8}{5}$  jsou podíly po sobě jdoucích členů Fibonacciho posloupnosti. Přitom již víme, že tyto podíly konvergují právě ke zlatému řezu $\varphi$. 
+Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$. Zároveň si můžeme všimnout, že vypočtená racionální čísla $\frac{5}{3}$ a $\frac{8}{5}$  jsou podíly po sobě jdoucích členů Fibonacciho posloupnosti. Přitom již víme, že posloupnost takovýchto podílů konverguje právě ke zlatému řezu $\varphi$. 
 
 \fi
 
@@ -130,13 +134,16 @@ Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$.
 >
 \iffalse
 
-*Řešení.* Jednou z možností, jak se přesvědčit, že $\varphi$ splňuje zadanou rovnost, je ukázat, že $\varphi$ je řešením rovnice 
+*Řešení.* Jednou z možností, jak se přesvědčit, že $\varphi$ splňuje zadanou rovnost, je vyřešit rovnici 
 
 $$
- x = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{x}}}. 
+\tag{3}
+ x = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{x}}}  
 $$
 
-Rovnici postupně zjednodušíme.
+a ukázat, že $\varphi$ je jejím řešením.  
+
+Rovnici postupně zjednodušíme: 
 
 $$
 \begin{aligned}
@@ -158,9 +165,19 @@ Její kořeny jsou
 $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 
 Všimněme si, že výraz na pravé straně zadané rovnice i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením původní rovnice. 
-Vidíme, že jedním z řešení je poměru zlatého řezu $\varphi$.
+Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 
-**Poznámka.** DOPLNIT ....... 
+**Poznámka.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
+
+$$
+ 1+\cfrac{1}{1+\cfrac{1}{\varphi}}=1+\frac{1}{\varphi}=\varphi, 
+$$
+
+a proto 
+
+$$
+ 1+\cfrac{1}{1+\cfrac{1}{1+\cfrac{1}{\varphi}}}=1+\frac{1}{\varphi}=\varphi. 
+$$
 
 \fi
 
@@ -184,7 +201,7 @@ $$
 
 Čísla $a_0=1$, $a_1=2$, $a_2=3$ a $a_3=2$ mají pěkný geometrický význam. 
 
-Uvažujme obdélník se stranami $23$ a $16$, do kterého vepíšeme co největší čtverec, tj. čtverec o straně $16$ (na obrázku níže je tento čtverec znázorněn žlutě). Tento čtverec se do našeho obdélníku vejde pouze jeden, tj. $a_0=1$. Poté nám zbyde obdélník o stranách $16$ a $7$. Do tohoto obdélníku opět vepíšeme co možná největší čtverec, tj. čtverec o straně $7$. Tyto čtverce (na obrázku je vidíme znázorněné šedou barvou) se tam ale vejdou dva, tj. $a_1=2$. Nyní si snadno rozmyslíme, že dosud nemáme pokrytý obdélník o stranách $7$ a $2$. Do tohoto obdélníku vepíšeme čtverec o straně $2$ (větší se tam nevejde). Tyto čtverce se tam ale vejdou tři (červená barva), tj. $a_2=3$. Nakonec nám zbyde malý obdélník o stranách $2$ a $1$, který jsme schopni (již beze zbytku) vyplnit dvěma čtverci (zelené, o straně 1), tzn. $a_3=2$. 
+Uvažujme obdélník se stranami $23$ a $16$, do kterého vepíšeme co největší čtverec, tj. čtverec o straně $16$ (na obrázku 2 níže je tento čtverec znázorněn žlutě). Tento čtverec se do našeho obdélníku vejde pouze jeden, tj. $a_0=1$. Poté nám zbyde obdélník o stranách $16$ a $7$. Do tohoto obdélníku opět vepíšeme co možná největší čtverec, tj. čtverec o straně $7$. Tyto čtverce (na obrázku 2 je vidíme znázorněné šedou barvou) se tam ale vejdou dva, tj. $a_1=2$. Nyní si snadno rozmyslíme, že dosud nemáme pokrytý obdélník o stranách $7$ a $2$. Do tohoto obdélníku vepíšeme čtverec o straně $2$ (větší se tam nevejde). Tyto čtverce se tam ale vejdou tři (červená barva), tj. $a_2=3$. Nakonec nám zbyde malý obdélník o stranách $2$ a $1$, který jsme schopni (již beze zbytku) vyplnit dvěma čtverci (zelené, o straně 1), tzn. $a_3=2$. 
 
 ![Řetězový zlomek - geometrická interpretace](retez_zlomek.svg)
 
@@ -197,7 +214,7 @@ Uvažujme obdélník se stranami $23$ a $16$, do kterého vepíšeme co největ�
 \iffalse
 
 *Řešení.* 
-Vyjádření zlatého řezu řetězovým zlomkem obsahuje samé jedničky, a proto při pokrývání zlatého obdélníku je použit vždy jeden čtverec dané velikosti (barvy). Vzhledem k tomu, že je tento řetězový zlomek nekonečný, nelze zlatý obdélník výše popsaným způsobem pokrýt konečně mnoha čtverci. 
+Vyjádření zlatého řezu řetězovým zlomkem obsahuje samé jedničky, a proto při pokrývání zlatého obdélníku je použit vždy jeden čtverec dané velikosti (barvy), viz obrázek 3. Vzhledem k tomu, že je tento řetězový zlomek nekonečný, nelze zlatý obdélník výše popsaným způsobem pokrýt konečně mnoha čtverci. 
 
 ![Zlatý obdélník](zlaty_obdelnik.svg)
 
@@ -237,65 +254,43 @@ Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr s
 \iffalse
 
 *Řešení.* 
-Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek níže. 
+Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku 4 je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek 4 níže. 
 
 ![Formát A4](format_A4.svg)
 
-Ve skutečnosti vše souvisí s tím, že vyjádření  čísla $\sqrt{2}$ řetězovým zlomkem obsahuje jednu jedničku a poté samé dvojky. Přesněji, platí rovnost 
-
-
-<!-- ZAPOZNÁMKOVÁNO
- Představme si obdélníkový papír s poměrem stran $\sqrt{2}$. Pro jednoduchost předpokládejme, že jeho rozměry jsou $\sqrt{2}$ a $1$. Do tohoto obdélníku se vejde jeden čtverec o straně $1$. Nepokrytý zůstane obdélník o stranách $1$ a $\sqrt{2}-1$. Do něj můžeme vepsat dva čtverce o straně $\sqrt{2}-1$, protože pro poměr jeho stran platí  
-
-$$
- \frac{1}{\sqrt{2}-1}=\sqrt{2}+1 \doteq 2,41. 
-$$
-
-Snadno spočítáme, že nyní zůstane nepokrytý obdélník o rozměrech $\sqrt{2}-1$ a $1-2(\sqrt{2}-1)=3-2\sqrt{2}$. Pro poměr stran tohoto obdélníku platí 
-
-$$
- \frac{\sqrt{2}-1}{3-2\sqrt{2}}=\frac{(\sqrt{2}-1)(3+2\sqrt{2})}{(3-2\sqrt{2})(3+2\sqrt{2})}=\sqrt{2}+1. 
-$$
-
-Poměr vyšel stejný jako v předchozím kroku, což znamená, že se do posledně zmíněného obdélníku opět vejdou dva čtverce, atd. 
-
-KONEC ZAPOZNÁMKOVÁNÍ
--->
-
+Ve skutečnosti vše souvisí s tím, že vyjádření čísla $\sqrt{2}$ řetězovým zlomkem obsahuje jednu jedničku a poté samé dvojky. 
+ 
 \fi
+
+<!-- ZAPOZNÁMKOVÁNO 
 
 Pěkným příkladem využití zlatého řezu v běžném životě je platební karta. Ta má přibližně tvar tzv. zlatého 
 obdélníku (délky stran zlatého obdélníku jsou v poměru zlatého řezu). Zlatý obdélník je oblíbený tvar díky jeho 
 vyváženému vzhledu; není ani příliš dlouhý, ani příliš široký.
 
-![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
+KONEC ZAPOZNÁMKOVÁNÍ -->
+
+## Fibonacciho posloupnost 
 
 Zlatý řez úzce souvisí s Fibonacciho posloupností. Členy Fibonacciho posloupnosti jsou čísla 
-$1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, ..., kde každý další člen posloupnosti 
+$1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, $\dots$, kde každý další člen posloupnosti 
 získáme součtem předchozích dvou členů. Jednotlivé prvky této posloupnosti označujeme také jako 
 Fibonacciho čísla. A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Platí, že 
-limita poměrů dvou po sobě jdoucích členů této posloupnosti je rovna právě zlatému řezu $\varphi$.
+limita poměrů dvou po sobě jdoucích členů této posloupnosti je rovna právě zlatému řezu $\varphi$. 
+Pro zajímavost uveďme, že $\frac{1}{1}=1$, $\frac{2}{1}=2$, $\frac{3}{2}=1{,}5$, $\frac{5}{3} \doteq 1{,}6667$, $\frac{8}{5} = 1{,}6$, $\frac{13}{8} = 1{,}625$, $\frac{21}{13} \doteq 1{,}6154$, $\frac{34}{21} \doteq 1{,}6190$, $\frac{55}{34} \doteq 1{,}6176$, atd. 
 
 Pokud sestrojíme čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je 
-pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku. Tento obdélník je blízký zlatému obdélníku. Do každého 
-čtverce pak můžeme vepsat čtvrtkružnici. Dostaneme Fibonacciho spirálu, která připomíná tzv. zlatou spirálu. Ta je 
-speciálním případem logaritmické spirály.
+pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Do každého 
+čtverce navíc můžeme vepsat čtvrtkružnici (viz obrázek 5) a dostat tak tzv. Fibonacciho spirálu. 
+
+![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
 V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít v 
 uspořádání listů na stoncích. Listy vyrůstají nad sebou tak, aby si navzájem nestínily, přechod od 
 jednoho listu k dalšímu má charakter šroubovitého výstupu kolem stonku. Podobné uspořádání můžeme 
-najít u šupin borové šišky, semen slunečnice nebo u kůry ananasu. Logaritmickou spirálu najdeme 
+najít u šupin borové šišky, semen slunečnice nebo u kůry ananasu. Fibonacciho spirálu najdeme 
 také ve schránkách měkkýšů či ve svinutém lístku kapradiny. Tento tvar dále mají tornáda, cyklóny i 
 galaxie.
-
-Zlatý řez je hojně využíván v umění pro dosažení esteticky působivých a harmonických kompozic. 
-Malíři a fotografové používají tento poměr k určení umístění klíčových prvků ve svých obrazech. 
-Architekti často integrují poměr zlatého řezu do návrhů budov.
-
-
-
-
-
 
 ## Literatura
 
