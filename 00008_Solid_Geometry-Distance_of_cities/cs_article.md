@@ -121,6 +121,28 @@ Vidíme, že se obě dráhy liší přibližně o $150 \,\text{km}$.
 >**Úloha 2.**
 Pokuste se zobecnit výše uvedený postup a odvodit obecný vzorec pro nejkratší vzdálenost dvou míst na Zemi, pokud $\varrho$ je zemský poloměr, $\psi$ je zeměpisná šířka obou míst (místa leží na stejné rovnoběžce) a $\lambda_1$, $\lambda_2$ jsou zeměpisné délky jednotlivých míst.  
 
+\iffalse
+
+*Řešení.* Úplně stejným postupem jako  v úloze 1 bychom došli ke vztahu 
+
+$$
+ \sin \frac{\varphi}{2} = \cos \psi \sin \frac{|\lambda_1-\lambda_2|}{2}, 
+$$
+
+který je zobecněním vztahu $(1)$. Spočítat nejkratší vzdálenost je už snadné. Pokud máme úhel $\varphi$ vyjádřený v radiánech, pak pro nejkratší vzdálenost $d$ platí vztah 
+
+$$
+ d = \varrho \varphi. 
+$$
+
+V případě, že úhel $\varphi$ máme vyjádřen ve stupních, pak 
+
+$$
+ d = \frac{\varphi}{360} \cdot 2\pi\varrho. 
+$$
+
+\fi
+
 Jinou technikou bychom mohli odvodit ještě obecnější výsledek. Toto odvození by vyžadovalo jisté znalosti analytické geometrie v prostoru, zejména odchylky dvou vektorů. 
 
 **Obecný vzorec pro nejkratší vzdálenost.**
