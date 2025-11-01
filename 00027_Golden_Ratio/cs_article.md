@@ -103,8 +103,11 @@ $$
 kde $a_0$ je celé číslo a $a_1, a_2, \dots\,$ jsou čísla přirozená. Řetězový 
 zlomek může být konečný (někdy říkáme ukončený) i nekonečný (někdy říkáme neukončený). Je to podobné jako u desetinného rozvoje - ten také může být ukončený nebo neukončený.  
 
-Lze ukázat, že zlatý řez je možné  vyjádřit nekonečným řetězovým zlomkem
-$$\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.$$
+Lze ukázat, že hodnotu poměru zlatého řezu $\varphi$ je možné  vyjádřit nekonečným řetězovým zlomkem následovně: 
+
+$$
+\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}
+$$
 
 >**Úloha 2.** Vypočítejte přibližné hodnoty zlatého řezu pomocí následujících konečných řetězových zlomků:
 >
@@ -124,7 +127,7 @@ Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$.
 \fi
 
 > **Úloha 3.**
-> Ukažte, že poměr zlatého řezu $\varphi$ splňuje následující rovnost: 
+> Ukažte, že hodnota poměru zlatého řezu $\varphi$ splňuje následující rovnost: 
 >
 > $$
  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}
