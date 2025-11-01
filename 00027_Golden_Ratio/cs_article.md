@@ -15,7 +15,7 @@ time: 40
 
 ## Zlatý řez 
 
-Dříve, než si objasníme, co přesně zlatý řez je, uveďme,  kde všude se s ním můžeme setkat. Pěkným příkladem je využití v umění. Zlatý řez totiž napomáhá dosáhnout esteticky působivých a harmonických kompozic, které jsou pro lidské oko přirozeně přitažlivé. Umělci a fotografové často využívají zlatý řez při rozvržení obrazu či fotografie, aby umístili klíčové prvky do bodů, které působí přirozeně vyváženě a dynamicky. Malíři, jako byl Leonardo da Vinci nebo Sandro Botticelli, jej záměrně používali ve svých dílech, například v Moně Lise nebo Zrození Venuše. Architekti pak integrují poměr zlatého řezu do návrhů budov a konstrukcí, aby docílili harmonických proporcí - příkladem může být Parthenon v Athénách nebo moderní stavby, které tento princip využívají pro dosažení vizuální rovnováhy a elegance.
+Dříve, než si objasníme, co přesně zlatý řez je, uveďme,  kde všude se s ním můžeme setkat. Pěkným příkladem je využití v umění. Zlatý řez totiž napomáhá dosáhnout esteticky působivých a harmonických kompozic, které jsou pro lidské oko přirozeně přitažlivé. Umělci a fotografové často využívají zlatý řez při rozvržení obrazu či fotografie, aby umístili klíčové prvky do bodů, které působí přirozeně vyváženě a dynamicky. Malíři, jako byl Leonardo da Vinci nebo Sandro Botticelli, jej záměrně používali ve svých dílech, například v Moně Lise nebo Zrození Venuše. Architekti pak integrují poměr zlatého řezu do návrhů budov a konstrukcí, aby docílili harmonických proporcí - příkladem může být Parthenón v Athénách nebo moderní stavby, které tento princip využívají pro dosažení vizuální rovnováhy a elegance.
 Tento poměr se ale objevuje i v přírodě - například ve tvaru lastur, květů nebo uspořádání listů na stonku.  
 
 **Definice zlatého řezu.** Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu (viz obrázek 1), 
@@ -30,8 +30,7 @@ Tento poměr (podíl $\frac{|AB|}{|AC|}$, který je stejný jako $\frac{|AC|}{|C
 
 \iffalse
 
-*Řešení.* 
-Předpokládejme, že úsečka $AB$ má délku $1$. Tuto úsečku rozdělíme bodem $C$ v poměru zlatého řezu. Potom platí
+*Řešení.* Bez újmy na obecnosti lze předpokládat, že úsečka $AB$ má délku $1$. Tuto úsečku rozdělíme bodem $C$ v poměru zlatého řezu. Potom platí
 
 $$
  \varphi=\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.
@@ -44,7 +43,7 @@ $$
 $$
 
 který má smysl pro $x\neq0 \text{ a } x\neq1$. 
-Úpravou (1) dostaneme kvadratickou rovnici
+Úpravou $(1)$ dostaneme kvadratickou rovnici
 
 $$
 x^2 + x - 1 = 0,
@@ -56,7 +55,7 @@ $$
 x_{1,2} = \frac{-1 \pm \sqrt{5}}{2}.
 $$
 
-V našem případě záporná hodnota $x$ nemá smysl, neboť $x$ je délka úsečky a délka nemůže být záporná. Máme tedy jediné vyhovující řešení rovnice (1), a to 
+V našem případě záporná hodnota $x$ nemá smysl, neboť $x$ je délka úsečky a délka nemůže být záporná. Máme tedy jediné vyhovující řešení rovnice $(1)$, a to 
 
 $$
 x = \frac{-1 + \sqrt{5}}{2}.
@@ -98,7 +97,7 @@ Nás však zajímá pouze kladné řešení. Tím se dostáváme k tomu, že $\v
 Řetězový zlomek je výraz typu
 
 $$
- x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \ddots}}},
+ a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \ddots}}},
 $$
 
 kde $a_0$ je celé číslo a $a_1, a_2, \dots\,$ jsou čísla přirozená. Řetězový 
@@ -133,16 +132,16 @@ Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$.
 >
 \iffalse
 
-*Řešení.* Jednou z možností, jak se přesvědčit, že $\varphi$ splňuje zadanou rovnost, je vyřešit rovnici 
+*Řešení.* Jednou z možností, jak ukázat, že $\varphi$ splňuje zadanou rovnost, je vyřešit rovnici 
 
 $$
 \tag{3}
  x = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{x}}}  
 $$
 
-a ukázat, že $\varphi$ je jejím řešením.  
+a přesvědčit se, že $\varphi$ je jejím řešením.  
 
-Rovnici postupně zjednodušíme: 
+Rovnici $(3)$ postupně zjednodušíme: 
 
 $$
 \begin{aligned}
@@ -154,7 +153,7 @@ x &= \frac{3x+2}{2x+1}\\
 \end{aligned}
 $$
  
-Získanou rovnici přenásobíme výrazem ve jmenovateli a po úpravě obdržíme kvadratickou rovnici 
+Získanou rovnici přenásobíme výrazem ve jmenovateli. Po jednoduché úpravě obdržíme kvadratickou rovnici 
 
 $$
  x^2 - x - 1 = 0.
@@ -163,7 +162,7 @@ $$
 Její kořeny jsou
 $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 
-Všimněme si, že výraz na pravé straně zadané rovnice i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením původní rovnice. 
+Všimněme si, že výraz na pravé straně rovnice $(3)$ i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením rovnice $(3)$. 
 Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 
 **Poznámka.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
@@ -184,10 +183,10 @@ $$
 
 Lze ukázat, že každé číslo $x \in \mathbb{R}$ je možné vyjádřit řetězovým zlomkem. Navíc, pokud je číslo $x$ racionální, je tento řetězový zlomek konečný (ukončený), zatímco pro iracionální $x$ je řetězový zlomek nekonečný (neukončený).  
 
-Uvažujme kladné racionální číslo $x$ a jeho vyjádření (konečným) řetězovým zlomkem 
+Uvažujme kladné racionální číslo $x$ a jeho vyjádření (konečným) řetězovým zlomkem: 
 
 $$
-x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}.
+x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{{\ddots+ \cfrac{1}{a_n}}}}}
 $$
 
 Na příkladě si ukážeme geometrický význam čísel $a_0, a_1, a_2, \dots, a_n$. 
@@ -235,7 +234,7 @@ $$
  x^2=2y^2. 
 $$
 
-Proto pro poměr stran (jedná se o kladná čísla) původního papíru musí platit 
+Proto pro poměr stran (délky stran jsou kladné) původního papíru musí platit 
 
 $$
  \frac{x}{y}= \sqrt{2}. 
@@ -247,7 +246,7 @@ $$
 Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr stran papíru formátu A je $\sqrt{2}$. Dále uveďme, že číslo $\sqrt{2}$ se dá řetězovým zlomkem vyjádřit takto:  
 >
 >$$
- \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}.
+ \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}
 >$$
 
 \iffalse
@@ -273,14 +272,19 @@ KONEC ZAPOZNÁMKOVÁNÍ -->
 
 Zlatý řez úzce souvisí s Fibonacciho posloupností. Členy Fibonacciho posloupnosti jsou čísla 
 $1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, $\dots$, kde každý další člen posloupnosti 
-získáme součtem předchozích dvou členů. Jednotlivé prvky této posloupnosti označujeme také jako 
-Fibonacciho čísla. A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Platí, že 
-limita posloupnosti poměrů dvou po sobě jdoucích členů této posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
-Pro zajímavost uveďme, že $\frac{1}{1}=1$, $\frac{2}{1}=2$, $\frac{3}{2}=1{,}5$, $\frac{5}{3} \doteq 1{,}6667$, $\frac{8}{5} = 1{,}6$, $\frac{13}{8} = 1{,}625$, $\frac{21}{13} \doteq 1{,}6154$, $\frac{34}{21} \doteq 1{,}6190$, $\frac{55}{34} \doteq 1{,}6176$, atd. 
+získáme součtem předchozích dvou členů. Jednotlivé členy této posloupnosti označujeme také jako 
+Fibonacciho čísla. A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Platí, že limita posloupnosti podílů dvou po sobě jdoucích členů Fibonacciho posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
+Pro zajímavost vypišme několik prvních podílů sousedních členů Fibonacciho posloupnosti: 
 
-Pokud sestrojíme čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je 
-pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Do každého 
-čtverce navíc můžeme vepsat čtvrtkružnici (viz obrázek 5) a dostat tak tzv. Fibonacciho spirálu. 
+$$
+\begin{gathered}
+\frac{1}{1}=1, \quad \frac{2}{1}=2, \quad \frac{3}{2}=1{,}5, \quad \frac{5}{3} \doteq 1{,}6667, \quad \frac{8}{5} = 1{,}6, \quad \frac{13}{8} = 1{,}625, \\[3mm] 
+\frac{21}{13} \doteq 1{,}6154, \quad \frac{34}{21} \doteq 1{,}6190, \quad \frac{55}{34} \doteq 1{,}6176, \quad\text{atd.}
+\end{gathered}
+$$ 
+
+Nyní popišme konstrukci tzv. Fibonacciho spirály, která se (jak uvidíme později) objevuje v přírodě. Sestrojíme-li čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Nyní do každého 
+čtverce vepišme čtvrtkružnici (viz obrázek 5). Tím dostaneme výše zmiňovanou Fibonacciho spirálu. 
 
 ![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
