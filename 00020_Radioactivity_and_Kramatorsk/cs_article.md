@@ -126,7 +126,7 @@ bychom se dočkali přibližně po 155 letech.
 
 \fi
 
->**Úloha k rozmyšlení 1.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+>**Úloha 3.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
 
 \iffalse
 
@@ -150,12 +150,12 @@ $$
 T \frac{\ln (k^2)}{\ln 2} = \frac{2T \ln k}{\ln 2}. 
 $$
 
->**Poznámka.**
+**Poznámka.**
 Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu obdržíme $t \doteq 155$ (stejně jako v úloze 2). 
 
 \fi
 
->**Úloha k rozmyšlení 2.**
+>**Úloha 4.**
 Ukažte, že vztah $(1)$, tj. 
 $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru 
 >
