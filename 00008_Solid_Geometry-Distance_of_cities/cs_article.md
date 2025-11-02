@@ -194,7 +194,7 @@ Srovnejte poslední rovnost se vztahem $(1)$.
 \iffalse
 
 **Vysvětlení vztahu (4).**
-Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země (bod $C$) umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo $M$ na zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak jsou jeho souřadnice 
+Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země (bod $C$) umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo $M$ na zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak pro jeho (kartézské) souřadnice platí 
 
 $$
 \tag{5}
@@ -209,7 +209,64 @@ kde $\varrho$ je poloměr Země. Vztahy $(5)$ lze odvodit na základě znalosti 
 
 ![Vztah zeměpisných a kartézských souřadnic](sfericke.svg)
 
-Uvažujme nyní dvě místa $A$ a $B$ na zemském povrchu. Jedno se zeměpisnou šířkou $\psi_1$ a zeměpisnou délkou $\lambda_1$ a druhé se zeměpisnou šířkou $\psi_2$ a zeměpisnou délkou $\lambda_2$. Střed Země si označme jako $C$ (počátek soustavy souřadnic). Nyní nás zajímá velikost úhlu $\varphi$, který svírají vektory $\overrightarrow{CA}$ a $\overrightarrow{CB}$. Vzhledem ke vztahům $(5)$ dostaneme 
+Skutečně, z pravoúhlého trojúhelníku $CPM$ vidíme, že  
+
+$$
+ \cos \psi = \frac{|CP|}{|CM|}=\frac{|CP|}{\varrho}. 
+$$
+
+Odtud 
+
+$$
+ |CP|=\varrho \cos\psi. 
+$$
+
+Z pravoúhlého trojúhelníku $CQP$ podobně dostaneme 
+
+$$
+ \cos\lambda = \frac{|CQ|}{|CP|} \quad \text{a} \quad 
+\sin\lambda = \frac{|QP|}{|CP|}, 
+$$
+
+odkud 
+
+$$
+\begin{gathered}
+ x=|CQ|=|CP|\cos\lambda = \varrho \cos\psi \cos\lambda, \\
+ y=|QP|=|CP|\sin\lambda = \varrho \cos\psi \sin\lambda. 
+ \end{gathered}
+$$
+
+Použijeme-li ještě jednou pravoúhlý trojúhelník $CPM$, dostaneme 
+
+$$
+ \sin\psi = \frac{|PM|}{|CM|}=\frac{|PM|}{\varrho}. 
+$$
+
+Odtud ihned máme i poslední vztah 
+
+$$
+ z=|PM|=\varrho \sin\psi. 
+$$
+
+Uvažujme nyní dvě místa $A$ a $B$ na zemském povrchu. Jedno se zeměpisnou šířkou $\psi_1$ a zeměpisnou délkou $\lambda_1$ a druhé se zeměpisnou šířkou $\psi_2$ a zeměpisnou délkou $\lambda_2$. Střed Země si označme jako $C$ (počátek soustavy souřadnic, tj. $C=[0;0;0]$). Nyní nás zajímá (stejně jako v úloze 1) velikost úhlu $\varphi$, který svírají vektory 
+
+$$
+\tag{6}
+\begin{aligned}
+\overrightarrow{CA} &= (\varrho \cos\psi_1 \cos\lambda_1; \, \varrho \cos\psi_1 \sin\lambda_1; \, \varrho \sin\psi_1), \\ 
+\overrightarrow{CB} &= (\varrho \cos\psi_2 \cos\lambda_2; \, \varrho \cos\psi_2 \sin\lambda_2; \, \varrho \sin\psi_2). 
+\end{aligned}
+$$
+
+Protože obě místa $A$ i $B$ leží na zemském povrchu, je jejich vzdálenost od středu Země $C$ rovna $\varrho$. Proto 
+
+$$
+\tag{7}
+ \left|\overrightarrow{CA}\right| = \left|\overrightarrow{CB}\right|=\varrho. 
+$$
+
+Vzhledem ke vztahům $(6)$ a $(7)$  dostaneme 
 
 $$
 \begin{gathered}
