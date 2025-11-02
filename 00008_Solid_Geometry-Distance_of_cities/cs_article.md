@@ -14,7 +14,7 @@ time: 25
 ---
 # Vzdálenosti na zemském povrchu
 
-Která z cest mezi Lisabonem a Washingtonem znázorněných na mapě je kratší? 
+Která z cest mezi Lisabonem a Washingtonem znázorněných na mapě je ve skutečnosti kratší? 
 
 ![Mapa](08_mapa.jpg)
 
@@ -126,10 +126,10 @@ Pokuste se zobecnit výše uvedený postup a odvodit obecný vzorec pro nejkrat�
 *Řešení.* Úplně stejným postupem jako  v úloze 1 bychom došli ke vztahu 
 
 $$
- \sin \frac{\varphi}{2} = \cos \psi \sin \frac{|\lambda_1-\lambda_2|}{2}, 
+ \sin \frac{\varphi}{2} = \cos \psi \sin \frac{\Delta\lambda}{2}, 
 $$
 
-který je zobecněním vztahu $(1)$. Spočítat nejkratší vzdálenost je už snadné. Pokud máme úhel $\varphi$ vyjádřený v radiánech, pak pro nejkratší vzdálenost $d$ platí vztah 
+kde $\Delta\lambda$ je rozdíl zeměpisných délek obou míst, tj. $\Delta\lambda=|\lambda_1-\lambda_2|$. Právě odvozený vztah je zobecněním vztahu $(1)$. Spočítat nejkratší vzdálenost je už snadné. Pokud máme úhel $\varphi$ vyjádřený v radiánech, pak pro nejkratší vzdálenost $d$ platí vztah 
 
 $$
  d = \varrho \varphi. 
@@ -194,7 +194,7 @@ Srovnejte poslední rovnost se vztahem $(1)$.
 \iffalse
 
 **Vysvětlení vztahu (4).**
-Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země (bod $C$) umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo $M$ na zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak pro jeho (kartézské) souřadnice platí 
+Uvažujme standardní pravoúhlou soustavu souřadnic v třírozměrném prostoru s počátkem ve středu Země (bod $C$, tzn. $C=[0;0;0]$) umístěnou tak, že osa $x$ je průsečnicí rovníkové roviny a roviny nultého poledníku, osa $y$ leží v rovníkové rovině a je kolmá k ose $x$ a osa $z$ prochází oběma zemskými póly (tzn. prochází středem Země a je kolmá na osu $x$ i $y$). Pokud má nějaké místo $M$ na Zemi zeměpisnou šířku $\psi$ a zeměpisnou délku $\lambda$, pak pro jeho (kartézské) souřadnice platí 
 
 $$
 \tag{5}
@@ -231,10 +231,10 @@ $$
 odkud 
 
 $$
-\begin{gathered}
- x=|CQ|=|CP|\cos\lambda = \varrho \cos\psi \cos\lambda, \\
- y=|QP|=|CP|\sin\lambda = \varrho \cos\psi \sin\lambda. 
- \end{gathered}
+\begin{aligned}
+ x &= |CQ|=|CP|\cos\lambda = \varrho \cos\psi \cos\lambda, \\
+ y &= |QP|=|CP|\sin\lambda = \varrho \cos\psi \sin\lambda. 
+ \end{aligned}
 $$
 
 Použijeme-li ještě jednou pravoúhlý trojúhelník $CPM$, dostaneme 
@@ -249,7 +249,7 @@ $$
  z=|PM|=\varrho \sin\psi. 
 $$
 
-Uvažujme nyní dvě místa $A$ a $B$ na zemském povrchu. Jedno se zeměpisnou šířkou $\psi_1$ a zeměpisnou délkou $\lambda_1$ a druhé se zeměpisnou šířkou $\psi_2$ a zeměpisnou délkou $\lambda_2$. Střed Země si označme jako $C$ (počátek soustavy souřadnic, tj. $C=[0;0;0]$). Nyní nás zajímá (stejně jako v úloze 1) velikost úhlu $\varphi$, který svírají vektory 
+Uvažujme nyní dvě místa $A$ a $B$ na zemském povrchu. Jedno se zeměpisnou šířkou $\psi_1$ a zeměpisnou délkou $\lambda_1$ a druhé se zeměpisnou šířkou $\psi_2$ a zeměpisnou délkou $\lambda_2$. Střed Země máme označený jako $C$ a nachází se v počátku souřadného systému, tj. $C=[0;0;0]$. Nyní nás zajímá (stejně jako v úloze 1) velikost úhlu $\varphi$, který svírají vektory $\overrightarrow{CA}$ a $\overrightarrow{CB}$. Přitom platí 
 
 $$
 \tag{6}
