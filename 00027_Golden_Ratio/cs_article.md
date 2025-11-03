@@ -15,8 +15,7 @@ time: 40
 
 ## Zlatý řez 
 
-Dříve, než si objasníme, co přesně zlatý řez je, uveďme,  kde všude se s ním můžeme setkat. Pěkným příkladem je využití v umění. Zlatý řez totiž napomáhá dosáhnout esteticky působivých a harmonických kompozic, které jsou pro lidské oko přirozeně přitažlivé. Umělci a fotografové často využívají zlatý řez při rozvržení obrazu či fotografie, aby umístili klíčové prvky do bodů, které působí přirozeně vyváženě a dynamicky. Malíři, jako byl Leonardo da Vinci nebo Sandro Botticelli, jej záměrně používali ve svých dílech, například v Moně Lise nebo Zrození Venuše. Architekti pak integrují poměr zlatého řezu do návrhů budov a konstrukcí, aby docílili harmonických proporcí - příkladem může být Parthenón v Athénách nebo moderní stavby, které tento princip využívají pro dosažení vizuální rovnováhy a elegance.
-Tento poměr se ale objevuje i v přírodě - například ve tvaru lastur, květů nebo uspořádání listů na stonku.  
+Dříve než se pustíme do vysvětlení, co přesně znamená zlatý řez, podívejme se, kde se s ním můžeme setkat. Krásným příkladem jeho využití je oblast umění. Zlatý řez pomáhá vytvářet esteticky působivé a harmonické kompozice, které jsou pro lidské oko přirozeně přitažlivé. Umělci i fotografové jej často využívají při rozvržení obrazu či fotografie, aby klíčové prvky umístili do míst, která působí vyváženě a dynamicky. Malíři, jako Leonardo da Vinci nebo Sandro Botticelli, tento princip vědomě uplatňovali ve svých dílech – například v Moně Lise nebo Zrození Venuše. Také architekti zapojují poměr zlatého řezu do návrhů budov a konstrukcí, aby dosáhli harmonických proporcí. Příkladem může být Parthenón v Athénách nebo moderní stavby, které tento princip využívají k dosažení vizuální rovnováhy a elegance. Tento poměr však nacházíme nejen v lidské tvorbě, ale i v přírodě – třeba ve tvarech lastur, květů nebo ve spirálním uspořádání listů na stonku.
 
 **Definice zlatého řezu.** Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu (viz obrázek 1), 
 jestliže pro délky uvažovaných úseček platí vztah
@@ -291,12 +290,11 @@ Nyní popišme konstrukci tzv. Fibonacciho spirály, která se (jak uvidíme poz
 
 ![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
-V přírodě se zlatý řez objevuje právě ve formě Fibonacciho posloupnosti. Můžeme ho najít například v 
-uspořádání listů na stoncích. Listy vyrůstají nad sebou tak, aby si navzájem nestínily, přechod od 
-jednoho listu k dalšímu má charakter šroubovitého výstupu kolem stonku. Podobné uspořádání můžeme 
-najít u šupin borové šišky, semen slunečnice nebo u kůry ananasu. Fibonacciho spirálu najdeme 
-také ve schránkách měkkýšů či ve svinutém lístku kapradiny. Tento tvar dále mají tornáda, cyklóny i 
-galaxie.
+ V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností, protože poměr dvou po sobě jdoucích čísel z této posloupnosti se blíží hodnotě zlatého řezu (přibližně 1,618). Čím dále v posloupnosti postupujeme, tím více se tento poměr přibližuje právě této hodnotě. Tento vztah najdeme v mnoha přírodních strukturách.
+Například listy na stoncích rostlin vyrůstají tak, aby si navzájem nestínily a aby měly co nejvíce světla. Vyrůstají ve spirálách kolem stonku, přičemž úhel mezi dvěma sousedními listy bývá kolem 137,5°, což odpovídá tzv. zlatému úhlu, přímo souvisejícímu se zlatým řezem.
+Stejný princip platí u uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat 8 spirál po směru hodinových ručiček a 13 spirál proti směru (čísla 8 a 13 jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru 34 ku 55 nebo 55 ku 89. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
+Fibonacciho spirálu najdeme i u některých ulit měkkýšů nebo ve svinutých lístcích kapradin. Všechny tyto spirály představují efektivní a harmonické způsoby růstu, které si zachovávají proporce i tvar. Dokonce i velké přírodní jevy, jako jsou tornáda, cyklóny nebo spirální galaxie, vykazují podobný tvar.
+Celkově tedy zlatý řez a Fibonacciho posloupnost vyjadřují hlubší zákonitosti přírodního růstu a uspořádání, kde matematika a harmonie spolu úzce souznívají.
 
 ## Literatura
 
