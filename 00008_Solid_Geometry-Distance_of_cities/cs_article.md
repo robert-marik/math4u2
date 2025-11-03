@@ -209,7 +209,7 @@ kde $\varrho$ je poloměr Země. Vztahy $(5)$ lze odvodit na základě znalosti 
 
 ![Vztah zeměpisných a kartézských souřadnic](sfericke.svg)
 
-Skutečně, z pravoúhlého trojúhelníku $CPM$ vidíme, že  
+Skutečně, z pravoúhlého trojúhelníku $CPM$ (pravý úhel je při vrcholu $P$) vidíme, že  
 
 $$
  \cos \psi = \frac{|CP|}{|CM|}=\frac{|CP|}{\varrho}. 
@@ -221,7 +221,7 @@ $$
  |CP|=\varrho \cos\psi. 
 $$
 
-Z pravoúhlého trojúhelníku $CQP$ podobně dostaneme 
+Z pravoúhlého trojúhelníku $CQP$ (pravý úhel je při vrcholu $Q$) podobně dostaneme 
 
 $$
  \cos\lambda = \frac{|CQ|}{|CP|} \quad \text{a} \quad 
