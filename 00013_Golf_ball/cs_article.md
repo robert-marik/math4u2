@@ -14,9 +14,7 @@ time: 30
 
 # Odpal golfového míčku
 
-## Šikmý vrh
-
-Šikmý vrh je nejobecnější způsob uvedení tělesa v homogenním tíhovém
+Chceme-li popsat trajektorii odpáleného golfového míčku, je potřeba si připomenout pár věcí týkajících se šikmého vrhu. Šikmý vrh je nejobecnější způsob uvedení tělesa v homogenním tíhovém
 poli do pohybu.  Předpokládejme, že hmotný bod byl šikmo vržen v
 prostředí bez odporu počáteční rychlostí $v_0$, přičemž příslušný vektor počáteční rychlosti $\vec {v}_0$ svírá s
 vodorovnou rovinou úhel $\alpha \in \left(0,\frac{\pi}{2}\right)$. V kartézské soustavě souřadnic bude pro tento vektor platit (viz obrázek)
@@ -46,7 +44,7 @@ protože okamžitá rychlost v čase $t$ je derivací polohy v čase $t$. Přesn
 
 ![Šikmý vrh](sikmy_vrh_upraveny.svg)
 
-## Odpal golfového míčku
+Nyní přejděme ke slíbenému odpalu golfového míčku. 
 
 Hráč golfu odpaluje míček počáteční rychlostí $v_0$ pod úhlem $\alpha \in \left(0,\frac{\pi}{2}\right)$. Předpokládejme, že na míček nepůsobí žádné odporové síly. Pohyb míčku tedy splňuje podmínky pro
 pohyb šikmo vrženého tělesa v prostředí bez odporu vzduchu.
