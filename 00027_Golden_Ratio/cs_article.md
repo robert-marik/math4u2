@@ -68,7 +68,7 @@ $$
 Usměrněním zlomku pak dostaneme
 $$\varphi=\frac{\sqrt{5}+1}{2}\doteq1{,}618.$$
 
-**Poznámka.** Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme vztah 
+**Poznámka k řešení úlohy 1.** Mohli bychom postupovat i jinak. Vyjdeme z rovnosti $\frac{a+b}{a}=\frac{a}{b}$ (viz obrázek 1). Víme přitom, že $\frac{a}{b}=\varphi$, odkud jednoduchou úpravou získáme vztah 
 
 $$
 \tag{2}
@@ -90,6 +90,17 @@ $$
 Nás však zajímá pouze kladné řešení. Tím se dostáváme k tomu, že $\varphi=\frac{1+\sqrt{5}}{2}$.
 
 \fi
+
+V úvodu jsme se zmínili o tom, že zlatý řez je možné najít například v uspořádání listů na stonku. Listy vyrůstají ve spirálách kolem stonku tak, aby si navzájem nestínily a aby měly co nejvíce světla. Ukazuje se, že úhel mezi dvěma sousedními listy bývá kolem $137{,}5^{\circ}$, což odpovídá tzv. zlatému úhlu, který lze definovat takto:
+
+Rozdělíme-li kruh (úhel $360^{\circ}$) na dva úhly tak, aby poměr většího úhlu k menšímu byl stejný jako poměr celého kruhu ($360^{\circ}$) k většímu úhlu, pak se menší z těchto úhlů nazývá zlatý úhel. Pro velikost $\alpha$ zlatého úhlu (měřeno ve stupních) tedy platí 
+
+$$ 
+ \frac{360-\alpha}{\alpha}=\frac{360}{360-\alpha}, 
+$$
+
+což dává $\alpha \doteq 137{,}5^{\circ}$. Srovnejte vztah pro velikost zlatého úhlu s definicí zlatého řezu. 
+
 
 ## Řetězový zlomek
 
@@ -167,7 +178,7 @@ $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 Všimněme si, že výraz na pravé straně rovnice $(3)$ i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením rovnice $(3)$. 
 Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 
-**Poznámka.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
+**Poznámka k řešení úlohy 3.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
 
 $$
  1+\cfrac{1}{1+\cfrac{1}{\varphi}}=1+\frac{1}{\varphi}=\varphi, 
@@ -283,31 +294,29 @@ získáme součtem předchozích dvou členů.
 Jednotlivé členy této posloupnosti označujeme také jako 
 Fibonacciho čísla. 
 
-A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Uvažujme posloupnost podílů dvou po sobě jdoucích členů Fibonacciho posloupnosti a vypišme si několik prvních členů této nové posloupnosti: 
+A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Pro lepší pochopení uvažujme posloupnost podílů dvou po sobě jdoucích členů Fibonacciho posloupnosti a vypišme si několik prvních členů této nové posloupnosti: 
 
 $$
 \begin{gathered}
 \frac{1}{1}=1, \quad \frac{2}{1}=2, \quad \frac{3}{2}=1{,}5, \quad \frac{5}{3} \doteq 1{,}6667, \quad \frac{8}{5} = 1{,}6, \quad \frac{13}{8} = 1{,}625, \\[3mm] 
-\frac{21}{13} \doteq 1{,}6154, \quad \frac{34}{21} \doteq 1{,}6190, \quad \frac{55}{34} \doteq 1{,}6176, \quad\text{atd.}
+\frac{21}{13} \doteq 1{,}6154, \quad \frac{34}{21} \doteq 1{,}6190, \quad \frac{55}{34} \doteq 1{,}6176, \; \dots
 \end{gathered}
 $$ 
 
 Lze ukázat, že limita této posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
 
+V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností (poměry dvou po sobě jdoucích členů této posloupnosti se blíží hodnotě zlatého řezu).
+Jako příklad uveďme uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34{:}55$ nebo $55{:}89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
 
-
-V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností (poměry dvou po sobě jdoucích členů této posloupnosti se blíží hodnotě zlatého řezu).  Například listy na stoncích rostlin vyrůstají tak, aby si navzájem nestínily a aby měly co nejvíce světla. Vyrůstají ve spirálách kolem stonku, přičemž úhel mezi dvěma sousedními listy bývá kolem $137{,}5^{\circ}$, což odpovídá tzv. zlatému úhlu, přímo souvisejícímu se zlatým řezem.[^1] 
-
-Stejný princip platí u uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34{:}55$ nebo $55{:}89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
-
-Nyní popišme konstrukci tzv. Fibonacciho spirály, která se (jak uvidíme později) objevuje v přírodě. Sestrojíme-li čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Nyní do každého 
-čtverce vepišme čtvrtkružnici (viz obrázek 5). Tím dostaneme výše zmiňovanou Fibonacciho spirálu. 
+Na závěr popišme konstrukci tzv. Fibonacciho spirály, která se také často objevuje v přírodě. Sestrojíme-li čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Nyní do každého 
+čtverce vepišme čtvrtkružnici (viz obrázek 5). Tím dostaneme Fibonacciho spirálu. 
 
 ![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
 
-Fibonacciho spirálu najdeme i u některých ulit měkkýšů nebo ve svinutých lístcích kapradin. Všechny tyto spirály představují efektivní a harmonické způsoby růstu, které si zachovávají proporce i tvar. Dokonce i velké přírodní jevy, jako jsou tornáda, cyklóny nebo spirální galaxie, vykazují podobný tvar.
+Fibonacciho spirálu najdeme u některých ulit měkkýšů nebo ve svinutých lístcích kapradin. Všechny tyto spirály představují efektivní a harmonické způsoby růstu, které si zachovávají proporce i tvar. Dokonce i velké přírodní jevy, jako jsou tornáda, cyklóny nebo spirální galaxie, vykazují podobný tvar.
 
-Celkově tedy zlatý řez a Fibonacciho posloupnost vyjadřují hlubší zákonitosti přírodního růstu a uspořádání, kde matematika a harmonie spolu úzce souznívají.
+<!--Celkově tedy zlatý řez a Fibonacciho posloupnost vyjadřují hlubší zákonitosti přírodního růstu a uspořádání, kde matematika a harmonie spolu úzce souznívají.
+-->
 
 ## Literatura
 
@@ -315,4 +324,3 @@ Celkově tedy zlatý řez a Fibonacciho posloupnost vyjadřují hlubší zákoni
 * Wikipedia. *Řetězový zlomek* [online]. Dostupné z https://cs.wikipedia.org/wiki/Řetězový_zlomek [cit. 10.\,11.\,2023].
 * Czech Digital Mathematics Library. *Řetězové zlomky* [online]. Dostupné z  https://www.dml.cz/handle/10338.dmlcz/404015
 
-[^1]: Rozdělíme-li kruh (úhel $360^{\circ}$) na dva úhly tak, aby poměr většího úhlu k menšímu byl stejný jako poměr celého kruhu ($360^{\circ}$) k většímu úhlu, pak se menší z těchto úhlů nazývá zlatý úhel. Pro velikost $\alpha$ zlatého úhlu (měřeno ve stupních) tedy platí $\frac{360-\alpha}{\alpha}=\frac{360}{360-\alpha}$, což dává $\alpha \doteq 137{,}5^{\circ}$. 
