@@ -178,7 +178,11 @@ $$x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.$$
 Všimněme si, že výraz na pravé straně rovnice $(3)$ i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením rovnice $(3)$. 
 Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 
-**Poznámka k řešení úlohy 3.** Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
+**Poznámka k řešení úlohy 3.** Další možností, jak dokázat uvedenou rovnost, je využít vztahu $(2)$, tj. $1+\frac{1}{\varphi}=\varphi$. Díky této rovnosti ihned dostaneme 
+
+<!-- ZAPOZNÁMKOVÁNO 
+Ve skutečnosti bychom vůbec nemuseli rovnici $(3)$ řešit. Stačí pouze provést zkoušku pro konkrétní hodnotu $x=\varphi=\frac{1+\sqrt{5}}{2}$. Abychom se vyhnuli práci s odmocninami při dosazování, můžeme postupovat ještě šikovněji. Z $(2)$ víme, že $1+\frac{1}{\varphi}=\varphi$. Odtud 
+-->
 
 $$
  1+\cfrac{1}{1+\cfrac{1}{\varphi}}=1+\frac{1}{\varphi}=\varphi, 
