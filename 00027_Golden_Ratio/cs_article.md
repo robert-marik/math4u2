@@ -13,9 +13,9 @@ time: 40
 
 # Zlatý řez, řetězový zlomek a Fibonacciho posloupnost 
 
-## Zlatý řez 
-
 Dříve než se pustíme do vysvětlení, co přesně znamená zlatý řez, podívejme se, kde se s ním můžeme setkat. Krásným příkladem jeho využití je oblast umění. Zlatý řez pomáhá vytvářet esteticky působivé a harmonické kompozice, které jsou pro lidské oko přirozeně přitažlivé. Umělci i fotografové jej často využívají při rozvržení obrazu či fotografie, aby klíčové prvky umístili do míst, která působí vyváženě a dynamicky. Malíři, jako Leonardo da Vinci nebo Sandro Botticelli, tento princip vědomě uplatňovali ve svých dílech – například v Moně Lise nebo Zrození Venuše. Také architekti zapojují poměr zlatého řezu do návrhů budov a konstrukcí, aby dosáhli harmonických proporcí. Příkladem může být Parthenón v Athénách nebo moderní stavby, které tento princip využívají k dosažení vizuální rovnováhy a elegance. Tento poměr však nacházíme nejen v lidské tvorbě, ale i v přírodě – třeba ve tvarech lastur, květů nebo ve spirálním uspořádání listů na stonku.
+
+## Zlatý řez
 
 **Definice zlatého řezu.** Mějme úsečku $AB$ a na ní bod $C$. Řekneme, že bod $C$ dělí úsečku $AB$ v poměru zlatého řezu (viz obrázek 1), 
 jestliže pro délky uvažovaných úseček platí vztah
