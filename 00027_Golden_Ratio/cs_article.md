@@ -245,7 +245,7 @@ $$
 \fi
 
 >**Úloha 6.** Zkuste podobným způsobem (pomocí čtverců) vyplnit list papíru formátu A. 
-Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr stran papíru formátu A je $\sqrt{2}$. Dále uveďme, že číslo $\sqrt{2}$ se dá řetězovým zlomkem vyjádřit takto:  
+Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr stran papíru formátu A je $\sqrt{2}$. Dále uveďme, že číslo $\sqrt{2}$ se dá vyjádřit nekonečným řetězovým zlomkem takto:  
 >
 >$$
  \sqrt{2}=1 + \cfrac{1}{2 + \cfrac{1}{2 + \cfrac{1}{2 + \ddots}}}
@@ -254,11 +254,11 @@ Pokud jste předchozí úlohu (úloha 5) nevyřešili, prozradíme, že poměr s
 \iffalse
 
 *Řešení.* 
-Není těžké si promyslet, že při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku 4 je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek 4 níže. 
+Řetězový zlomek obsahuje jednu jedničku a poté samé dvojky. Proto při postupném pokrývání obdélníku s poměrem stran $\sqrt{2}$ nejprve umístíme jeden velký čtverec (v obrázku 4 je znázorněn žlutě) a poté použijeme vždy dva stejně velké čtverce (šedé, červené, modré, zelené, atd.) - viz obrázek 4 níže. 
 
-![Obdélník formátu A](format_A4.svg)
+![Papír formátu A](format_A4.svg)
 
-Ve skutečnosti vše souvisí s tím, že vyjádření čísla $\sqrt{2}$ řetězovým zlomkem obsahuje jednu jedničku a poté samé dvojky. 
+Vzhledem k tomu, že je řetězový zlomek nekonečný, nelze papír pokrýt konečným počtem takovýchto čtverců.  
  
 \fi
 
@@ -273,10 +273,17 @@ KONEC ZAPOZNÁMKOVÁNÍ -->
 ## Fibonacciho posloupnost 
 
 Zlatý řez úzce souvisí s Fibonacciho posloupností. Členy Fibonacciho posloupnosti jsou čísla 
-$1$, $1$, $2$, $3$, $5$, $8$, $13$, $21$, $34$, $55$, $\dots$, kde každý další člen posloupnosti 
-získáme součtem předchozích dvou členů. Jednotlivé členy této posloupnosti označujeme také jako 
-Fibonacciho čísla. A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Platí, že limita posloupnosti podílů dvou po sobě jdoucích členů Fibonacciho posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
-Pro zajímavost vypišme několik prvních podílů sousedních členů Fibonacciho posloupnosti: 
+
+$$
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \dots, 
+$$
+
+kde každý další člen posloupnosti 
+získáme součtem předchozích dvou členů. 
+Jednotlivé členy této posloupnosti označujeme také jako 
+Fibonacciho čísla. 
+
+A jaká je souvislost mezi Fibonacciho posloupností a zlatým řezem? Uvažujme posloupnost podílů dvou po sobě jdoucích členů Fibonacciho posloupnosti a vypišme si několik prvních členů této nové posloupnosti: 
 
 $$
 \begin{gathered}
@@ -285,16 +292,18 @@ $$
 \end{gathered}
 $$ 
 
+Lze ukázat, že limita této posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
+
+
+
+V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností (poměry dvou po sobě jdoucích členů této posloupnosti se blíží hodnotě zlatého řezu).  Například listy na stoncích rostlin vyrůstají tak, aby si navzájem nestínily a aby měly co nejvíce světla. Vyrůstají ve spirálách kolem stonku, přičemž úhel mezi dvěma sousedními listy bývá kolem $137{,}5^{\circ}$, což odpovídá tzv. zlatému úhlu, přímo souvisejícímu se zlatým řezem.[^1] 
+
+Stejný princip platí u uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34{:}55$ nebo $55{:}89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
+
 Nyní popišme konstrukci tzv. Fibonacciho spirály, která se (jak uvidíme později) objevuje v přírodě. Sestrojíme-li čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Nyní do každého 
 čtverce vepišme čtvrtkružnici (viz obrázek 5). Tím dostaneme výše zmiňovanou Fibonacciho spirálu. 
 
 ![Fibonacciho čísla a Fibonacciho spirála](00027_2.jpg)
-
- V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností, protože poměry dvou po sobě jdoucích členů této posloupnosti se blíží hodnotě zlatého řezu $\varphi$ (přibližně $1{,}618$). Čím dále v posloupnosti postupujeme, tím více se tento poměr přibližuje právě k hodnotě $\varphi$. Tento vztah najdeme v mnoha přírodních strukturách.
-
-Například listy na stoncích rostlin vyrůstají tak, aby si navzájem nestínily a aby měly co nejvíce světla. Vyrůstají ve spirálách kolem stonku, přičemž úhel mezi dvěma sousedními listy bývá kolem $137{,}5^{\circ}$, což odpovídá tzv. zlatému úhlu, přímo souvisejícímu se zlatým řezem.[^1] 
-
-Stejný princip platí u uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34{:}55$ nebo $55{:}89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
 
 Fibonacciho spirálu najdeme i u některých ulit měkkýšů nebo ve svinutých lístcích kapradin. Všechny tyto spirály představují efektivní a harmonické způsoby růstu, které si zachovávají proporce i tvar. Dokonce i velké přírodní jevy, jako jsou tornáda, cyklóny nebo spirální galaxie, vykazují podobný tvar.
 
