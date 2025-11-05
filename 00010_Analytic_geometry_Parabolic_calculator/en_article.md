@@ -1,6 +1,6 @@
 ---
 # workflow: in progress
- workflow: translating
+workflow: translating
 # workflow: finished
 keywords:
 - analytic geometry
@@ -10,80 +10,130 @@ is_finished: true
 
 # Parabolic calculator
 
-While surfing the Internet, Eva found an interesting fact about the graph of a function
-$f\colon y = x^2$ which is that the graph can be used as a calculator to multiply two numbers
+While surfing the web, Eva found an interesting geometric trick connected with the graph of the function
+$f\colon y = x^2$ that  can be used as a calculator for multiplying two numbers
 $a$ and $b$.[^1] The procedure is as follows:
 
- 1. On the $x$-axis mark the points corresponding to the numbers $-a$ and $b$.
- 2. At these points, draw lines perpendicular to the $x$-axis and
-    construct their intersections with the graph of the function $f$.
- 3. The line passing through the newly constructed intersections
-    intersects the $y$-axis at a point whose distance from the
-    origin is $ab$.
-    
-You can try the procedure in the attached worksheet, its illustrations
-is also available in GeoGebra. The interactive applet can be found on the website
-<https://www.geogebra.org/m/sj5cjbaf>. 
+ 1.In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
+
+ 2. On the $x$-axis mark the points corresponding to the numbers $-a$ and $b$, i.e. the points $[-a;0]$ and $[b;0]$.
+
+ 3. At these points, draw lines perpendicular to the $x$-axis and
+    construct their intersections with the parabola $f$.
+ 4. The line passing through the two intersection points 
+    intersects the $y$-axis at a point whose $y$-coordinate equals the product $ab$.    
+You can try the procedure in the attached worksheet; an illustration is also possible in GeoGebra. An interactive applet is available at <https://www.geogebra.org/m/sj5cjbaf>
 
 
-> **Exercise.** Does the above procedure apply to all pairs of
-> numbers, or only to some? Can this procedure be proved?
+> **Exercise.** Does the procedure described above work for all pairs of real
+> numbers $a$ and $b$, or only for some? Prove your answer.
 
 \iffalse
 
-*Solution.* It is evident from the procedure that if the images of the numbers $-a$ and $b$
-merge, the line described in the third step cannot be uniquely constructed.
-Therefore, the given procedure will not work if $-a=b$ holds. We
-will show that, besides this case, the procedure holds for all other
-pairs of numbers $a$ and $b$.
+*Solution.* From the procedure it is clear that if the two points $-a$ and $b$ marked on the $x$-axis coincide, the line in the fourth step cannot be constructed uniquely. Therefore, the procedure will not work when $-a=b$. We will show that apart from this exceptional case the procedure works for all other pairs of numbers $a$ and $b$. 
 
-Let's construct, according to the given procedure, on the $x$-axis the points corresponding to the numbers $-a$ and $b$, and then construct perpendiculars at these points
-to the $x$-axis. Let's denote the intersections of
-these perpendiculars with the parabola by $A$ and $B$, and let the
-line $AB$ be denoted by $p$. The line $p$ intersects the $y$ axis at the point $C$, which determines the unknown number $m$.
+Mark the points $-a$ and $b$ on the $x$-axis and construct perpendiculars at these points. Let the intersections of these perpendiculars with the parabola $y=x^2$ be $A$ and $B$, and denote the line through $A$ and $B$ by $p$. We will show that the intersection $C$ of line $p$ with the $y$-axis has $y$-coordinate equal to the product $ab$ (see figure 1). 
 
-![Illustrative image](math4you_00010.jpg)
 
-The line $p$ is defined by the points $A(-a;a^2)$ and $B(b;b^2)$, so the
-direction vector is
+
+![Parabolic calculator](math4you_00010.jpg)
+
+
+The line $p$ is determined by the two points $A=(-a;a^2)$ and $B=(b;b^2)$, so its direction vector is
+
+
 $$
 \overrightarrow{v}=\overrightarrow{AB}= [b+a; b^2-a^2].
-$$ 
-By multiplying the vector $\overrightarrow{v}$ with the number
-$\frac{1}{a+b}$ we get
+$$
+
+Multiplying the vector $\overrightarrow{v}$ by the scalar $\frac{1}{b+a}$ we obtain:
+
 $$
 \overrightarrow{u}=[1; b-a].
 $$ 
-This adjustment can be made since in our case is $b\neq -a$, and so
-$b+a\neq0$. Thus, we get the parametric equations
+
+which is also a direction vector of the line $p$. This operation is possible because in our case $-a\neq b$, hence $b+a\neq0$. Thus, the line $p$ has the parametric representation
+
+$$
+p\colon \; X = A + t\cdot\overrightarrow{u}, \quad t\in\mathbb{R}. 
+$$
+
+Expanding this gives  
+
 $$
 \begin{aligned}
-p\colon X &= B + t\cdot\overrightarrow{u}, t\in\mathbb{R}\\[2mm]
-p\colon x &= b + t \\
-y &= b^2 + t\cdot (b-a), t\in\mathbb{R}\,.
+p\colon \; x &= -a + t, \\
+y &= a^2 + t\cdot (b-a), \quad t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
-By substituting the coordinates of point $C$ into the left sides
-of the equations (i.e. $x=0$, $y=m$) we get the system
+The point $C$ on line $p$ that lies on the $y$-axis has $x$-coordinate $0$ (intersection with the $y$-axis), so substituting $x=0$ into the first equation yields $t=a$. Substituting this value into the second equation gives
+
+$$
+ y=a^2 + t\cdot (b-a)=a^2 + a\cdot (b-a)=ab,  
+$$
+
+which is what we wanted to prove.
+
+
+>**Follow-up question to consider.**
+What would happen if, on the $x$-axis, we marked images of the numbers $a$ and $b$ (instead of $-a$ and $b$)? Would the parabolic calculator still work in that case? 
+
+\iffalse
+
+*Answer to the question.* 
+It is clear that a problem occurs when $a=b$. Therefore assume $a\neq b$. We need to write the equation of the line $q$ passing through the points $A=(a;a^2)$ and $B=(b;b^2)$. Its direction vector is
+
+$$
+\overrightarrow{v}=\overrightarrow{AB}= [b-a; b^2-a^2].
+$$
+
+Multiplying the vector $\overrightarrow{v}$ by the number $\frac{1}{b-a}$ we obtain:
+
+$$
+\overrightarrow{u}=[1; b+a], 
+$$ 
+
+which is also a direction vector of our line. This operation is valid since we assumed that $a \neq b$, and so $b-a\neq0$. The parametric equation of $q$ is:
+
+$$
+q\colon \; X = A + t\cdot\overrightarrow{u}, \quad t\in\mathbb{R}. 
+$$
+
+
+Expanding gives
+
 $$
 \begin{aligned}
-0 &= b+t\\
-m &= b^2+t(b-a)\,.
+q\colon \, x &= a + t, \\
+y &= a^2 + t\cdot (b+a), \; t\in\mathbb{R}.
 \end{aligned}
 $$ 
-From the first equation, we express $t=-b$ and substitute it into the
-second equation. From here
+
+The intersection of this line with the $y$-axis has $x$-coordinate zero. Substituting $x=0$ into the first equation gives $t=-a$. Substituting this $t$ into the second equation yields:
+
 $$
-\begin{aligned}
-m &=b^2+(-b)\cdot(b-a) \\
-m &=ab.
-\end{aligned}
+ y=a^2 + t\cdot (b+a)=a^2 + (-a)\cdot (b+a)=-ab.  
 $$
-This is the result we needed to prove.
+
+
+Thus in this case the construction produces a point whose $y$-coordinate is $-ab$, not $ab$. In other words, the parabolic calculator still works, but returns the product with the opposite sign.
 
 \fi
 
-[^1]: In general, graphs that allow us to perform arithmetic operations
-    by geometric constructions are called *nomograms*.
+>**One interesting remark to finish.**
+The idea behind the parabolic calculator is the basis of a geometric version of the Sieve of Eratosthenes used to find prime numbers. The construction is: for every point $(-a;a^2)$ with $a\in\mathbb{N}\setminus\{1\}$ connect it with every point $(b;b^2)$ with $b\in\mathbb{N}\setminus\{1\}$. These connecting lines hit all composite numbers on the $y$-axis. The remaining natural numbers on the $y$-axis are precisely the primes and the number 1 (see figure 2). Think through the details to understand why this works. 
+
+![Parabolic prime sieve](parabolicke_sito.svg)
+
+## References 
+* A Parabola Sieve for Prime Numbers — https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
+* A Geometric Sieve for the Prime Numbers — 
+https://thatsmaths.com/2017/04/27/a-geometric-sieve-for-the-prime-numbers/
+
+
+
+
+
+
 
