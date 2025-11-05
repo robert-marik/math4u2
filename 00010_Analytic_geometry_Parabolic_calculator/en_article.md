@@ -14,19 +14,18 @@ While surfing the web, Eva found an interesting geometric trick connected with t
 $f\colon y = x^2$ that  can be used as a calculator for multiplying two numbers
 $a$ and $b$.[^1] The procedure is as follows:
 
- 1.In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
+ 1. In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
 
  2. On the $x$-axis mark the points corresponding to the numbers $-a$ and $b$, i.e. the points $[-a;0]$ and $[b;0]$.
 
- 3. At these points, draw lines perpendicular to the $x$-axis and
-    construct their intersections with the parabola $f$.
- 4. The line passing through the two intersection points 
-    intersects the $y$-axis at a point whose $y$-coordinate equals the product $ab$.    
+ 3. At these points, draw lines perpendicular to the $x$-axis and construct their intersections with the parabola $f$.
+
+ 4. The line passing through the two intersection points intersects the $y$-axis at a point whose $y$-coordinate equals the product $ab$.    
+
 You can try the procedure in the attached worksheet; an illustration is also possible in GeoGebra. An interactive applet is available at <https://www.geogebra.org/m/sj5cjbaf>
 
 
-> **Exercise.** Does the procedure described above work for all pairs of real
-> numbers $a$ and $b$, or only for some? Prove your answer.
+> **Exercise.** Does the procedure described above work for all pairs of real numbers $a$ and $b$, or only for some? Prove your answer.
 
 \iffalse
 
@@ -49,7 +48,7 @@ $$
 Multiplying the vector $\overrightarrow{v}$ by the scalar $\frac{1}{b+a}$ we obtain:
 
 $$
-\overrightarrow{u}=[1; b-a].
+\overrightarrow{u}=[1; b-a],
 $$ 
 
 which is also a direction vector of the line $p$. This operation is possible because in our case $-a\neq b$, hence $b+a\neq0$. Thus, the line $p$ has the parametric representation
@@ -117,7 +116,7 @@ $$
 $$
 
 
-Thus in this case the construction produces a point whose $y$-coordinate is $-ab$, not $ab$. In other words, the parabolic calculator still works, but returns the product with the opposite sign.
+Thus, in this case, the construction produces a point whose $y$-coordinate is $-ab$, not $ab$. In other words, the parabolic calculator still works, but returns the product with the opposite sign.
 
 \fi
 
