@@ -143,6 +143,7 @@ Dostali jsme relativně dobré racionální aproximace zlatého řezu $\varphi$.
  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}
 >$$
 >
+
 \iffalse
 
 *Řešení.* Jednou z možností, jak ukázat, že $\varphi$ splňuje zadanou rovnost, je vyřešit rovnici 
