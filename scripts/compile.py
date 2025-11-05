@@ -49,6 +49,7 @@ df = pd.DataFrame(
 df.to_csv("math4u_file_workflows.csv")
 df['html'] = df['directory'] + "/" + df['name'] + ".html"
 df['pdf'] = df['directory'] + "/" + df['name'] + ".pdf"
+df['pdf_reduced'] = df['directory'] + "/" + df['name'] + "_reduced.pdf"
 df['diff2old'] = df['directory'] + "/" + df['name'] + "_diff.pdf"
 df.to_csv("math4u_file_workflow.csv")
 shutil.copy("math4u_file_workflow.csv", "_site/rwp_data.csv")

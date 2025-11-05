@@ -206,7 +206,7 @@ LATEXFILE_HEADER = r"""
 \usepackage{tikz}
 \usepackage{fontspec}
 \usepackage{xcolor}
-\usepackage[left=4cm,right=2.5cm,top=3cm,bottom=3cm, footskip=2cm]{geometry}
+\usepackage[left=3cm,right=2cm,top=3cm,bottom=3cm, footskip=2cm]{geometry}
 \usepackage{fancyhdr}
 
 %------------------Main Font-------------------------

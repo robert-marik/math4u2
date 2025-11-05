@@ -210,7 +210,7 @@ class File:
             text = text.replace(r'\textbackslash iffalse',r'\iffalse')
             text = text.replace(r'\textbackslash fi',r'\fi')
 
-            return {'reduced':text, 'full':text.replace(r"\iffalse","").replace(r"\fi","")}
+            return {'reduced':text, 'full':text.replace(r"\iffalse","").replace(r"\fi",r"$\blacktriangle$")}
 
         def osetri_soubor(text):
             """Fix LaTeX source before compilation. Set language-specific options. Set metadata."""
@@ -225,25 +225,29 @@ class File:
                 babel = r"\usepackage[spanish]{babel}"
             text = text.replace("%%%BABEL",babel)
  
-            keywords = self.yaml_header.get("keywords", [])
-            kwds = ', '.join(keywords)
-            metadata = f"""
-                \\def\\meta{{
-                Keywords:  {kwds} 
+            ### No keywords in metadata for now
+            # keywords = self.yaml_header.get("keywords", [])
+            # kwds = ', '.join(keywords)
+            # metadata = f"""
+            #     \\def\\meta{{
+            #     Keywords:  {kwds} 
 
-                }}
-                """
-            text = text.replace("%%%METADATA",metadata)
+            #     }}
+            #     """
+            # text = text.replace("%%%METADATA",metadata)
             for n,i,s in df_image_settings[df_image_settings['number']==self.parent.directory[:5]].values:
                 text = text.replace(r"\includegraphics{"+i+"}",r"\oldincludegraphics["+s+"]{"+i+"}")
 
             return text
         
-        content = osetri_text(content)['full']
+        _ = osetri_text(content)
+        content = _['full']
+        reduced_content = _['reduced']
         old_content = osetri_text(old_content)['full']
         LATEXFILE_HEADER_ = LATEXFILE_HEADER.replace("%%%GRAPHICSPATH", r"\graphicspath{{../../}{../}{}{../../../"+self.parent.directory+"/}}")
 
         temp_tex = Path("_temp") / self.parent.directory / f"{self.language}_article.tex"
+        temp_tex_reduced = Path("_temp") / self.parent.directory / f"{self.language}_article_reduced.tex"
         temp_tex_old = Path("_temp") / self.parent.directory / f"{self.language}_article_old.tex"
         tex_dir = temp_tex.parent  # adresář, kde bude probíhat kompilace
 
@@ -256,6 +260,8 @@ class File:
         # zapsání latexového souboru
         temp_tex.write_text(osetri_soubor(LATEXFILE_HEADER_ + content + LATEXFILE_FOOT), 
                             encoding="utf-8")
+        temp_tex_reduced.write_text(osetri_soubor(LATEXFILE_HEADER_ + reduced_content + LATEXFILE_FOOT), 
+                            encoding="utf-8")
         temp_tex_old.write_text(osetri_soubor(LATEXFILE_HEADER_ + old_content + LATEXFILE_FOOT), 
                                 encoding="utf-8")
 
@@ -266,6 +272,13 @@ class File:
             print(f"xelatex failed: {proc.stderr}")
         else:
             print("PDF compilation succeeded.")
+
+        cmd = ["xelatex", temp_tex_reduced.name]
+        proc = subprocess.run(cmd, capture_output=True, text=True, cwd=tex_dir)
+        if proc.returncode != 0:
+            print(f"xelatex failed: {proc.stderr}")
+        else:
+            print("PDF compilation succeeded for reduced file.")
 
         # latexdiff
         diff_tex = Path("_temp") / self.parent.directory / f"{self.language}_article_diff.tex"
@@ -289,6 +302,11 @@ class File:
             output_pdf = tex_dir / f"{self.language}_article.pdf"
             output_path = Path(output_path)
             output_path.parent.mkdir(parents=True, exist_ok=True)
+            if output_pdf.exists():
+                output_pdf.replace(output_path)
+
+            output_pdf = tex_dir / f"{self.language}_article_reduced.pdf"
+            output_path = Path(output_path.parent) / f"{self.language}_article_reduced.pdf"
             if output_pdf.exists():
                 output_pdf.replace(output_path)
 

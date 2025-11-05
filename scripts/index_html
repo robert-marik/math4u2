@@ -21,6 +21,7 @@
           <th class="py-2 px-4">Keywords</th>
           <th class="py-2 px-4">HTML</th>
           <th class="py-2 px-4">PDF</th>
+          <th class="py-2 px-4">RPDF</th>
           <th class="py-2 px-4">Diff2Old</th>
           <th class="py-2 px-4">Date&Time</th>
         </tr>
@@ -51,6 +52,7 @@
             <td class="py-2 px-4">${row.keywords}</td>
             <td class="py-2 px-4"><a href="${row.html}" class="text-blue-600 hover:underline" >HTML</a></td>
             <td class="py-2 px-4"><a href="${row.pdf}" class="text-blue-600 hover:underline" >PDF</a></td>
+            <td class="py-2 px-4"><a href="${row.pdf_reduced}" class="text-blue-600 hover:underline" >PDF</a></td>
             <td class="py-2 px-4"><a href="${row.diff2old}" class="text-blue-600 hover:underline" >Diff</a></td>
             <td class="py-2 px-4">${row.date_time}</td>
           `;
