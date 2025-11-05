@@ -41,8 +41,7 @@ $$
 \frac{1}{x} = \frac{x}{1-x},\tag{1}
 $$
 
-který má smysl pro $x\neq0 \text{ a } x\neq1$. 
-Úpravou $(1)$ dostaneme kvadratickou rovnici
+který má smysl pro $x$ splňující podmínky $x \neq 0$ a $x \neq 1$. Úpravou $(1)$ dostaneme kvadratickou rovnici
 
 $$
 x^2 + x - 1 = 0,
@@ -311,7 +310,7 @@ $$
 Lze ukázat, že limita této posloupnosti je rovna právě zlatému řezu $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{,}6180$. 
 
 V přírodě se zlatý řez často objevuje ve spojení s Fibonacciho posloupností (poměry dvou po sobě jdoucích členů této posloupnosti se blíží hodnotě zlatého řezu).
-Jako příklad uveďme uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34{:}55$ nebo $55{:}89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
+Jako příklad uveďme uspořádání semen ve slunečnicích nebo šupin borových šišek. Počet spirál, které jdou jedním směrem, a počet spirál jdoucích opačným směrem jsou vždy dvě sousední Fibonacciho čísla. Tak například můžeme na šišce napočítat $8$ spirál po směru hodinových ručiček a $13$ spirál proti směru (čísla $8$ a $13$ jsou po sobě jdoucí členy Fibonacciho posloupnosti). U slunečnic mohou být spirály například v poměru $34\!:\!55$ nebo $55\!:\!89$. Tento typ uspořádání umožňuje optimální využití prostoru, kdy každé semeno nebo šupina má dostatek místa a maximální přístup ke světlu.
 
 Na závěr popišme konstrukci tzv. Fibonacciho spirály, která se také často objevuje v přírodě. Sestrojíme-li čtverce, jejichž délky stran odpovídají právě Fibonacciho číslům, je možné je pěkně uspořádat vedle sebe do tvaru obdélníku tak, jak je vidět na obrázku 5. Tento obdélník je blízký zlatému obdélníku, protože délky jeho stran jsou rovny dvěma po sobě jdoucím členům Fibonacciho posloupnosti. Nyní do každého 
 čtverce vepišme čtvrtkružnici (viz obrázek 5). Tím dostaneme Fibonacciho spirálu. 
