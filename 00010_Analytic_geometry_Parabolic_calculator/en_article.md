@@ -130,7 +130,8 @@ The idea behind the parabolic calculator is the basis of a geometric version of 
 * A Geometric Sieve for the Prime Numbers — 
 https://thatsmaths.com/2017/04/27/a-geometric-sieve-for-the-prime-numbers/
 
-
+[^1]: In general, graphs that allow us to perform arithmetic operations
+    by geometric constructions are called *nomograms*.
 
 
 
