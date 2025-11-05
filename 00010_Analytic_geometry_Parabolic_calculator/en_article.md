@@ -66,13 +66,8 @@ y &= a^2 + t\cdot (b-a), \quad t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
-<<<<<<< HEAD
-By substituting the coordinates of point $C$ into the left sides
-of the equations (i.e., $x=0$, $y=m$) we get the system
-=======
 The point $C$ on line $p$ that lies on the $y$-axis has $x$-coordinate $0$ (intersection with the $y$-axis), so substituting $x=0$ into the first equation yields $t=a$. Substituting this value into the second equation gives
 
->>>>>>> fd89df6e497ed2af2edf70ad7d8967d2fb2b3e6a
 $$
  y=a^2 + t\cdot (b-a)=a^2 + a\cdot (b-a)=ab,  
 $$
@@ -92,13 +87,13 @@ $$
 \overrightarrow{v}=\overrightarrow{AB}= [b-a, b^2-a^2].
 $$
 
-Multiplying the vector $\overrightarrow{v}$ by the number $\frac{1}{b-a}$ we obtain:
+Multiplying the vector $\overrightarrow{v}$ by the number $\frac{1}{b-a}$ we obtain
 
 $$
 \overrightarrow{u}=[1, b+a], 
 $$ 
 
-which is also a direction vector of our line. This operation is valid since we assumed that $a \neq b$, and so $b-a\neq0$. The parametric equation of $q$ is:
+which is also a direction vector of our line. This operation is valid since we assumed that $a \neq b$, and so $b-a\neq0$. The parametric equation of $q$ is
 
 $$
 q\colon \; X = A + t\cdot\overrightarrow{u}, \quad t\in\mathbb{R}. 
@@ -114,7 +109,7 @@ y &= a^2 + t\cdot (b+a), \; t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
-The intersection of this line with the $y$-axis has $x$-coordinate zero. Substituting $x=0$ into the first equation gives $t=-a$. Substituting this $t$ into the second equation yields:
+The intersection of this line with the $y$-axis has $x$-coordinate zero. Substituting $x=0$ into the first equation gives $t=-a$. Substituting this $t$ into the second equation yields
 
 $$
  y=a^2 + t\cdot (b+a)=a^2 + (-a)\cdot (b+a)=-ab.  
