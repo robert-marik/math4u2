@@ -326,5 +326,6 @@ Fibonacciho spirálu najdeme u některých ulit měkkýšů nebo ve svinutých l
 
 * Wikipedia. *Golden ratio* [online]. Dostupné z https://en.wikipedia.org/wiki/Golden_ratio [cit. 10.\,11.\,2023].
 * Wikipedia. *Řetězový zlomek* [online]. Dostupné z https://cs.wikipedia.org/wiki/Řetězový_zlomek [cit. 10.\,11.\,2023].
-* Czech Digital Mathematics Library. *Řetězové zlomky* [online]. Dostupné z  https://www.dml.cz/handle/10338.dmlcz/404015
+* Czech Digital Mathematics Library. *Řetězové zlomky* [online].  
+Dostupné z  https://www.dml.cz/handle/10338.dmlcz/404015
 
