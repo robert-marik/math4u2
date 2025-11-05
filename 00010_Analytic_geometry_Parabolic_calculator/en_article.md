@@ -16,7 +16,7 @@ $a$ and $b$.[^1] The procedure is as follows:
 
  1. In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
 
- 2. On the $x$-axis mark the images of the numbers $-a$ and $b$, i.e. the points $(-a,0)$ and $(b,0)$.
+ 2. On the $x$-axis mark the images of the numbers $-a$ and $b$, i.e., the points $(-a,0)$ and $(b,0)$.
 
  3. At these points, draw lines perpendicular to the $x$-axis and construct their intersections with the parabola $f$.
 
@@ -66,8 +66,13 @@ y &= a^2 + t\cdot (b-a), \quad t\in\mathbb{R}.
 \end{aligned}
 $$ 
 
+<<<<<<< HEAD
+By substituting the coordinates of point $C$ into the left sides
+of the equations (i.e., $x=0$, $y=m$) we get the system
+=======
 The point $C$ on line $p$ that lies on the $y$-axis has $x$-coordinate $0$ (intersection with the $y$-axis), so substituting $x=0$ into the first equation yields $t=a$. Substituting this value into the second equation gives
 
+>>>>>>> fd89df6e497ed2af2edf70ad7d8967d2fb2b3e6a
 $$
  y=a^2 + t\cdot (b-a)=a^2 + a\cdot (b-a)=ab,  
 $$
