@@ -1,6 +1,6 @@
 ---
 # workflow: in progress
- workflow: translating
+workflow: translating
 # workflow: finished
 keywords:
 - analytic geometry
