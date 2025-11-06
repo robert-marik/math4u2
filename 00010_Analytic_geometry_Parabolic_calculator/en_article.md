@@ -27,7 +27,7 @@ You can try the procedure in the attached worksheet; an illustration is also pos
 \iffalse
 
 *Solution.* 
-From the procedure it is clear that if the two marks $-a$ and $b$ on the $x$-axis coincide, the line in the fourth step cannot be constructed uniquely. Therefore, the procedure will not work when $-a=b$. We will show that, apart from this exceptional case, the procedure works for all other pairs of numbers $a$ and $b$. 
+From the procedure, it is clear that if the two marks $-a$ and $b$ on the $x$-axis coincide, the line in the fourth step cannot be constructed uniquely. Therefore, the procedure will not work when $-a=b$. We will show that, apart from this exceptional case, the procedure works for all other pairs of numbers $a$ and $b$. 
 
 Mark the images of the numbers $-a$ and $b$ on the $x$-axis and construct perpendiculars at these points. Let the intersections of these perpendiculars with the parabola $f(x)=x^2$ be $A$ and $B$, and denote the line through $A$ and $B$ by $p$. We will show that the intersection $C$ of line $p$ with the $y$-axis has $y$-coordinate equal to the product $ab$ (see figure 1). 
 
