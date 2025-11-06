@@ -16,7 +16,7 @@ $a$ and $b$.[^1] The procedure is as follows:
 
  1. In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
  2. On the $x$-axis mark the images of the numbers $-a$ and $b$, i.e., the points $(-a,0)$ and $(b,0)$.
- 3. At these points, draw lines perpendicular to the $x$-axis and construct their intersections with the parabola~$f$.
+ 3. At these points, draw lines perpendicular to the $x$-axis and construct their intersections with the parabola&nbsp;$f$.
  4. The line passing through the two intersection points intersects the $y$-axis at a point whose $y$-coordinate equals the product $ab$.    
 
 You can try the procedure in the attached worksheet; an illustration is also possible in GeoGebra. An interactive applet is available at <https://www.geogebra.org/m/sj5cjbaf>
