@@ -11,7 +11,7 @@ is_finished: true
 # Parabolic Calculator
 
 While surfing the web, Eva found an interesting geometric trick connected with the graph of the function
-$f\colon y = x^2$ that  can be used as a calculator for multiplying two numbers
+$f(x) = x^2$ that  can be used as a calculator for multiplying two numbers
 $a$ and $b$.[^1] The procedure is as follows:
 
  1. In a Cartesian coordinate system, draw the graph of the function $f(x)=x^2$.
@@ -27,9 +27,9 @@ You can try the procedure in the attached worksheet; an illustration is also pos
 \iffalse
 
 *Solution.* 
-From the procedure it is clear that if the two points $-a$ and $b$ marked on the $x$-axis coincide, the line in the fourth step cannot be constructed uniquely. Therefore, the procedure will not work when $-a=b$. We will show that apart from this exceptional case the procedure works for all other pairs of numbers $a$ and $b$. 
+From the procedure it is clear that if the two marks $-a$ and $b$ on the $x$-axis coincide, the line in the fourth step cannot be constructed uniquely. Therefore, the procedure will not work when $-a=b$. We will show that, apart from this exceptional case, the procedure works for all other pairs of numbers $a$ and $b$. 
 
-Mark the images of the points $-a$ and $b$ on the $x$-axis and construct perpendiculars at these points. Let the intersections of these perpendiculars with the parabola $y=x^2$ be $A$ and $B$, and denote the line through $A$ and $B$ by $p$. We will show that the intersection $C$ of line $p$ with the $y$-axis has $y$-coordinate equal to the product $ab$ (see figure 1). 
+Mark the images of the numbers $-a$ and $b$ on the $x$-axis and construct perpendiculars at these points. Let the intersections of these perpendiculars with the parabola $f(x)=x^2$ be $A$ and $B$, and denote the line through $A$ and $B$ by $p$. We will show that the intersection $C$ of line $p$ with the $y$-axis has $y$-coordinate equal to the product $ab$ (see figure 1). 
 
 ![Parabolic calculator](math4you_00010.jpg)
 
@@ -46,7 +46,7 @@ $$
 \overrightarrow{u}=[1, b-a],
 $$ 
 
-which is also a direction vector of the line $p$. This operation is possible because in our case $-a\neq b$, hence $b+a\neq0$. Thus, the line $p$ has the parametric representation
+which is also a direction vector of the line $p$. This operation is possible because, in our case, $-a\neq b$, hence $b+a\neq0$. Thus the line $p$ has the parametric representation
 
 $$
 p\colon \; X = A + t\cdot\overrightarrow{u}, \quad t\in\mathbb{R}. 
