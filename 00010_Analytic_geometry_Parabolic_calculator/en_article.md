@@ -22,7 +22,7 @@ $a$ and $b$.[^1] The procedure is as follows:
 You can try the procedure in the attached worksheet; an illustration is also possible in GeoGebra. An interactive applet is available at <https://www.geogebra.org/m/sj5cjbaf>
 
 
-> **Problem 1.** Does the procedure described above work for all pairs of real numbers $a$ and $b$, or only for some? Prove your answer.
+> **Task 1.** Does the procedure described above work for all pairs of real numbers $a$ and $b$, or only for some? Prove your answer.
 
 \iffalse
 
@@ -71,7 +71,7 @@ which is what we wanted to prove.
 
 \fi
 
->**Problem 2.**
+>**Task 2.**
 What would happen if, on the $x$-axis, we marked images of the numbers $a$ and $b$ (instead of $-a$ and $b$)? Would the parabolic calculator still work in that case? 
 
 \iffalse
