@@ -267,8 +267,8 @@ which corresponds to optimal angle $\alpha=\frac{\pi}{4}$, as previously found.
 
 ## References
 
-1. Kubera, Miroslav; Nečas, Tomáš; Beneš, Vojtěch. *Online Physics Textbook for Grammar Schools – Projectile Motion* [online]. Available from: <https://e-manuel.cz/kapitoly/pouziti-pohybovych-zakonu/vyklad/vrhy/> [accessed 27.9.2023].
-2. Moc, Ondřej; Eisenmann, Petr. *Projectile Motion from a Tower* [online]. Available from: <https://mfi.upol.cz/files/26/2602/mfi_2602_129_137.pdf> [accessed 27.9.2023]
+1. Kubera, Miroslav; Nečas, Tomáš; Beneš, Vojtěch. *Online učebnice fyziky pro gymnázia - Vrhy (Online Physics Textbook for Grammar Schools – Projectile Motion)* [online]. Available from: <https://e-manuel.cz/kapitoly/pouziti-pohybovych-zakonu/vyklad/vrhy/> [accessed 27.9.2023].
+2. Moc, Ondřej; Eisenmann, Petr. *Šikmý vrh z rozhledny (Projectile Motion from a Tower)* [online]. Available from: <https://mfi.upol.cz/files/26/2602/mfi_2602_129_137.pdf> [accessed 27.9.2023]
 
 ## Links
-* Projectile motion – https://cs.wikipedia.org/wiki/Vrh_%C5%A1ikm%C3%BD
+* Vrh šikmý (Projectile motion) – https://cs.wikipedia.org/wiki/Vrh_%C5%A1ikm%C3%BD
