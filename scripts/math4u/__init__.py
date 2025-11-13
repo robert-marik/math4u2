@@ -95,7 +95,7 @@ class File:
                 try:
                     return yaml.safe_load(yaml_content)
                 except yaml.YAMLError as e:
-                    logging.error(f"YAML parsing error in file {self.path}: {e}")
+                    logging.warning(f"YAML parsing error in file {self.path}: {e}")
                 return {}
         return {}
     
