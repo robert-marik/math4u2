@@ -1,8 +1,17 @@
 # %%
+import importlib
 import math4u
 import pandas as pd
 # print(math4u.directories)
 
+
+importlib.reload(math4u)
+file = math4u.File(path="00008_Solid_Geometry-Distance_of_cities/cs_article.md")
+copy = True
+file.to_html()
+
+
+# %%
 files = []
 for dir in math4u.directories:
     problem = math4u.Problem(directory=dir)

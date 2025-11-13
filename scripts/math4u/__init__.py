@@ -180,6 +180,12 @@ class File:
                 css = "\n".join(f.readlines())
         html_page = makeHEAD(css=css, title=self.path)
         html_page += f"Workflow: {self.yaml_header.get('workflow','unknown')}<br>\n"
+        html_page += f"Links: <a href='https://github.com/robert-marik/math4u2/tree/main/{self.path}'>GitHub source</a> "
+        html_page += f" <a href='https://github.com/robert-marik/math4u2/tree/main/{str(self.path).replace("article","article_old")}'>GitHub old source</a> "
+        html_page += f" <a href='{self.path.name.split('.')[0]}.pdf'>PDF</a> "
+        html_page += f" <a href='https://rwp.math4u.vsb.cz/{self.path.parent.name}/{self.path.name.split('.')[0]}.pdf'>PDF old</a> "
+        html_page += f" <a href='{self.path.name.split('.')[0]}_diff.pdf'>PDFdiff</a>"
+
         keywords = self.yaml_header.get('keywords', [])
         if keywords:
             html_page += f"<div class='header_keywords'>Keywords: <span>{'; '.join(keywords)}</span></div>\n"

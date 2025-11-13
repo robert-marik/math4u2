@@ -86,7 +86,18 @@ tr:nth-child(even) {{background-color: #f2f2f2;}}
   flex-grow: 1; /* Tlačítka se roztáhnou tak, aby vyplnila celý řádek */
   text-align: center; /* Vycentrování textu tlačítka */
 }}
-  
+
+a {{
+    display: inline-block;
+    padding: 2px 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}}
+
   {css}
   </style>
   </head>
@@ -94,6 +105,7 @@ tr:nth-child(even) {{background-color: #f2f2f2;}}
 <div >
 <img src="../head.svg" style="width: 100% !important; max-width: 100% !important;">
 <div>
+
 """
 
 HEAD = makeHEAD()
