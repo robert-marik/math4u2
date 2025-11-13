@@ -25,7 +25,7 @@ Uvedený postup si můžete vyzkoušet v přiloženém pracovním listu, jeho
 ilustrace je možná také v GeoGebře. Interaktivní applet najdete na
 stránkách <https://www.geogebra.org/m/sj5cjbaf>.
 
-> **Úloha.** Funguje výše uvedený postup pro všechny dvojice čísel $a$ a $b$, nebo jen pro
+> **Úloha 1.** Funguje výše uvedený postup pro všechny dvojice čísel $a$ a $b$, nebo jen pro
 > některé? Dokažte. 
 
 \iffalse
@@ -80,14 +80,14 @@ což jsme měli dokázat.
 
 \fi
 
->**Doplňující otázka k rozmyšlení.**
+>**Úloha 2.**
 Co by se stalo, kdybychom 
 na ose $x$ nevyznačovali obrazy čísel $-a$ a $b$, ale čísel  $a$ a $b$? 
 Fungovala by parabolická kalkulačka i v tomto případě? 
 
 \iffalse
 
-*Odpověď na otázku.*
+*Řešení.*
 Je jasné, že by nastal problém v případě $a=b$. Dále proto předpokládejme, že $a \neq b$. Nyní potřebujeme napsat rovnici přímky $q$ procházející body $A=[a;a^2]$ a $B=[b;b^2]$. Její směrový vektor je
 
 $$
@@ -127,7 +127,7 @@ Vidíme tedy, že v tomto případě dostaneme stejnou konstrukcí bod, jehož $
 
 \fi
 
->**Jedna zajímavost na závěr.**
+**Jedna zajímavost na závěr.**
 Na principu parabolické kalkulačky je založena geometrická verze Eratosthenova síta pro hledání prvočísel. Funguje to tak, že každý bod $[-a;a^2]$, kde $a \in \mathbb{N} \setminus \{1\}$, spojíme s každým bodem $[b;b^2]$, kde $b \in \mathbb{N} \setminus \{1\}$. Tyto spojnice nám na ose $y$ protnou  všechna složená čísla. Zbylá přirozená čísla jsou právě všechna prvočísla a číslo 1 (viz obrázek 2). Promyslete si detailně, proč to opravdu takto funguje. 
 
 ![Parabolické prvočíselné síto](parabolicke_sito.svg)

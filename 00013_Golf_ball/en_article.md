@@ -1,167 +1,274 @@
 ---
-workflow: in progress
-# workflow: translating
+# workflow: in progress
+workflow: translating
 # workflow: finished
 keywords:
 - differential and integral calculus
 - optimization
 - quadratic equation
-- derivation
+- derivative
 is_finished: true
+difficulty: 3
+time: 30
 ---
 
-# Golf Ball Shot
+# Golf Ball Hit
 
-## Oblique Projectile Motion
+To describe the trajectory of a golf ball that has been hit, we need to recall a few facts about projectile motion. Projectile motion is the most general method of launching an object into motion in a uniform gravitational field. Assume that a point mass is launched at an angle in an environment without air resistance, with initial speed $v_0$. The corresponding initial velocity vector $\vec{v}_0$ makes an angle 
+$\alpha \in \left(0,\frac{\pi}{2}\right)$ 
+with the horizontal plane. In a Cartesian coordinate system, this vector is given by (see the figure):
+$$\vec{v}_0=[v_0\cos\alpha,v_0\sin\alpha].$$
 
-Projectile motion is the most general way of setting an object in a
-homogeneous gravitational field into motion. Suppose that a body
-(point mass) is thrown obliquely into space without
-resistance. The initial velocity is $\vec{v}_0$ and the angle between
-the vector $\vec{v}_0$ and horizontal direction is
-$\alpha$. Let us introduce the Cartesian coordinate system with horizontal
-$x$-axis and vertical $y$-axis as shown in the picture. The coordinates of
-the initial velocity vector are
+The motion of the object is affected by gravitational acceleration of magnitude $g$ acting vertically downward. In the horizontal direction, there is no component of gravitational acceleration, so the horizontal motion is uniform. In contrast, the vertical motion is influenced by gravity. Therefore, for the instantaneous velocity vector $\vec{v}=[v_x,v_y]$ at time $t \geq 0$, we have:
 
-$$\vec{v}_0=(v_0\cos\alpha,v_0\sin\alpha).$$
-
-The motion of the body is governed by an acceleration due to gravity $g$
-directed vertically downwards. The horizontal component of the
-gravitational acceleration is zero, therefore the motion in the
-horizontal direction is unaffected by the gravitational field. 
-The vertical component of the motion is affected by the
-negative acceleration $-g$. Hence, it is a movement with constant
-(uniform) deceleration and initial velocity $v_0t\sin\alpha$.
-
-We can use formulas for distance of motion with constant speed
-and constant acceleration to quantify the coordinates of the
-point mass. By doing so we get
 $$
 \begin{aligned}
-        x(t) &= v_0 t\cos\alpha,\\
-        y(t) &= v_0t\sin\alpha-\frac{1}{2}gt^2.
+        v_x=v_x(t) &= v_0 \cos\alpha,\\
+        v_y=v_y(t) &= v_0 \sin\alpha-gt.
+\end{aligned}
+$$
+
+For the coordinates $(x, y)$ of the point mass at time $t \geq 0$, we obtain:
+
+$$
+\begin{aligned}
+        x = x(t) &= v_0 t\cos\alpha,\\
+        y = y(t) &= v_0 t\sin\alpha-\frac{1}{2}gt^2,
 \end{aligned}\tag{1}
 $$
 
-![Oblique motion](sikmy_vrh_upraveny.svg)
+because the instantaneous velocity at time $t$ is the derivative of the position at time $t$. Specifically, $v_x(t)=x'(t)$ and $v_y(t)=y'(t)$.
 
-## Motion of a Golf Ball
+![Projectile motion](sikmy_vrh_upraveny.svg)
 
-A golfer hits a ball with an initial velocity $v_0$. The angle
-between the initial velocity and the horizontal plane is
-$\alpha$. Let's assume that the drag force is negligible. The motion of
-the ball therefore satisfies the conditions for movement of a
-projectile launched at an angle in an environment without air resistance.
+Now let us move on to the promised golf ball drive.
 
->**Exercise 1.**  Prove that the trajectory of the golf ball follows a parabolic path.
+A golf player hits the ball with initial speed $v_0$ at an angle $\alpha \in \left(0,\frac{\pi}{2}\right)$. We assume that the ball is not affected by air resistance. Therefore, its motion satisfies the conditions of projectile motion without air resistance.
+
+> **Task 1.** Prove that the trajectory of the golf ball is a part of a parabola.
 
 \iffalse
 
-*Solution.* To find the equation of the trajectory in the form
-$y=f(x)$ it is necessary to eliminate the parameter $t$ from
-the system (1).
+*Solution.* To find the trajectory equation in the form $y=f(x)$, we need to convert the parametric representation (1) into a standard equation.
 
-We solve the first equation with respect to time
-$t=\frac{x}{v_0\cos\alpha}$ 
-and substitute into the second equation:
-$$y(x) = v_0\sin\alpha\,\frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .$$
-From here we see that the $y$-coordinate of the trajectory is a
-quadratic function of the $x$-coordinate and the trajectory of the
-golf ball is therefore described by a parabola.
+First, express $t$ from the first equation, i.e., $t=\frac{x}{v_0\cos\alpha}$, and substitute this into the second equation:
+
+$$
+ y = v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha}= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
+$$
+
+We see that the function $f$ describing the trajectory of the golf ball is a quadratic function
+
+$$
+ f(x)=Ax^2+Bx,
+$$
+
+where
+
+$$
+ A=-\frac{g}{2v_0^2\cos^2\alpha} \quad \text{and} \quad
+ B=\frac{\sin\alpha}{\cos\alpha}.
+$$
+
+The graph of $f$ is a parabola. Therefore, the trajectory of the golf ball is a part of this parabola.
 
 \fi
 
->**Exercise 2.** Calculate the height of the throw, i.e. the maximal
->height $y_{max}$ that the launched ball reaches.
+> **Task 2.** Compute the maximum height $y_{\text{max}}$ reached by the golf ball.
 
 \iffalse
 
-*Solution.* The height of the throw (projectile motion) is the maximum of the function
-from the previous exercise:
-$$f\colon y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ .$$
-
-We calculate the derivative of the function $f$ as
+*Solution.* To compute the maximum height of the golf ball, we need to find the extreme value of the function $f$ describing the trajectory:
 
 $$
-y'=-\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}\ .
+ f(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x .
 $$
-To find the stationary point, we set the derivative equal to zero and
-obtain the equation
-$$
-\frac{g}{v_0^2\cos^2\alpha}\cdot x=\frac{\sin\alpha}{\cos\alpha}\ .
-$$
-The solution of this equation is
-$$
-x_{max}=\frac{v_0^2\sin\alpha\cos\alpha}{g}\ .
-$$
-Since the trajectory of the motion is a concave down quadratic function,
-the located stationary point is the maximum and the vertical coordinate
-of this point is the height of the throw.
 
-The height of the throw is calculated by evaluating the function $f$
-at the obtained coordinate $x_{max}$:
-$$y_{max}=\frac{v_0^2\sin^2\alpha}{2g}\ .$$
+Compute the derivative of $f$:
 
+$$
+f'(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot2x+\frac{\sin\alpha}{\cos\alpha}.
+$$
+
+To find the stationary point, set the derivative equal to zero:
+
+$$
+\frac{g}{v_0^2\cos^2\alpha}\cdot x=\frac{\sin\alpha}{\cos\alpha}.
+$$
+
+The solution is:
+
+$$
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g}.
+$$
+
+Since $f$ is a concave quadratic function, this stationary point $x_0$ is its (local and global) maximum.
+
+The maximum height $y_{\text{max}}$ is obtained by substituting $x_0$ into $f$. After simplification, we get:
+
+$$
+ y_{\text{max}}=f(x_{0})=\frac{v_0^2\sin^2\alpha}{2g}.
+$$
 \fi
 
-> **Exercise 3.** Given constant initial velocity, find the angle
-> $\alpha$ which guarantees maximal distance between the initial and
-> the terminal point of the trajectory.
+> **Task 3.** Determine the angle $\alpha$ for which the ball reaches the maximum horizontal distance (for a given initial speed).
 
 \iffalse
 
-*Solution.* To find the maximum range angle we need to obtain the
-terminal point $x_d$ of the trajectory as a function of the angle
-$\alpha$ and find the maximum of the function $x_d(\alpha).$ Given
-that $y=0$ when the ball hits the ground, we find zeros of the function
-$$y(x) = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x.$$
-From here we obtain:
-$$0 = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x\ ,$$
-$$0 = x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right)\ .$$
-This factorized equation has two solutions. The first solution
-$x=0$ corresponds to the place where the ball is launched and the
-second solution $x_d$ to the place of impact
-$$
-x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha\ .
-$$ 
-Now we need to find the maximum of the function $x_d(\alpha)$. It is
-sufficient to find the stationary point, since it has been showed that
-the trajectory is a parabola that opens downward. We calculate the
-derivative of the function $x_d(\alpha)$ with respect to $\alpha$
+*Solution.* To compute the launch angle that maximizes the horizontal range, we first determine the $x$-coordinate $x_d$ of the landing point as a function of $\alpha$, i.e., we find the maximum of the function $x_d$. Since the ball hits the ground when its height is zero, we set:
 
 $$
-x_d'(\alpha)=\frac{v_0^2}{g}\cdot\cos2\alpha\cdot 2\ .
-$$ 
-
-By setting the derivative equal to zero, we get 
-$\cos2\alpha=0$, which is satisfied for $2\alpha=90^\circ$ (for the
-ball to be launched, obviously
-$\alpha\in\langle0^\circ,90^\circ\rangle$, so the solution is
-unambiguous). Thus the stationary point is $\alpha=45^\circ$.
-
-The maximum range in golf is achieved when hitting the ball at an angle
-$\alpha=45^\circ$ and the ball lands at a distance of
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x
 $$
-x_d(45^\circ) =\frac{v_0^2}{g}\sin(2\cdot45^\circ)=\frac{v_0^2}{g}.
-$$ 
 
-Note that it is possible to obtain the function $x_d(\alpha) =
-\frac{v_0^2}{g}\sin2\alpha$ without calculus by using the symmetry of the
-parabola. The vertex of the parabola is located in the
-middle of the zero points. Therefore, the $x$-coordinate
-of the impact point can be quantified as $x_d(\alpha) = 2\cdot x_{max}$.  
-This allows us to avoid solving the quadratic equation obtained by substituting 
-$y=0$ into the function $y(x)$ and factorizing the right-hand side.
+equal to $y=0$ and solve:
+
+$$
+\begin{aligned}
+ 0 &= -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x ,\\[3mm]
+ 0 &= x\cdot\left(-\frac{g}{2v_0^2\cos^2\alpha}\cdot x+\frac{\sin\alpha}{\cos\alpha}\right).
+\end{aligned}
+$$
+
+This factored equation has two solutions. The first, $x=0$, corresponds to the launch point, and the second, $x_d$, to the landing point. We can observe that:
+
+$$
+x_d = x_d(\alpha) = \frac{2v_0^2\sin\alpha\cos\alpha}{g}=\frac{v_0^2}{g}\sin2\alpha.
+$$
+
+We now find the maximum of $x_d$. For $\alpha \in \left(0,\frac{\pi}{2}\right)$, the value $\sin 2\alpha$ is maximal when $\alpha=\frac{\pi}{4}$.
+
+Thus, the maximum range is achieved when the ball is hit at angle $\alpha=\frac{\pi}{4}$, and the maximum distance is:
+
+$$
+x_d \left(\frac{\pi}{4} \right) =\frac{v_0^2}{g}\sin\left(2\cdot \frac{\pi}{4} \right)=\frac{v_0^2}{g}.
+$$
+
+The function $x_d(\alpha) = \frac{v_0^2}{g}\sin2\alpha$ could also be found more easily by using symmetry of the parabola. The parabola vertex lies halfway along the ball's trajectory. Thus, the landing point $x_d = 2 x_0$, where $x_0$ is the value computed in Task 2. This avoids solving the quadratic equation obtained by substituting $y=0$ into $y=f(x)$.
 
 \fi
 
-## Literature
+> **Additional questions to consider.** Think about how the situation changes if the golf ball is hit from an elevated point at height $h$ above the ground.
+>
+> 1) Is the trajectory still part of a parabola?  
+> 2) What is the maximum height reached by the ball?  
+> 3) How far will the ball travel?  
+> 4) For a given initial speed, at what angle should the ball be hit to travel as far as possible?  
 
-1. Kubera, Miroslav; Nečas, Tomáš; Beneš, Vojtěch. *Online učebnice
-   fyziky pro gymnázia - Vrhy* [online]. Available from
-   <https://e-manuel.cz/kapitoly/pouziti-pohybovych-zakonu/vyklad/vrhy/>
-   [cit. 27.9.2023].
-2. Moc, Ondřej; Eisenmann, Petr. *Šikmý vrh z rozhledny*
-   [online]. Available from
-   <https://mfi.upol.cz/files/26/2602/mfi_2602_129_137.pdf>
-   [cit. 27.9.2023]
+\iffalse
+
+*Answer to Question 1.*  
+For the coordinates $(x,\,y)$ of the ball at time $t \geq 0$, we have:
+
+$$
+\begin{aligned}
+       x &= v_0 t\cos\alpha,\\
+       y &= h+v_0 t\sin\alpha-\frac{1}{2}gt^2.
+\end{aligned}\tag{2}
+$$
+
+Similarly, as in Task 1, we obtain the trajectory as the graph of a function $f$:
+
+$$
+ y = h+v_0\sin\alpha\, \frac{x}{v_0\cos\alpha} -\frac{1}{2}g\frac{x^2}{v_0^2\cos^2\alpha},
+$$
+
+i.e.,
+
+$$
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h.
+$$
+
+This quadratic function differs from that in Task 1 only by the constant term, meaning their graphs are vertically shifted by $h$ in the direction of the $y$-axis.
+
+*Answer to Question 2.*  
+To find the maximum height of the hit golf ball, we obtain the same expression:
+
+$$
+x_{0}=\frac{v_0^2\sin\alpha\cos\alpha}{g},
+$$
+
+as formerly derived in Task 2 (this is because the derivative of a constant function is the zero function — think about it).
+
+Substituting $x_0$ into $f$ gives:
+
+$$
+ y_{\text{max}}=f(x_{0})=h+\frac{v_0^2\sin^2\alpha}{2g}.
+$$
+
+*Answer to Question 3.*  
+Setting $y=0$ in
+
+$$
+ y = -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h
+$$
+
+leads again to a quadratic equation:
+
+$$
+ -\frac{g}{2v_0^2\cos^2\alpha}\cdot x^2+\frac{\sin\alpha}{\cos\alpha}\cdot x + h = 0.
+$$
+This time, however, the equation is not in factored form, so we will solve it using the general formula for finding the roots of a quadratic equation. First, though, it will be useful to eliminate the fractions from the equation by multiplying by the expression $-2v_0^2\cos^2\alpha$. This gives us the quadratic equation
+$$
+ gx^2-2v_0^2\sin\alpha \cos\alpha \cdot x - 2hv_0^2 \cos^2\alpha = 0,
+$$
+
+which has two solutions:
+
+$$
+x_{1,2}=\frac{2v_0^2\sin\alpha \cos\alpha \pm \sqrt{4v_0^4\sin^2\alpha \cos^2\alpha+8ghv_0^2\cos^2\alpha}}{2g}.
+$$
+
+Simplifying we obtain: 
+
+$$
+x_{1,2}=\frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha \pm \sqrt{v_0^2\sin^2\alpha+2gh}\right).
+$$
+
+It is not difficult to realize that one of the roots (the one with the minus sign) is negative. Therefore, only one of the roots (the one with the plus sign) corresponds to our task. So the relevant range of the golf ball is:
+
+$$
+x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha+2gh}\right).
+$$
+
+Note that for $h=0$ we obtain:
+
+$$
+x_d = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha}\right)=
+\frac{v_0\cos\alpha}{g} \cdot 2v_0\sin\alpha=
+\frac{v_0^2}{g} \sin 2\alpha,
+$$
+
+which matches the result from Task 3.
+
+*Answer to Question 4.*  
+Here the situation is more complicated. We would have to find the maximum of:
+
+$$
+x_d(\alpha) = \frac{v_0\cos\alpha}{g} \cdot \left( v_0\sin\alpha + \sqrt{v_0^2\sin^2\alpha+2gh}\right),
+$$
+
+which is quite difficult. Skipping the derivation, we state only the result: the maximum occurs when the angle $\alpha$ satisfies:
+
+$$
+\sin\alpha = \frac{v_0}{\sqrt{2v_0^2+2gh}}.
+$$
+
+Thus, we shall see that the optimal launch angle depends on the initial speed $v_0$ of the golf ball, the height $h$ of the golf ball launch point, and even also on gravitational acceleration $g$.
+
+In the special case of $h=0$, the last expression becomes:
+
+$$
+\sin\alpha = \frac{v_0}{\sqrt{2v_0^2}}=\frac{\sqrt{2}}{2},
+$$
+
+which corresponds to optimal angle $\alpha=\frac{\pi}{4}$, as previously found.
+\fi
+
+## References
+
+1. Kubera, Miroslav; Nečas, Tomáš; Beneš, Vojtěch. *Online učebnice fyziky pro gymnázia - Vrhy (Online Physics Textbook for Grammar Schools – Projectile Motion)* [online]. Available from: <https://e-manuel.cz/kapitoly/pouziti-pohybovych-zakonu/vyklad/vrhy/> [accessed 27.9.2023].
+2. Moc, Ondřej; Eisenmann, Petr. *Šikmý vrh z rozhledny (Projectile Motion from a Tower)* [online]. Available from: <https://mfi.upol.cz/files/26/2602/mfi_2602_129_137.pdf> [accessed 27.9.2023]
+
+## Links
+* Vrh šikmý (Projectile motion) – https://cs.wikipedia.org/wiki/Vrh_%C5%A1ikm%C3%BD
