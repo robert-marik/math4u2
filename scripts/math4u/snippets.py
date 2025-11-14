@@ -87,7 +87,7 @@ tr:nth-child(even) {{background-color: #f2f2f2;}}
   text-align: center; /* Vycentrování textu tlačítka */
 }}
 
-a {{
+.headerBtn a {{
     display: inline-block;
     padding: 2px 20px;
     font-size: 16px;

@@ -102,8 +102,7 @@ $$
 $$
 
 $$
-\frac{\varphi}{2} 
-%=\frac{180}{\pi} \cdot \arcsin \left( %\cos 39^{\circ}\sin 34^{\circ} \right) 
+\frac{\varphi}{2}  
 \doteq 25^{\circ}45' 30''\quad \Rightarrow \quad \varphi \doteq 51^{\circ}31'.
 $$
 

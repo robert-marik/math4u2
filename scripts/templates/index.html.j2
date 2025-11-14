@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #fafafa;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #e5e5e5;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f2f7ff;
+}
+
+.separator {
+    border-left: 2px solid #999;
+}
+
+.legend {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.legend span {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.color-box {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+a {text-decoration: none; font-weight: 800}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>List of articles</h1>
+
+<table>
+
+    <!-- První řádek: seskupené hlavičky -->
+    <tr>
+        <th>Directory</th>
+
+        <th class="separator" colspan="5">OLD</th>
+        <th class="separator" colspan="5">NEW</th>
+    </tr>
+
+
+    <!-- Data -->
+    {% for row in rows %}
+    <tr>
+
+        <td><b>{{ row.dirname }}</b></td>
+
+        <!-- OLD sloupce -->
+        {% for lang in row.old %}
+            
+            {% if loop.index0 == 0 %}
+                <td class="separator"
+            {% else %}
+                <td
+            {% endif %}
+            >
+            
+            <a href="{{ lang.url }}">{{ lang.label }}</a></td>
+        {% endfor %}
+
+        <!-- NEW sloupce -->
+        {% for lang in row.new %}
+
+            {% if loop.index0 == 0 %}
+                <td class="separator"
+            {% else %}
+                <td
+            {% endif %}
+            >
+
+            {% if not lang.exists %}
+                <!-- Černý neklikací text -->
+                <span style="color: black;">{{ lang.label }}</span>
+
+            {% else %}
+                <!-- Klikací odkaz -->
+                <a href="{{ lang.url }}" style="color: {{ lang.color }};">
+                    {{ lang.label }}
+                </a>
+
+            {% endif %}
+            </td>
+
+        {% endfor %}
+
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+<!-- Legenda -->
+<div class="legend">
+    <p><b>Legend (NEW part):</b></p>
+
+    <span><span class="color-box" style="background:red;"></span>In progress</span>
+    <span><span class="color-box" style="background:green;"></span>Translating</span>
+    <span><span class="color-box" style="background:blue;"></span>Finished</span>
+</div>
+
+</body>
+</html>
