@@ -138,10 +138,11 @@ These provide relatively good rational approximations of the golden ratio $\varp
 
 > **Task 3.**  
 > Show that the value of the golden ratio $\varphi$ satisfies:
-
-$$
-\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
-$$
+>
+> $$
+> \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
+> $$
+>
 
 \iffalse
 
