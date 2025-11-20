@@ -15,7 +15,7 @@ Before we explain exactly what the golden ratio means, let's see where we can en
 
 ## The Golden Ratio
 
-**Definition of the golden ratio.** Let $AB$ be a line segment with a point $C$ on it. We say that $C$ divides $AB$ in the golden ratio (see Figure 1) if the lengths of the segments satisfy:
+**Definition of the golden ratio.** Let $AB$ be a line segment with a point $C$ on it. We say that $C$ divides $AB$ in the golden ratio (see Figure 1) if the lengths of the segments satisfy
 
 $$\frac{|AB|}{|AC|}=\frac{|AC|}{|CB|}.$$
 
@@ -120,7 +120,7 @@ $$
 $$
 
 > **Task 2.**  
-> Compute approximate values of the Golden Ratio using the following finite continued fractions:
+> Compute approximate values of the golden ratio using the following finite continued fractions:
 >
 > 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}$$
 > 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}$$
@@ -137,7 +137,7 @@ These provide relatively good rational approximations of the golden ratio $\varp
 \fi
 
 > **Task 3.**  
-> Show that the value of the golden gatio $\varphi$ satisfies:
+> Show that the value of the golden ratio $\varphi$ satisfies:
 
 $$
 \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
@@ -176,7 +176,7 @@ $$
 x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.
 $$
 
-Note that the expression on the right side of the equation $(3)$ and all the  next performed simplifications are valid for all $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$.  Therefore, both  found  roots are valid solutions of the equation $(3)$.
+Note that the expression on the right side of the equation $(3)$ and all the  next performed simplifications are valid for all $x \in \mathbb{R} \setminus \{0, -1, -\frac{1}{2}\}$. Therefore, both found roots are valid solutions of the equation $(3)$.
 One of these solutions is the golden ratio $\varphi$.
 
 **Note on Task 3.** Another approach to prove the given equality holds is to use relation (2): $1 + \frac{1}{\varphi} = \varphi$.  Using that relation results in
@@ -213,11 +213,11 @@ $$
 
 Numbers $a_0 = 1$, $a_1 = 2$, $a_2 = 3$, $a_3 = 2$ have a nice geometric meaning.  
 
-Consider a rectangle of sides $23$ and $16$, and inscribe the largest possible square, meaning a square of side $16$, (see the square colored in yellow in Figure 2). Only one such square fits into our rectangle, so $a_0 = 1$. Remaining empty rectangle has sides $16 $ and $7$. Again, inscribe largest possible square.  In this case a square  of side $7$.Two such squares fit (grey in Figure 2), so $a_1 = 2$. Remaining rectangle has sides $7$ and  $2$ so the largest square that fits is of side  $2$. Three of such squares fit (red color), so $a_2 = 3$. Remaining rectangle has sides $2$  and $1$ and is filled with two unit squares (green color), $a_3 = 2$.
+Consider a rectangle of sides $23$ and $16$, and inscribe the largest possible square, meaning a square of side length $16$ (see the square colored in yellow in Figure 2). Only one such square fits into our rectangle, so $a_0 = 1$. Remaining empty rectangle has sides $16 $ and $7$. Again, inscribe largest possible square.  In this case a square of side length $7$.Two such squares fit (grey in Figure 2), so $a_1 = 2$. Remaining rectangle has sides $7$ and  $2$ so the largest square that fits is of side length $2$. Three of such squares fit (red color), so $a_2 = 3$. Remaining rectangle has sides of lengths $2$ and $1$ and is filled with two unit squares (green color), $a_3 = 2$.
 
 ![Continued fraction – geometric interpretation](retez_zlomek.svg)
 
-> **Task 4.** How would this work if we tried to fill a golden rectangle, meaning the rectangle with sides whose proportion is golden ratio $\varphi$,. using squares as above? Recall:
+> **Task 4.** How would this work if we tried to fill a golden rectangle, meaning the rectangle with sides whose proportion is the golden ratio $\varphi$,. using squares as above? Recall:
 
 $$
 \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.
@@ -235,13 +235,13 @@ $$
 
 \iffalse
 
-*Solution.* Let the longer side be $x$ and the shorter $y$. After folding, the dimensions of the paper are $y \times x/2$. The fact that the folded paper has the same side ratio as the original paper yields equation
+*Solution.* Let the longer side be $x$ and the shorter $y$. After folding, the dimensions of the paper are $y \times x/2$. The fact that the folded paper has the same side ratio as the original paper yields the equation
 
 $$
 \frac{x}{y} = \frac{y}{x/2}, 
 $$
 
-which simplified gives
+which simplifies to
 $$
  x^2 = 2y^2. \implies \frac{x}{y} = \sqrt{2}.
 $$
@@ -301,7 +301,7 @@ $$
 It can be shown that the limit of this sequence is exactly the golden ratio $\varphi=\frac{1+\sqrt{5}}{2} \doteq 1{.}6180$.
 
 In nature, the golden ratio often appears together with the Fibonacci sequence (the ratios of two consecutive terms of this sequence approach the golden ratio).  
-Examples include the arrangement of seeds in sunflowers or the scales of pine cones. The number of spirals that go in one direction and the number of spirals that go in the opposite direction are always two consecutive Fibonacci numbers. For instance, you may count $8$ spirals clockwise and $13$ spirals counterclockwise on a pine cone (the numbers $8$ and $13$ are consecutive Fibonacci numbers). In sunflowers the spirals may be in ratios such as $34\!:\!55$ or $55\!:\!89$. This kind of arrangement allows for optimal use of space so that each seed or scale has enough room and maximum access to light.
+Examples include the arrangement of seeds in sunflowers or the scales of pine cones. The number of spirals that go in one direction and the number of spirals that go in the opposite direction are always two consecutive Fibonacci numbers. For instance, you may count $8$ spirals clockwise and $13$ spirals counterclockwise on a pine cone (the numbers $8$ and $13$ are consecutive Fibonacci numbers). In sunflowers, the spirals may be in ratios such as $34\!:\!55$ or $55\!:\!89$. This kind of arrangement allows for optimal use of space so that each seed or scale has enough room and maximum access to light.
 
 Finally, let us describe the construction of the so-called Fibonacci spiral, which also often appears in nature. If we construct squares whose side lengths correspond to Fibonacci numbers, we can arrange them neatly next to each other to form a rectangle, as shown in Figure 5. This rectangle is close to a golden rectangle because its side lengths are equal to two consecutive Fibonacci numbers. Now draw a quarter-circle inside each square (see Figure 5). In this way, we obtain the Fibonacci spiral.
 
