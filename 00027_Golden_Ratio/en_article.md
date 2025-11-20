@@ -26,6 +26,8 @@ This proportion (the ratio $\frac{|AB|}{|AC|}$, which is the same as $\frac{|AC|
 > **Task 1.**  
 > Compute the value of the golden ratio $\varphi$.
 
+\iffalse
+
 *Solution.* Without loss of generality, we can assume that segment $AB$ has length $1$. We divide this segment with point $C$ in the golden ratio. Then we have:
 
 $$
@@ -89,7 +91,10 @@ $$
 
 We are only interested in the positive solution, so $\varphi = \frac{1+\sqrt{5}}{2}$.
 
+\fi
+
 In the introduction, we mentioned that the golden ratio can be found, for example, in the arrangement of leaves on a stem. Leaves grow in spirals around the stem to avoid shading each other and to receive as much light as possible. It turns out that the angle between two neighboring leaves is about $137.5^\circ$, which corresponds to the so-called *golden angle*, defined as follows:
+
 If we divide a circle (full angle $360^\circ$) into two angles such that the ratio of the larger angle to the smaller angle equals the ratio of the full angle to the larger angle, then the smaller of these angles is called the golden angle. For the golden angle $\alpha$ (in degrees), we have:
 
 $$
@@ -120,6 +125,8 @@ $$
 > 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}$$
 > 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}$$
 
+\iffalse
+
 *Solution.*
 
 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}} = 1 + \cfrac{1}{1 + \cfrac{1}{2}} = 1 + \cfrac{1}{\frac{3}{2}} = \frac{5}{3} \approx 1.67$$
@@ -127,12 +134,16 @@ $$
 
 These provide relatively good rational approximations of the golden ratio $\varphi$. More on rational approximations of $\varphi$ will be discussed in the section on the Fibonacci sequence.
 
+\fi
+
 > **Task 3.**  
 > Show that the value of the golden gatio $\varphi$ satisfies:
 
 $$
 \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
 $$
+
+\iffalse
 
 *Solution.* One way to show that $\varphi$ satisfies the given equality   is to solve the following equation
 
@@ -159,14 +170,12 @@ $$
 x^2 - x - 1 = 0.
 $$
 
-Its roots are:
+Its roots are
 
 $$
 x_{1,2} = \frac{1 \pm \sqrt{5}}{2}.
 $$
 
-Všimněme si, že výraz na pravé straně rovnice $(3)$ i následně provedené úpravy mají smysl právě pro všechna $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$, a tedy oba nalezené kořeny jsou řešením rovnice $(3)$. 
-Vidíme, že jedním z řešení je poměr zlatého řezu $\varphi$.
 Note that the expression on the right side of the equation $(3)$ and all the  next performed simplifications are valid for all $x \in \mathbb{R} \setminus \{0,-1,-\frac{1}{2}\}$.  Therefore, both  found  roots are valid solutions of the equation $(3)$.
 One of these solutions is the golden ratio $\varphi$.
 
@@ -176,11 +185,13 @@ $$
 1 + \cfrac{1}{1 + \cfrac{1}{\varphi}} = 1 + \frac{1}{\varphi} = \varphi,
 $$
 
-and therefore:
+and therefore
 
 $$
 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}} = \varphi.
 $$
+
+\fi
 
 ### Geometric Interpretation of a Continued Fraction
 
@@ -212,11 +223,17 @@ $$
 \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.
 $$
 
+\iffalse
+
 *Solution.* The continued fraction of $\varphi$ contains only ones. So when filling a golden rectangle, we always use one square of each size (one square of each color, as seen in Figure 3). Since the fraction is infinite (non-terminating), the rectangle cannot be completely covered in the manner described above with a finite number of squares.
 
 ![Golden rectangle](zlaty_obdelnik.svg)
 
+\fi
+
 > **Task 5.** A-format paper (A0, A1, A2, …) has a certain nice property: folding it in half along the longer side produces a smaller format with the same side ratio as the original. Compute the side ratio of this paper.
+
+\iffalse
 
 *Solution.* Let the longer side be $x$ and the shorter $y$. After folding, the dimensions of the paper are $y \times x/2$. The fact that the folded paper has the same side ratio as the original paper yields equation
 
@@ -233,6 +250,8 @@ Therefore, the side ratio (positive values) of the original paper is
 $$
  \frac{x}{y} = \sqrt{2}.
 $$
+
+\fi
 
 >**Problem 6.** Try to fill a sheet of A-format paper using squares in a similar way.  
 If you did not solve the previous problem (Problem 5), we reveal that the side ratio of A-format paper is $\sqrt{2}$. Let us also mention that the number $\sqrt{2}$ can be expressed as an infinite continued fraction as follows:  
