@@ -140,9 +140,9 @@ These provide relatively good rational approximations of the golden ratio $\varp
 > Show that the value of the golden ratio $\varphi$ satisfies:
 >
 > $$
-> \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
+  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
 > $$
->
+
 
 \iffalse
 
@@ -219,10 +219,11 @@ Consider a rectangle of sides $23$ and $16$, and inscribe the largest possible s
 ![Continued fraction – geometric interpretation](retez_zlomek.svg)
 
 > **Task 4.** How would this work if we tried to fill a golden rectangle, meaning the rectangle with sides whose proportion is the golden ratio $\varphi$,. using squares as above? Recall:
+>
+> $$
+  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.
+> $$
 
-$$
-\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.
-$$
 
 \iffalse
 
@@ -233,6 +234,7 @@ $$
 \fi
 
 > **Task 5.** A-format paper (A0, A1, A2, …) has a certain nice property: folding it in half along the longer side produces a smaller format with the same side ratio as the original. Compute the side ratio of this paper.
+>
 
 \iffalse
 
@@ -254,7 +256,7 @@ $$
 
 \fi
 
->**Problem 6.** Try to fill a sheet of A-format paper using squares in a similar way.  
+>**Task 6.** Try to fill a sheet of A-format paper using squares in a similar way.  
 If you did not solve the previous problem (Problem 5), we reveal that the side ratio of A-format paper is $\sqrt{2}$. Let us also mention that the number $\sqrt{2}$ can be expressed as an infinite continued fraction as follows:  
 >
 >$$
