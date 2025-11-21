@@ -1,6 +1,6 @@
 ---
 workflow: in progress
-# workflow: translating
+workflow: translating
 # workflow: finished
 keywords:
 - equations and inequalities
@@ -23,18 +23,17 @@ This proportion (the ratio $\frac{|AB|}{|AC|}$, which is the same as $\frac{|AC|
 
 ![Line segment divided in the Golden Ratio](00027_1.jpg)
 
-> **Task 1.**  
-> Compute the value of the golden ratio $\varphi$.
+> **Task 1.** Compute the value of the golden ratio $\varphi$.
 
 \iffalse
 
-*Solution.* Without loss of generality, we can assume that segment $AB$ has length $1$. We divide this segment with point $C$ in the golden ratio. Then we have:
+*Solution.* Without loss of generality, we can assume that segment $AB$ has length $1$. We divide this segment with point $C$ in the golden ratio. Then we have
 
 $$
  \varphi = \frac{|AB|}{|AC|} = \frac{|AC|}{|CB|}.
 $$
 
-Let $x = |AC|$. Then the length of $CB$ is $|CB| = 1 - x$, giving the relation:
+Let $x = |AC|$. Then the length of $CB$ is $|CB| = 1 - x$, giving the relation
 
 $$
 \frac{1}{x} = \frac{x}{1-x}, \tag{1}
@@ -52,7 +51,7 @@ $$
 x_{1,2} = \frac{-1 \pm \sqrt{5}}{2}.
 $$
 
-The negative value does not make sense because $x$ is a segment length and cannot be negative. So we have only one valid solution:
+The negative value does not make sense because $x$ is a segment length and cannot be negative. So we have only one valid solution
 
 $$
 x = \frac{-1 + \sqrt{5}}{2}.
@@ -61,29 +60,29 @@ $$
 Now we can calculate the value of the golden ratio $\varphi$:
 
 $$
-\varphi = \frac{|AB|}{|AC|} = \frac{1}{x} = \frac{1}{\frac{-1 + \sqrt{5}}{2}} = \frac{2}{\sqrt{5} - 1}.
+\varphi = \frac{|AB|}{|AC|} = \frac{1}{x} = \frac{1}{\frac{-1 + \sqrt{5}}{2}} = \frac{2}{\sqrt{5} - 1}
 $$
 
-Rationalizing the denominator, we obtain:
+Rationalizing the denominator, we obtain
 
 $$
 \varphi = \frac{\sqrt{5}+1}{2} \approx 1.618.
 $$
 
-**Note on the solution of Task 1.** Let us consider another approach, which is to start from the equality $\frac{a+b}{a} = \frac{a}{b}$ (see Figure 1). Since $\frac{a}{b} = \varphi$, a simple rearrangement gives:
+**Note on the solution of Task 1.** Let us consider another approach, which is to start from the equality $\frac{a+b}{a} = \frac{a}{b}$ (see Figure 1). Since $\frac{a}{b} = \varphi$, a simple rearrangement gives
 
 $$
 \tag{2}
 1 + \frac{1}{\varphi} = \varphi.
 $$
 
-To find the value of $\varphi$, we solve this equation. Multiplying both sides by $\varphi$ and rearranging all terms to one side, we get the quadratic equation:
+To find the value of $\varphi$, we solve this equation. Multiplying both sides by $\varphi$ and rearranging all terms to one side, we get the quadratic equation
 
 $$
 \varphi^2 - \varphi - 1 = 0.
 $$
 
-This equation has two solutions:
+This equation has two solutions
 
 $$
 \varphi_{1,2} = \frac{1 \pm \sqrt{5}}{2}.
@@ -95,7 +94,7 @@ We are only interested in the positive solution, so $\varphi = \frac{1+\sqrt{5}}
 
 In the introduction, we mentioned that the golden ratio can be found, for example, in the arrangement of leaves on a stem. Leaves grow in spirals around the stem to avoid shading each other and to receive as much light as possible. It turns out that the angle between two neighboring leaves is about $137.5^\circ$, which corresponds to the so-called *golden angle*, defined as follows:
 
-If we divide a circle (full angle $360^\circ$) into two angles such that the ratio of the larger angle to the smaller angle equals the ratio of the full angle to the larger angle, then the smaller of these angles is called the golden angle. For the golden angle $\alpha$ (in degrees), we have:
+If we divide a circle (full angle $360^\circ$) into two angles such that the ratio of the larger angle to the smaller angle equals the ratio of the full angle to the larger angle, then the smaller of these angles is called the golden angle. For the golden angle $\alpha$ (in degrees), we have
 
 $$
 \frac{360 - \alpha}{\alpha} = \frac{360}{360 - \alpha},
@@ -105,22 +104,21 @@ giving $\alpha \approx 137.5^\circ$. Compare this relation for the golden angle 
 
 ## Continued Fraction
 
-A continued fraction is an expression of the type:
+A continued fraction is an expression of the type
 
 $$
 a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{a_3 + \ddots}}},
 $$
 
-where $a_0$ is an integer and $a_1, a_2, \dots$ are natural numbers. A continued fraction may be finite (terminated) or infinite (non-terminated). This is similar to decimal expansions—they can also be finite (terminated) or infinite (non-terminated).
+where $a_0$ is an integer and $a_1, a_2, \dots$ are natural numbers. A continued fraction may be finite (terminating) or infinite (non-terminating). This is similar to decimal expansions—they can also be finite (terminating) or infinite (non-terminating).
 
 It can be shown that the value of the golden ratio $\varphi$ can be expressed as an infinite continued fraction:
 
 $$
-\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}.
+\varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \ddots}}}
 $$
 
-> **Task 2.**  
-> Compute approximate values of the golden ratio using the following finite continued fractions:
+> **Task 2.** Compute approximate values of the golden ratio using the following finite continued fractions:
 >
 > 1. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}$$
 > 2. $$1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{1}}}}$$
@@ -136,11 +134,10 @@ These provide relatively good rational approximations of the golden ratio $\varp
 
 \fi
 
-> **Task 3.**  
-> Show that the value of the golden ratio $\varphi$ satisfies:
+> **Task 3.** Show that the value of the golden ratio $\varphi$ satisfies:
 >
 > $$
-  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}.
+  \varphi = 1 + \cfrac{1}{1 + \cfrac{1}{1 + \cfrac{1}{\varphi}}}
 > $$
 
 
@@ -165,7 +162,7 @@ x &= \frac{3x+2}{2x+1}
 \end{aligned}
 $$
 
-Then, multiply both sides by the expression in the denominator and rearrange to get the quadratic equation:
+Then, multiply both sides by the expression in the denominator and rearrange to get the quadratic equation
 
 $$
 x^2 - x - 1 = 0.
@@ -201,7 +198,7 @@ It is possible to show that every real number $x \in \mathbb{R}$ can be represen
 Consider a positive rational number $x$ and its (finite) continued fraction representation:
 
 $$
-x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_n}}}}
+x = a_0 + \cfrac{1}{a_1 + \cfrac{1}{a_2 + \cfrac{1}{\ddots + \cfrac{1}{a_n}}}} 
 $$
 
 Let's see the geometric meaning of $a_0, a_1, \dots, a_n$.
