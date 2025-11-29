@@ -1,7 +1,7 @@
 ---
 # workflow: in progress
-workflow: translating
-# workflow: finished
+# workflow: translating
+workflow: finished
 keywords:
 - rovnice a nerovnice
 - řetězový zlomek

@@ -1,7 +1,7 @@
 ---
 # workflow: in progress
-workflow: translating
-# workflow: finished
+# workflow: translating
+workflow: finished
 keywords:
 - diferenciální a integrální počet
 - optimalizace
