@@ -32,21 +32,55 @@ prohlédnut. Šokovaní inspektoři zjistili, že v dětském pokoji je silný
 zdroj radioaktivního záření. Velká část zdi byla vyříznuta a
 prozkoumána. Pečlivý průzkum objevil v panelu radioaktivní zářič, jaký
 se používá v lomech. Díky značení radiokativních zdrojů bylo zjištěno,
-že zmíněný zářič byl ztracen koncem sedmdesátých let v lomu Karansky.
-
-V lomech se radioaktivní materiály mohou použít například ke stanovení
+že zmíněný zářič byl ztracen koncem sedmdesátých let v lomu Karansky. Jednalo se o malou kapsli s radioaktivním izotopem cesia-137 vyzařující nebezpečné gama záření. Kapsle se ztratila v lomu a nešťastnou náhodou skončila ve štěrku použitém pro výrobu panelu právě v tomto bytě. V lomech se radioaktivní materiály mohou použít například ke stanovení
 hustoty hornin nebo naplněnosti neprůhledných nádob. Jakkoliv se
 zacházení s těmto materiály podrobuje přísným pravidlům, k nehodě
-někdy dojde. Podobná nehoda jako v lomu Karansky se stala začátkem
-roku 2023 v Austrálii, kde byl zářič vytroušen během transportu na
-vzdálenost 1400 kilometrů. Hledání bylo vskutku hledáním jehly v kupce
-sena, protože zářičem je váleček velikosti knoflíkové baterie o
-velikosti 8 milimetrů. Australský zářič se naštěstí podařilo najít u
-silnice, po které se transport pohyboval. Ukrajinský zářič bohužel
-takové štestí neměl a skončil v panelu, ze kterého byl postaven
-nešťastný dům.
+někdy dojde. 
 
-![Zářič podobného typu ztracený v roce 2023 v Austrálii](australia-capsule-size.png)
+#### Pro přehlednost si ještě jednou shrňme, co všechno se stalo:  
+- V 70. letech se v kamenolomu u Kramatorsku ztratil radioaktivní zdroj cesia-137 z průmyslového zařízení.
+- Štěrk a materiál z lomu se použil k výrobě betonových panelů pro panelový dům.
+- V jednom panelu, tvořícím stěnu dětského pokoje bytu č. 85, se ocitl pevně zabetonovanýmalý zdroj.
+- V těsné blízkosti stěny stála dětská postel, kde děti trávily mnoho času (spánek,hraní, učení).
+- Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o jiné příčině záhadných úmrtí.
+- Nakonec příbuzní a lékaři přizvali odborníky, kteří v bytě naměřili extrémně vysoké dávky záření a objevili kapsli se silným zdrojem cesia-137 přímo ve zdi. 
+
+## Základní fyzikální pojmy 
+
+### Radioaktivita a radioaktivní nuklid
+Radioaktivita je vlastnost některých jader atomů samovolně se přeměňovat na jiné prvky neboizotopy a při tom vyzařovat částice nebo elektromagnetické záření. Látky, které tuto vlastnostmají, nazýváme radioaktivní nuklidy (radioizotopy), v příběhu hraje hlavní roli cesium-137, umělevytvořený radionuklid.
+
+### Druhy ionizujícího záření
+Pro řešení úloh se hodí rozlišit tři základní typy záření:
+
+- Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkouvrstvou materiálu (např. papírem nebo pokožkou).
+- Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dápoměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
+- Gama záření: velmi pronikavé elektromagnetické záření s velkou energií, odstínění vyžadujevelkou vrstvu hustého materiálu (olovo, beton).
+
+Cesium-137 vyzařuje gama záření, které dokáže pronikat stavební konstrukcí i lidským tělem azpůsobuje poškození buněk a DNA.
+
+### Poločas rozpadu a exponenciální zákon
+Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobřepopsatelným zákonem.
+
+- Poločas rozpadu $T$ 
+je doba, za kterou se počet radioaktivních jader (a intenzita záření) zmenší na polovinu.
+- Pro počet nerozpadlých jader platí exponenciální zákon
+$$
+ N(t)=N_0 \mathrm{e}^{-\lambda t}
+$$
+- Stejným způsobem klesá i radioaktivita. 
+
+Cesium-137 má poločas přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu, za 60 let na čtvrtinu, za 90 let na osminu atd.
+
+### Intenzita záření a vzdálenost od zářiče
+Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této plochy roven $4\pi r^2$. 
+
+- Zvětší-li se vzdálenost od zářiče, intenzita záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude s druhou mocninou vzdálenosti klesat. 
+- Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
+
+Nyní již je možné se pustit do řešení následujících úloh. 
+
+
 
 > **Úloha 1.** V panelu tvořícím stěnu dětského pokoje je radioaktivní
 > zářič. Nešťastnou shodou okolností právě v místě vedle postele
@@ -187,6 +221,19 @@ $$
 $$
 
 \fi
+
+
+Podobná nehoda jako v lomu Karansky se stala začátkem
+roku 2023 v Austrálii, kde byl zářič vytroušen během transportu na
+vzdálenost 1400 kilometrů. Hledání bylo vskutku hledáním jehly v kupce
+sena, protože zářičem je váleček velikosti knoflíkové baterie o
+velikosti 8 milimetrů. Australský zářič se naštěstí podařilo najít u
+silnice, po které se transport pohyboval. Ukrajinský zářič bohužel
+takové štestí neměl a skončil v panelu, ze kterého byl postaven
+nešťastný dům.
+
+![Zářič podobného typu ztracený v roce 2023 v Austrálii](australia-capsule-size.png)
+
 
 ## Odkazy a literatura
 
