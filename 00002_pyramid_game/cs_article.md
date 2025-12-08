@@ -235,13 +235,35 @@ $$
   P_n=\frac{z_n}{s_n}=\frac{3^{n-2}+3^{n-1}}{\frac{3^n-1}{2}}=\frac{3^n(\frac{1}{9}+\frac{1}{3})}{\frac{1}{2}(3^n-1)}=\frac{\frac{4}{9}\cdot 3^n}{\frac{1}{2}(3^n-1)}=\frac{8}{9} \cdot \frac{3^n}{3^n-1}=\frac{8}{9}\cdot \frac{3^n}{3^n(1-3^{-n})}=\frac{8}{9}\cdot \frac{1}{1-3^{-n}}. 
  $$
 
-Není težké si uvědomit, že pro velké $n$ je výraz $3^{-n}$ velmi malý, a proto je (pro takové $n$) podíl $\frac{1}{1-3^{-n}}$ téměř roven jedné. To znamená, že $P \doteq \frac{8}{9} =0{,}\overline{8}$. 
+Není težké si uvědomit, že pro velká $n$ je výraz $3^{-n}$ zanedbatelně malý, a proto je (pro taková $n$) podíl $\frac{1}{1-3^{-n}}$ blízký jedničce. To znamená, že $P_n \doteq \frac{8}{9} =0{,}\overline{8}$. 
 
 Pojďme se ještě zamyslet nad tím, jak se liší skutečná hodnota podílu $P_n$ lidí ve ztrátě od čísla $\frac{8}{9}$. 
 
 $$
- P_n-\frac{8}{9}=\frac{8}{9}\cdot \frac{3^n}{3^n-1} -\frac{8}{9} = \frac{8}{9} \left( \frac{3^n}{3^n-1} - 1 \right) = \frac{8}{9} \cdot \frac{1}{3^n-1}. 
+ P_n-\frac{8}{9}=\frac{8}{9}\cdot \frac{1}{1-3^{-n}} -\frac{8}{9} = \frac{8}{9} \left( \frac{1}{1-3^{-n}} - 1 \right) = \frac{8}{9} \cdot \frac{3^{-n}}{1-3^{-n}}. 
 $$
+
+Z výsledky ihned vidíme, že rozdíl $P_n-\frac{8}{9}$ je kladný a navíc (protože předpokládáme, že $n>2$) platí 
+
+$$
+ P_n-\frac{8}{9} = \frac{8}{9} \cdot \frac{3^{-n}}{1-3^{-n}} < \frac{8}{9} \cdot \frac{3^{-n}}{1-3^{-2}} = \frac{8}{9} \cdot \frac{3^{-n}}{\frac{8}{9}}=3^{-n}=\frac{1}{3^n}. 
+$$
+
+Celkem tedy (pro každé $n \in \mathbb{N}$, $n \geq 3$) dostáváme zajímavý odhad 
+
+$$
+ \frac{8}{9} < P_n < \frac{8}{9}+\frac{1}{3^n}. 
+$$
+
+Například pro $n=8$ z posledního vztahu obdržíme 
+
+$$
+ 0{,}888888 < \frac{8}{9} < P_8 < \frac{8}{9} + \frac{1}{3^8} < 0{,}889042,   
+$$
+
+což je v souladu s výsledkem úlohy 3.2. 
+
+
 
 \fi
 
