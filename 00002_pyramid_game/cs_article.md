@@ -1,5 +1,5 @@
 ---
-# workflow: in progress
+workflow: in progress
 # workflow: translating
 # workflow: finished
 keywords:
@@ -64,7 +64,7 @@ ti dále musí nabrat alespoň dva další členy (od kterých dostane zbylých 
 >zakladatel společnosti nedostane ze vstupních poplatků nových členů
 >žádné peníze.
 >
-> 1. Která úroveň to je?
+> 1. Ve které úrovni pyramidy se tito noví členové nachází?
 > 2. Kolik lidí je v celé pyramidě po naplnění této úrovně? Srovnejte
 >    tento počet s počtem lidí ve vaší škole nebo obci.
 > 3. Určete procentuální podíl lidí, kteří jsou po naplnění této
@@ -83,8 +83,19 @@ nedostane nic). Nově příchozí člen se tak nachází v 17. úrovni.
 *Řešení části 2.2.* Počty lidí v jednotlivých úrovních tvoří geometrickou
 posloupnost s prvním členem $a_1=1$ a kvocientem $q=3$. 
 Počet lidí v pyramidě o sedmnácti úrovních je pak součtem prvních sedmnácti členů této
-posloupnosti: $$s_{n}=a_1\cdot\frac{q^n-1}{q-1},\qquad
-s_{17}=1\cdot\frac{3^{17}-1}{3-1}=64\,570\,081.$$ Je vidět, že by do schématu
+posloupnosti. Připomeňme, že součet prvních $n$ členů geometrické posloupnosti lze vypočítat podle vzorce
+
+$$
+\tag{1}
+ s_{n}=a_1\cdot\frac{q^n-1}{q-1}.
+$$
+
+V našem případě ($a_1=1$, $q=3$ a $n=17$) dostaneme 
+
+$$
+s_{17}=1\cdot\frac{3^{17}-1}{3-1}=64\,570\,081.$$ 
+
+Je vidět, že by do schématu
 musela být zapojena celá populace většího státu (přibližně odpovídá populaci
 Francie).
 
@@ -97,7 +108,7 @@ a_{16}+a_{17}=3^{15}+3^{16}=57\,395\,628.
 $$
 
 Nyní můžeme určit procentuální podíl lidí ve ztrátě:
-$$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\,\%\doteq 88{,}89\,\%.$$
+$$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\doteq 88{,}89\,\%.$$
 
 \fi
 
@@ -119,8 +130,13 @@ $$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\,\%\doteq 88{,}89\,\%.$$
 
 *Řešení části 3.1.* Úlohu lze řešit postupným dosazováním přirozených čísel do
 vzorce pro součet prvních $n$ členů geometrické posloupnosti. Uvedeme zde však
-řešení užitím exponenciální nerovnice. Musí platit $2\,000 \leq s_n \leq  8\,000$, tedy po dosazení do vzorce ($a_1=1$, $q=3$) 
-dostáváme: 
+řešení užitím exponenciálních nerovnic. Podle zadání musí platit 
+
+$$
+ 2\,000 \leq s_n \leq  8\,000 
+$$
+
+a po dosazení $a_1=1$ a $q=3$ do obecného vzorce $(1)$ dostáváme: 
 
 $$
 2\,000  \leq  \dfrac{3^n-1}{2}  \leq  8\,000
@@ -143,7 +159,7 @@ je nyní $3\,280$).
 Obdobně jako v úloze 2.3 je počet lidí ve ztrátě roven $a_7+a_8=3^6+3^7=2\ 916$.
 Stanovíme procentuální podíl: 
 $$
-P'=100\cdot\frac{2\,916}{3\,280}\,\%\doteq 88{,}90\,\%.
+P'=100\cdot\frac{2\,916}{3\,280} \doteq 88{,}90\,\%.
 $$ 
 Můžeme si všimnout, že se výsledek příliš neliší od výsledku úlohy
 2.3, i když jsou počty uvažovaných lidí řádově odlišné.
@@ -166,22 +182,66 @@ nabraných zelenými investory a všech dalších lidí v "jeho" větvi pyramidy
 Určeme nyní zisk $Z_2$ červeného investora. Počet lidí, od kterých dostane $1\,000\,\text{Kč}$ je
 roven součtu $$3^2 + 3^3 + 3^4 + 3^5 + 3^6$$ (celá pyramida má mít osm úrovní).
 Nesmíme dále zapomenout na odečtení vstupního poplatku. Tedy 
-$$Z_2=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5 + 3^6 )\cdot 1\,000 - 20\,000\,\text{Kč} = 1\,087\,000\,\text{Kč}.$$
+$$Z_2=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5 + 3^6 )\cdot 1\,000 - 20\,000 = 1\,087\,000\,\text{Kč}.$$
 
 *Řešení části 3.5.* Z části 3.1 víme, že lidí v pyramidě je celkem $3\,280$, každý
 až na zakladatele zaplatil na vstupních poplatcích $20\,000\,\text{Kč}$. Celková suma
-vybraných peněz je proto $65\,580\,000\,\text{Kč}$. Z částí 3.3 a 3.4 známe zisk zakladatele
+vybraných peněz je proto $3\,279 \cdot 20\,000 = 65\,580\,000\,\text{Kč}$. Z částí 3.3 a 3.4 známe zisk zakladatele
 a investora ve druhé úrovni, spočítáme proto ještě zisk investora ve třetí
 úrovni (obdobně jako v části 3.4): 
-$$Z_3=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5)\cdot 1\,000 - 20\,000 = 358\,000\,\text{Kč}.$$
-Nyní již můžeme stanovit podíl prostředků vyplacených lidem na prvních třech
+
+$$
+Z_3=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5)\cdot 1\,000 - 20\,000 = 358\,000\,\text{Kč}.
+$$
+
+Nyní již můžeme stanovit procentuální podíl prostředků vyplacených lidem na prvních třech
 úrovních ($S$ je celková suma): 
-$$P''=100\cdot\frac{Z_1 + 3\cdot Z_2 + 9\cdot Z_3}{S}=100\cdot\frac{37\,638\,000}{65\,580\,000}\,\%\doteq 57{,}39\,\%.$$
+
+$$
+P''=100\cdot\frac{Z_1 + 3\cdot Z_2 + 9\cdot Z_3}{S}=100\cdot\frac{37\,638\,000}{65\,580\,000} \doteq 57{,}39\,\%.
+$$
+
 Pro lepší pochopení je důležité si uvědomit, že tento podíl z celkového "příjmu
 společnosti" je vyplacen pouze $13$ lidem z $3\,280.$ Přibližně $0{,}4\,\%$ lidí v
 pyramidě tak dostane více než polovinu vybraných peněz. Není proto divu, že v
-řadě zemí světa je pyramidové schéma jako obchodní model zakázané (ČR mezi nimi
+řadě zemí světa je pyramidové schéma jako obchodní model zakázané. 
+<!-- (ČR mezi nimi
 bohužel dodnes, do roku 2023, není).
+-->
+
+\fi
+
+>**Úloha 4.** 
+Zamyslete se nad tím, proč procento lidí ve ztrátě téměř nezávisí na počtu úrovní pyramidy (viz úlohy 2.3 a 3.2). 
+
+\iffalse
+
+*Řešení.*
+Předpokládejme, že pyramida má $n$ (zcela zaplněných) úrovní a předpokládejme, že $n \geq 3$. Podle vzorce $(1)$ se pyramidové hry účastní celkem 
+
+$$
+ s_n=\frac{3^n-1}{2}
+$$
+
+lidí. Ve ztrátě jsou právě lidé z posledních dvou úrovní. Jejich počet je dán vztahem 
+
+$$
+ z_n=3^{n-2}+3^{n-1},
+$$
+
+ neboť v $k$-té úrovni pyramidy je $3^{k-1}$ lidí. Podíl lidí ve ztrátě je tedy 
+
+ $$
+  P_n=\frac{z_n}{s_n}=\frac{3^{n-2}+3^{n-1}}{\frac{3^n-1}{2}}=\frac{3^n(\frac{1}{9}+\frac{1}{3})}{\frac{1}{2}(3^n-1)}=\frac{\frac{4}{9}\cdot 3^n}{\frac{1}{2}(3^n-1)}=\frac{8}{9} \cdot \frac{3^n}{3^n-1}=\frac{8}{9}\cdot \frac{3^n}{3^n(1-3^{-n})}=\frac{8}{9}\cdot \frac{1}{1-3^{-n}}. 
+ $$
+
+Není težké si uvědomit, že pro velké $n$ je výraz $3^{-n}$ velmi malý, a proto je (pro takové $n$) podíl $\frac{1}{1-3^{-n}}$ téměř roven jedné. To znamená, že $P \doteq \frac{8}{9} =0{,}\overline{8}$. 
+
+Pojďme se ještě zamyslet nad tím, jak se liší skutečná hodnota podílu $P_n$ lidí ve ztrátě od čísla $\frac{8}{9}$. 
+
+$$
+ P_n-\frac{8}{9}=\frac{8}{9}\cdot \frac{3^n}{3^n-1} -\frac{8}{9} = \frac{8}{9} \left( \frac{3^n}{3^n-1} - 1 \right) = \frac{8}{9} \cdot \frac{1}{3^n-1}. 
+$$
 
 \fi
 
