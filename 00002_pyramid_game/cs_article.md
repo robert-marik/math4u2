@@ -212,7 +212,7 @@ bohužel dodnes, do roku 2023, není).
 \fi
 
 >**Úloha 4.** 
-Zamyslete se nad tím, proč procento lidí ve ztrátě téměř nezávisí na počtu úrovní pyramidy (viz úlohy 2.3 a 3.2). 
+Zamyslete se nad tím, proč v úlohách 2.3 a 3.2 vyšlo procento lidí ve ztrátě téměř stejné. Byla to jen náhoda, nebo bychom dostali podobný výsledek i pro jiné počty úrovní pyramidy? 
 
 \iffalse
 
