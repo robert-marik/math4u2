@@ -40,95 +40,92 @@ někdy dojde.
 #### Pro přehlednost si ještě jednou shrňme, co všechno se stalo:  
 - V 70. letech se v kamenolomu u Kramatorsku ztratil radioaktivní zdroj cesia-137 z průmyslového zařízení.
 - Štěrk a materiál z lomu se použil k výrobě betonových panelů pro panelový dům.
-- V jednom panelu, tvořícím stěnu dětského pokoje bytu č. 85, se ocitl pevně zabetonovanýmalý zdroj.
-- V těsné blízkosti stěny stála dětská postel, kde děti trávily mnoho času (spánek,hraní, učení).
-- Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o jiné příčině záhadných úmrtí.
+- V jednom panelu tvořícím stěnu dětského pokoje bytu č. 85 se ocitl pevně zabetonovaný malý zdroj.
+- V těsné blízkosti stěny stála dětská postel, kde děti trávily mnoho času (spánek, hraní,  učení).
+- Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o možné příčině záhadných úmrtí.
 - Nakonec příbuzní a lékaři přizvali odborníky, kteří v bytě naměřili extrémně vysoké dávky záření a objevili kapsli se silným zdrojem cesia-137 přímo ve zdi. 
 
 ## Základní fyzikální pojmy 
 
 ### Radioaktivita a radioaktivní nuklid
-Radioaktivita je vlastnost některých jader atomů samovolně se přeměňovat na jiné prvky neboizotopy a při tom vyzařovat částice nebo elektromagnetické záření. Látky, které tuto vlastnostmají, nazýváme radioaktivní nuklidy (radioizotopy), v příběhu hraje hlavní roli cesium-137, umělevytvořený radionuklid.
+Radioaktivita je vlastnost některých jader atomů samovolně se přeměňovat na jiné prvky nebo izotopy a přitom vyzařovat částice nebo elektromagnetické záření. Látky, které tuto vlastnost mají, nazýváme radioaktivní nuklidy (radionuklidy). V příběhu hraje hlavní roli cesium-137, uměle vytvořený radionuklid.
 
 ### Druhy ionizujícího záření
-Pro řešení úloh se hodí rozlišit tři základní typy záření:
+I když pro řešení našich úloh nebude nutné vědět, jaké druhy záření rozlišujeme, je zajímavé si tyto věci připomenout: 
 
-- Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkouvrstvou materiálu (např. papírem nebo pokožkou).
-- Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dápoměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
-- Gama záření: velmi pronikavé elektromagnetické záření s velkou energií, odstínění vyžadujevelkou vrstvu hustého materiálu (olovo, beton).
+- Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkou vrstvou materiálu (např. papírem nebo pokožkou).
+- Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dá poměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
+- Gama záření: velmi pronikavé elektromagnetické záření s velkou energií, odstínění vyžaduje silnou vrstvu hustého materiálu (olovo, beton).
 
-Cesium-137 vyzařuje gama záření, které dokáže pronikat stavební konstrukcí i lidským tělem azpůsobuje poškození buněk a DNA.
+Cesium-137 vyzařuje gama záření, které dokáže pronikat stavební konstrukcí i lidským tělem a způsobuje poškození buněk a DNA.
 
 ### Poločas rozpadu a exponenciální zákon
-Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobřepopsatelným zákonem.
+Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobře popsatelným zákonem.
 
-- Poločas rozpadu $T$ 
-je doba, za kterou se počet radioaktivních jader (a intenzita záření) zmenší na polovinu.
-- Pro počet nerozpadlých jader platí exponenciální zákon
-$$
- N(t)=N_0 \mathrm{e}^{-\lambda t}
-$$
-- Stejným způsobem klesá i radioaktivita. 
+* Poločas rozpadu $T$ 
+je doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu.
+* Pro počet nerozpadlých jader platí exponenciální zákon
 
-Cesium-137 má poločas přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu, za 60 let na čtvrtinu, za 90 let na osminu atd.
+$$
+\tag{1}
+ N(t)=N_0 \mathrm{e}^{-\lambda t}, 
+$$
+
+kde
+* $N(t)$ značí množství nerozpadnuté látky v čase $t \geq 0$;
+* $N_0$ je počáteční množství látky, tj. množství v čase $t=0$;
+* $\lambda$ je konstanta, která charakterizuje předpokládanou rychlost rozpadu;
+* $t$ je čas. 
+
+Cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu, za 60 let na čtvrtinu, za 90 let na osminu,  atd.
 
 ### Intenzita záření a vzdálenost od zářiče
 Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této plochy roven $4\pi r^2$. 
 
-- Zvětší-li se vzdálenost od zářiče, intenzita záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude s druhou mocninou vzdálenosti klesat. 
+- Zvětší-li se vzdálenost od zářiče, intenzita záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
 - Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
 
-Nyní již je možné se pustit do řešení následujících úloh. 
+Nyní je již možné se pustit do řešení následujících úloh. 
 
 
 
 > **Úloha 1.** V panelu tvořícím stěnu dětského pokoje je radioaktivní
 > zářič. Nešťastnou shodou okolností právě v místě vedle postele
-> jednoho z dětí. Pokuste se odhadnout, jak by se dávka snížila, pokud
+> jednoho z dětí. Pokuste se odhadnout, jak by se intenzita radioaktivního záření snížila, pokud
 > by dětská postel nebyla u této stěny, ale na opačné straně
-> postiženého pokoje. Předpokládejte, že zářič září všemi směry
-> rovnoměrně, že vzdálenost zářiče od dětské postele byla půl metru a
+> postiženého pokoje. Předpokládejte, že vzdálenost zářiče od dětské postele byla půl metru a
 > po přestěhování postele na opačnou stranu pokoje by narostla na tři
 > metry, tj. šestkrát.
 
 \iffalse
 
-*Řešení.* Podle zadání je možné předpokládát, že záření se rovnoměrně rozloží na
-kulovou plochu.
-
-Povrch koule o poloměru $r$ je dán vzorcem 
-
-$$S = 4\pi r^2.$$
-
-Odsud plyne, že kulová plocha mající šestinásobný poloměr má 36-krát
-větší povrch. Veškerý výkon zářiče se tedy rozloží na 36-krát větší
-povrch. Proto je intenzita radiace v šestinásobné vzdálenosti celkem
-36-krát menší.
+*Řešení.* Z předchozího víme, že pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. Pokud tedy vzdálenost naroste $6\times$, intenzita radioaktivního záření klesne $36\times$. 
 
 \fi
 
-> **Úloha 2.** Cesium použité jako zdroj radioaktivního záření v
+> **Úloha 2.** Cesium-137  použité jako zdroj radioaktivního záření v
 > popsaném incidentu má poločas rozpadu 30 let. Určete, za jak dlouho
 > by radioaktivita (v původní vzdálenosti půl metru) klesla na hodnotu, která by odpovídala aktuální radioaktivitě ve vzdálenosti $3$ metry ($6\times$ větší vzdálenost), tj. v případě přestěhování postele z předchozí úlohy.
 
 \iffalse
 
-*Řešení.* Z fyziky je známo, že aktivita zářiče a množství nerozpadnuté látky
-jsou úměrné a obě klesají exponenciálně s časem podle vztahu
+*Řešení.* Již víme, že intenzita radioaktivního záření a množství nerozpadnuté látky
+obě klesají exponenciálně s časem podle vztahu $(1)$, tj. 
 
-$$N(t) = N_0\mathrm{e}^{-\lambda t},\tag{1}$$
+$$
+ N(t)=N_0 \mathrm{e}^{-\lambda t}. 
+$$
 
-kde
+Musíme tedy určit, v jakém čase $t$ bude množství radioaktivního
+materiálu $36\times$ menší. To znamená, že hledáme $t$ takové, že $N(t)=\frac{1}{36}N_0$. Jednoduchou úpravou a následným logaritmováním vztahu $(1)$ dostáváme: 
 
-* $N(t)$ značí množství nerozpadnuté látky v čase;
-* $N_0$ je počáteční množství látky;
-* $\lambda$ je přeměnová konstanta, která charakterizuje předpokládanou rychlost přeměny;
-* $t$ je čas. 
+$$
+\mathrm{e}^{-\lambda t} = \frac{N(t)}{N_0} 
+$$
 
-Je tedy nutné najít, v jakém čase bude množství radioaktivního
-materiálu 36-krát menší. Logaritmováním vztahu (1) dostáváme
-
-$$-\lambda t  = \ln \frac{N(t)}{N_0}\tag{2}.$$
+$$
+-\lambda t  = \ln \frac{N(t)}{N_0}\tag{2}
+$$
 
 Protože po třiceti letech klesne množství na polovinu, 
 tj. $N(30)=\frac{1}{2}N_0$, tak platí
@@ -138,10 +135,10 @@ $$
 $$
 a tedy 
 $$
-\lambda = \frac 1{30}\ln 2.
+\lambda = -\frac{1}{30} \ln \frac{1}{2} = \frac 1{30}\ln 2.
 $$ 
 
-Po dosazení do (2) dostáváme 
+Po dosazení vypočtené konstanty $\lambda$ zpět do $(2)$  dostáváme 
 $$
 -\frac{\ln 2}{30} \cdot t  = \ln \frac{N(t)}{N_0}
 $$
@@ -149,10 +146,10 @@ a následně
 $$
 t  = -30 \frac{\ln \frac{N(t)}{N_0}}{\ln 2}.
 $$
-Pro čas $t$, kdy platí $\frac{N(t)}{N_0}=\frac {1}{36}$, dostáváme
+Pro čas $t$, ve kterém platí $N(t)=\frac {1}{36}N_0$, dostáváme
 $$
 t  = -30 \frac{\ln \frac{1}{36}}{\ln 2}=
-30 \frac{\ln {36}}{\ln 2} \doteq 155.
+30 \frac{\ln {36}}{\ln 2} \doteq 155 \; \text{let}.
 $$
 
 Poklesu ozáření ekvivalentnímu přesunu postele na druhou stranu pokoje
@@ -189,6 +186,8 @@ Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu
 
 \fi
 
+V následující úloze odvodíme jiný vzorec popisující radioaktivní rozpad. Jeho výhodou je, že se v něm přímo objevuje poločas rozpadu radioaktivní látky. 
+
 >**Úloha 4.**
 Ukažte, že vztah $(1)$, tj. 
 $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru 
@@ -205,7 +204,7 @@ $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru
 Dosazením $t=T$ do vztahu $(1)$  dostaneme (uvědomme si, že $T$ je poločas rozpadu)
 
 $$
- \frac{N_0}{2}=N(T)=N_0 \mathrm{e}^{-\lambda T}=N_0 \left( \mathrm{e}^{-\lambda} \right)^T. 
+ \frac{1}{2}N_0=N(T)=N_0 \mathrm{e}^{-\lambda T}=N_0 \left( \mathrm{e}^{-\lambda} \right)^T. 
 $$
 
 Nyní vykrátíme $N_0$ a umocníme na $\frac{1}{T}$. Tím dostaneme 
@@ -222,6 +221,7 @@ $$
 
 \fi
 
+### Nehoda nebyla jediná  
 
 Podobná nehoda jako v lomu Karansky se stala začátkem
 roku 2023 v Austrálii, kde byl zářič vytroušen během transportu na
