@@ -133,8 +133,7 @@ $$
 -\lambda t  = \ln \frac{N(t)}{N_0}\tag{2}
 $$
 
-Protože po třiceti letech klesne množství na polovinu, 
-tj. $N(30)=\frac{1}{2}N_0$, tak platí
+Protože po třiceti letech klesne množství radioaktivní látky na polovinu (poločas rozpadu je 30 let), znamená to, že $N(30)=\frac{1}{2}N_0$. Dosazením $t=30$ do vztahu $(2)$ pak dostaneme 
 
 $$
 -\lambda \cdot 30  = \ln \frac 12, 
@@ -152,7 +151,7 @@ a následně
 $$
 t  = -30 \frac{\ln \frac{N(t)}{N_0}}{\ln 2}.
 $$
-Pro čas $t$, ve kterém platí $N(t)=\frac {1}{36}N_0$, dostáváme
+Hledáme čas $t$, v němž bude $N(t)$ (množství radioaktivní látky) $36\times$ menší než v čase $0$, tj. $N(t)=\frac {1}{36}N_0$. Pro tento čas dostáváme
 $$
 t  = -30 \frac{\ln \frac{1}{36}}{\ln 2}=
 30 \frac{\ln {36}}{\ln 2} \doteq 155 \; \text{let}.
@@ -180,7 +179,7 @@ $$
  t  = -T \frac{\ln \frac{N(t)}{N_0}}{\ln 2}. 
 $$
 
-Nyní si stačí uvědomit, že pokud vzdálenost od zářiče vzroste $k$-krát, intenzita záření je $k^2$-krát menší. Proto pro čas $t$, pro který platí $\frac{N(t)}{N_0}=\frac{1}{k^2}$, dostáváme 
+Nyní si stačí uvědomit, že pokud vzdálenost od zářiče vzroste $k$-krát, intenzita záření je $k^2$-krát menší. Proto pro čas $t$, pro který platí $N(t)=\frac{1}{k^2}N_0$, dostáváme 
 
 $$
  t  = -T \frac{\ln \frac{1}{k^2}}{\ln 2}=
