@@ -45,13 +45,15 @@ někdy dojde.
 - Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o možné příčině záhadných úmrtí.
 - Nakonec příbuzní a lékaři přizvali odborníky, kteří v bytě naměřili extrémně vysoké dávky záření a objevili kapsli se silným zdrojem cesia-137 přímo ve zdi. 
 
+Tento příběh ukazuje, jak silný může být vliv radioaktivního záření na lidské zdraví, jak zákeřná je "neviditelnost"  radiace a jak důležitá je bezpečná manipulace s radioaktivními látkami.
+
 ## Základní fyzikální pojmy 
 
 ### Radioaktivita a radioaktivní nuklid
 Radioaktivita je vlastnost některých jader atomů samovolně se přeměňovat na jiné prvky nebo izotopy a přitom vyzařovat částice nebo elektromagnetické záření. Látky, které tuto vlastnost mají, nazýváme radioaktivní nuklidy (radionuklidy). V příběhu hraje hlavní roli cesium-137, uměle vytvořený radionuklid.
 
 ### Druhy ionizujícího záření
-I když pro řešení našich úloh nebude nutné vědět, jaké druhy záření rozlišujeme, je zajímavé si tyto věci připomenout: 
+I když pro řešení našich úloh nebude nezbytně nutné vědět, jaké druhy záření rozlišujeme, je zajímavé si tyto věci připomenout: 
 
 - Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkou vrstvou materiálu (např. papírem nebo pokožkou).
 - Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dá poměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
@@ -71,8 +73,9 @@ $$
  N(t)=N_0 \mathrm{e}^{-\lambda t}, 
 $$
 
-kde
+kde 
 * $N(t)$ značí množství nerozpadnuté látky v čase $t \geq 0$;
+
 * $N_0$ je počáteční množství látky, tj. množství v čase $t=0$;
 * $\lambda$ je konstanta, která charakterizuje předpokládanou rychlost rozpadu;
 * $t$ je čas. 
@@ -85,9 +88,12 @@ Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme 
 - Zvětší-li se vzdálenost od zářiče, intenzita záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
 - Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
 
-Nyní je již možné se pustit do řešení následujících úloh. 
+### Dávka záření a zdravotní riziko
+* Dávka záření vyjadřuje, kolik energie ionizujícího záření je absorbováno v určitém množství (hmotnosti) tkáně. Běžně se používá jednotka gray (Gy) nebo sievert (Sv) pro efekt na biologické tkáně.
+* Dlouhodobé vystavení vyšší dávce záření zvyšuje riziko vzniku nádorů, leukémie a dalších zdravotních problémů.
+* V Kramatorsku šlo o kombinaci relativně malé vzdálenosti, stálé přítomnosti v místnosti (mnoho hodin denně) a dlouhého časového období (roky).
 
-
+Nyní je již možné pustit se do řešení následujících úloh.
 
 > **Úloha 1.** V panelu tvořícím stěnu dětského pokoje je radioaktivní
 > zářič. Nešťastnou shodou okolností právě v místě vedle postele
@@ -196,7 +202,7 @@ $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru
  N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}, 
 >$$
 >
->kde $T$ je poločas rozpadu radioaktivní látky. 
+>kde $T$ je poločas rozpadu radioaktivní látky.  
 
 \iffalse
 
@@ -220,6 +226,25 @@ $$
 $$
 
 \fi
+
+**Poznámka.** 
+Ze vztahu $N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}$ je například pěkně vidět, že v případě poločasu rozpadu 30 let za 90 let zůstane $\frac{1}{8}$ původního množství látky, protože $\left( \frac{1}{2} \right)^{\frac{t}{T}} = \left( \frac{1}{2} \right)^{\frac{90}{30}} = \left( \frac{1}{2} \right)^{3}=\frac{1}{8}.$ 
+
+### Otázky k zamyšlení (bez počítání)
+* Proč si lidé v Kramatorsku tak dlouho nevšimli, že problém je ve stěně bytu a ne "jen" v náhodě nebo genetice?
+
+* Jakou roli hraje v tomto příběhu skutečnost, že radioaktivní záření není vidět, cítit ani slyšet?
+
+* Co by se stalo, kdyby byl stejný zdroj umístěn třeba ve zdi sklepa nebo technické místnosti, do které lidé chodí jen zřídka?
+
+* Jak by se změnilo riziko, kdyby v pokoji nespaly děti, ale jen dospělí, kteří tam tráví méně času?
+
+* Jaké povinnosti mají podle vašeho názoru firmy a instituce, které pracují s radioaktivními zdroji (označování, evidence, kontrola)?
+
+* Může být využití radioaktivity užitečné (např. medicína, průmysl, energetika)?
+
+
+
 
 ### Nehoda nebyla jediná  
 
@@ -248,6 +273,15 @@ nešťastný dům.
 
 * <https://edition.cnn.com/2023/02/01/australia/australia-radioactive-capsule-found-intl-hnk/index.html>, September 28, 2023
 
+* <https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident2.>
+
+* <https://www.iflscience.com/the-devastating-kramatorsk-radiological-accident-almost-killed-an-entire-apartment-block-67384> 
+
+* https://www.curiousarchive.com/death-in-apartment-85-the-kramatorsk-radiological-accident/5>
+
+* https://www.amusingplanet.com/2023/11/the-building-that-gave-its-residents.html> 
+
+* https://www.reddit.com/r/interestingasfuck/comments/zqrz3p/in_the_1970s_a_capsule_with_radioactive/>
 
 ### Zdroje obrázků
 
