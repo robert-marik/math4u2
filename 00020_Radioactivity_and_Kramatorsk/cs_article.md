@@ -42,7 +42,7 @@ někdy dojde.
 - Štěrk a materiál z lomu se použil k výrobě betonových panelů pro panelový dům.
 - V jednom panelu tvořícím stěnu dětského pokoje bytu č. 85 se ocitl pevně zabetonovaný malý zdroj.
 - V těsné blízkosti stěny stála dětská postel, kde děti trávily mnoho času (spánek, hraní,  učení).
-- Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o možné příčině záhadných úmrtí.
+- Během zhruba jednoho desetiletí postupně onemocnělo a zemřelo několik obyvatel bytu (především dětí) na leukémii. Teprve poté se začalo uvažovat o pravé příčině záhadných úmrtí.
 - Nakonec příbuzní a lékaři přizvali odborníky, kteří v bytě naměřili extrémně vysoké dávky záření a objevili kapsli se silným zdrojem cesia-137 přímo ve zdi. 
 
 Tento příběh ukazuje, jak silný může být vliv radioaktivního záření na lidské zdraví, jak zákeřná je "neviditelnost"  radiace a jak důležitá je bezpečná manipulace s radioaktivními látkami.
@@ -84,13 +84,13 @@ kde
 Cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu, za 60 let na čtvrtinu, za 90 let na osminu,  atd.
 
 ### Intenzita záření a vzdálenost od zářiče
-Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této plochy roven $4\pi r^2$. 
+Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$. 
 
-- Zvětší-li se vzdálenost od zářiče, intenzita záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
+- Zvětší-li se vzdálenost od zářiče, pak se příslušná dávka záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
 - Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
 
 ### Dávka záření a zdravotní riziko
-* Dávka záření vyjadřuje, kolik energie ionizujícího záření je absorbováno v určitém množství (hmotnosti) tkáně. Běžně se používá jednotka gray (Gy) nebo sievert (Sv) pro efekt na biologické tkáně.
+* Dávka záření vyjadřuje, kolik energie ionizujícího záření je absorbováno v určitém množství tkáně. Běžně se používá jednotka gray (Gy) nebo sievert (Sv) pro efekt na biologické tkáně.
 * Dlouhodobé vystavení vyšší dávce záření zvyšuje riziko vzniku nádorů, leukémie a dalších zdravotních problémů.
 * V Kramatorsku šlo o kombinaci relativně malé vzdálenosti, stálé přítomnosti v místnosti (mnoho hodin denně) a dlouhého časového období (roky).
 
@@ -163,7 +163,7 @@ bychom se dočkali přibližně po 155 letech.
 
 \fi
 
->**Úloha 3.** Pokuste se vyřešit úlohu 2 obecně, tj. v případě, že poločas rozpadu radioaktivní látky použité v zářiči je $T$ a že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+>**Úloha 3.** Pokuste se vyřešit úlohu 2 obecně, tj. pro jakoukoliv radioaktivní látku s poločasem rozpadu $T$ a pro případ, že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
 
 \iffalse
 
@@ -216,7 +216,10 @@ $$
 Nyní vykrátíme $N_0$ a umocníme na $\frac{1}{T}$. Tím dostaneme 
 
 $$
- \mathrm{e}^{-\lambda}=\left( \frac{1}{2} \right)^{\frac{1}{T}}. 
+\begin{aligned}
+ \left( \mathrm{e}^{-\lambda} \right)^T &= \frac{1}{2} \\
+ \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\frac{1}{T}}. 
+\end{aligned}
 $$
 
 Dosazením poslední rovnosti zpět do vztahu $(1)$ obdržíme 
@@ -277,11 +280,11 @@ nešťastný dům.
 
 * <https://www.iflscience.com/the-devastating-kramatorsk-radiological-accident-almost-killed-an-entire-apartment-block-67384> 
 
-* https://www.curiousarchive.com/death-in-apartment-85-the-kramatorsk-radiological-accident/5>
+* <https://www.curiousarchive.com/death-in-apartment-85-the-kramatorsk-radiological-accident/5>
 
-* https://www.amusingplanet.com/2023/11/the-building-that-gave-its-residents.html> 
+* <https://www.amusingplanet.com/2023/11/the-building-that-gave-its-residents.html> 
 
-* https://www.reddit.com/r/interestingasfuck/comments/zqrz3p/in_the_1970s_a_capsule_with_radioactive/>
+* <https://www.reddit.com/r/interestingasfuck/comments/zqrz3p/in_the_1970s_a_capsule_with_radioactive>
 
 ### Zdroje obrázků
 
