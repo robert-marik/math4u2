@@ -64,9 +64,7 @@ Cesium-137 vyzařuje gama záření, které dokáže pronikat stavební konstruk
 ### Poločas rozpadu a exponenciální zákon
 Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobře popsatelným zákonem.
 
-* Poločas rozpadu $T$ 
-je doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu.
-* Pro počet nerozpadlých jader platí exponenciální zákon
+Pro počet nerozpadlých jader platí exponenciální zákon
 
 $$
 \tag{1}
@@ -81,7 +79,9 @@ kde
 * $\lambda$ je konstanta, která charakterizuje předpokládanou rychlost rozpadu;
 * $t$ je čas. 
 
-Cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu, za 60 let na čtvrtinu, za 90 let na osminu,  atd.
+Dalším velmi důležitým pojmem je tzv. poločas rozpadu radioaktivní látky (budeme ho označovat jako $T$). Je to doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu. Poločas rozpadu $T$ přitom úzce souvisí s konstantou $\lambda$ ze vztahu $(1)$.
+
+Například cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu. Za dalších 30 let (tj. celkem za 60 let) na čtvrtinu (polovina z poloviny), za 90 let na osminu,  atd.
 
 ### Intenzita záření a vzdálenost od zářiče
 Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$. 
@@ -192,7 +192,7 @@ Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu
 
 \fi
 
-V následující úloze odvodíme jiný vzorec popisující radioaktivní rozpad. Jeho výhodou je, že se v něm přímo objevuje poločas rozpadu radioaktivní látky. 
+V následující úloze odvodíme jiný vzorec popisující radioaktivní rozpad. Jeho výhodou je, že se v něm přímo objevuje poločas rozpadu radioaktivní látky. V mnohých situacích se s ním navíc pracuje lépe než ze vzorcem $(1)$. 
 
 >**Úloha 4.**
 Ukažte, že vztah $(1)$, tj. 
@@ -231,7 +231,11 @@ $$
 \fi
 
 **Poznámka.** 
-Ze vztahu $N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}$ je například pěkně vidět, že v případě poločasu rozpadu 30 let za 90 let zůstane $\frac{1}{8}$ původního množství látky, protože $\left( \frac{1}{2} \right)^{\frac{t}{T}} = \left( \frac{1}{2} \right)^{\frac{90}{30}} = \left( \frac{1}{2} \right)^{3}=\frac{1}{8}.$ 
+Ze vztahu $N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}$ je například pěkně vidět, že v případě poločasu rozpadu $T=30 \;\text{let}$ zůstane za $t=90 \; \text{let}$ jedna osmina původního množství látky, protože 
+
+$$
+ N(t)=N_0\left( \frac{1}{2} \right)^{\frac{t}{T}} = N_0\left( \frac{1}{2} \right)^{\frac{90}{30}} = N_0\left( \frac{1}{2} \right)^{3}=\frac{1}{8}N_0.
+$$ 
 
 ### Otázky k zamyšlení (bez počítání)
 * Proč si lidé v Kramatorsku tak dlouho nevšimli, že problém je ve stěně bytu a ne "jen" v náhodě nebo genetice?
