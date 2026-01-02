@@ -192,7 +192,7 @@ Můžeme se přesvědčit, že po dosazení $T=30$ a $k=6$ do posledního vztahu
 
 \fi
 
-V následující úloze odvodíme jiný vzorec popisující radioaktivní rozpad. Jeho výhodou je, že se v něm přímo objevuje poločas rozpadu radioaktivní látky. V mnohých situacích se s ním navíc pracuje lépe než ze vzorcem $(1)$. 
+V následující úloze odvodíme jiný vzorec popisující radioaktivní rozpad. Jeho výhodou je, že se v něm přímo objevuje poločas rozpadu radioaktivní látky. V mnohých situacích se s ním navíc pracuje lépe než se vzorcem $(1)$. 
 
 >**Úloha 4.**
 Ukažte, že vztah $(1)$, tj. 
