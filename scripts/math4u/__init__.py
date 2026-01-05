@@ -188,6 +188,8 @@ class File:
         html_page += f" <a href='{self.path.name.split('.')[0]}_reduced.pdf'>PDF reduced</a> "
         html_page += f" <a href='https://rwp.math4u.vsb.cz/{self.path.parent.name}/{self.path.name.split('.')[0]}.pdf'>PDF old</a> "
         html_page += f" <a href='{self.path.name.split('.')[0]}_diff.pdf'>PDFdiff</a>"
+        if self.language != "en":
+            html_page += f" <a href='en_article_diff.pdf'>PDFdiff ENG</a>"
         html_page += "</div>\n"
 
         keywords = self.yaml_header.get('keywords', [])
