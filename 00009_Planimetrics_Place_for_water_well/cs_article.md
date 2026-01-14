@@ -37,6 +37,7 @@ pro málo prostupné prostředí jsou dány následovně:
 > na plánu vidět silnice vedoucí kolem obou pozemků. Vyznačte v plánu
 > prostor, do kterého je možné studnu dle pravidel umístit.
 >
+
  ![Plán pozemků s měřítkem](math4you_00009.png)
 
 \iffalse
