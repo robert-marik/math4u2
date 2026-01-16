@@ -163,15 +163,9 @@ bychom se dočkali přibližně po 155 letech.
 
 \fi
 
->**Úloha 3.** V čase $t=0$ (začátek pozorování) je postel u stěny. Pokud by se v tomto čase postel přesunula do $k$ násobné vzdálenosti od stěny, intenzita záření by klesla $k^2$ násobně. Určete, za jak dlouho ($t>0$) by množství nerozpadnutého materiálu v panelu kleslo tak, že intenzita záření v místě u stěny by byla stejně nízká jako intenzita záření v čase $t=0$ ve vzdálenosti $k$ násobné.  
-
-
-
-
-Pokuste se vyřešit úlohu 2 obecně, tj. pro jakoukoliv radioaktivní látku s poločasem rozpadu $T$ a pro případ, že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho by množství nerozpadnutého materiálu v panelu kleslo tak, že by intenzita záření v původní vzdálenosti byla stejně nízká jako intenzita v v $k$-násobné vzdálenosti od zářiče v čase $t=0$. 
-
-
-radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+>**Úloha 3.** Pokuste se vyřešit úlohu 2 obecně, tj. pro jakoukoliv radioaktivní látku s poločasem rozpadu $T$ a pro případ, že vzdálenost od zářiče vzroste $k$-krát. 
+>
+>Podrobněji: V čase $t=0$ (začátek pozorování) je postel u stěny. Určete, za jak dlouho ($t>0$) by množství nerozpadnutého materiálu v panelu kleslo tak, že intenzita záření v místě u stěny by byla stejně nízká jako intenzita záření v čase $t=0$ ve vzdálenosti $k$-násobné.  
 
 \iffalse
 
@@ -188,7 +182,10 @@ $$
  t  = -T \frac{\ln \frac{N(t)}{N_0}}{\ln 2}. 
 $$
 
-Nyní si stačí uvědomit, že pokud vzdálenost od zářiče vzroste $k$-krát, intenzita záření je $k^2$-krát menší. Proto pro čas $t$, pro který platí $N(t)=\frac{1}{k^2}N_0$, dostáváme 
+Nyní si stačí uvědomit, že pokud vzdálenost od zářiče vzroste $k$-krát, intenzita záření je $k^2$-krát menší. Protože intenzita radioaktivního záření je přímo úměrná množství nerozpadnutého materiálu, chceme zjistit, v jakém čase $t$ bude množství radioaktivního
+materiálu $k^2$-krát menší. 
+
+Proto pro čas $t$, pro který platí $N(t)=\frac{1}{k^2}N_0$, dostáváme 
 
 $$
  t  = -T \frac{\ln \frac{1}{k^2}}{\ln 2}=
@@ -215,17 +212,20 @@ $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru
 \iffalse
 
 *Řešení.*
-Dosazením $t=T$ do vztahu $(1)$  dostaneme (uvědomme si, že $T$ je poločas rozpadu)
-
-$$
- \frac{1}{2}N_0=N(T)=N_0 \mathrm{e}^{-\lambda T}=N_0 \left( \mathrm{e}^{-\lambda} \right)^T. 
-$$
-
-Nyní vykrátíme $N_0$ a umocníme na $\frac{1}{T}$. Tím dostaneme 
+Dosazením $t=T$ do vztahu $(1)$  dostaneme (uvědomme si, že $T$ je poločas rozpadu, tj. $N(T)=\frac{1}{2}N_0$):
 
 $$
 \begin{aligned}
- \left( \mathrm{e}^{-\lambda} \right)^T &= \frac{1}{2} \\
+ N(T) &= N_0 \mathrm{e}^{-\lambda T} \\
+ \frac{1}{2}N_0 &= N_0 \left( \mathrm{e}^{-\lambda} \right)^T 
+\end{aligned}
+$$
+
+Postupnými úpravami dostáváme:  
+
+$$
+\begin{aligned}
+ \frac{1}{2} &= \left( \mathrm{e}^{-\lambda} \right)^T  \\
  \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\frac{1}{T}}. 
 \end{aligned}
 $$
@@ -256,7 +256,7 @@ $$
 
 * Jaké povinnosti mají podle vašeho názoru firmy a instituce, které pracují s radioaktivními zdroji (označování, evidence, kontrola)?
 
-* Může být využití radioaktivity užitečné (např. medicína, průmysl, energetika)?
+* Může být využití radioaktivních látek užitečné (např. medicína, průmysl, energetika)?
 
 
 
@@ -268,9 +268,7 @@ roku 2023 v Austrálii, kde byl zářič vytroušen během transportu na
 vzdálenost 1400 kilometrů. Hledání bylo vskutku hledáním jehly v kupce
 sena, protože zářičem je váleček velikosti knoflíkové baterie o
 velikosti 8 milimetrů. Australský zářič se naštěstí podařilo najít u
-silnice, po které se transport pohyboval. Ukrajinský zářič bohužel
-takové štestí neměl a skončil v panelu, ze kterého byl postaven
-nešťastný dům.
+silnice, po které se transport pohyboval. 
 
 ![Zářič podobného typu ztracený v roce 2023 v Austrálii](australia-capsule-size.png)
 
