@@ -49,22 +49,19 @@ Tento příběh ukazuje, jak silný může být vliv radioaktivního záření n
 
 ## Základní fyzikální pojmy 
 
-### Radioaktivita a radioaktivní nuklid
-Radioaktivita je vlastnost některých jader atomů samovolně se přeměňovat na jiné prvky nebo izotopy a přitom vyzařovat částice nebo elektromagnetické záření. Látky, které tuto vlastnost mají, nazýváme radioaktivní nuklidy (radionuklidy). V příběhu hraje hlavní roli cesium-137, uměle vytvořený radionuklid.
-
-### Druhy ionizujícího záření
-I když pro řešení našich úloh nebude nezbytně nutné vědět, jaké druhy záření rozlišujeme, je zajímavé si tyto věci připomenout: 
+### Radioaktivita a radioaktivní záření
+Radioaktivita je samovolný proces, při kterém se některá jádra atomů samovolně přeměňují na stabilnější jádra a přitom se uvolňuje radioaktivní záření. Rozeznáváme následující druhy:  
 
 - Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkou vrstvou materiálu (např. papírem nebo pokožkou).
 - Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dá poměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
 - Gama záření: velmi pronikavé elektromagnetické záření s velkou energií, odstínění vyžaduje silnou vrstvu hustého materiálu (olovo, beton).
 
-Cesium-137 vyzařuje gama záření, které dokáže pronikat stavební konstrukcí i lidským tělem a způsobuje poškození buněk a DNA.
+V našem příběhu hraje hlavní roli radioaktivní látka cesium-137, která 
+vyzařuje gama záření. To dokáže pronikat stavební konstrukcí i lidským tělem a způsobuje poškození buněk a DNA.
 
-### Poločas rozpadu a exponenciální zákon
+### Radioaktivní rozpad a poločas rozpadu
 Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobře popsatelným zákonem.
-
-Pro počet nerozpadlých jader platí exponenciální zákon
+Pro počet nerozpadlých jader platí vztah 
 
 $$
 \tag{1}
@@ -79,12 +76,16 @@ kde
 * $\lambda$ je konstanta, která charakterizuje předpokládanou rychlost rozpadu;
 * $t$ je čas. 
 
-Dalším velmi důležitým pojmem je tzv. poločas rozpadu radioaktivní látky (budeme ho označovat jako $T$). Je to doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu. Poločas rozpadu $T$ přitom úzce souvisí s konstantou $\lambda$ ze vztahu $(1)$.
+Poločas rozpadu radioaktivní látky (budeme ho označovat jako $T$) je doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu. Poločas rozpadu $T$ přitom úzce souvisí s konstantou $\lambda$ ze vztahu $(1)$.
 
 Například cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu. Za dalších 30 let (tj. celkem za 60 let) na čtvrtinu (polovina z poloviny), za 90 let na osminu,  atd.
 
-### Intenzita záření a vzdálenost od zářiče
-Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$. 
+### Intenzita záření
+Intenzita záření je fyzikální veličina, která udává množství energie nebo částic záření procházející jednotkou plochy za jednotku času. 
+
+V dané vzdálenosti od zářiče je intenzita záření přímo úměrná množství nerozpadnutého materiálu ve zdroji. Proto při výpočtu intenzity záření využíváme vztah $(1)$. 
+
+Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$ (tj. roste s druhou mocninou vzdálenosti). 
 
 - Zvětší-li se vzdálenost od zářiče, pak se příslušná dávka záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
 - Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
