@@ -49,8 +49,9 @@ Tento příběh ukazuje, jak silný může být vliv radioaktivního záření n
 
 ## Základní fyzikální pojmy 
 
-### Radioaktivita a radioaktivní záření
-Radioaktivita je samovolný proces, při kterém se některá jádra atomů samovolně přeměňují na stabilnější jádra a přitom se uvolňuje radioaktivní záření. Rozeznáváme následující druhy:  
+### Radioaktivní látky a radioaktivní záření
+Radioaktivní látkou rozumíme látku obsahující  nestabilní atomová jádra (radionuklidy), která se spontánně rozpadají a produkují přitom záření. 
+Rozeznáváme následující druhy záření:  
 
 - Alfa záření: proud těžkých částic (jádra helia), má malý dosah a snadno se odstíní tenkou vrstvou materiálu (např. papírem nebo pokožkou).
 - Beta záření: proud elektronů nebo pozitronů, má větší dosah než alfa, ale stále se dá poměrně snadno zastavit například kovem nebo silnější vrstvou plastu.
@@ -60,7 +61,7 @@ V našem příběhu hraje hlavní roli radioaktivní látka cesium-137, která
 vyzařuje gama záření. To dokáže pronikat stavební konstrukcí i lidským tělem a způsobuje poškození buněk a DNA.
 
 ### Radioaktivní rozpad a poločas rozpadu
-Radioaktivní rozpad je náhodný proces, ale v souboru velkého počtu jader se řídí dobře popsatelným zákonem.
+Radioaktivita (radioaktivní rozpad) je samovolný proces, při kterém se nestabilní jádra atomů samovolně přeměňují na stabilnější jádra a přitom se uvolňuje radioaktivní záření. V souboru velkého počtu jader se tento proces řídí dobře popsatelným zákonem.
 Pro počet nerozpadlých jader platí vztah 
 
 $$
@@ -83,17 +84,15 @@ Například cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 le
 ### Intenzita záření
 Intenzita záření je fyzikální veličina, která udává množství energie nebo částic záření procházející jednotkou plochy za jednotku času. 
 
-V dané vzdálenosti od zářiče je intenzita záření přímo úměrná množství nerozpadnutého materiálu ve zdroji. Proto při výpočtu intenzity záření využíváme vztah $(1)$. 
+V dané vzdálenosti od zářiče je intenzita záření přímo úměrná množství nerozpadnutého materiálu ve zdroji. Pokud chceme intenzitu záření snížit například $36\times$, musíme snížit počet jader také $36\times$.   
 
-Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$ (tj. roste s druhou mocninou vzdálenosti). 
+Bodový zdroj vyzařuje energii rovnoměrně do všech směrů. Čím dál jsme od zdroje záření, tím se energie musí rozprostřít na větší plochu (kulová plocha). Pokud jsme ve vzdálenosti $r$ od zářiče, je obsah této kulové plochy roven $4\pi r^2$. Je tedy přímo úměrný druhé mocnině vzdálenosti. 
 
-- Zvětší-li se vzdálenost od zářiče, pak se příslušná dávka záření se rozloží na větší plochu. Obsah této plochy je přímo úměrný druhé mocnině vzdálenosti od zářiče, což znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
-- Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
+Zvětší-li se vzdálenost od zářiče, pak se příslušná dávka záření rozloží na větší plochu, která (jak je uvedeno výše) je přímo úměrná druhé mocnině vzdálenosti. To znamená, že intenzita záření bude naopak s druhou mocninou vzdálenosti klesat. 
+Pokud se vzdálenost od zářiče zvětší $k$-krát, intenzita záření klesne $k^2$-krát. 
 
-### Dávka záření a zdravotní riziko
-* Dávka záření vyjadřuje, kolik energie ionizujícího záření je absorbováno v určitém množství tkáně. Běžně se používá jednotka gray (Gy) nebo sievert (Sv) pro efekt na biologické tkáně.
-* Dlouhodobé vystavení vyšší dávce záření zvyšuje riziko vzniku nádorů, leukémie a dalších zdravotních problémů.
-* V Kramatorsku šlo o kombinaci relativně malé vzdálenosti, stálé přítomnosti v místnosti (mnoho hodin denně) a dlouhého časového období (roky).
+### Dávka záření a zdravotní riziko 
+Dávka záření vyjadřuje, kolik energie záření je absorbováno v určitém množství tkáně. Běžně se používá jednotka gray (Gy) nebo sievert (Sv) pro efekt na biologické tkáně. Dlouhodobé vystavení vyšší dávce záření zvyšuje riziko vzniku nádorů, leukémie a dalších zdravotních problémů. V Kramatorsku šlo o kombinaci relativně malé vzdálenosti, stálé přítomnosti v místnosti (mnoho hodin denně) a dlouhého časového období (roky).
 
 Nyní je již možné pustit se do řešení následujících úloh.
 
@@ -112,20 +111,20 @@ Nyní je již možné pustit se do řešení následujících úloh.
 \fi
 
 > **Úloha 2.** Cesium-137  použité jako zdroj radioaktivního záření v
-> popsaném incidentu má poločas rozpadu 30 let. Určete, za jak dlouho
-> by radioaktivita (v původní vzdálenosti půl metru) klesla na hodnotu, která by odpovídala aktuální radioaktivitě ve vzdálenosti $3$ metry ($6\times$ větší vzdálenost), tj. v případě přestěhování postele z předchozí úlohy.
+> popsaném incidentu má poločas rozpadu 30 let. Určete, za jak dlouho by množství nerozpadnutého cesia v panelu kleslo tak, že by intenzita záření ve vzdálenosti půl metru byla stejně nízká jako původní intenzita ve vzdálenosti $3$ metry ($6\times$ větší vzdálenost). 
 
 \iffalse
 
-*Řešení.* Již víme, že intenzita radioaktivního záření a množství nerozpadnuté látky
-obě klesají exponenciálně s časem podle vztahu $(1)$, tj. 
+*Řešení.* Z úlohy 1 víme, že zvětší-li se vzdálenost $6\times$,  intenzita radioaktivního záření klesne $36\times$. Protože intenzita radioaktivního záření je přímo úměrná množství nerozpadnutého materiálu, chceme zjistit, v jakém čase $t$ bude množství radioaktivního
+materiálu $36\times$ menší. 
+
+Můžeme tedy využít vztah $(1)$, tj. 
 
 $$
- N(t)=N_0 \mathrm{e}^{-\lambda t}. 
+ N(t)=N_0 \mathrm{e}^{-\lambda t}
 $$
 
-Musíme tedy určit, v jakém čase $t$ bude množství radioaktivního
-materiálu $36\times$ menší. To znamená, že hledáme $t$ takové, že $N(t)=\frac{1}{36}N_0$. Jednoduchou úpravou a následným logaritmováním vztahu $(1)$ dostáváme: 
+s tím, že hledáme $t$ takové, že $N(t)=\frac{1}{36}N_0$. Jednoduchou úpravou a následným logaritmováním vztahu $(1)$ dostáváme: 
 
 $$
 \mathrm{e}^{-\lambda t} = \frac{N(t)}{N_0} 
@@ -142,7 +141,7 @@ $$
 $$
 a tedy 
 $$
-\lambda = -\frac{1}{30} \ln \frac{1}{2} = \frac 1{30}\ln 2.
+\lambda = -\frac{1}{30} \ln \frac{1}{2} = \frac {\ln 2}{30}.
 $$ 
 
 Po dosazení vypočtené konstanty $\lambda$ zpět do $(2)$  dostáváme 
@@ -164,7 +163,15 @@ bychom se dočkali přibližně po 155 letech.
 
 \fi
 
->**Úloha 3.** Pokuste se vyřešit úlohu 2 obecně, tj. pro jakoukoliv radioaktivní látku s poločasem rozpadu $T$ a pro případ, že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
+>**Úloha 3.** V čase $t=0$ (začátek pozorování) je postel u stěny. Pokud by se v tomto čase postel přesunula do $k$ násobné vzdálenosti od stěny, intenzita záření by klesla $k^2$ násobně. Určete, za jak dlouho ($t>0$) by množství nerozpadnutého materiálu v panelu kleslo tak, že intenzita záření v místě u stěny by byla stejně nízká jako intenzita záření v čase $t=0$ ve vzdálenosti $k$ násobné.  
+
+
+
+
+Pokuste se vyřešit úlohu 2 obecně, tj. pro jakoukoliv radioaktivní látku s poločasem rozpadu $T$ a pro případ, že vzdálenost od zářiče vzroste $k$-krát. Úkolem je určit, za jak dlouho by množství nerozpadnutého materiálu v panelu kleslo tak, že by intenzita záření v původní vzdálenosti byla stejně nízká jako intenzita v v $k$-násobné vzdálenosti od zářiče v čase $t=0$. 
+
+
+radioaktivita poklesne na hodnotu odpovídající radioaktivitě v $k$-násobné vzdálenosti od zářiče. 
 
 \iffalse
 
