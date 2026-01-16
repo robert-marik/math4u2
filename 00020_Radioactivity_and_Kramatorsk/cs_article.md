@@ -270,7 +270,7 @@ sena, protože zářičem je váleček velikosti knoflíkové baterie o
 velikosti 8 milimetrů. Australský zářič se naštěstí podařilo najít u
 silnice, po které se transport pohyboval. 
 
-![Zářič podobného typu ztracený v roce 2023 v Austrálii](australia-capsule-size2.png)
+![Zářič podobného typu ztracený v roce 2023 v Austrálii a jeho srovnání s mincí](australia-capsule-size2.png)
 
 
 ## Odkazy a literatura
