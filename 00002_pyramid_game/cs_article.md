@@ -237,6 +237,12 @@ $$
 
 Není težké si uvědomit, že pro velká $n$ je výraz $3^{-n}$ zanedbatelně malý, a proto je (pro taková $n$) podíl $\frac{1}{1-3^{-n}}$ blízký jedničce. To znamená, že $P_n \doteq \frac{8}{9} =0{,}\overline{8}$. 
 
+\fi
+
+<!--ZAPOZNÁMKOVÁNO
+
+\iffalse
+
 Pojďme se ještě zamyslet nad tím, jak se liší skutečná hodnota podílu $P_n$ lidí ve ztrátě od čísla $\frac{8}{9}$. 
 
 $$
@@ -263,9 +269,9 @@ $$
 
 což je v souladu s výsledkem úlohy 3.2. 
 
-
-
 \fi
+
+-->
 
 ## Literatura
 
