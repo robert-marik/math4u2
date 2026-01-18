@@ -76,6 +76,22 @@ class Problem:
                 shutil.copy2(file, target_file)
                 
 
+def replace_comment_by_file(content, file_path):
+    """Replace comments in the content with the content of the referenced files."""
+    import re
+    pattern = r"<!--\s*include:\s*(.*?)\s*-->"
+    
+    def replacer(match):
+        include_path = match.group(1)
+        full_path = DIR_PATH / file_path.parent / include_path
+        if full_path.exists():
+            return full_path.read_text(encoding="utf-8")
+        else:
+            logging.warning(f"Included file {full_path} not found.")
+            return f"<!-- Included file {include_path} not found -->"
+    
+    return re.sub(pattern, replacer, content)
+
 class File:
     """Class representing a file in a Math4u problem."""
     def __init__(self, path, parent=None):
@@ -134,6 +150,7 @@ class File:
             "<figcaption >",
             "<figcaption>"        
             )
+        file_content = replace_comment_by_file(file_content, self.path)
         return file_content
 
     @property

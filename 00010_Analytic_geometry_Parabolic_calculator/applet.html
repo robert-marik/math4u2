@@ -1,0 +1,54 @@
+<style>
+  .jxgbox {height: 600px; margin: auto !important;}  
+</style>
+
+
+<h2>Interactive parabolic calculator</h2>
+
+
+<!-- Include JSXGraph -->
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+<!-- Include MathJax -->
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+
+<!-- JSXGraph div -->
+<div id="jxgbox" class="jxgbox" style="max-width:800px; aspect-ratio:1/1">
+</div>
+
+
+<script>
+
+
+// Enable MathJax for all JSXGraph elements!
+// Use '\\( ... \\)' or '\\[ ... \\]` for LaTeX math text
+JXG.Options.text.useMathJax = true;
+
+const board = JXG.JSXGraph.initBoard('jxgbox', {
+    boundingbox: [-5, 5, 5, -5],
+    axis: true,
+    pan: { enabled: true },      // Disable pan for 3D view
+    zoom: { enabled: true }      // Disable zoom for 3D view
+});
+
+const zero = board.create('point', [0, 0], { name: 'O', size: 3, color: 'black', visible: false });
+const leftaxis = board.create('line', [[-3, 0], [0, 0]], {visible: false });
+const rightaxis = board.create('line', [[0, 0], [3, 0]], {visible: false });
+
+const pointa = board.create('glider', [-1.5, 0,leftaxis], { name: '-a', size: 3, color: 'red'});
+const pointb = board.create('glider', [1, 0,rightaxis], { name: 'b', size: 3, color: 'red'});
+let pointA = board.create('point', [()=>pointa.X(), ()=> pointa.X()**2], { name: 'A', size: 2, color: 'blue' });
+const segmentA = board.create('segment', [pointa, pointA], { strokeColor: 'green', strokeWidth: 2, dash: 2 });
+
+let pointB = board.create('point', [()=>pointb.X(), ()=> pointb.X()**2], { name: 'B', size: 2, color: 'blue' });
+const segmentB = board.create('segment', [pointb, pointB], { strokeColor: 'green', strokeWidth: 2, dash: 2 });
+
+const parabola = board.create("functiongraph",[(x)=>x**2,-10,10], {strokeColor:'blue', strokeWidth:2});
+
+const line = board.create('line', [pointA, pointB], { strokeColor: 'orange', strokeWidth: 2 });
+
+const yaxis = board.create('line', [[0, -10], [0, 10]], {visible: false });
+
+const pointab = board.create('intersection', [line, yaxis, 0], { name: 'ab', size: 3, color: 'purple' });
+
+</script>
