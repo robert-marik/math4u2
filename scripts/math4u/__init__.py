@@ -43,8 +43,7 @@ def remove_only_blocks(text: str, mode: str) -> str:
         "pdf"  -> <!-- pdfonly start --> ... <!-- pdfonly end -->
         "html" -> <!-- htmlonly start --> ... <!-- htmlonly end -->
     """
-    print(f"\nOdstraňuji bloky pouze pro režim: {mode}\n")
-    print(text)
+    print(f"Odstraňuji bloky pouze pro mód: {mode}")
     if mode not in ("pdf", "html"):
         raise ValueError("mode musí být 'pdf' nebo 'html'")
 
@@ -185,18 +184,24 @@ class File:
     @property
     def latex_content(self):
         """Convert markdown content to LaTeX using pandoc."""
-        file_content = subprocess.run(
-                ["pandoc", 
-                 "-f", "markdown",
-                 "-t", "latex",
-                 f"{DIR_PATH}/{self.path}"
-                 ],     
-                capture_output = True, # Python >= 3.7 only
-                text = True # Python >= 3.7 only
-                )
-        file_content = file_content.stdout
-        file_content = remove_only_blocks(file_content, mode='html')
-        return file_content
+
+        # 1. Načti markdown
+        with open(f"{DIR_PATH}/{self.path}", encoding="utf-8") as f:
+            md_content = f.read()
+
+        # 2. Nejdřív odstraň only-blocky
+        md_content = remove_only_blocks(md_content, mode="html")
+
+        # 3. Zavolej pandoc se stdin
+        result = subprocess.run(
+            ["pandoc", "-f", "markdown", "-t", "latex"],
+            input=md_content,
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+
+        return result.stdout
 
     @property
     def latex_old_content(self):

@@ -119,7 +119,20 @@ The idea behind the parabolic calculator is the basis of a geometric version of 
 
 ![Parabolic prime sieve](parabolicke_sito.svg)
 
+<!-- htmlonly start -->
+
+## Interactive parabolic calculator 
+
+<!-- htmlonly end -->
+
 <!-- include: applet.html -->
+
+<!-- pdfonly start -->
+
+This will be in the PDF only.
+
+<!-- pdfonly end -->
+
 
 ## References 
 * A Parabola Sieve for Prime Numbers — https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
