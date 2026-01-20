@@ -15,6 +15,7 @@ import os
 import logging
 import shutil
 import pandas as pd
+import re
 from math4u.snippets import makeHEAD, FOOT, file_action, figure_name, LATEXFILE_HEADER, LATEXFILE_FOOT
 
 from datetime import datetime
@@ -31,6 +32,33 @@ df_image_settings = pd.read_csv("image2pdf_setting.csv", dtype=str)
 directories = [d.name for d in DIR_PATH.iterdir() if d.is_dir() and d.name.startswith("00")]
 # sort directories by name
 directories.sort()
+
+import re
+
+def remove_only_blocks(text: str, mode: str) -> str:
+    """
+    Odstraní bloky určené pouze pro daný mód a jejich obsah vytiskne.
+
+    mode:
+        "pdf"  -> <!-- pdfonly start --> ... <!-- pdfonly end -->
+        "html" -> <!-- htmlonly start --> ... <!-- htmlonly end -->
+    """
+    print(f"\nOdstraňuji bloky pouze pro režim: {mode}\n")
+    print(text)
+    if mode not in ("pdf", "html"):
+        raise ValueError("mode musí být 'pdf' nebo 'html'")
+
+    pattern = rf"(<!-- {mode}only start -->.*?<!-- {mode}only end -->)"
+
+    matches = re.findall(pattern, text, flags=re.DOTALL)
+
+    for i, block in enumerate(matches, 1):
+        print(f"\n--- VYNECHANÝ BLOK {i} ({mode}) ---")
+        print(block)
+        print("--- KONEC BLOKU ---")
+
+    return re.sub(pattern, "", text, flags=re.DOTALL)
+
 
 class Problem:
     """Class representing a Math4u problem, identified by its directory."""
@@ -130,6 +158,7 @@ class File:
                 text = True # Python >= 3.7 only
                 )
         file_content = file_content.stdout
+        file_content = remove_only_blocks(file_content, mode='pdf')
         file_content = f"<div class='problem_body'> {file_content} </div>"
         file_content =  file_content.replace(
             "<blockquote>",
@@ -166,6 +195,7 @@ class File:
                 text = True # Python >= 3.7 only
                 )
         file_content = file_content.stdout
+        file_content = remove_only_blocks(file_content, mode='html')
         return file_content
 
     @property
