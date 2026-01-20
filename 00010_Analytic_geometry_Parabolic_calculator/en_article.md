@@ -129,7 +129,9 @@ The idea behind the parabolic calculator is the basis of a geometric version of 
 
 <!-- pdfonly start -->
 
-This will be in the PDF only.
+## Interactive parabolic calculator 
+
+See <https://math4u.mendelu.cz/math4u2/00010_Analytic_geometry_Parabolic_calculator/applet.html>.
 
 <!-- pdfonly end -->
 
