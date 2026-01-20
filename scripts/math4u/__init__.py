@@ -43,7 +43,7 @@ def remove_only_blocks(text: str, mode: str) -> str:
         "pdf"  -> <!-- pdfonly start --> ... <!-- pdfonly end -->
         "html" -> <!-- htmlonly start --> ... <!-- htmlonly end -->
     """
-    print(f"Odstraňuji bloky pouze pro mód: {mode}")
+    # print(f"Odstraňuji bloky pouze pro mód: {mode}")
     if mode not in ("pdf", "html"):
         raise ValueError("mode musí být 'pdf' nebo 'html'")
 
@@ -51,10 +51,10 @@ def remove_only_blocks(text: str, mode: str) -> str:
 
     matches = re.findall(pattern, text, flags=re.DOTALL)
 
-    for i, block in enumerate(matches, 1):
-        print(f"\n--- VYNECHANÝ BLOK {i} ({mode}) ---")
-        print(block)
-        print("--- KONEC BLOKU ---")
+    # for i, block in enumerate(matches, 1):
+    #     print(f"\n--- VYNECHANÝ BLOK {i} ({mode}) ---")
+    #     print(block)
+    #     print("--- KONEC BLOKU ---")
 
     return re.sub(pattern, "", text, flags=re.DOTALL)
 
