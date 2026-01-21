@@ -119,21 +119,24 @@ The idea behind the parabolic calculator is the basis of a geometric version of 
 
 ![Parabolic prime sieve](parabolicke_sito.svg)
 
-<!-- htmlonly start -->
+
+<!-- htmlstart -->
 
 ## Interactive parabolic calculator 
-
-<!-- htmlonly end -->
 
 <!-- include: applet.html -->
 
-<!-- pdfonly start -->
+<!-- end -->
+
+<!-- pdfstart -->
 
 ## Interactive parabolic calculator 
 
+Interactive parabolic calculator applet is available online on the Math4U website.
+
 See <https://math4u.mendelu.cz/math4u2/00010_Analytic_geometry_Parabolic_calculator/applet.html>.
 
-<!-- pdfonly end -->
+<!-- end -->
 
 
 ## References 

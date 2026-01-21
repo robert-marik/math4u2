@@ -40,14 +40,14 @@ def remove_only_blocks(text: str, mode: str) -> str:
     Odstraní bloky určené pouze pro daný mód a jejich obsah vytiskne.
 
     mode:
-        "pdf"  -> <!-- pdfonly start --> ... <!-- pdfonly end -->
-        "html" -> <!-- htmlonly start --> ... <!-- htmlonly end -->
+        "pdf"  -> <!-- pdfstart --> ... <!-- end -->
+        "html" -> <!-- html start --> ... <!-- end -->
     """
     # print(f"Odstraňuji bloky pouze pro mód: {mode}")
     if mode not in ("pdf", "html"):
         raise ValueError("mode musí být 'pdf' nebo 'html'")
 
-    pattern = rf"(<!-- {mode}only start -->.*?<!-- {mode}only end -->)"
+    pattern = rf"(<!-- {mode}start -->.*?<!-- end -->)"
 
     matches = re.findall(pattern, text, flags=re.DOTALL)
 
