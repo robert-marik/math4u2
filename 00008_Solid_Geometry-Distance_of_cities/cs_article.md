@@ -14,12 +14,12 @@ time: 25
 ---
 # Vzdálenosti na zemském povrchu
 
-Která z cest mezi Lisabonem a Washingtonem znázorněných na mapě je ve skutečnosti kratší? 
+Která z cest mezi Lisabonem $(L)$ a Washingtonem $(W)$ znázorněných na mapě je ve skutečnosti kratší? 
 
 ![Mapa](08_mapa.jpg)
 
 Zdánlivě jednoduchý dotaz má, jak si ověříte v této úloze, 
-překvapivou odpověď. Kratší trasa je oblouk, delší je úsečka. Důvodem 
+překvapivou odpověď. To, co se na mapě jeví jako úsečka $LW$, ve skutečnosti není nejkratší cesta mezi místy $L$ a $W$ na zeměkouli. Důvodem 
 je zkreslení vzdáleností ve zvoleném zobrazení zemského povrchu. 
 Vidíme, že úsečka $LW$ na mapě je přibližně rovnoběžná s 
 geografickými rovnoběžkami na Zemi, tedy ve skutečnosti odpovídá 
@@ -28,9 +28,12 @@ kružnice $k$ se středem $O$ na obrázku).
 
 ![Rovnoběžka a hlavní kružnice](math4you_00008_01.jpg)
 
-Na kulovém povrchu (který budeme v této úloze považovat za povrch Země) je však nejkratší vzdálenost jiný oblouk. 
+Na kulovém povrchu (který budeme v této úloze považovat za povrch Země) je však nejkratší vzdálenost mezi místy $L$ a $W$ jiný oblouk. 
 Tento oblouk leží na kružnici $h$, jejíž střed $C$ je středem Země. 
 Takové spojnice označujeme jako *ortodromy* a všechny kružnice s uvedenou vlastností nazýváme *hlavními kružnicemi*. 
+
+Dá se ukázat (není to vidět na první pohled), že nejkratší cestou spojující dva body na povrchu koule je vždy část odpovídající hlavní kružnice, tj. kružnice mající střed ve středu uvažované koule a procházející dvěma danými body na povrchu koule.  
+
 O kolik kilometrů si však cestou po ortodromě polepšíme? Odpověď na tuto otázku je již potřeba spočítat.
 
 ### Slovníček 
@@ -39,7 +42,13 @@ stupních a orientaci sever/jih) je odchylka přímky, která
 prochází daným místem a středem Země, od roviny rovníku. Zeměpisnou šířku budeme označovat písmenem $\psi$, kde $\psi$ může nabývat hodnot od $-90^{\circ}$ (jižní pól) do $+90^{\circ}$ (severní pól). Záporné hodnoty odpovídají místům na jižní polokouli, zatímco kladné hodnoty místům na severní polokouli. 
 * *Zeměpisná délka* místa na zemském povrchu (vyjádřená ve 
 stupních a orientaci východ/západ) je odchylka roviny poledníku, 
-který prochází daným místem, od roviny nultého poledníku. Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může nabývat hodnot od $-180^{\circ}$ do $+180^{\circ}$. Záporné hodnoty odpovídají místům na západní polokouli a kladné hodnoty místům na východní polokouli. 
+který prochází daným místem (tj. roviny, která prochází daným místem a oběma póly), od roviny nultého poledníku (tj. roviny, která prochází Greenwichem a oběma póly). Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může nabývat hodnot od $-180^{\circ}$ do $+180^{\circ}$. Záporné hodnoty odpovídají místům na západní polokouli a kladné hodnoty místům na východní polokouli. 
+
+### Jak mapa zkresluje Zem?
+
+* Na skutečné Zemi (koule): Rovnoběžky jsou kružnice, jejichž poloměr se postupně zmenšuje směrem k pólům. Poledníky jsou půlkružnice sbíhající se v pólech.
+
+* Na mapě (např. Mercatorovo zobrazení): Všechny rovnoběžky se protáhnou do rovných čar stejné délky (jako rovník). Poledníky zůstávají rovné a kolmé na rovnoběžky. Tím se vzdálenost dvou míst ležících na stejné rovnoběžce blízko pólu "nafouknou" – úsečka na mapě odpovídá delší cestě po rovnoběžce!
 
 > **Úloha 1.** Lisabon i Washington se nachází přibližně na stejné 
 > rovnoběžce (asi $39^{\circ}$ severní šířky). O kolik kilometrů 
@@ -61,7 +70,7 @@ poloměrem $r$. Ve vhodném pravoúhlém průmětu zeměkoule (viz
 obrázek, kde $S$ a $J$ jsou póly) se řečená kružnice zobrazí 
 jako úsečka $AB$ se středem $O$. 
 
-![Pravoúhlý průmět](math4you_00008_02.jpg)
+![Řez zeměkoule středem Země C a oběma póly S, J](math4you_00008_02.jpg)
 
 Z obrázku je zřejmá rovnost $\lvert\sphericalangle CBO\rvert = \lvert\sphericalangle BCD\rvert = 39^{\circ}$ 
 (úhly jsou střídavé) a užitím funkce kosinus v pravoúhlém trojúhelníku $BCO$ dostáváme $r=\varrho\cdot \cos 39^{\circ}$.
@@ -75,7 +84,7 @@ $$
 \frac{(77-9)}{360}\cdot 2\pi\varrho\cdot \cos 39^{\circ} \doteq 5\ 885{,}4\,\text{km}.
 $$
 
-![Pravoúhlý průmět - překryv pólů](math4you_00008_03.jpg)
+![Pohled shora na zeměkouli – větší kružnice představuje rovník a menší pak naši rovnoběžku.](math4you_00008_03.jpg)
 
 Nyní zjistíme, kolik kilometrů uletí letadlo pohybující se po ortodromě. Jedná se vlastně o vzdálenost dvou bodů na pomyslné sféře o poloměru $\varrho=6\ 381\,\text{km}$. Na obrázku lze vidět, že ortodroma mezi body $L$ a 
 $W$ je obloukem jisté hlavní kružnice $h$ s neznámým středovým úhlem $\varphi$. Tento úhel musíme určit.
