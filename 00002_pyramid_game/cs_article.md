@@ -239,6 +239,17 @@ Není težké si uvědomit, že pro velká $n$ je výraz $3^{-n}$ zanedbatelně 
 
 \fi
 
+### Otázky k zamyšlení (bez počítání)
+* Proč pyramidové schéma selže, i když na začátku slibuje rychlý zisk? Jak souvisí růst počtu investorů s realitou populace? 
+
+* Jak by se změnilo riziko ztráty, kdybyste do schématu vtáhli příbuzné nebo kamarády? Jaké to má dopady na vztahy?​
+
+* Proč je pyramidové schéma zakázáno ve většině zemí? 
+
+* Představte si pyramidové schéma v dnešní době (např. online) – jak byste varovali ostatní a co byste udělali, kdybyste byli osloveni?​
+
+* Je pyramidové schéma pouze podvod, nebo existují legální formy síťového marketingu (MLM)? Znáte pojem MLM? Distributor v MLM vydělává na prodeji reálných produktů (např. Avon, Herbalife, Amway) a provizích z prodejů své sítě – jak se to liší od pyramidového schématu a proč je legální?
+
 <!--ZAPOZNÁMKOVÁNO
 
 \iffalse
