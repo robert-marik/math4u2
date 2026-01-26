@@ -55,7 +55,7 @@ společnosti, dostává zbytek poplatku.
 
 *Řešení.* Nově příchozí člověk zaplatí vstupní poplatek $20\,000\,\text{Kč}$. Aby se mu
 peníze vrátily, musí nabrat tři nové členy (od nich inkasuje celkem $18\,000\,\text{Kč}$) a
-ti dále musí nabrat alespoň dva další členy (od kterých dostane zbylých $2\,000\,\text{Kč}$).
+ti dále musí (dohromady) nabrat alespoň dva další členy (od kterých dostane zbylých $2\,000\,\text{Kč}$).
 
 \fi
 
@@ -104,11 +104,11 @@ poslední dvě úrovně. Počet lidí ve ztrátě tak odpovídá součtu šestn�
 a sedmnáctého členu zmiňované geometrické posloupnosti:
 
 $$
-a_{16}+a_{17}=3^{15}+3^{16}=57\,395\,628.
+a_{16}+a_{17}=3^{15}+3^{16}=57\,395\,628
 $$
 
 Nyní můžeme určit procentuální podíl lidí ve ztrátě:
-$$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\doteq 88{,}89\,\%.$$
+$$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\doteq 88{,}89\,\%$$
 
 \fi
 
@@ -147,7 +147,7 @@ $$
 $$ 
 
 $$
-\log_3 4\,001  \leq   n  \leq   \log_3 16\,001.
+\log_3 4\,001  \leq   n  \leq   \log_3 16\,001
 $$ 
 
 Protože
@@ -159,15 +159,15 @@ je nyní $3\,280$).
 Obdobně jako v úloze 2.3 je počet lidí ve ztrátě roven $a_7+a_8=3^6+3^7=2\ 916$.
 Stanovíme procentuální podíl: 
 $$
-P'=100\cdot\frac{2\,916}{3\,280} \doteq 88{,}90\,\%.
+P'=100\cdot\frac{2\,916}{3\,280} \doteq 88{,}90\,\%
 $$ 
 Můžeme si všimnout, že se výsledek příliš neliší od výsledku úlohy
 2.3, i když jsou počty uvažovaných lidí řádově odlišné.
 
 *Řešení části 3.3.* Zakladatel společnosti dostane od každého člověka v druhé úrovni celý vstupní 
 poplatek ($20\,000\,\text{Kč}$), od každého člověka v třetí úrovni $14\,000\,\text{Kč}$, od každého člověka 
-v čtvrté úrovni $13\,000\,\text{Kč}$ atd. Protože má pyramida nyní osm úrovní, celkový zisk 
-zakladatele $Z_1$ spočteme
+v čtvrté úrovni $13\,000\,\text{Kč}$ atd. Protože má pyramida nyní osm úrovní, pro celkový zisk $Z_1$
+zakladatele společnosti platí 
 $$Z_1=3\cdot 20\,000 + 3^2\cdot 14\,000 + 3^3\cdot 13\ 000 + \cdots + 3^7\cdot 9\,000 = 31\,155\,000\,\text{Kč}.$$
 
 *Řešení části 3.4.* Pro názornost ilustrujeme situaci investora na druhé úrovni
@@ -185,20 +185,25 @@ Nesmíme dále zapomenout na odečtení vstupního poplatku. Tedy
 $$Z_2=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5 + 3^6 )\cdot 1\,000 - 20\,000 = 1\,087\,000\,\text{Kč}.$$
 
 *Řešení části 3.5.* Z části 3.1 víme, že lidí v pyramidě je celkem $3\,280$, každý
-až na zakladatele zaplatil na vstupních poplatcích $20\,000\,\text{Kč}$. Celková suma
-vybraných peněz je proto $3\,279 \cdot 20\,000 = 65\,580\,000\,\text{Kč}$. Z částí 3.3 a 3.4 známe zisk zakladatele
-a investora ve druhé úrovni, spočítáme proto ještě zisk investora ve třetí
+až na zakladatele zaplatil na vstupních poplatcích $20\,000\,\text{Kč}$. Pro celkovou sumu $S$ vybraných peněz proto platí 
+
+$$
+ S=3\,279 \cdot 20\,000 = 65\,580\,000\,\text{Kč}. 
+$$
+
+Z částí 3.3 a 3.4 známe zisk zakladatele
+a investora ve druhé úrovni, spočítáme proto ještě zisk $Z_3$ investora ve třetí
 úrovni (obdobně jako v části 3.4): 
 
 $$
-Z_3=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5)\cdot 1\,000 - 20\,000 = 358\,000\,\text{Kč}.
+Z_3=3\cdot 6\,000 + (3^2+3^3 + 3^4 + 3^5)\cdot 1\,000 - 20\,000 = 358\,000\,\text{Kč} 
 $$
 
 Nyní již můžeme stanovit procentuální podíl prostředků vyplacených lidem na prvních třech
-úrovních ($S$ je celková suma): 
+úrovních ($S$ je celková suma vybraných peněz): 
 
 $$
-P''=100\cdot\frac{Z_1 + 3\cdot Z_2 + 9\cdot Z_3}{S}=100\cdot\frac{37\,638\,000}{65\,580\,000} \doteq 57{,}39\,\%.
+P''=100\cdot\frac{Z_1 + 3\cdot Z_2 + 9\cdot Z_3}{S}=100\cdot\frac{37\,638\,000}{65\,580\,000} \doteq 57{,}39\,\%
 $$
 
 Pro lepší pochopení je důležité si uvědomit, že tento podíl z celkového "příjmu
