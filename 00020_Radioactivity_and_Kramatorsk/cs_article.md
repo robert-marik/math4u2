@@ -34,7 +34,7 @@ prozkoumána. Pečlivý průzkum objevil v panelu radioaktivní zářič, jaký
 se používá v lomech. Díky značení radiokativních zdrojů bylo zjištěno,
 že zmíněný zářič byl ztracen koncem sedmdesátých let v lomu Karansky. Jednalo se o malou kapsli s radioaktivním izotopem cesia-137 vyzařující nebezpečné gama záření. Kapsle se ztratila v lomu a nešťastnou náhodou skončila ve štěrku použitém pro výrobu panelu právě v tomto bytě. V lomech se radioaktivní materiály mohou použít například ke stanovení
 hustoty hornin nebo naplněnosti neprůhledných nádob. Jakkoliv se
-zacházení s těmto materiály podrobuje přísným pravidlům, k nehodě
+zacházení s těmito materiály podrobuje přísným pravidlům, k nehodě
 někdy dojde. 
 
 #### Pro přehlednost si ještě jednou shrňme, co všechno se stalo:  
@@ -79,7 +79,7 @@ kde
 
 Poločas rozpadu radioaktivní látky (budeme ho označovat jako $T$) je doba, za kterou se počet radioaktivních jader (a spolu s tím i intenzita radioaktivního záření) zmenší na polovinu. Poločas rozpadu $T$ přitom úzce souvisí s konstantou $\lambda$ ze vztahu $(1)$.
 
-Například cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne radioaktivita na polovinu. Za dalších 30 let (tj. celkem za 60 let) na čtvrtinu (polovina z poloviny), za 90 let na osminu,  atd.
+Například cesium-137 má poločas rozpadu přibližně 30 let, takže za 30 let klesne množství radioaktivní látky na polovinu. Za dalších 30 let (tj. celkem za 60 let) na čtvrtinu (polovina z poloviny), za 90 let na osminu,  atd.
 
 ### Intenzita záření
 Intenzita záření je fyzikální veličina, která udává množství energie nebo částic záření procházející jednotkou plochy za jednotku času. 
@@ -98,7 +98,7 @@ Nyní je již možné pustit se do řešení následujících úloh.
 
 > **Úloha 1.** V panelu tvořícím stěnu dětského pokoje je radioaktivní
 > zářič. Nešťastnou shodou okolností právě v místě vedle postele
-> jednoho z dětí. Pokuste se odhadnout, jak by se intenzita radioaktivního záření snížila, pokud
+> jednoho z dětí. Určete, jak by se intenzita radioaktivního záření snížila, pokud
 > by dětská postel nebyla u této stěny, ale na opačné straně
 > postiženého pokoje. Předpokládejte, že vzdálenost zářiče od dětské postele byla půl metru a
 > po přestěhování postele na opačnou stranu pokoje by narostla na tři
@@ -226,7 +226,7 @@ Postupnými úpravami dostáváme:
 $$
 \begin{aligned}
  \frac{1}{2} &= \left( \mathrm{e}^{-\lambda} \right)^T  \\
- \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\frac{1}{T}}. 
+ \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\frac{1}{T}} 
 \end{aligned}
 $$
 
