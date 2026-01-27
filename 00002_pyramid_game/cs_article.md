@@ -112,6 +112,8 @@ $$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\doteq 88{,}89\,\%$$
 
 \fi
 
+Pyramidové hry, známé také jako letadla, mají v České republice bohatou a bohužel temnou historii. Jedním z nejznámějších případů je například kauza Avalanche z let 2000–2006, kdy manažeři mostecké firmy pod slibem vysokých výnosů vylákali od téměř 6000 investorů přes 400 milionů korun, které využívali k výplatám starším účastníkům z prostředků nových – klasický princip pyramidové hry, který se později zhroutil. 
+
 >**Úloha 3.** 
 >Reálně se v případech z ČR pohyboval počet účastníků v řádech
 >jednotek tisíců. Řekněme proto, že je počet účastníků v naší
