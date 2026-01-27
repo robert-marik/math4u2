@@ -189,7 +189,7 @@ Proto pro čas $t$, pro který platí $N(t)=\frac{1}{k^2}N_0$, dostáváme
 
 $$
  t  = -T \frac{\ln \frac{1}{k^2}}{\ln 2}=
-T \frac{\ln (k^2)}{\ln 2} = \frac{2T \ln k}{\ln 2}. 
+T \frac{\ln (k^2)}{\ln 2} = \frac{2\ \!T \ln k}{\ln 2}. 
 $$
 
 **Poznámka.**
@@ -204,7 +204,7 @@ Ukažte, že vztah $(1)$, tj.
 $N(t) = N_0\mathrm{e}^{-\lambda t}$, lze psát ve tvaru 
 >
 >$$
- N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}, 
+ N(t)=N_0 \left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}}, 
 >$$
 >
 >kde $T$ je poločas rozpadu radioaktivní látky.  
@@ -226,23 +226,23 @@ Postupnými úpravami dostáváme:
 $$
 \begin{aligned}
  \frac{1}{2} &= \left( \mathrm{e}^{-\lambda} \right)^T  \\
- \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\frac{1}{T}} 
+ \mathrm{e}^{-\lambda} &= \left( \frac{1}{2} \right)^{\!\small{\frac{1}{T}}} 
 \end{aligned}
 $$
 
 Dosazením poslední rovnosti zpět do vztahu $(1)$ obdržíme 
 
 $$
- N(t)=N_0 \mathrm{e}^{-\lambda t} = N_0 \left( \mathrm{e}^{-\lambda} \right)^t = N_0 \left[ \left(\frac{1}{2}\right)^{\frac{1}{T}} \right]^t = N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}. 
+ N(t)=N_0 \mathrm{e}^{-\lambda t} = N_0 \left( \mathrm{e}^{-\lambda} \right)^t = N_0 \left[ \left(\frac{1}{2}\right)^{\!\small{\frac{1}{T}}} \right]^{{t}} = N_0 \left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}}. 
 $$
 
 \fi
 
 **Poznámka.** 
-Ze vztahu $N(t)=N_0 \left( \frac{1}{2} \right)^{\frac{t}{T}}$ je například pěkně vidět, že v případě poločasu rozpadu $T=30 \;\text{let}$ zůstane za $t=90 \; \text{let}$ jedna osmina původního množství látky, protože 
+Ze vztahu $N(t)=N_0 \left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}}$ je například pěkně vidět, že v případě poločasu rozpadu $T=30 \;\text{let}$ zůstane za $t=90 \; \text{let}$ jedna osmina původního množství látky, protože 
 
 $$
- N(t)=N_0\left( \frac{1}{2} \right)^{\frac{t}{T}} = N_0\left( \frac{1}{2} \right)^{\frac{90}{30}} = N_0\left( \frac{1}{2} \right)^{3}=\frac{1}{8}N_0.
+ N(t)=N_0\left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}} = N_0\left( \frac{1}{2} \right)^{\!\small{\frac{90}{30}}} = N_0\left( \frac{1}{2} \right)^{\!3}=\frac{1}{8}N_0.
 $$ 
 
 ### Otázky k zamyšlení (bez počítání)
