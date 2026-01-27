@@ -25,7 +25,7 @@ nepřinesl a jejich syn zakrátko zemřel, také na leukémii.
 
 ![Dům v Kramatorsku, kde docházelo k záhadným úmrtím](house_no_7.jpg)
 
-## Nehoda v lomu Karansky
+### Nehoda v lomu Karansky
 
 Teprve po dalším úmrtí a díky vytrvalosti nového nájemníka byl byt
 prohlédnut. Šokovaní inspektoři zjistili, že v dětském pokoji je silný
@@ -46,8 +46,6 @@ někdy dojde.
 - Nakonec příbuzní a lékaři přizvali odborníky, kteří v bytě naměřili extrémně vysoké dávky záření a objevili kapsli se silným zdrojem cesia-137 přímo ve zdi. 
 
 Tento příběh ukazuje, jak silný může být vliv radioaktivního záření na lidské zdraví, jak zákeřná je "neviditelnost"  radiace a jak důležitá je bezpečná manipulace s radioaktivními látkami.
-
-## Základní fyzikální pojmy 
 
 ### Radioaktivní látky a radioaktivní záření
 Radioaktivní látkou rozumíme látku obsahující  nestabilní atomová jádra (radionuklidy), která se spontánně rozpadají a produkují přitom záření. 
