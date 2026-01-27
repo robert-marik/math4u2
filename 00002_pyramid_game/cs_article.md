@@ -291,7 +291,7 @@ což je v souladu s výsledkem úlohy 3.2.
 
 -->
 
-## Literatura
+### Literatura
 
 * Yates K. (2021). *Matematika pro život*. Praha: Kniha Zlín.
 
