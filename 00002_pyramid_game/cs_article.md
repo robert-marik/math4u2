@@ -29,7 +29,7 @@ modelů – *pyramidové schéma*.
 
 ![Pyramidové schéma](pyramida.png)
 
-## Zadání 
+### Zadání 
 Zakladatel společnosti (první úroveň pyramidy) sežene tři investory
 (druhá úroveň pyramidy) a od každého vybere fixní vstupní poplatek
 $20\,000\,\text{Kč}$. Úkolem každého z tří investorů je přivést do schématu další
@@ -117,7 +117,7 @@ Pyramidové hry, známé také jako letadla, mají v České republice bohatou a
 >**Úloha 3.** 
 >Reálně se v případech z ČR pohyboval počet účastníků v řádech
 >jednotek tisíců. Řekněme proto, že je počet účastníků v naší
->pyramidě po naplnění určité úrovně v rozmezí $2\,000\,–\,8\,000$.
+>pyramidě po naplnění určité úrovně v rozmezí $3\,000\,–\,4\,000$.
 >
 >1.  Která úroveň to je?
 >2.  Určete procentuální podíl lidí, kteří jsou nyní ve ztrátě.
@@ -135,25 +135,25 @@ vzorce pro součet prvních $n$ členů geometrické posloupnosti. Uvedeme zde v
 řešení užitím exponenciálních nerovnic. Podle zadání musí platit 
 
 $$
- 2\,000 \leq s_n \leq  8\,000 
+ 3\,000 \leq s_n \leq  4\,000 
 $$
 
 a po dosazení $a_1=1$ a $q=3$ do obecného vzorce $(1)$ dostáváme: 
 
 $$
-2\,000  \leq  \dfrac{3^n-1}{2}  \leq  8\,000
+3\,000  \leq  \dfrac{3^n-1}{2}  \leq  4\,000
 $$ 
 
 $$
-4\,001  \leq   3^n  \leq   16\,001
+6\,001  \leq   3^n  \leq   8\,001
 $$ 
 
 $$
-\log_3 4\,001  \leq   n  \leq   \log_3 16\,001
+\log_3 6\,001  \leq   n  \leq   \log_3 8\,001
 $$ 
 
 Protože
-$\log_3 4\,001 \doteq 7{,}55$ a $\log_3 16\,001 \doteq 8{,}81$, 
+$\log_3 6\,001 \doteq 7{,}92$ a $\log_3 8\,001 \doteq 8{,}18$, 
 má nyní pyramida osm úrovní (dosazením do $s_8$ se můžeme přesvědčit, že počet lidí v pyramidě 
 je nyní $3\,280$).
 
