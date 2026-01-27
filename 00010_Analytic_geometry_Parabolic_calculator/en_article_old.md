@@ -5,7 +5,7 @@ keywords:
 is_finished: true
 ---
 
-# Parabolic calculator
+# Parabolic Calculator
 
 While surfing the Internet, Eva found an interesting fact about the graph of a function
 $f\colon y = x^2$ which is that the graph can be used as a calculator to multiply two numbers
