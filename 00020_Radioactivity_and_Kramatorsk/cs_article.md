@@ -272,29 +272,26 @@ silnice, po které se transport pohyboval.
 
 ### Literatura
 
-* Wikipedie, Kramatorsk radiological accident,
-  <https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident>,
+* Wikipedie, [Kramatorsk radiological accident](https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident),
   September 28, 2023
 
-* <https://www.irozhlas.cz/zpravy-svet/australie-radiace-nebezpeci-varovani-radioaktivita-cesium-137-ozareni_2301311701_har>,
+* iRozhlas, [Stav radiačního nebezpečí. Austrálie pátrá po kousku ztraceného cesia 137, může být kdekoliv](https://www.irozhlas.cz/zpravy-svet/australie-radiace-nebezpeci-varovani-radioaktivita-cesium-137-ozareni_2301311701_har>),
   September 28, 2023
 
-* <https://edition.cnn.com/2023/02/01/australia/australia-radioactive-capsule-found-intl-hnk/index.html>, September 28, 2023
+* CNN, [Missing radioactive capsule found on remote road in Australia](<https://edition.cnn.com/2023/02/01/australia/australia-radioactive-capsule-found-intl-hnk/index.html), September 28, 2023
 
-* <https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident2.>
+* IFL Science, [The Devastating Kramatorsk Radiological Accident Almost Killed An Entire Apartment Block](https://www.iflscience.com/the-devastating-kramatorsk-radiological-accident-almost-killed-an-entire-apartment-block-67384) 
 
-* <https://www.iflscience.com/the-devastating-kramatorsk-radiological-accident-almost-killed-an-entire-apartment-block-67384> 
+* Courious Archive, [Death in Apartment 85: The Kramatorsk Radiological Accident](https://www.curiousarchive.com/death-in-apartment-85-the-kramatorsk-radiological-accident/5)
 
-* <https://www.curiousarchive.com/death-in-apartment-85-the-kramatorsk-radiological-accident/5>
+* Amusing Planet, [ The Building That Gave Its Residents Leukemia ](https://www.amusingplanet.com/2023/11/the-building-that-gave-its-residents.html)
 
-* <https://www.amusingplanet.com/2023/11/the-building-that-gave-its-residents.html> 
-
-* <https://www.reddit.com/r/interestingasfuck/comments/zqrz3p/in_the_1970s_a_capsule_with_radioactive>
+* Reddit, [In the 1970s, a capsule with radioactive Caesium-137 was lost in the sand quarry...](https://www.reddit.com/r/interestingasfuck/comments/zqrz3p/in_the_1970s_a_capsule_with_radioactive)
 
 ### Zdroje obrázků
 
-* Artemka, Own work, <https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%9C%D0%B0%D1%80%D0%B8%D0%B8_%D0%9F%D1%80%D0%B8%D0%B9%D0%BC%D0%B0%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,_7.jpg>, September 28, 2023
+* Wikimedia, [Artemka](https://commons.wikimedia.org/wiki/File:%D0%A3%D0%BB%D0%B8%D1%86%D0%B0_%D0%9C%D0%B0%D1%80%D0%B8%D0%B8_%D0%9F%D1%80%D0%B8%D0%B9%D0%BC%D0%B0%D1%87%D0%B5%D0%BD%D0%BA%D0%BE,_7.jpg), September 28, 2023
 
-* <https://edition.cnn.com/2023/02/01/australia/australia-radioactive-capsule-found-intl-hnk/index.html>, September 28, 2023
+* CNN, [Missing radioactive capsule found on remote road in Australia](https://edition.cnn.com/2023/02/01/australia/australia-radioactive-capsule-found-intl-hnk/index.html), September 28, 2023
 
 

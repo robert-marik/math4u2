@@ -187,7 +187,7 @@ $(document).ready(function(){
 LATEXFILE_HEADER = r"""
 \nonstopmode
 \documentclass[oneside]{article}
-\usepackage{graphicx, amsmath, url, amssymb, longtable, amsfonts, booktabs}
+\usepackage{graphicx, amsmath, url, amssymb, longtable, amsfonts, booktabs, hyperref}
 
 \parindent 0 pt
 \parskip=6pt
