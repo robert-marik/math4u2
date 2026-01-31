@@ -236,7 +236,7 @@ LATEXFILE_HEADER = r"""
 %------------------Section Default Setting-------------
 \titleformat*{\section}{\color{black}\normalfont\bfseries\Huge}
 \titleformat*{\subsection}{\color{black}\normalfont\bfseries\LARGE}
-\titleformat*{\subsubsection}{\color{black}\normalfont\bfseries\LARGE}
+\titleformat*{\subsubsection}{\color{black}\normalfont\bfseries\large}
 
 %-------------------Section Numbers Removal------------
 \setcounter{secnumdepth}{0}
