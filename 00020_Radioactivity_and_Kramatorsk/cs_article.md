@@ -70,7 +70,6 @@ $$
 kde 
 
 * $N(t)$ značí množství nerozpadnuté látky v čase $t \geq 0$;
-
 * $N_0$ je počáteční množství látky, tj. množství v čase $t=0$;
 * $\lambda$ je konstanta, která charakterizuje předpokládanou rychlost rozpadu;
 * $t$ je čas. 
