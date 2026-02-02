@@ -1,6 +1,6 @@
 ---
-workflow: in progress
-# workflow: translating
+# workflow: in progress
+workflow: translating
 # workflow: finished
 keywords:
 - posloupnosti a řady
@@ -76,9 +76,9 @@ ti dále musí (dohromady) nabrat alespoň dva další členy (od kterých dosta
 
 *Řešení části 2.1.*  Jestliže ze vstupního poplatku nově příchozího člena
 zakladatel společnosti poprvé žádné peníze nedostane, znamená to, že se nad
-tímto členem nachází 16 úrovní ($6\,000\,\text{Kč}$ dostane člověk v úrovni výše, $14\cdot
+tímto členem nachází $16$ úrovní ($6\,000\,\text{Kč}$ dostane člověk v úrovni výše, $14\cdot
 1\,000\,\text{Kč}$ dostanou lidé v čtrnácti vyšších úrovních a zakladatel v první úrovni
-nedostane nic). Nově příchozí člen se tak nachází v 17. úrovni.
+nedostane nic). Nově příchozí člen se tak nachází v $17$. úrovni.
 
 *Řešení části 2.2.* Počty lidí v jednotlivých úrovních tvoří geometrickou
 posloupnost s prvním členem $a_1=1$ a kvocientem $q=3$. 
@@ -112,11 +112,11 @@ $$P=100\cdot\frac{57\,395\,628}{64\,570\,081}\doteq 88{,}89\,\%$$
 
 \fi
 
-Pyramidové hry, známé také jako letadla, mají v České republice bohatou a bohužel temnou historii. Jedním z nejznámějších případů je například kauza Avalanche z let 2000–2006, kdy manažeři mostecké firmy pod slibem vysokých výnosů vylákali od téměř 6000 investorů přes 400 milionů korun, které využívali k výplatám starším účastníkům z prostředků nových – klasický princip pyramidové hry, který se později zhroutil. 
+Pyramidové hry, známé také jako letadla, mají v České republice bohatou a bohužel temnou historii. Jedním z nejznámějších případů je například kauza Avalanche z let $2000\, – \,2006$, kdy manažeři jisté firmy pod slibem vysokých výnosů vylákali od téměř $6\,000$ investorů přes $400$ milionů korun, které využívali k výplatám starším účastníkům z prostředků nových – klasický princip pyramidové hry, který se později zhroutil. 
 
 >**Úloha 3.** 
 >Reálně se v případech z ČR pohyboval počet účastníků v řádech
->jednotek tisíců. Řekněme proto, že je počet účastníků v naší
+>jednotek tisíců. V této úloze předpokládejme, že je počet účastníků v naší
 >pyramidě po naplnění určité úrovně v rozmezí $3\,000\,–\,4\,000$.
 >
 >1.  Která úroveň to je?
