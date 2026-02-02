@@ -132,6 +132,26 @@ Na principu parabolické kalkulačky je založena geometrická verze Eratostheno
 
 ![Parabolické prvočíselné síto](parabolicke_sito.svg)
 
+<!-- htmlstart -->
+
+## Interaktivní parabolická kalkulačka
+
+<!-- include: applet.html -->
+
+V interaktivním prvku je možné hýbat s červenými body na ose $x$. 
+
+<!-- end -->
+
+<!-- pdfstart -->
+
+## Interaktivní parabolická kalkulačka
+
+Interaktivní prvek s parabolickou kalkulačkou je dostupný online na portálu  Math4U. 
+
+Viz <https://math4u.mendelu.cz/math4u2/00010_Analytic_geometry_Parabolic_calculator/applet.html>.
+
+<!-- end -->
+
 ## Odkazy 
 * A Parabola Sieve for Prime Numbers - https://demonstrations.wolfram.com/AParabolaSieveForPrimeNumbers/
 * A Geometric Sieve for the Prime Numbers - 
