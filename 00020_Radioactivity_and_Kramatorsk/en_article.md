@@ -154,7 +154,7 @@ A reduction in radiation equivalent to moving the bed to the other side of the r
 
 \iffalse
 
-*Solution.*  
+*Solution.* 
 Proceeding in the same way as in Task 2, we obtain that for a radioactive substance with half-life $T$,
 
 $$
@@ -176,7 +176,7 @@ t  = -T \frac{\ln \frac{1}{k^2}}{\ln 2}=
 T \frac{\ln (k^2)}{\ln 2} = \frac{2\ \!T \ln k}{\ln 2}. 
 $$
 
-**Remark.**  
+**Note.**  
 We can verify that substituting $T=30$ and $k=6$ into the last formula gives $t \doteq 155$ (the same result as in Problem 2).
 
 \fi
@@ -184,8 +184,7 @@ We can verify that substituting $T=30$ and $k=6$ into the last formula gives $t 
 In the following problem, we derive another formula describing radioactive decay. Its advantage is that the half-life of the radioactive substance appears explicitly in it. In many situations, it is also more convenient to use than formula $(1)$.
 
 > **Task 4.**  
-> Show that relation $(1)$,  
-> $N(t) = N_0 \mathrm{e}^{-\lambda t}$, can be written in the form  
+> Show that relation $(1)$, $N(t) = N_0 \mathrm{e}^{-\lambda t}$, can be written in the form  
 >
 > $$
 > N(t) = N_0 \left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}},
@@ -194,7 +193,8 @@ In the following problem, we derive another formula describing radioactive decay
 > where $T$ is the half-life of the radioactive substance.
 
 \iffalse
-*Solution.*  
+
+*Solution.* 
 Substituting $t = T$ into relation $(1)$, we obtain (recall that $T$ is the half-life, that is, $N(T)=\frac{1}{2}N_0$):
 
 $$
@@ -224,7 +224,7 @@ $$
  
 \fi
 
-**Remark.**  
+**Note.**  
 From the relation $N(t)=N_0 \left( \frac{1}{2} \right)^{\!\small{\frac{t}{T}}}$, we can clearly see, for example, that if the half-life is $T=30 \;\text{years}$, then after $t=90 \; \text{years}$ one eighth of the original amount of the substance remains, since
 
 $$
