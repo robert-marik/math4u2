@@ -138,7 +138,9 @@ Na principu parabolické kalkulačky je založena geometrická verze Eratostheno
 
 <!-- include: applet.html -->
 
+<center>
 V interaktivním prvku je možné hýbat s červenými body na ose $x$. 
+</center>
 
 <!-- end -->
 
