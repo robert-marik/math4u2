@@ -6,19 +6,19 @@ keywords:
 - radioactivity
 is_finished: true
 # workflow: in progress
-workflow: translating
-# workflow: finished
+# workflow: translating
+workflow: finished
 difficulty: 2
 time: 20
 ---
 
-# The Deadly Flat in Kramatorsk
+# Deadly Flat in Kramatorsk
 
 Apartment No. 85, Building 7, Kramatorsk (formerly USSR, today Ukraine), Mariyi Pryimachenko Street, was truly cursed and brought nothing but suffering to its residents. Between 1980 and 1989, two families lived there one after another and helplessly watched their children die of leukemia. In 1980, an eighteen-year-old daughter suddenly died; in 1982, her sixteen-year-old brother and their mother followed. None of this attracted the attention of the authorities, and the apartment was assigned to new tenants. Unfortunately, they were not lucky either, as their son soon died of leukemia as well.
 
 ![Building in Kramatorsk where the mysterious deaths occurred](house_no_7.jpg)
 
-### The Accident at the Karansky Quarry
+### Accident at the Karansky Quarry
 
 Only after another death, and thanks to the persistence of the new tenant, was the apartment inspected. Shocked inspectors discovered a strong source of radioactive radiation in the children’s room. A large section of the wall was cut out and examined. A careful investigation revealed a radioactive source embedded in the concrete panel—similar to those used in quarries.
 Thanks to the labeling of radioactive sources, it was determined that the device had been lost in the late 1970s at the Karansky quarry. It was a small capsule containing the radioactive isotope cesium-137, emitting dangerous gamma radiation. The capsule was lost at the quarry and, by an unfortunate coincidence, ended up in the gravel used to manufacture the concrete panel just for this apartment.
