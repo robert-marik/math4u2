@@ -21,9 +21,7 @@ Apartment No. 85, Building 7, Kramatorsk (formerly USSR, today Ukraine), Mariyi 
 ### The Accident at the Karansky Quarry
 
 Only after another death, and thanks to the persistence of the new tenant, was the apartment inspected. Shocked inspectors discovered a strong source of radioactive radiation in the children’s room. A large section of the wall was cut out and examined. A careful investigation revealed a radioactive source embedded in the concrete panel—similar to those used in quarries.
-
 Thanks to the labeling of radioactive sources, it was determined that the device had been lost in the late 1970s at the Karansky quarry. It was a small capsule containing the radioactive isotope cesium-137, emitting dangerous gamma radiation. The capsule was lost at the quarry and, by an unfortunate coincidence, ended up in the gravel used to manufacture the concrete panel just for this apartment.
-
 In quarries, radioactive materials may be used, for example, to determine the density of rock or the fill level of opaque containers. Although the handling of such materials is subject to strict regulations, accidents can still happen.
 
 #### For clarity, let us summarize what happened:  
@@ -37,21 +35,18 @@ In quarries, radioactive materials may be used, for example, to determine the de
 This story shows how powerful the effects of radioactive radiation on human health can be, how dangerous the “invisibility” of radiation is, and how important the safe handling of radioactive materials is.
 
 ### Radioactive Substances and Radioactive Radiation
-
 A radioactive substance is a substance containing unstable atomic nuclei (radionuclides) that spontaneously decay and emit radiation.
-
 We distinguish the following types of radiation:  
 
 - Alpha radiation: a stream of heavy particles (helium nuclei); it has a short range and can be stopped by a thin layer of material (e.g., paper or human skin).
 - Beta radiation: a stream of electrons or positrons; it has a longer range than alpha radiation but can still be relatively easily stopped by metal or a thicker layer of plastic.
 -  Gamma radiation: highly penetrating electromagnetic radiation with high energy; shielding requires a thick layer of dense material (lead, concrete).
 
-In our story, the main role is played by cesium-137, which emits gamma radiation. Gamma radiation can penetrate building structures as well as the human body and may damage cells and DNA.
+In our story, the main role is played by cesium-137, which emits gamma radiation. 
+Gamma radiation can penetrate building structures as well as the human body and may damage cells and DNA.
 
 ### Radioactive Decay and Half-Life
-
 Radioactivity (radioactive decay) is a spontaneous process in which unstable atomic nuclei transform into more stable nuclei while emitting radiation. For a large number of nuclei, this process follows a well-described law.
-
 The number of undecayed nuclei satisfies the relation
 
 $$
@@ -71,7 +66,6 @@ The half-life of a radioactive substance (denoted by $T$) is the time required f
 For example, cesium-137 has a half-life of approximately 30 years. After 30 years, the amount of radioactive substance decreases to one half; after another 30 years (a total of 60 years), to one quarter; after 90 years, to one eighth, and so on.
 
 ### Radiation Intensity
-
 Radiation intensity is a physical quantity that expresses the amount of radiation energy (or number of particles) passing through a unit area per unit time.
 
 At a fixed distance from the source, the radiation intensity is directly proportional to the amount of undecayed material in the source. If we want to reduce the radiation intensity by a factor of $36$, we must reduce the number of nuclei by a factor of $36$.  
@@ -81,9 +75,7 @@ A point source emits energy uniformly in all directions. The farther we are from
 If the distance from the source increases, the radiation dose spreads over a larger area proportional to the square of the distance. Therefore, the radiation intensity decreases with the square of the distance. If the distance from the source increases $k$ times, the radiation intensity decreases $k^2$ times.
 
 ### Radiation Dose and Health Risk
-
 Radiation dose expresses how much radiation energy is absorbed by a given amount of tissue. The commonly used units are the gray (Gy) and the sievert (Sv), the latter reflecting the biological effect on tissue. Long-term exposure to higher radiation doses increases the risk of tumors, leukemia, and other health problems.  
-
 In Kramatorsk, the danger resulted from a combination of relatively short distance, constant presence in the room (many hours per day), and a long period of time (years).
 
 We are now ready to solve the following tasks.
@@ -244,7 +236,6 @@ $$
 
 
 ### Questions for Reflection (No Calculations Required)
-
 * Why did the people in Kramatorsk take so long to realize that the problem was in the wall of the apartment rather than “just” coincidence or genetics?
 * What role does the fact that radiation cannot be seen, felt, or heard play in this story?
 * What would have happened if the same source had been located in a basement wall or a technical room that people visit only rarely?
@@ -253,7 +244,6 @@ $$
 * Can the use of radioactive substances be beneficial (e.g., in medicine, industry, energy production)?
 
 ### The Accident Was Not Unique  
-
 A similar accident to the one at the Karansky quarry occurred at the beginning of 2023 in Australia, where a radioactive source was lost during transport over a distance of 1,400 kilometers. The search was truly like looking for a needle in a haystack, as the source was a tiny cylinder about 8 millimeters in size—roughly the size of a button battery. Fortunately, the Australian capsule was eventually found along the roadside on the transport route.
 
 ![Radioactive source lost in Australia in 2023 compared with a coin](australia-capsule-size2.png)
