@@ -98,7 +98,7 @@ If the distance increases $6$ times, the radiation intensity decreases $36$ time
 
 \fi
 
-> **Problem 2.** The cesium-137 used as the radioactive source in the described incident has a half-life of 30 years. Determine how long it would take for the amount of undecayed cesium in the panel to decrease so that the radiation intensity at a distance of half a meter would be as low as the original intensity at a distance of $3$ meters (i.e., six times farther away).
+> **Task 2.** The cesium-137 used as the radioactive source in the described incident has a half-life of 30 years. Determine how long it would take for the amount of undecayed cesium in the panel to decrease so that the radiation intensity at a distance of half a meter would be as low as the original intensity at a distance of $3$ meters (i.e., six times farther away).
 
 \iffalse
 
@@ -191,7 +191,7 @@ We can verify that substituting $T=30$ and $k=6$ into the last formula gives $t 
 
 In the following problem, we derive another formula describing radioactive decay. Its advantage is that the half-life of the radioactive substance appears explicitly in it. In many situations, it is also more convenient to use than formula $(1)$.
 
-> **Problem 4.**  
+> **Task 4.**  
 > Show that relation $(1)$,  
 > $N(t) = N_0 \mathrm{e}^{-\lambda t}$, can be written in the form  
 >
