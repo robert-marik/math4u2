@@ -197,7 +197,11 @@ $$
  \sin \frac{\varphi}{2} = \cos \psi \sin \frac{\Delta\lambda}{2}. 
 $$
 
-Srovnejte poslední rovnost se vztahem $(1)$. 
+\iffalse
+
+Srovnejte poslední rovnost s výsledkem úlohy 2.  
+
+\fi
 
 \iffalse
 
