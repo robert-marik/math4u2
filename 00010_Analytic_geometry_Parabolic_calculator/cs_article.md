@@ -134,11 +134,12 @@ Na principu parabolické kalkulačky je založena geometrická verze Eratostheno
 
 <!-- htmlstart -->
 
-## Interaktivní parabolická kalkulačka
+### Interaktivní parabolická kalkulačka
 
 <!-- include: applet.html -->
 
 <center>
+<br>
 V interaktivním prvku je možné hýbat s červenými body na ose $x$. 
 </center>
 
@@ -146,7 +147,7 @@ V interaktivním prvku je možné hýbat s červenými body na ose $x$.
 
 <!-- pdfstart -->
 
-## Interaktivní parabolická kalkulačka
+### Interaktivní parabolická kalkulačka
 
 Interaktivní prvek s parabolickou kalkulačkou je dostupný online na portálu  Math4U. 
 
