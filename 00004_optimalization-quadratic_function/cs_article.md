@@ -51,7 +51,7 @@ $p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000$. Můžeme si všimnout, že koeficient u k
 
 \fi
 
->**Úloha 3** Určete jaký je maximální možný zisk majitele. O kolik se tento zisk liší od současného? Kolik vozů musí majitel koupit (nebo eventuálně prodat)?
+>**Úloha 3.** Určete jaký je maximální možný zisk majitele. O kolik se tento zisk liší od současného? Kolik vozů musí majitel koupit (nebo eventuálně prodat)?
 
 \iffalse
 
@@ -67,9 +67,15 @@ $$
 \end{align*}
 $$
 
-Nyní je hezky vidět, že maximalitu $f(n)$ zajistíme, pokud bude výraz $\left( n-\frac{1}{2} \right)^2$ co nejmenší. Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, položili bychom $n=\frac{1}{2}$. Vzhledem k tomu, že $n \in \mathbb{N} \cup \{-3,-2,-1,0\}$, je výraz $\left( n-\frac{1}{2} \right)^2$ nejmenší, právě pro $n=0$ a pro $n=1$. 
+Nyní je hezky vidět, že maximalitu $f(n)$ zajistíme, pokud bude výraz $\left( n-\frac{1}{2} \right)^2$ co nejmenší. To je jasné, protože je tento výraz nezáporný a v předpisu $f(n)$ se objevuje jeho záporný násobek. 
+Vzhledem k tomu, že nás zajímají pouze hodnoty $n \in \mathbb{N} \cup \{-3,-2,-1,0\}$, je zřejmé, že výraz $\left( n-\frac{1}{2} \right)^2$ je nejmenší (a $f(n)$ tedy největší) pro $n=0$ a pro $n=1$. 
 
-To však znamená, že současný stav (ten odpovídá hodnotě $n=0$) je optimální. Pokud by majitel ještě jeden vůz dokoupil ($n=1$), docílil by stejného zisku. Jakýkoliv jiný počet vozů by vedl ke snížení čistého zisku. 
+Zjistili jsme, že současný stav (ten odpovídá hodnotě $n=0$) je optimální a maximální možný čistý zisk majitele je $60\,000$ Kč. Pokud by majitel ještě jeden vůz dokoupil (to odpovídá hodnotě $n=1$), docílil by stejného zisku. Jakýkoliv jiný počet vozů by vedl ke snížení čistého zisku. 
+
+*Poznámka.*
+Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by se realizovalo pro $n=\frac{1}{2}$.  
+
+![Graf funkce $f$](parabola.png)
 
 \fi
 
