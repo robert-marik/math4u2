@@ -49,6 +49,8 @@ $$
 Protože definičním oborem této funkce je množina $\mathbb{N} \cup \{-3,-2,-1,0\}$, je grafem naší funkce množina izolovaných bodů ležících na parabole
 $p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000$. Můžeme si všimnout, že koeficient u kvadratického členu je záporný, což znamená, že se jedná o konkávní parabolu. 
 
+![Graf funkce $f$](parabola.png)
+
 \fi
 
 >**Úloha 3.** Určete jaký je maximální možný zisk majitele. O kolik se tento zisk liší od současného? Kolik vozů musí majitel koupit (nebo eventuálně prodat)?
@@ -74,8 +76,6 @@ Zjistili jsme, že současný stav (ten odpovídá hodnotě $n=0$) je optimáln�
 
 *Poznámka.*
 Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by se realizovalo pro $n=\frac{1}{2}$.  
-
-![Graf funkce $f$](parabola.png)
 
 \fi
 
