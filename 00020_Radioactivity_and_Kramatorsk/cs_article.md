@@ -6,8 +6,8 @@ keywords:
 - radioaktivita
 is_finished: true
 # workflow: in progress
-workflow: translating
-# workflow: finished
+# workflow: translating
+workflow: finished
 difficulty: 2
 time: 20
 ---
