@@ -83,17 +83,14 @@ Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel,
 \fi
 
 *Poznámka.*
-Mohlo by nás napadnout postupovat následujícím způsobem: 
-
-Nejprve bychom si uvědomili, že naše kvadratická funkce   
+Mohlo by nás napadnout postupovat tak, že bychom si nejprve uvědomili, že naše kvadratická funkce   
 
 $$
- p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000, 
+ p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000 
 $$
 
-která je definovaná na celém $\mathbb{R}$,
 nabývá svého maxima v bodě $x=\frac{1}{2}$. 
-Protože naše úloha vyžaduje, aby $x$ bylo celočíselné, musí maximum v oboru celých čísel nastat v nejbližším celém čísle, tj. v bodě $x=0$ nebo v bodě $x=1$. V naší úloze tomu tak skutečně bylo. Následující příklad ale ukazuje, že se podobné úvahy mohou krutě vymstít. 
+Protože zadaná úloha vyžaduje, aby $x$ bylo celočíselné, musí maximum v oboru celých čísel nastat v nejbližším celém čísle, tj. v bodě $x=0$ nebo v bodě $x=1$. V naší úloze tomu tak skutečně bylo. Následující příklad ale ukazuje, že se podobné úvahy mohou krutě vymstít. 
 
 Uvažujme funkci $g$ definovanou předpisem 
 
@@ -101,9 +98,9 @@ $$
  g(x)=\frac{1}{1+(2x-1)^2}+\frac{1}{1+(x-3)^2}. 
 $$
 
-Její graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0 \in (0,1)$. Výše uvedená úvaha by nás ale vedla k závěru, že maximum funkce $g$ na množině celých čísel nastane opět v bodě $x=0$ nebo v bodě $x=1$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=3$. 
+Její graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0$, který sice není přesně roven číslu $\frac{1}{2}$, ale nachází se v intervalu $(0,1)$. Výše uvedená úvaha by nás opět vedla k závěru, že maximum funkce $g$ na množině celých čísel nastane v bodě $x=0$ nebo v bodě $x=1$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=3$ (viz červené body na obrázku). 
 
-![Grafy funkcí $f$ a $p$](taxi2.svg)
+![Graf funkce $g$](taxi2.svg)
 
 
 
