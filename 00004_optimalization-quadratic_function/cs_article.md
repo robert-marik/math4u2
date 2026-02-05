@@ -102,7 +102,9 @@ $$
 nabývá svého maxima v bodě $x=\frac{7}{2}$. To lze mimochodem zjistit více způsoby - úpravou na čtverec, s použitím kořenů kvadratické rovnice, případně s použitím derivací. 
 
 Protože zadaná úloha vyžaduje, aby $x$ bylo přirozené, musí maximum v oboru přirozených čísel nastat v nejbližším přirozeném čísle, tj. v bodě $x=3$ nebo v bodě $x=4$. V naší úloze tomu tak skutečně bylo. 
-Následující příklad ale ukazuje, že se podobné úvahy mohou krutě vymstít. 
+Existují ale situace, ve kterých se podobné úvahy mohou krutě vymstít. 
+
+\iffalse
 
 Uvažujme funkci $g$, jejíž graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0$, který sice není přesně roven číslu $\frac{7}{2}$, ale nachází se v intervalu $(3,4)$. Výše uvedená úvaha by nás opět vedla k závěru, že maximum funkce $g$ na množině přirozených, popř. celých čísel nastane v bodě $x=3$ nebo v bodě $x=4$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=6$ (viz červené body na obrázku). 
 
@@ -115,6 +117,23 @@ $$
 $$
 
 Znalost tohoto předpisu však není důležitá pro pochopení nesprávnosti popsané úvahy. 
+
+\fi 
+
+### Otázky k zamyšlení (bez počítání)
+
+* Jaké předpoklady o chování zákazníků a trhu se skrývají za tvrzením, že s každým dalším vozem klesne průměrný výdělek každého vozu právě o $5\,000$ Kč? Jsou tyto předpoklady realistické v reálném podnikání?​
+* Co by se v modelu změnilo, kdyby se ukázalo, že pokles tržeb na jeden vůz není lineární? Jak by se to projevilo v grafu funkce zisku?​
+
+* Jak si prakticky vysvětlíte, že zmenšení počtu vozů může zvýšit zisk na jeden vůz?​
+
+* V modelu předpokládáme, že náklady na řidiče a údržbu jsou u všech vozů stejné a nemění se s jejich počtem. Jaké typy nákladů v reálné firmě mohou tento předpoklad porušovat (fixní náklady, flotilové slevy, náklady na dispečink,  atd.)?​
+
+* Jak by se rozhodování majitele změnilo, kdyby plánoval podnikání na delší dobu, například na několik let dopředu (opotřebení vozů, změna poptávky, konkurence, regulace města)? Jaké nové faktory by musel do modelu zapojit?​
+
+* Z řešení úlohy 3 vyplývá, že stav se třemi vozy i stav se čtyřmi vozy dávají stejný (maximální) zisk. Jaké  argumenty by mohl majitel použít, aby se rozhodl mezi variantou "zůstat na 3 vozech" a "koupit 4. vůz" (riziko, flexibilita, marketing, spokojenost řidičů atd.)?​
+
+* V textu se ukazuje, že maximum kvadratické funkce $p$ se realizuje v bodě $x=\frac{7}{2}$, ale povolené jsou jen celočíselné hodnoty $x$. Proč je obecně nebezpečné automaticky předpokládat, že optimální celočíselné řešení leží "v nejbližším celém čísle" kolem bodu, ve kterém se realizuje maximum na množině všech reálných čísel? Pokuste se slovně shrnout, co ilustruje funkce $g$ v tomto textu.​
 
 
 
