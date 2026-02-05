@@ -10,19 +10,15 @@ is_finished: true
 ---
 # Pyramid Scheme
 
-Imagine that someone, claiming to represent an investment company, offers you a quick way to multiply your money. The only thing you need to do is persuade three of your friends to invest as well. In reality, however, your money will not be used to purchase gold or stocks. Instead, it will be divided among the people who joined the company before you.  
+Imagine that someone, claiming to represent an investment company, offers you a quick way to multiply your money. The only thing you need to do is persuade three of your friends to invest as well. In reality, however, your money will not be used to purchase gold or stocks. Instead, it will be divided among the people who joined the company before you. If you manage to convince three friends, you will receive a share of their money, and also from the people they recruit — until the entire system collapses due to a lack of new investors and the company’s owner mysteriously flies off to the Bahamas. It should be noted that situations like this usually do not benefit friendships.
 
-If you manage to convince three friends, you will receive a share of their money, and also from the people they recruit — until the entire system collapses due to a lack of new investors and the company’s owner mysteriously flies off to the Bahamas. It should be noted that situations like this usually do not benefit friendships.
-
-You have just fallen for one of the most widespread fraudulent business models — a *pyramid scheme*.
+You have just fallen for one of the most widespread fraudulent business models - a *pyramid scheme*.
 
 ![Pyramid Scheme](pyramida.png)
 
 ### Assignment
 
-The founder of the company (the first level of the pyramid) recruits three investors (the second level of the pyramid) and collects a fixed entry fee of $20\,000\,\text{CZK}$ from each of them. Each of these three investors must then recruit three new investors (the third level of the pyramid) and again collect an entry fee of $20\,000\,\text{CZK}$ from each. The same process continues at the following levels.  
-
-For simplicity, we assume that recruitment for a new level begins only after the previous level has been completely filled. For example, recruitment into the fourth level begins only after all nine investors in the third level have joined.
+The founder of the company (the first level of the pyramid) recruits three investors (the second level of the pyramid) and collects a fixed entry fee of $20\,000\,\text{CZK}$ from each of them. Each of these three investors must then recruit three new investors (the third level of the pyramid) and again collect an entry fee of $20\,000\,\text{CZK}$ from each. The same process continues at the following levels. For simplicity, we assume that recruitment for a new level begins only after the previous level has been completely filled. For example, recruitment into the fourth level begins only after all nine investors in the third level have joined.
 
 The entry fee paid by each new member is distributed among the existing participants as follows: $6\,000\,\text{CZK}$ goes to person A, who recruited the new member; $1\,000\,\text{CZK}$ goes to person B, who recruited person A; another $1\,000\,\text{CZK}$ goes to person C, who recruited person B; another $1\,000\,\text{CZK}$ goes to person D, who recruited person C; and so on, until the entire entry fee has been distributed. If the distribution reaches the founder of the company, the founder receives the remaining amount.
 
@@ -48,9 +44,7 @@ The entry fee paid by each new member is distributed among the existing particip
 
 *Solution to part 2.1.* If the founder of the company receives no money for the first time from the entry fee of a newly joined member, this means that there are $16$ levels above this member ($6\,000\,\text{CZK}$ goes to the person one level above, $14 \cdot 1\,000\,\text{CZK}$ goes to people in the next fourteen higher levels, and the founder in the first level receives nothing). Therefore, the newly joined member is at the $17$th level.
 
-*Solution to part 2.2.* The number of people at each level forms a geometric sequence with first term $a_1 = 1$ and common ratio $q = 3$.  
-
-The total number of people in a pyramid with seventeen levels is the sum of the first seventeen terms of this sequence. Recall that the sum of the first $n$ terms of a geometric sequence is given by
+*Solution to part 2.2.* The number of people at each level forms a geometric sequence with first term $a_1 = 1$ and common ratio $q = 3$. The total number of people in a pyramid with seventeen levels is the sum of the first seventeen terms of this sequence. Recall that the sum of the first $n$ terms of a geometric sequence is given by
 
 $$
 \tag{1}
