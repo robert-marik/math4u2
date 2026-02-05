@@ -1,5 +1,5 @@
 ---
-# workflow: in progress
+workflow: in progress
 # workflow: translating
 # workflow: finished
 keywords:
@@ -36,12 +36,14 @@ na $n-1$ desetinných míst podle standardních pravidel
 pro zaokrouhlování. 
 * Např. čísla $r=31{,}258\,16$ a $s=0{,}023 \,123\,6$ 
 zaokrouhlíme na čtyři platné číslice takto: 
+
 $$
 \begin{aligned}
 r &= 31{,}258\,16 = 3{,}125\,816 \cdot 10^1 \quad \doteq\quad 3{,}126 \cdot 10^1 = 31{,}26 \\
 s &= 0{,}023 \,123\,6 = 2{,}312\,36 \cdot 10^{-2} \quad \doteq\quad 2{,}312 \cdot 10^{-2} = 0{,}023\,12.
 \end{aligned}
 $$
+
 Konkrétně zaokrouhlování vstupních dat může mít 
 překvapivé důsledky pro přesnost výsledku třeba při 
 řešení rovnic, jak se přesvědčíme v následující sérii 
@@ -52,12 +54,12 @@ překvapivé důsledky pro přesnost výsledku třeba při
 > balení vakcín Ixodinum proti encefalitidě a $386$ 
 > balení vakcín Nopolio proti obrně zaplaceno 
 > $401\,950\,\text{Kč}$. Při vstupní kontrole však 
-> bylo zjištěno, že $84$ balení vakcíny Ixodinum a $19$ 
+> bylo zjištěno, že $86$ balení vakcíny Ixodinum a $19$ 
 > balení vakcíny Nopolio je prošlých a musí být 
 > vráceny. Při reklamaci prošlých léčiv bylo vráceno 
 > $39\,600\,\text{Kč}$.  
 >
-> Protože je zvědavý, chce si spočítat, jaká je 
+> Protože vedoucí je zvědavý, chce si spočítat, jaká je 
 > nákupní cena jednoho balení obou vakcín. Nemá však 
 > po ruce  kalkulačku a ani telefon, a proto se 
 > spokojí s přibližným řešením.  Všechny údaje, které 
@@ -101,7 +103,7 @@ Výsledky shrneme v tabulce:
 
 | vakcína  | skutečná cena | skladníkův odhad ceny | relativní chyba |
 | ------------- | ------------- | --- | --- |
-| Ixodinum  | $350\,\text{Kč}$  | $333\,\text{Kč}$ | $\frac{350-333}{350}=4{,}9\,\%$ |
+| Ixodinum  | $350\,\text{Kč}$  | $333\,\text{Kč}$ | $\frac{350-333}{350}\doteq 4{,}9\,\%$ |
 | Nopolio | $500\,\text{Kč}$  | $500\,\text{Kč}$ | $\frac{500-500}{500}=0\,\%$ | 
 
 \fi
