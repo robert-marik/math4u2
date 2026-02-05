@@ -58,7 +58,7 @@ $$
  f(x) = -5000x^2+35\,000x. 
 $$
 
-Uvědomme si, že definičním oborem funkce $f$ je množina $\mathbb{N}$, což znamená, že jejím grafem je množina izolovaných bodů ležících na grafu (kvadratické) funkce $p(x)=-5000x^2+35\,000x$, jejímž grafem je parabola (viz obrázek).  
+Uvědomme si, že definičním oborem funkce $f$ je množina $\mathbb{N}$, což znamená, že jejím grafem je množina izolovaných bodů ležících na grafu (kvadratické) funkce $p(x)=-5000x^2+35\,000x$, kterým je parabola (viz obrázek).  
 
 ![Grafy funkcí $f$ a $p$](taxi1.svg)
 
@@ -92,6 +92,8 @@ Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel,
 
 \fi
 
+\iffalse
+
 *Poznámka.*
 Mohlo by nás napadnout postupovat tak, že bychom si nejprve uvědomili, že naše kvadratická funkce   
 
@@ -103,8 +105,6 @@ nabývá svého maxima v bodě $x=\frac{7}{2}$. To lze mimochodem zjistit více 
 
 Protože zadaná úloha vyžaduje, aby $x$ bylo přirozené, musí maximum v oboru přirozených čísel nastat v nejbližším přirozeném čísle, tj. v bodě $x=3$ nebo v bodě $x=4$. V naší úloze tomu tak skutečně bylo. 
 Existují ale situace, ve kterých se podobné úvahy mohou krutě vymstít. 
-
-\iffalse
 
 Uvažujme funkci $g$, jejíž graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0$, který sice není přesně roven číslu $\frac{7}{2}$, ale nachází se v intervalu $(3,4)$. Výše uvedená úvaha by nás opět vedla k závěru, že maximum funkce $g$ na množině přirozených, popř. celých čísel nastane v bodě $x=3$ nebo v bodě $x=4$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=6$ (viz červené body na obrázku). 
 
@@ -131,11 +131,13 @@ Znalost tohoto předpisu však není důležitá pro pochopení nesprávnosti po
 
 * Jak by se rozhodování majitele změnilo, kdyby plánoval podnikání na delší dobu, například na několik let dopředu (opotřebení vozů, změna poptávky, konkurence, regulace města)? Jaké nové faktory by musel do modelu zapojit?​
 
+\iffalse
+
 * Z řešení úlohy 3 vyplývá, že stav se třemi vozy i stav se čtyřmi vozy dávají stejný (maximální) zisk. Jaké  argumenty by mohl majitel použít, aby se rozhodl mezi variantou "zůstat na 3 vozech" a "koupit 4. vůz" (riziko, flexibilita, marketing, spokojenost řidičů atd.)?​
 
 * V textu se ukazuje, že maximum kvadratické funkce $p$ se realizuje v bodě $x=\frac{7}{2}$, ale povolené jsou jen celočíselné hodnoty $x$. Proč je obecně nebezpečné automaticky předpokládat, že optimální celočíselné řešení leží "v nejbližším celém čísle" kolem bodu, ve kterém se realizuje maximum na množině všech reálných čísel? Pokuste se slovně shrnout, co ilustruje funkce $g$ v tomto textu.​
 
-
+\fi 
 
 
 
