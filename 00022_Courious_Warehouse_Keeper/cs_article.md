@@ -188,6 +188,54 @@ Porovnáním obou grafických znázornění je vidět, že v případě Úlohy 2
 
 \fi
 
-## Literatura
+*Poznámka.*
+Ukážeme si ještě dvě další soustavy, u kterých je chování možná ještě kurióznější. 
+
+První soustava:
+
+$$
+\begin{alignedat}{2}
+460x &\,+ & 96 y &= 196\,160 \\
+96x &\,+ & 16 y &= 38\,880
+\end{alignedat}
+$$
+
+Její řešení je $x=320$ a $y=510$.
+
+Zaokrouhlená první soustava:
+
+$$
+\begin{alignedat}{2}
+500x &\,+ & 100 y &= 200\,000 \\
+100x &\,+ & 20 y &= 40\,000
+\end{alignedat}
+$$
+
+Tato soustava má nekonečně mnoho řešení. 
+
+Druhá soustava:
+
+$$
+\begin{alignedat}{2}
+460x &\,+ & 96 y &= 194\,600 \\
+96x &\,+ & 16 y &= 34\,560
+\end{alignedat}
+$$
+
+Její řešení je $x=110$ a $y=1\,500$.
+
+Zaokrouhlená druhá soustava:
+
+$$
+\begin{alignedat}{2}
+500x &\,+ & 100 y &= 200\,000 \\
+100x &\,+ & 20 y &= 30\,000
+\end{alignedat}
+$$
+
+Tato soustava nemá řešení. 
+
+
+### Literatura
 
 * Biermann K., Grötschel M., Lutz-Westphal B. (2010). *Besser als Mathe: Moderne angewandte Mathematik aus dem MATHEON zum Mitmachen*. Berlin: Vieweg+Teubner.
