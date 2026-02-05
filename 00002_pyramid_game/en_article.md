@@ -10,7 +10,7 @@ is_finished: true
 ---
 # Pyramid Scheme
 
-Imagine that someone, claiming to represent an investment company, offers you a quick way to multiply your money. The only thing you need to do is persuade three of your friends to invest as well. In reality, however, your money will not be used to purchase gold or stocks. Instead, it will be divided among the people who joined the company before you. If you manage to convince three friends, you will receive a share of their money, and also from the people they recruit — until the entire system collapses due to a lack of new investors and the company’s owner mysteriously flies off to the Bahamas. It should be noted that situations like this usually do not benefit friendships.
+Imagine that someone, claiming to represent an investment company, offers you a quick way to multiply your money. The only thing you need to do is persuade three of your friends to invest as well. In reality, however, your money will not be used to purchase gold or stocks. Instead, it will be divided among the people who joined the company before you. If you manage to convince three friends, you will receive a share of their money, and also from the people they recruit - until the entire system collapses due to a lack of new investors and the company’s owner mysteriously flies off to the Bahamas. It should be noted that situations like this usually do not benefit friendships.
 
 You have just fallen for one of the most widespread fraudulent business models - a *pyramid scheme*.
 
@@ -22,8 +22,7 @@ The founder of the company (the first level of the pyramid) recruits three inves
 
 The entry fee paid by each new member is distributed among the existing participants as follows: $6\,000\,\text{CZK}$ goes to person A, who recruited the new member; $1\,000\,\text{CZK}$ goes to person B, who recruited person A; another $1\,000\,\text{CZK}$ goes to person C, who recruited person B; another $1\,000\,\text{CZK}$ goes to person D, who recruited person C; and so on, until the entire entry fee has been distributed. If the distribution reaches the founder of the company, the founder receives the remaining amount.
 
-> **Task 1.**  
-> When does a newly joined participant recover the money paid as the entry fee?
+> **Task 1.** When does a newly joined participant recover the money paid as the entry fee?
 
 \iffalse
 
@@ -31,8 +30,7 @@ The entry fee paid by each new member is distributed among the existing particip
 
 \fi
 
-> **Task 2.**  
-> At a certain level of the pyramid, it happens for the first time that the founder of the company receives no money from the entry fees of new members.
+> **Task 2.** At a certain level of the pyramid, it happens for the first time that the founder of the company receives no money from the entry fees of new members.
 >
 > 1. At which level of the pyramid are these new members?  
 > 2. How many people are in the entire pyramid after this level has been filled? Compare this number with the population of your school or your town.  
@@ -68,15 +66,14 @@ $$
 Now we determine the percentage of people at a loss:
 
 $$
-P = 100 \cdot \frac{57\,395\,628}{64\,570\,081} \doteq 88.89\,\%.
+P = 100 \cdot \frac{57\,395\,628}{64\,570\,081} \approx 88.89\,\%.
 $$
 
 \fi
 
 Pyramid schemes, also known as airplane games, have a long and unfortunately dark history in the Czech Republic. One of the most well-known cases is the Avalanche affair (2000–2006), in which managers of a certain company, promising high returns, collected over $400$ million CZK from nearly $6\,000$ investors. The money was used to pay earlier participants from the contributions of new ones — the classic principle of a pyramid scheme — which later collapsed.
 
-> **Task 3.**  
-> In real cases in the Czech Republic, the number of participants was typically in the thousands. In this task, assume that after filling a certain level, the total number of participants in our pyramid is between $3\,000$ and $4\,000$.
+> **Task 3.** In real cases in the Czech Republic, the number of participants was typically in the thousands. In this task, assume that after filling a certain level, the total number of participants in our pyramid is between $3\,000$ and $4\,000$.
 >
 > 1. Which level is it?  
 > 2. Determine the percentage of people who are at a loss at this stage.  
@@ -121,7 +118,7 @@ $$
 We determine the percentage:
 
 $$
-P' = 100 \cdot \frac{2\,916}{3\,280} \doteq 88.90\,\%.
+P' = 100 \cdot \frac{2\,916}{3\,280} \approx 88.90\,\%.
 $$
 
 We may notice that the result differs only slightly from the result in Task 2.3, even though the numbers of people considered are of different orders of magnitude.
@@ -165,15 +162,14 @@ We can now determine the percentage of funds paid to participants in the first t
 $$
 P'' = 100 \cdot \frac{Z_1 + 3 \cdot Z_2 + 9 \cdot Z_3}{S}
 = 100 \cdot \frac{37\,638\,000}{65\,580\,000}
-\doteq 57.39\,\%.
+\approx 57.39\,\%.
 $$
 
 For better understanding, it is important to realize that this share of the total “company revenue” is paid to only $13$ people out of $3\,280$. Approximately $0.4\,\%$ of the participants receive more than half of the collected money. It is therefore not surprising that pyramid schemes are banned as a business model in many countries around the world.
 
 \fi
 
-> **Task 4.**  
-> Think about why, in Tasks 2.3 and 3.2, the percentage of people at a loss turned out to be almost the same. Was this merely a coincidence, or would we obtain a similar result for other numbers of pyramid levels?
+> **Task 4.** Think about why, in Tasks 2.3 and 3.2, the percentage of people at a loss turned out to be almost the same. Was this merely a coincidence, or would we obtain a similar result for other numbers of pyramid levels?
 
 \iffalse
 
@@ -204,7 +200,7 @@ $$
 For large $n$, the expression $3^{-n}$ is negligibly small, and therefore the factor $\frac{1}{1 - 3^{-n}}$ is close to $1$. This means that
 
 $$
-P_n \doteq \frac{8}{9} = 0.\overline{8}.
+P_n \approx \frac{8}{9} = 0.\overline{8}.
 $$
 
 \fi
@@ -223,7 +219,7 @@ $$
 
 ### References
 
-* Yates K. (2021). *Mathematics for Life*. Prague: Kniha Zlín.
+* Yates K. (2021). *Matematika pro život (Mathematics for Life)*. Praha: Kniha Zlín.
 
 * Illinois Attorney General. *Pyramid schemes* [online]. Available at  
 <https://ag.state.il.us/consumers/pyramid.html> [accessed June 1, 2023].
