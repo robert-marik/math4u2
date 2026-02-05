@@ -189,7 +189,7 @@ Porovnáním obou grafických znázornění je vidět, že v případě Úlohy 2
 \fi
 
 *Poznámka.*
-Ukážeme si ještě dvě další soustavy, u kterých je chování možná ještě kurióznější. 
+Ukážeme si dvě další soustavy, u kterých je chování možná ještě kurióznější. 
 
 První soustava:
 
