@@ -311,14 +311,37 @@ Odtud po vydělení číslem $2$ dostaneme vztah $(3)$. Vztahy $(2)$ a následn�
 
 \fi
 
-## Literatura
+### Otázky k zamyšlení (bez počítání)
+
+* Uvažujte, že letíte letadlem a na obrazovce vidíte "zakřivenou" trasu letu po ortodromě. Proč může být pro pasažéra překvapivé, že let přes severní oceán a "blíž k pólu" je kratší než "rovnější" trasa blíž k rovnoběžce?​
+
+* V úloze předpokládáme, že Země je dokonalá koule a letadlo letí stále ve stejné výšce. Jaké skutečné vlivy takový model zanedbává (např. vítr, tvar Země, omezení letových koridorů, politické hranice)? Ve kterých situacích může být nejkratší matematická trasa ve skutečnosti nevhodná?
+
+* Jaký dopad může mít nevhodně zvolená projekce mapy (např. pro navigaci, plánování námořních tras, leteckou dopravu nebo geolokační aplikace v mobilu)? Vymyslete konkrétní situaci, kdy nesprávná představa o "nejkratší cestě" na mapě může vést k chybnému rozhodnutí.
+
+* V letectví se používají speciální letecké mapy (nejen "obyčejná" nástěnná mapa světa). Proč podle vás piloti potřebují jiné mapy než turisté? Jaké informace navíc musí taková mapa obsahovat?
+
+* Představte si, že pilot plánuje let jen podle mapy, která silně zkresluje vzdálenosti ve vyšších zeměpisných šířkách. K jakým chybám by mohlo dojít při odhadu délky letu, spotřeby paliva nebo nouzových letišť?
+
+* Letové trasy dopravních letadel jsou často vedené po "vzdušných koridorech" a body, které jsou definované zeměpisnými souřadnicemi nebo radiomajáky. Čím se podle vás liší plánování trasy letadla od plánování silniční cesty autem?
+
+* Letadla dnes využívají satelitní navigaci (např. GPS). Jaké výhody má podle vás satelitní určování polohy oproti klasické mapě a kompasu? A jaká rizika nebo omezení vás naopak napadají?
+
+* Představte si, že by GPS přestala dočasně fungovat (porucha, rušení signálu). Jaké rezervní způsoby navigace by pilot nebo námořník mohl použít? Které dovednosti z "klasické" kartografie a trigonometrie by se v tu chvíli hodily?
+
+* Mapy v mobilu většinou automaticky „narovnají" obraz tak, aby vypadal přehledně a známě. Jaká nedorozumění může u běžného uživatele vzniknout, když si neuvědomuje, že krátká čára na displeji nemusí vždy znamenat skutečně nejkratší cestu na Zemi?
+
+
+
+
+### Literatura
 * Novák V., Murdych Z. *Kartografie a topografie.* Praha: Státní pedagogické nakladatelství. (1988)
 * Hradecký F., Koman M., Vyšín J. *Několik úloh z geometrie jednoduchých těles.* Praha: Škola mladých matematiků. (1977). 36--38.
 
-## Odkazy
+### Odkazy
 * Ortodroma - https://cs.wikipedia.org/wiki/Ortodroma
 * Matematické metody v kartografii - https://web.natur.cuni.cz/~bayertom/images/courses/mmk/mk2.pdf
 
 
-## Zdroje obrázků
+### Zdroje obrázků
 * Mercator projection. Strebe – Vlastní dílo, CC BY-SA 4.0, dostupné z <https://commons.wikimedia.org/wiki/File:Mercator_projection_Square.JPG> [cit. 14. 8. 2023]
