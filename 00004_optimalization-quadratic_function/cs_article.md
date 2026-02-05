@@ -13,72 +13,82 @@ time: 20
 
 # Nákup vozů pro taxislužbu
 
+Pan Petr si chce založit novou taxislužbu. Ze stávající taxislužby, kterou už provozuje mnoho let, si chce přesunout nějaké vozy do nové živnosti. Uvažuje však, kolik vozů se mu nejvíce vyplatí. Ze svých letitých zkušeností ví, že když měl tři vozy, pak byl jeho průměrný měsíční výdělek (bez započítání nákladů na údržbu a řidiče) $60\,000$ Kč z každého vozu. Ví také, že s každým přidaným vozem průměrný výdělek každého vozu v jeho vozovém parku klesal o $5\,000$ Kč. Naopak, když vozy odebíral, pak s každým odebraným vozem průměrný výdělek každého vozu v jeho vozovém parku rostl o $5\,000$ Kč. Náklady na údržbu a řidiče jsou při jakémkoliv počtu aut stále stejné, a to $40\,000$ Kč na každé auto. 
+
+<!--- STARÁ VERZE----
 V České Republice majitel pražské taxislužby zvažuje, zda pořídit další vozy a kolik jich pořídit 
 tak, aby jeho zisk byl co největší. Momentálně má $3$ vozy a z každého vozu (bez započítání nákladů na údržbu a řidiče) má průměrný měsíční výdělek $60\,000$ Kč. Dle letitých zkušeností v oboru však 
 očekává, že s každým nakoupeným vozem průměrný výdělek každého vozu klesne 
 o $5\,000$ Kč, neboť dojde k částečnému přelivu zákazníků do nového vozu. Naopak, s každým prodaným vozem tento výdělek o $5\,000$ Kč vzroste. Ještě dodejme, že dříve zmíněné náklady na řidiče a vůz za jeden měsíc činí $40\,000$ Kč.
+-->
 
->**Úloha 1.** Jaký je (po odečtení nákladů na údržbu a řidiče) měsíční zisk  majitele taxislužby nyní? 
+>**Úloha 1.** Jaký byl (po odečtení nákladů na údržbu a řidiče) celkový čistý měsíční zisk majitele taxislužby v době, kdy provozoval tři vozy? 
+
+<!--- STARÁ VERZE----
+Jaký je (po odečtení nákladů na údržbu a řidiče) měsíční zisk  majitele taxislužby nyní? 
+-->
 
 \iffalse
 
-*Řešení.* Každý ze tří vozů majiteli taxislužby přináší čistý zisk (po odečtení nákladů)
-$20\,000$ Kč.  Dohromady tak současný čistý zisk ze tří vozů činí $60\,000$ Kč.
+*Řešení.* Každý ze tří vozů majiteli taxislužby přinesl (po odečtení nákladů) čistý zisk 
+$60\,000 - 40\,000 = 20\,000$ Kč.  Dohromady tak čistý zisk ze tří vozů činil $3 \cdot 20\,000 = 60\,000$ Kč.
 
 \fi
 
->**Úloha 2.** Určete předpis funkce, která vyjadřuje čistý zisk majitele taxislužby v závislosti na počtu nově dokoupených (případně vyřazených) vozů. O jakou funkci se jedná a jak vypadá její graf?
+>**Úloha 2.** Určete předpis funkce, která vyjadřuje čistý zisk majitele taxislužby v závislosti na počtu provozovaných vozů. O jakou funkci se jedná a jak vypadá její graf?
 
 \iffalse
 
-*Řešení.* Označme $x$ počet nově pořízených vozů. Ze zadání je jasné, že $x \in \mathbb{N} \cup \{-3,-2,-1,0\}$ . Záporné $x$ přitom znamená, že se majitel příslušného počtu vozů zbavuje. Označme dále $f(x)$ čistý zisk majitele za jeden měsíc. 
-Víme, že čistý zisk jednoho ze stávajících tří vozů je $20\,000$ Kč. Od této částky je třeba odečíst 
-částku $5\,000x$ Kč, protože podle zadání víme, že s nákupem každého dalšího vozu klesne zisk z každého vozu o $5\,000$ Kč. Celkem tedy jeden vůz přinese 
-majiteli čistý zisk $20\ 000-5\ 000x$ Kč. Celkový zisk při dokoupení $x$ vozů dostaneme vynásobením této částky aktuálním počtem vozů (a ten je roven $3+x$):  
+*Řešení.* Označme $x \in \mathbb{N}$ počet provozovaných vozů a $f(x)$ celkový čistý zisk majitele za jeden měsíc. 
+Víme, že v případě $x=3$ byl čistý zisk z každého vozu $20\,000$ Kč a že s každým přidaným (resp. odebraným) vozem klesne (resp. vzroste) zisk z každého vozu o $5\,000$ Kč. Proto je při obecném počtu vozů $x \in \mathbb{N}$ čistý zisk z každého vozu roven 
 
 $$
-f(x)=(20\ 000-5\ 000x)(3+x)
+ 20\,000 - 5000(x-3) = (35\,000-5000x) \, \text{ Kč}.
+$$  
+
+Protože je provozováno $x$ vozů, pro celkový čistý zisk majitele taxislužby platí 
+
+$$
+ f(x) = x(35\,000-5000x).
 $$
 
-Po roznásobení a úpravě pravé strany dostaneme předpis  
+Po roznásobení obdržíme 
 
 $$
- f(x)= -5\ 000x^2 + 5\ 000x + 60\ 000. 
+ f(x) = -5000x^2+35\,000x. 
 $$
 
-Protože definičním oborem funkce $f$ je množina $\mathbb{N} \cup \{-3,-2,-1,0\}$, je jejím grafem množina izolovaných bodů ležících na parabole $p$ dané předpisem 
-$p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000$. Definiční obor funkce $p$ je nyní množina všech reálných čísel (viz obrázek).  
-
-<!-- Můžeme si všimnout, že koeficient u kvadratického členu je záporný, což znamená, že se jedná o konkávní parabolu. 
--->
+Uvědomme si, že definičním oborem funkce $f$ je množina $\mathbb{N}$, což znamená, že jejím grafem je množina izolovaných bodů ležících na grafu (kvadratické) funkce $p(x)=-5000x^2+35\,000x$, jejímž grafem je parabola (viz obrázek).  
 
 ![Grafy funkcí $f$ a $p$](taxi1.svg)
 
 \fi
 
->**Úloha 3.** Určete jaký je maximální možný zisk majitele. O kolik se tento zisk liší od současného? Kolik vozů musí majitel koupit (nebo eventuálně prodat)?
+>**Úloha 3.** Určete, kolik vozů má majitel provozovat, aby byl jeho celkový čistý zisk maximální. Určete také výši tohoto zisku. 
 
 \iffalse
 
 *Řešení.* 
-Naším úkolem je nyní určit maximum funkce $f$. Jedním ze způsobů, jak toto maximum najít, je provést tzv. úpravu na čtverec: 
+Naším úkolem je nyní najít $x \in \N$, pro které je $f(x)$ maximální, a toto maximum určit. Jedním ze způsobů, jak to lze provést, je použít tzv. úpravu na čtverec: 
 
 $$
 \begin{align*}
- f(x) &= -5\ 000x^2 + 5\ 000x + 60\ 000 = 
- -5000 \left( x^2 - x - 12 \right) = \\
- &= -5000 \left[ \left( x-\frac{1}{2} \right)^2 -\frac{1}{4}-12\right]
- = -5000 \left( x-\frac{1}{2} \right)^2 + 61\,250
+ f(x) &= -5000x^2+35\,000x = 
+ -5000 \left( x^2 - 7x \right) = \\
+ &= -5000 \left[ \left( x-\frac{7}{2} \right)^2 -\frac{49}{4}\right]
+ = -5000 \left( x-\frac{7}{2} \right)^2 + 61\,250
 \end{align*}
 $$
 
-Nyní je hezky vidět, že maximalitu $f(x)$ zajistíme, pokud bude výraz $\left( x-\frac{1}{2} \right)^2$ co nejmenší. To je jasné, protože je tento výraz nezáporný a v předpisu $f(x)$ se objevuje jeho záporný násobek. 
-Vzhledem k tomu, že nás zajímají pouze hodnoty $x \in \mathbb{N} \cup \{-3,-2,-1,0\}$, je zřejmé, že výraz $\left( x-\frac{1}{2} \right)^2$ je nejmenší (a $f(x)$ tedy největší) pro $x=0$ a pro $x=1$. 
+Nyní je hezky vidět, že maximalitu $f(x)$ zajistíme, pokud bude výraz $\left( x-\frac{7}{2} \right)^2$ co nejmenší. To je jasné, protože tento výraz je nezáporný a v předpisu $f(x)$ se objevuje jeho záporný násobek. 
+Vzhledem k tomu, že nás zajímají pouze hodnoty $x \in \mathbb{N}$, je zřejmé, že výraz $\left( x-\frac{7}{2} \right)^2$ je nejmenší (a $f(x)$ tedy největší) pro $x=3$ a pro $x=4$. Poslední krok naší úvahy má i pěknou geometrickou interpretaci. Není těžké si rozmyslet, že $\left( x-\frac{7}{2} \right)^2=\left| x-\frac{7}{2} \right|^2$, a proto $\left( x-\frac{7}{2} \right)^2$ představuje druhou mocninu vzdálenosti čísel $x$ a $\frac{7}{2}$ na číselné ose. Ale přirozená čísla, která jsou nejblíže k bodu $\frac{7}{2}$ jsou právě čísla $3$ a $4$. 
 
-Zjistili jsme, že současný stav (ten odpovídá hodnotě $x=0$) je optimální a maximální možný čistý zisk majitele je $60\,000$ Kč. Pokud by majitel ještě jeden vůz dokoupil (to odpovídá hodnotě $x=1$), docílil by stejného zisku. Jakýkoliv jiný počet vozů by vedl ke snížení čistého zisku. 
+Zjistili jsme, že stav, kdy majitel provozoval tři vozy, je optimální a celkový čistý zisk (jak už víme z úlohy 1) je $60\,000$ Kč. Hodonotu $60\,000$ bychom samozřejmě dostali i jako funkční hodnotu funkce $f$ v bodě $3$, tzn. $f(3)$ (vyzkoušejte si to). 
+Stejného čistého zisku by majitel docílil i se čtyřmi auty. 
+Jakýkoliv jiný počet vozů by vedl ke snížení čistého zisku. 
 
 *Poznámka.*
-Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by se realizovalo pro $x=\frac{1}{2}$.  
+Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by se realizovalo v bodě $x=\frac{7}{2}$. 
 
 \fi
 
@@ -86,22 +96,25 @@ Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel,
 Mohlo by nás napadnout postupovat tak, že bychom si nejprve uvědomili, že naše kvadratická funkce   
 
 $$
- p(x)=-5\ 000x^2 + 5\ 000x + 60\ 000 
+ p(x)=-5000x^2+35\,000x 
 $$
 
-nabývá svého maxima v bodě $x=\frac{1}{2}$. 
-Protože zadaná úloha vyžaduje, aby $x$ bylo celočíselné, musí maximum v oboru celých čísel nastat v nejbližším celém čísle, tj. v bodě $x=0$ nebo v bodě $x=1$. V naší úloze tomu tak skutečně bylo. Následující příklad ale ukazuje, že se podobné úvahy mohou krutě vymstít. 
+nabývá svého maxima v bodě $x=\frac{7}{2}$. To lze mimochodem zjistit více způsoby - úpravou na čtverec, s použitím kořenů kvadratické rovnice, případně s použitím derivací. 
 
-Uvažujme funkci $g$ definovanou předpisem 
+Protože zadaná úloha vyžaduje, aby $x$ bylo přirozené, musí maximum v oboru přirozených čísel nastat v nejbližším přirozeném čísle, tj. v bodě $x=3$ nebo v bodě $x=4$. V naší úloze tomu tak skutečně bylo. 
+Následující příklad ale ukazuje, že se podobné úvahy mohou krutě vymstít. 
 
-$$
- g(x)=\frac{1}{1+(2x-1)^2}+\frac{1}{1+(x-3)^2}. 
-$$
-
-Její graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0$, který sice není přesně roven číslu $\frac{1}{2}$, ale nachází se v intervalu $(0,1)$. Výše uvedená úvaha by nás opět vedla k závěru, že maximum funkce $g$ na množině celých čísel nastane v bodě $x=0$ nebo v bodě $x=1$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=3$ (viz červené body na obrázku). 
+Uvažujme funkci $g$, jejíž graf můžeme vidět na obrázku. Všimněme si, že maximum funkce $g$ (na $\mathbb{R}$) nastává v bodě $x_0$, který sice není přesně roven číslu $\frac{7}{2}$, ale nachází se v intervalu $(3,4)$. Výše uvedená úvaha by nás opět vedla k závěru, že maximum funkce $g$ na množině přirozených, popř. celých čísel nastane v bodě $x=3$ nebo v bodě $x=4$, což (jak vidíme z obrázku) není pravda. Maximum funkce $g$ na množině celých čísel nastává totiž v bodě $x=6$ (viz červené body na obrázku). 
 
 ![Graf funkce $g$](taxi2.svg)
 
+Pro zajímavost uveďme, že funkce $g$ byla zadána předpisem 
+
+$$
+ g(x)=\frac{1}{1+(2x-7)^2}+\frac{1}{1+(x-6)^2}. 
+$$
+
+Znalost tohoto předpisu však není důležitá pro pochopení nesprávnosti popsané úvahy. 
 
 
 
