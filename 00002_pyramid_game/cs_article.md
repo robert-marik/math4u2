@@ -93,7 +93,8 @@ $$
 V našem případě ($a_1=1$, $q=3$ a $n=17$) dostaneme 
 
 $$
-s_{17}=1\cdot\frac{3^{17}-1}{3-1}=64\,570\,081.$$ 
+s_{17}=1\cdot\frac{3^{17}-1}{3-1}=64\,570\,081.
+$$ 
 
 Je vidět, že by do schématu
 musela být zapojena celá populace většího státu (přibližně odpovídá populaci
