@@ -50,7 +50,9 @@ Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může n
 
 * Na mapě (např. Mercatorovo zobrazení): Všechny rovnoběžky se protáhnou do rovných čar stejné délky (jako rovník). Poledníky zůstávají rovné a kolmé na rovnoběžky. Tím se vzdálenost dvou míst ležících na stejné rovnoběžce blízko pólu "nafouknou" – úsečka na mapě odpovídá delší cestě po rovnoběžce!
 
-> **Úloha 1.** Lisabon i Washington se nachází přibližně na stejné 
+
+<!-- ÚLOHA 1 - STARÁ VERZE
+Lisabon i Washington se nachází přibližně na stejné 
 > rovnoběžce (asi $39^{\circ}$ severní šířky). O kolik kilometrů 
 > méně uletí letadlo pohybující se po ortodromě oproti cestě po 
 > rovnoběžce? Lisabon se nachází na přibližně $9^{\circ}$ 
@@ -60,34 +62,53 @@ poloměrem $6\ 371\,\text{km}$ a že letadlo letí v průměrné výšce
 $10\,\text{km}$ (vzlet a přistání brát do úvahy nebudeme). Proto 
 budeme ve všech úvahách pracovat s koulí o poloměru 
 $\varrho=6\ 381\,\text{km}$. 
+--> 
+
+
+> **Úloha 1.** Lisabon i Washington se nachází přibližně na stejné 
+> rovnoběžce (asi $39^{\circ}$ severní šířky). Vypočtěte vzdálenost, kterou uletí letadlo mezi oběma městy, pokud se pohybuje po rovnoběžce. Dodejme, že 
+Lisabon se nachází na přibližně $9^{\circ}$ 
+> západní délky a Washington na $77^{\circ}$ západní délky.
+Dále předpokládejme, že Země je koule se středem $C$ a 
+poloměrem $6\ 371\,\text{km}$ a že letadlo letí v průměrné výšce 
+$10\,\text{km}$ (vzlet a přistání brát do úvahy nebudeme). Proto 
+budeme ve všech úvahách pracovat s koulí o poloměru 
+$\varrho=6\ 381\,\text{km}$. Při řešení se pokuste využít následující obrázky. 
+
+![Řez zeměkoule středem Země C a oběma póly S, J](math4you_00008_02.jpg)
+![Pohled shora na zeměkouli – větší kružnice představuje rovník a menší pak naši rovnoběžku.](math4you_00008_03.jpg)
 
 \iffalse
 
-*Řešení.* Určeme nejdříve, kolik kilometrů 
-urazí letadlo při cestě po rovnoběžce. Označme rovnoběžku 
+*Řešení.* Označme rovnoběžku 
 na $39^{\circ}$ severní šířky jako kružnici $k$ se středem $O$ a 
 poloměrem $r$. Ve vhodném pravoúhlém průmětu zeměkoule (viz 
-obrázek, kde $S$ a $J$ jsou póly) se řečená kružnice zobrazí 
-jako úsečka $AB$ se středem $O$. 
+obrázek 3, kde $S$ a $J$ jsou póly) se řečená kružnice zobrazí 
+jako úsečka $AB$ se středem $O$. Dále budeme postupovat následovně: 
 
-![Řez zeměkoule středem Země C a oběma póly S, J](math4you_00008_02.jpg)
-
+1. Nejprve určíme délku celé rovnoběžky na $39^{\circ}$ severní šířky. Protože je tato rovnoběžka kružnice, pro určení její délky potřebujeme spočítat její poloměr $r$. K tomu nám pomůže obrázek 3. 
 Z obrázku je zřejmá rovnost $\lvert\sphericalangle CBO\rvert = \lvert\sphericalangle BCD\rvert = 39^{\circ}$ 
 (úhly jsou střídavé) a užitím funkce kosinus v pravoúhlém trojúhelníku $BCO$ dostáváme $r=\varrho\cdot \cos 39^{\circ}$.
 
-Dráhu letadla pohybujícího se po rovnoběžce (v obrázku níže je 
-trajektorie letadla znázorněná kratším obloukem $LW$) určíme 
-přímou úměrou. Celá kružnice $k$ má délku 
-$2\pi r =2\pi\varrho\cdot\cos 39^{\circ} \,\text{km}$, tedy 
-délka kratšího oblouku $LW$ je rovna
+2. Dráha letadla pohybujícího se po rovnoběžce je část kružnice $k$ (kratší oblouk $LW$). K výpočtu délky $d_1$ tohoto oblouku využijeme přímou úměru. 
+Uvědomme si, že celá kružnice $k$ má délku 
+$2\pi r =2\pi\varrho\cdot\cos 39^{\circ} \,\text{km}$, a proto  
+
 $$
-\frac{(77-9)}{360}\cdot 2\pi\varrho\cdot \cos 39^{\circ} \doteq 5\ 885{,}4\,\text{km}.
+ \frac{77-9}{360} = \frac{d_1}{2\pi\varrho \cdot \cos 39^{\circ}} 
+  \quad \Longrightarrow \quad 
+d_1 = \frac{(77-9)}{360}\cdot 2\pi\varrho\cdot \cos 39^{\circ} \doteq 5\ 885{,}4 \; \text{km}.
 $$
 
-![Pohled shora na zeměkouli – větší kružnice představuje rovník a menší pak naši rovnoběžku.](math4you_00008_03.jpg)
+\fi
 
-Nyní zjistíme, kolik kilometrů uletí letadlo pohybující se po ortodromě. Jedná se vlastně o vzdálenost dvou bodů na pomyslné sféře o poloměru $\varrho=6\ 381\,\text{km}$. Na obrázku lze vidět, že ortodroma mezi body $L$ a 
-$W$ je obloukem jisté hlavní kružnice $h$ s neznámým středovým úhlem $\varphi$. Tento úhel musíme určit.
+> **Úloha 2.** Určete, jakou vzdálenost uletí letadlo letící z Lisabonu do Washingtonu, pokud letí po ortodromě a o kolik kilometrů se vzdálenosti po rovnoběžce a po ortodromě liší? Souřadnice obou míst a poloměr Země použijte stejné jako v úloze 1. 
+
+\iffalse
+
+*Řešení.* 
+Nyní zjistíme, kolik kilometrů uletí letadlo pohybující se po ortodromě. Ortodroma mezi body $L$ a $W$ je obloukem jisté hlavní kružnice $h$ s poloměrem $\varrho=6\,381 \; \text{km}$ a s neznámým středovým úhlem $\varphi$. Abychom mohli spočítat délku $d_2$ tohoto oblouku, musíme nejprve určit 
+tento úhel $\varphi$. 
 
 ![Ortodroma spojující Lisabon (L) a Washington (W)](math4you_00008_04.jpg)
 
@@ -115,18 +136,22 @@ $$
 \doteq 25^{\circ}45' 30''\quad \Rightarrow \quad \varphi \doteq 51^{\circ}31'.
 $$
 
-Dráhu letadla pohybujícího se po ortodromě určíme podobně jako v 
-případě rovnoběžky přímou úměrou. Délka celé kružnice $h$ je rovna $2\pi\varrho$, pro délku kratšího oblouku $LW$ pak platí
+Dráhu $d_2$ letadla pohybujícího se po ortodromě určíme podobně jako v 
+případě rovnoběžky přímou úměrou. Délka celé kružnice $h$ je rovna $2\pi\varrho$, a proto 
 
 $$
+\frac{\varphi}{360}=\frac{d_2}{2\pi\varrho} 
+\quad \Longrightarrow \quad 
+d_2=\frac{\varphi}{360}\cdot 2\pi\varrho \doteq 
 \frac{51{,}5}{360}\cdot 2\pi\varrho \doteq 5\ 735{,}5 \,\text{km}.
 $$
 
-Vidíme, že se obě dráhy liší přibližně o $150 \,\text{km}$.
+Vidíme, že se obě dráhy (po rovnoběžce a po ortodromě) liší přibližně o $150 \,\text{km}$.
 
 \fi
 
->**Úloha 2.**
+
+>**Úloha 3.**
 Pokuste se zobecnit výše uvedený postup a odvodit obecný vzorec pro nejkratší vzdálenost dvou míst na Zemi, pokud $\varrho$ je zemský poloměr, $\psi$ je zeměpisná šířka obou míst (místa leží na stejné rovnoběžce) a $\lambda_1$, $\lambda_2$ jsou zeměpisné délky jednotlivých míst.  
 
 \iffalse
