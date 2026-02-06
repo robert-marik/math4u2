@@ -38,11 +38,11 @@ O kolik kilometrů si však cestou po ortodromě polepšíme? Odpověď na tuto 
 
 ### Slovníček 
 * *Zeměpisná šířka* místa na zemském povrchu (vyjádřená ve 
-stupních a orientaci sever/jih) je odchylka přímky, která 
-prochází daným místem a středem Země, od roviny rovníku. Zeměpisnou šířku budeme označovat písmenem $\psi$, kde $\psi$ může nabývat hodnot od $-90^{\circ}$ (jižní pól) do $+90^{\circ}$ (severní pól). Záporné hodnoty odpovídají místům na jižní polokouli, zatímco kladné hodnoty místům na severní polokouli. 
+stupních) je odchylka přímky, která 
+prochází daným místem a středem Země, od roviny rovníku. Tuto odchylku opatříme znaménkem takto: místům na severní polokouli (tj. na sever od rovníku) budeme přiřazovat kladné zeměpisné šířky, zatímco místům na polokouli jižní přiřadíme záporné zeměpisné šířky. Někdy (především v běžné řeči) se znaménko nepoužívá a mluví se o severní, popř. jižní, zeměpisné šířce. Zeměpisnou šířku budeme označovat písmenem $\psi$, kde $\psi$ může nabývat hodnot od $-90^{\circ}$ (jižní pól) do $+90^{\circ}$ (severní pól).  
 * *Zeměpisná délka* místa na zemském povrchu (vyjádřená ve 
-stupních a orientaci východ/západ) je odchylka roviny poledníku, 
-který prochází daným místem (tj. roviny, která prochází daným místem a oběma póly), od roviny nultého poledníku (tj. roviny, která prochází Greenwichem a oběma póly). Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může nabývat hodnot od $-180^{\circ}$ do $+180^{\circ}$. Záporné hodnoty odpovídají místům na západní polokouli a kladné hodnoty místům na východní polokouli. 
+stupních) je odchylka dvou polorovin, jejichž společnou hraniční přímkou je spojnice severního a jižního pólu. První polorovina navíc prochází Greenwichem a druhá daným místem. Tuto odchylku opatříme znaménkem takto: místům na východní polokouli (tj. na východ od Greenwiche) budeme přiřazovat kladné zeměpisné délky, zatímco místům na polokouli západní přiřadíme záporné zeměpisné délky. Někdy se (podobně jako u zeměpisné šířky) znaménko nepoužívá a mluví se o východní, popř. západní, zeměpisné délce. 
+Zeměpisnou délku budeme označovat písmenem $\lambda$, kde $\lambda$ může nabývat hodnot od $-180^{\circ}$ do $+180^{\circ}$. 
 
 ### Jak mapa zkresluje Zem?
 
