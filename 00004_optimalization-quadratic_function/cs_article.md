@@ -69,7 +69,7 @@ Uvědomme si, že definičním oborem funkce $f$ je množina $\mathbb{N}$, což 
 \iffalse
 
 *Řešení.* 
-Naším úkolem je nyní najít $x \in \N$, pro které je $f(x)$ maximální, a toto maximum určit. Jedním ze způsobů, jak to lze provést, je použít tzv. úpravu na čtverec: 
+Naším úkolem je nyní najít $x \in \mathbb{N}$, pro které je $f(x)$ maximální, a toto maximum určit. Jedním ze způsobů, jak to lze provést, je použít tzv. úpravu na čtverec: 
 
 $$
 \begin{align*}
@@ -80,7 +80,7 @@ $$
 \end{align*}
 $$
 
-Nyní je hezky vidět, že maximalitu $f(x)$ zajistíme, pokud bude výraz $\left( x-\frac{7}{2} \right)^2$ co nejmenší. To je jasné, protože tento výraz je nezáporný a v předpisu $f(x)$ se objevuje jeho záporný násobek. 
+Nyní je hezky vidět, že maximálního $f(x)$ docílíme v případě, když výraz $\left( x-\frac{7}{2} \right)^2$ bude co nejmenší. To je jasné, protože tento výraz je nezáporný a v předpisu $f(x)$ se objevuje jeho záporný násobek, ke kterému je přičtena pouze nějaká konstanta.  
 Vzhledem k tomu, že nás zajímají pouze hodnoty $x \in \mathbb{N}$, je zřejmé, že výraz $\left( x-\frac{7}{2} \right)^2$ je nejmenší (a $f(x)$ tedy největší) pro $x=3$ a pro $x=4$. Poslední krok naší úvahy má i pěknou geometrickou interpretaci. Není těžké si rozmyslet, že $\left( x-\frac{7}{2} \right)^2=\left| x-\frac{7}{2} \right|^2$, a proto $\left( x-\frac{7}{2} \right)^2$ představuje druhou mocninu vzdálenosti čísel $x$ a $\frac{7}{2}$ na číselné ose. Ale přirozená čísla, která jsou nejblíže k bodu $\frac{7}{2}$ jsou právě čísla $3$ a $4$. 
 
 Zjistili jsme, že stav, kdy majitel provozoval tři vozy, je optimální a celkový čistý zisk (jak už víme z úlohy 1) je $60\,000$ Kč. Hodonotu $60\,000$ bychom samozřejmě dostali i jako funkční hodnotu funkce $f$ v bodě $3$, tzn. $f(3)$ (vyzkoušejte si to). 
@@ -88,7 +88,7 @@ Stejného čistého zisku by majitel docílil i se čtyřmi auty.
 Jakýkoliv jiný počet vozů by vedl ke snížení čistého zisku. 
 
 *Poznámka.*
-Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by se realizovalo v bodě $x=\frac{7}{2}$. 
+Pokud by definičním oborem funkce $f$ byla množina všech reálných čísel, maximum by nastalo v bodě $x=\frac{7}{2}$. 
 
 \fi
 
